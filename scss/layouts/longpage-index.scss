@@ -1,6 +1,6 @@
 
 // utility settings
-$darkygrey: #4E4E4E;
+$darkgrey: #4E4E4E;
 $mediumgrey: #666666;
 $lightgrey: #F3F3F3;
 
@@ -16,7 +16,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f2f2f2;
+  background-color: #fff;
 
   * {
     box-sizing: border-box;
@@ -35,13 +35,13 @@ body {
 
 // section styling and themes
 section {
-  padding: 60px 0;
-
+  padding: rem-calc(60) 0;
+  min-height: rem-calc(600);
 }
 
 .section-title {
   margin-top: 40px;
-  margin-bottom: 25px;
+  margin-bottom: rem-calc(25);
   font-family: $montserrat;
   font-size: 6.5em;
   line-height: 1em;
@@ -50,12 +50,31 @@ section {
 }
 
 .theme-1 {
-  background-color: $darkygrey;
+  background-color: $darkgrey;
   color: $lightgrey;
 
   h2 {
     color: $lightgrey;
   }
+}
+
+.theme-2 {
+  background-color: lighten($darkgrey, 60%);
+  color: $darkgrey;
+
+  h2 {
+    color: $darkgrey;
+  }
+}
+
+// custom section styling
+#contact-us {
+  box-shadow: 0 rem-calc(20) 0 lighten($darkgrey, 58%) inset;
+}
+
+#location {
+  background: url(/images/charlotte-skyline-faded.jpg) no-repeat transparent 0 0;
+  background-size: cover;
 }
 
 // footer stylings

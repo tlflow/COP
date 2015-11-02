@@ -8869,7 +8869,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f2f2f2;
+  background-color: #fff;
 }
 
 body * {
@@ -8887,12 +8887,13 @@ body .center-content {
 }
 
 section {
-  padding: 60px 0;
+  padding: 3.75rem 0;
+  min-height: 37.5rem;
 }
 
 .section-title {
   margin-top: 40px;
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
   font-family: Montserrat, sans-serif;
   font-size: 6.5em;
   line-height: 1em;
@@ -8907,6 +8908,24 @@ section {
 
 .theme-1 h2 {
   color: #F3F3F3;
+}
+
+.theme-2 {
+  background-color: #e7e7e7;
+  color: #4E4E4E;
+}
+
+.theme-2 h2 {
+  color: #4E4E4E;
+}
+
+#contact-us {
+  box-shadow: 0 1.25rem 0 #e2e2e2 inset;
+}
+
+#location {
+  background: url(/images/charlotte-skyline-faded.jpg) no-repeat transparent 0 0;
+  background-size: cover;
 }
 
 #copyright {
