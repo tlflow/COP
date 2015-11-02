@@ -1,9 +1,22 @@
+
+// utility settings
+$darkygrey: #4E4E4E;
+$mediumgrey: #666666;
+$lightgrey: #F3F3F3;
+
+$primary: #502D51; // purple
+$secondary: #5F4A64;
+$tertiary: #C6A7A6;
+
+// fonts
+$montserrat: Montserrat, sans-serif;
+$opensans: Open Sans, sans-serif;
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #f2f2f2;
-  font-size: 12px;
 
   * {
     box-sizing: border-box;
@@ -15,28 +28,34 @@ body {
 }
 
 .row {
-  @media only screen and (max-width: 40em) {
+  @media #{$small-only} {
     max-width: 20.5rem;
   }
 }
 
-// utility settings
-$darkygrey: #4E4E4E;
-$mediumgrey: #666666;
-$lightgrey: #F3F3F3;
-
-$primary: #502D51; // purple
-$secondary: #5F4A64;
-$tertiary: #C6A7A6;
-
 // section styling and themes
 section {
   padding: 60px 0;
+
+}
+
+.section-title {
+  margin-top: 40px;
+  margin-bottom: 25px;
+  font-family: $montserrat;
+  font-size: 6.5em;
+  line-height: 1em;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .theme-1 {
   background-color: $darkygrey;
   color: $lightgrey;
+
+  h2 {
+    color: $lightgrey;
+  }
 }
 
 // footer stylings

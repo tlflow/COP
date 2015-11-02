@@ -1,8 +1,8 @@
 /* import foundation */
-@import '../bower_components/foundation/css/foundation';
-
-/* layout styling*/
-@import '../css/layouts/longpage-index';
+@import '../bower_components/foundation/scss/foundation';
 
 /* this is a tests*/
 @import '../css/countdown-timer';
+
+/* layout styling*/
+@import 'layouts/longpage-index';

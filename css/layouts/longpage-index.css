@@ -3,7 +3,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #f2f2f2;
-  font-size: 12px;
 }
 
 body * {
@@ -14,18 +13,26 @@ body .center-content {
   text-align: center;
 }
 
-@media only screen and (max-width: 40em) {
-  .row {
-    max-width: 20.5rem;
-  }
-}
-
 section {
   padding: 60px 0;
 }
 
+.section-title {
+  margin-top: 40px;
+  margin-bottom: 25px;
+  font-family: Montserrat, sans-serif;
+  font-size: 6.5em;
+  line-height: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .theme-1 {
   background-color: #4E4E4E;
+  color: #F3F3F3;
+}
+
+.theme-1 h2 {
   color: #F3F3F3;
 }
 

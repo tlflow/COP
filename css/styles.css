@@ -214,18 +214,12 @@ select {
 }
 
 .column + .column:last-child,
-.columns + .column:last-child, .column +
-.columns:last-child,
-.columns +
-.columns:last-child {
+.columns + .columns:last-child {
   float: right;
 }
 
 .column + .column.end,
-.columns + .column.end, .column +
-.columns.end,
-.columns +
-.columns.end {
+.columns + .columns.end {
   float: left;
 }
 
@@ -1289,7 +1283,8 @@ select {
   top: 50%;
 }
 
-.alert-box .close:hover, .alert-box .close:focus {
+.alert-box .close:hover,
+.alert-box .close:focus {
   opacity: 0.5;
 }
 
@@ -1766,7 +1761,8 @@ select {
   cursor: default;
 }
 
-.breadcrumbs > *.current:hover, .breadcrumbs > *.current:hover a, .breadcrumbs > *.current:focus, .breadcrumbs > *.current:focus a {
+.breadcrumbs > *.current:hover, .breadcrumbs > *.current:hover a,
+.breadcrumbs > *.current:focus, .breadcrumbs > *.current:focus a {
   text-decoration: none;
 }
 
@@ -1778,7 +1774,9 @@ select {
   color: #999999;
 }
 
-.breadcrumbs > *.unavailable:hover, .breadcrumbs > *.unavailable:hover a, .breadcrumbs > *.unavailable:focus,
+.breadcrumbs > *.unavailable:hover,
+.breadcrumbs > *.unavailable:hover a,
+.breadcrumbs > *.unavailable:focus,
 .breadcrumbs > *.unavailable a:focus {
   color: #999999;
   cursor: not-allowed;
@@ -1827,11 +1825,15 @@ button, .button {
           transition: background-color 300ms ease-out;
 }
 
-button:hover, button:focus, .button:hover, .button:focus {
+button:hover,
+button:focus, .button:hover,
+.button:focus {
   background-color: #007095;
 }
 
-button:hover, button:focus, .button:hover, .button:focus {
+button:hover,
+button:focus, .button:hover,
+.button:focus {
   color: #FFFFFF;
 }
 
@@ -1841,11 +1843,15 @@ button.secondary, .button.secondary {
   color: #333333;
 }
 
-button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
+button.secondary:hover,
+button.secondary:focus, .button.secondary:hover,
+.button.secondary:focus {
   background-color: #b9b9b9;
 }
 
-button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
+button.secondary:hover,
+button.secondary:focus, .button.secondary:hover,
+.button.secondary:focus {
   color: #333333;
 }
 
@@ -1855,11 +1861,15 @@ button.success, .button.success {
   color: #FFFFFF;
 }
 
-button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
+button.success:hover,
+button.success:focus, .button.success:hover,
+.button.success:focus {
   background-color: #368a55;
 }
 
-button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
+button.success:hover,
+button.success:focus, .button.success:hover,
+.button.success:focus {
   color: #FFFFFF;
 }
 
@@ -1869,11 +1879,15 @@ button.alert, .button.alert {
   color: #FFFFFF;
 }
 
-button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
+button.alert:hover,
+button.alert:focus, .button.alert:hover,
+.button.alert:focus {
   background-color: #cf2a0e;
 }
 
-button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
+button.alert:hover,
+button.alert:focus, .button.alert:hover,
+.button.alert:focus {
   color: #FFFFFF;
 }
 
@@ -1883,11 +1897,15 @@ button.warning, .button.warning {
   color: #FFFFFF;
 }
 
-button.warning:hover, button.warning:focus, .button.warning:hover, .button.warning:focus {
+button.warning:hover,
+button.warning:focus, .button.warning:hover,
+.button.warning:focus {
   background-color: #cf6e0e;
 }
 
-button.warning:hover, button.warning:focus, .button.warning:hover, .button.warning:focus {
+button.warning:hover,
+button.warning:focus, .button.warning:hover,
+.button.warning:focus {
   color: #FFFFFF;
 }
 
@@ -1897,11 +1915,15 @@ button.info, .button.info {
   color: #333333;
 }
 
-button.info:hover, button.info:focus, .button.info:hover, .button.info:focus {
+button.info:hover,
+button.info:focus, .button.info:hover,
+.button.info:focus {
   background-color: #61b6d9;
 }
 
-button.info:hover, button.info:focus, .button.info:hover, .button.info:focus {
+button.info:hover,
+button.info:focus, .button.info:hover,
+.button.info:focus {
   color: #FFFFFF;
 }
 
@@ -1957,15 +1979,27 @@ button.disabled, button[disabled], .button.disabled, .button[disabled] {
   opacity: 0.7;
 }
 
-button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
+button.disabled:hover,
+button.disabled:focus, button[disabled]:hover,
+button[disabled]:focus, .button.disabled:hover,
+.button.disabled:focus, .button[disabled]:hover,
+.button[disabled]:focus {
   background-color: #007095;
 }
 
-button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
+button.disabled:hover,
+button.disabled:focus, button[disabled]:hover,
+button[disabled]:focus, .button.disabled:hover,
+.button.disabled:focus, .button[disabled]:hover,
+.button[disabled]:focus {
   color: #FFFFFF;
 }
 
-button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
+button.disabled:hover,
+button.disabled:focus, button[disabled]:hover,
+button[disabled]:focus, .button.disabled:hover,
+.button.disabled:focus, .button[disabled]:hover,
+.button[disabled]:focus {
   background-color: #008CBA;
 }
 
@@ -1978,15 +2012,27 @@ button.disabled.secondary, button[disabled].secondary, .button.disabled.secondar
   opacity: 0.7;
 }
 
-button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
+button.disabled.secondary:hover,
+button.disabled.secondary:focus, button[disabled].secondary:hover,
+button[disabled].secondary:focus, .button.disabled.secondary:hover,
+.button.disabled.secondary:focus, .button[disabled].secondary:hover,
+.button[disabled].secondary:focus {
   background-color: #b9b9b9;
 }
 
-button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
+button.disabled.secondary:hover,
+button.disabled.secondary:focus, button[disabled].secondary:hover,
+button[disabled].secondary:focus, .button.disabled.secondary:hover,
+.button.disabled.secondary:focus, .button[disabled].secondary:hover,
+.button[disabled].secondary:focus {
   color: #333333;
 }
 
-button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
+button.disabled.secondary:hover,
+button.disabled.secondary:focus, button[disabled].secondary:hover,
+button[disabled].secondary:focus, .button.disabled.secondary:hover,
+.button.disabled.secondary:focus, .button[disabled].secondary:hover,
+.button[disabled].secondary:focus {
   background-color: #e7e7e7;
 }
 
@@ -1999,15 +2045,27 @@ button.disabled.success, button[disabled].success, .button.disabled.success, .bu
   opacity: 0.7;
 }
 
-button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
+button.disabled.success:hover,
+button.disabled.success:focus, button[disabled].success:hover,
+button[disabled].success:focus, .button.disabled.success:hover,
+.button.disabled.success:focus, .button[disabled].success:hover,
+.button[disabled].success:focus {
   background-color: #368a55;
 }
 
-button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
+button.disabled.success:hover,
+button.disabled.success:focus, button[disabled].success:hover,
+button[disabled].success:focus, .button.disabled.success:hover,
+.button.disabled.success:focus, .button[disabled].success:hover,
+.button[disabled].success:focus {
   color: #FFFFFF;
 }
 
-button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
+button.disabled.success:hover,
+button.disabled.success:focus, button[disabled].success:hover,
+button[disabled].success:focus, .button.disabled.success:hover,
+.button.disabled.success:focus, .button[disabled].success:hover,
+.button[disabled].success:focus {
   background-color: #43AC6A;
 }
 
@@ -2020,15 +2078,27 @@ button.disabled.alert, button[disabled].alert, .button.disabled.alert, .button[d
   opacity: 0.7;
 }
 
-button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
+button.disabled.alert:hover,
+button.disabled.alert:focus, button[disabled].alert:hover,
+button[disabled].alert:focus, .button.disabled.alert:hover,
+.button.disabled.alert:focus, .button[disabled].alert:hover,
+.button[disabled].alert:focus {
   background-color: #cf2a0e;
 }
 
-button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
+button.disabled.alert:hover,
+button.disabled.alert:focus, button[disabled].alert:hover,
+button[disabled].alert:focus, .button.disabled.alert:hover,
+.button.disabled.alert:focus, .button[disabled].alert:hover,
+.button[disabled].alert:focus {
   color: #FFFFFF;
 }
 
-button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
+button.disabled.alert:hover,
+button.disabled.alert:focus, button[disabled].alert:hover,
+button[disabled].alert:focus, .button.disabled.alert:hover,
+.button.disabled.alert:focus, .button[disabled].alert:hover,
+.button[disabled].alert:focus {
   background-color: #f04124;
 }
 
@@ -2041,15 +2111,27 @@ button.disabled.warning, button[disabled].warning, .button.disabled.warning, .bu
   opacity: 0.7;
 }
 
-button.disabled.warning:hover, button.disabled.warning:focus, button[disabled].warning:hover, button[disabled].warning:focus, .button.disabled.warning:hover, .button.disabled.warning:focus, .button[disabled].warning:hover, .button[disabled].warning:focus {
+button.disabled.warning:hover,
+button.disabled.warning:focus, button[disabled].warning:hover,
+button[disabled].warning:focus, .button.disabled.warning:hover,
+.button.disabled.warning:focus, .button[disabled].warning:hover,
+.button[disabled].warning:focus {
   background-color: #cf6e0e;
 }
 
-button.disabled.warning:hover, button.disabled.warning:focus, button[disabled].warning:hover, button[disabled].warning:focus, .button.disabled.warning:hover, .button.disabled.warning:focus, .button[disabled].warning:hover, .button[disabled].warning:focus {
+button.disabled.warning:hover,
+button.disabled.warning:focus, button[disabled].warning:hover,
+button[disabled].warning:focus, .button.disabled.warning:hover,
+.button.disabled.warning:focus, .button[disabled].warning:hover,
+.button[disabled].warning:focus {
   color: #FFFFFF;
 }
 
-button.disabled.warning:hover, button.disabled.warning:focus, button[disabled].warning:hover, button[disabled].warning:focus, .button.disabled.warning:hover, .button.disabled.warning:focus, .button[disabled].warning:hover, .button[disabled].warning:focus {
+button.disabled.warning:hover,
+button.disabled.warning:focus, button[disabled].warning:hover,
+button[disabled].warning:focus, .button.disabled.warning:hover,
+.button.disabled.warning:focus, .button[disabled].warning:hover,
+.button[disabled].warning:focus {
   background-color: #f08a24;
 }
 
@@ -2062,15 +2144,27 @@ button.disabled.info, button[disabled].info, .button.disabled.info, .button[disa
   opacity: 0.7;
 }
 
-button.disabled.info:hover, button.disabled.info:focus, button[disabled].info:hover, button[disabled].info:focus, .button.disabled.info:hover, .button.disabled.info:focus, .button[disabled].info:hover, .button[disabled].info:focus {
+button.disabled.info:hover,
+button.disabled.info:focus, button[disabled].info:hover,
+button[disabled].info:focus, .button.disabled.info:hover,
+.button.disabled.info:focus, .button[disabled].info:hover,
+.button[disabled].info:focus {
   background-color: #61b6d9;
 }
 
-button.disabled.info:hover, button.disabled.info:focus, button[disabled].info:hover, button[disabled].info:focus, .button.disabled.info:hover, .button.disabled.info:focus, .button[disabled].info:hover, .button[disabled].info:focus {
+button.disabled.info:hover,
+button.disabled.info:focus, button[disabled].info:hover,
+button[disabled].info:focus, .button.disabled.info:hover,
+.button.disabled.info:focus, .button[disabled].info:hover,
+.button[disabled].info:focus {
   color: #FFFFFF;
 }
 
-button.disabled.info:hover, button.disabled.info:focus, button[disabled].info:hover, button[disabled].info:focus, .button.disabled.info:hover, .button.disabled.info:focus, .button[disabled].info:hover, .button[disabled].info:focus {
+button.disabled.info:hover,
+button.disabled.info:focus, button[disabled].info:hover,
+button[disabled].info:focus, .button.disabled.info:hover,
+.button.disabled.info:focus, .button[disabled].info:hover,
+.button[disabled].info:focus {
   background-color: #a0d3e8;
 }
 
@@ -2341,14 +2435,20 @@ button::-moz-focus-inner {
   border-radius: 0;
 }
 
-.button-group.radius > *:first-child, .button-group.radius > *:first-child > a, .button-group.radius > *:first-child > button, .button-group.radius > *:first-child > .button {
+.button-group.radius > *:first-child,
+.button-group.radius > *:first-child > a,
+.button-group.radius > *:first-child > button,
+.button-group.radius > *:first-child > .button {
   -webkit-border-bottom-left-radius: 3px;
   -webkit-border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
 }
 
-.button-group.radius > *:last-child, .button-group.radius > *:last-child > a, .button-group.radius > *:last-child > button, .button-group.radius > *:last-child > .button {
+.button-group.radius > *:last-child,
+.button-group.radius > *:last-child > a,
+.button-group.radius > *:last-child > button,
+.button-group.radius > *:last-child > .button {
   -webkit-border-bottom-right-radius: 3px;
   -webkit-border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -2392,14 +2492,20 @@ button::-moz-focus-inner {
   border-radius: 0;
 }
 
-.button-group.radius.stack > *:first-child, .button-group.radius.stack > *:first-child > a, .button-group.radius.stack > *:first-child > button, .button-group.radius.stack > *:first-child > .button {
+.button-group.radius.stack > *:first-child,
+.button-group.radius.stack > *:first-child > a,
+.button-group.radius.stack > *:first-child > button,
+.button-group.radius.stack > *:first-child > .button {
   -webkit-top-left-radius: 3px;
   -webkit-top-right-radius: 3px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
 
-.button-group.radius.stack > *:last-child, .button-group.radius.stack > *:last-child > a, .button-group.radius.stack > *:last-child > button, .button-group.radius.stack > *:last-child > .button {
+.button-group.radius.stack > *:last-child,
+.button-group.radius.stack > *:last-child > a,
+.button-group.radius.stack > *:last-child > button,
+.button-group.radius.stack > *:last-child > .button {
   -webkit-bottom-left-radius: 3px;
   -webkit-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -2424,13 +2530,19 @@ button::-moz-focus-inner {
   .button-group.radius.stack-for-small > * > .button {
     border-radius: 0;
   }
-  .button-group.radius.stack-for-small > *:first-child, .button-group.radius.stack-for-small > *:first-child > a, .button-group.radius.stack-for-small > *:first-child > button, .button-group.radius.stack-for-small > *:first-child > .button {
+  .button-group.radius.stack-for-small > *:first-child,
+  .button-group.radius.stack-for-small > *:first-child > a,
+  .button-group.radius.stack-for-small > *:first-child > button,
+  .button-group.radius.stack-for-small > *:first-child > .button {
     -webkit-border-bottom-left-radius: 3px;
     -webkit-border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px;
   }
-  .button-group.radius.stack-for-small > *:last-child, .button-group.radius.stack-for-small > *:last-child > a, .button-group.radius.stack-for-small > *:last-child > button, .button-group.radius.stack-for-small > *:last-child > .button {
+  .button-group.radius.stack-for-small > *:last-child,
+  .button-group.radius.stack-for-small > *:last-child > a,
+  .button-group.radius.stack-for-small > *:last-child > button,
+  .button-group.radius.stack-for-small > *:last-child > .button {
     -webkit-border-bottom-right-radius: 3px;
     -webkit-border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
@@ -2469,13 +2581,19 @@ button::-moz-focus-inner {
   .button-group.radius.stack-for-small > * > .button {
     border-radius: 0;
   }
-  .button-group.radius.stack-for-small > *:first-child, .button-group.radius.stack-for-small > *:first-child > a, .button-group.radius.stack-for-small > *:first-child > button, .button-group.radius.stack-for-small > *:first-child > .button {
+  .button-group.radius.stack-for-small > *:first-child,
+  .button-group.radius.stack-for-small > *:first-child > a,
+  .button-group.radius.stack-for-small > *:first-child > button,
+  .button-group.radius.stack-for-small > *:first-child > .button {
     -webkit-top-left-radius: 3px;
     -webkit-top-right-radius: 3px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
   }
-  .button-group.radius.stack-for-small > *:last-child, .button-group.radius.stack-for-small > *:last-child > a, .button-group.radius.stack-for-small > *:last-child > button, .button-group.radius.stack-for-small > *:last-child > .button {
+  .button-group.radius.stack-for-small > *:last-child,
+  .button-group.radius.stack-for-small > *:last-child > a,
+  .button-group.radius.stack-for-small > *:last-child > button,
+  .button-group.radius.stack-for-small > *:last-child > .button {
     -webkit-bottom-left-radius: 3px;
     -webkit-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
@@ -2504,14 +2622,20 @@ button::-moz-focus-inner {
   border-radius: 0;
 }
 
-.button-group.round > *:first-child, .button-group.round > *:first-child > a, .button-group.round > *:first-child > button, .button-group.round > *:first-child > .button {
+.button-group.round > *:first-child,
+.button-group.round > *:first-child > a,
+.button-group.round > *:first-child > button,
+.button-group.round > *:first-child > .button {
   -webkit-border-bottom-left-radius: 1000px;
   -webkit-border-top-left-radius: 1000px;
   border-bottom-left-radius: 1000px;
   border-top-left-radius: 1000px;
 }
 
-.button-group.round > *:last-child, .button-group.round > *:last-child > a, .button-group.round > *:last-child > button, .button-group.round > *:last-child > .button {
+.button-group.round > *:last-child,
+.button-group.round > *:last-child > a,
+.button-group.round > *:last-child > button,
+.button-group.round > *:last-child > .button {
   -webkit-border-bottom-right-radius: 1000px;
   -webkit-border-top-right-radius: 1000px;
   border-bottom-right-radius: 1000px;
@@ -2555,14 +2679,20 @@ button::-moz-focus-inner {
   border-radius: 0;
 }
 
-.button-group.round.stack > *:first-child, .button-group.round.stack > *:first-child > a, .button-group.round.stack > *:first-child > button, .button-group.round.stack > *:first-child > .button {
+.button-group.round.stack > *:first-child,
+.button-group.round.stack > *:first-child > a,
+.button-group.round.stack > *:first-child > button,
+.button-group.round.stack > *:first-child > .button {
   -webkit-top-left-radius: 1rem;
   -webkit-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
 
-.button-group.round.stack > *:last-child, .button-group.round.stack > *:last-child > a, .button-group.round.stack > *:last-child > button, .button-group.round.stack > *:last-child > .button {
+.button-group.round.stack > *:last-child,
+.button-group.round.stack > *:last-child > a,
+.button-group.round.stack > *:last-child > button,
+.button-group.round.stack > *:last-child > .button {
   -webkit-bottom-left-radius: 1rem;
   -webkit-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
@@ -2587,13 +2717,19 @@ button::-moz-focus-inner {
   .button-group.round.stack-for-small > * > .button {
     border-radius: 0;
   }
-  .button-group.round.stack-for-small > *:first-child, .button-group.round.stack-for-small > *:first-child > a, .button-group.round.stack-for-small > *:first-child > button, .button-group.round.stack-for-small > *:first-child > .button {
+  .button-group.round.stack-for-small > *:first-child,
+  .button-group.round.stack-for-small > *:first-child > a,
+  .button-group.round.stack-for-small > *:first-child > button,
+  .button-group.round.stack-for-small > *:first-child > .button {
     -webkit-border-bottom-left-radius: 1000px;
     -webkit-border-top-left-radius: 1000px;
     border-bottom-left-radius: 1000px;
     border-top-left-radius: 1000px;
   }
-  .button-group.round.stack-for-small > *:last-child, .button-group.round.stack-for-small > *:last-child > a, .button-group.round.stack-for-small > *:last-child > button, .button-group.round.stack-for-small > *:last-child > .button {
+  .button-group.round.stack-for-small > *:last-child,
+  .button-group.round.stack-for-small > *:last-child > a,
+  .button-group.round.stack-for-small > *:last-child > button,
+  .button-group.round.stack-for-small > *:last-child > .button {
     -webkit-border-bottom-right-radius: 1000px;
     -webkit-border-top-right-radius: 1000px;
     border-bottom-right-radius: 1000px;
@@ -2632,13 +2768,19 @@ button::-moz-focus-inner {
   .button-group.round.stack-for-small > * > .button {
     border-radius: 0;
   }
-  .button-group.round.stack-for-small > *:first-child, .button-group.round.stack-for-small > *:first-child > a, .button-group.round.stack-for-small > *:first-child > button, .button-group.round.stack-for-small > *:first-child > .button {
+  .button-group.round.stack-for-small > *:first-child,
+  .button-group.round.stack-for-small > *:first-child > a,
+  .button-group.round.stack-for-small > *:first-child > button,
+  .button-group.round.stack-for-small > *:first-child > .button {
     -webkit-top-left-radius: 1rem;
     -webkit-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
   }
-  .button-group.round.stack-for-small > *:last-child, .button-group.round.stack-for-small > *:last-child > a, .button-group.round.stack-for-small > *:last-child > button, .button-group.round.stack-for-small > *:last-child > .button {
+  .button-group.round.stack-for-small > *:last-child,
+  .button-group.round.stack-for-small > *:last-child > a,
+  .button-group.round.stack-for-small > *:last-child > button,
+  .button-group.round.stack-for-small > *:last-child > .button {
     -webkit-bottom-left-radius: 1rem;
     -webkit-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -2759,7 +2901,8 @@ button::-moz-focus-inner {
   z-index: 999;
 }
 
-.clearing-close:hover, .clearing-close:focus {
+.clearing-close:hover,
+.clearing-close:focus {
   color: #CCCCCC;
 }
 
@@ -3133,7 +3276,8 @@ button::-moz-focus-inner {
   margin: 0;
 }
 
-.f-dropdown li:hover, .f-dropdown li:focus {
+.f-dropdown li:hover,
+.f-dropdown li:focus {
   background: #EEEEEE;
 }
 
@@ -3484,7 +3628,39 @@ input:not([type]):disabled, input[type="text"]:disabled, input[type="password"]:
   cursor: default;
 }
 
-input:not([type])[disabled], input:not([type])[readonly], fieldset[disabled] input:not([type]), input[type="text"][disabled], input[type="text"][readonly], fieldset[disabled] input[type="text"], input[type="password"][disabled], input[type="password"][readonly], fieldset[disabled] input[type="password"], input[type="date"][disabled], input[type="date"][readonly], fieldset[disabled] input[type="date"], input[type="datetime"][disabled], input[type="datetime"][readonly], fieldset[disabled] input[type="datetime"], input[type="datetime-local"][disabled], input[type="datetime-local"][readonly], fieldset[disabled] input[type="datetime-local"], input[type="month"][disabled], input[type="month"][readonly], fieldset[disabled] input[type="month"], input[type="week"][disabled], input[type="week"][readonly], fieldset[disabled] input[type="week"], input[type="email"][disabled], input[type="email"][readonly], fieldset[disabled] input[type="email"], input[type="number"][disabled], input[type="number"][readonly], fieldset[disabled] input[type="number"], input[type="search"][disabled], input[type="search"][readonly], fieldset[disabled] input[type="search"], input[type="tel"][disabled], input[type="tel"][readonly], fieldset[disabled] input[type="tel"], input[type="time"][disabled], input[type="time"][readonly], fieldset[disabled] input[type="time"], input[type="url"][disabled], input[type="url"][readonly], fieldset[disabled] input[type="url"], input[type="color"][disabled], input[type="color"][readonly], fieldset[disabled] input[type="color"], textarea[disabled], textarea[readonly], fieldset[disabled] textarea {
+input:not([type])[disabled],
+input:not([type])[readonly],
+fieldset[disabled] input:not([type]), input[type="text"][disabled],
+input[type="text"][readonly],
+fieldset[disabled] input[type="text"], input[type="password"][disabled],
+input[type="password"][readonly],
+fieldset[disabled] input[type="password"], input[type="date"][disabled],
+input[type="date"][readonly],
+fieldset[disabled] input[type="date"], input[type="datetime"][disabled],
+input[type="datetime"][readonly],
+fieldset[disabled] input[type="datetime"], input[type="datetime-local"][disabled],
+input[type="datetime-local"][readonly],
+fieldset[disabled] input[type="datetime-local"], input[type="month"][disabled],
+input[type="month"][readonly],
+fieldset[disabled] input[type="month"], input[type="week"][disabled],
+input[type="week"][readonly],
+fieldset[disabled] input[type="week"], input[type="email"][disabled],
+input[type="email"][readonly],
+fieldset[disabled] input[type="email"], input[type="number"][disabled],
+input[type="number"][readonly],
+fieldset[disabled] input[type="number"], input[type="search"][disabled],
+input[type="search"][readonly],
+fieldset[disabled] input[type="search"], input[type="tel"][disabled],
+input[type="tel"][readonly],
+fieldset[disabled] input[type="tel"], input[type="time"][disabled],
+input[type="time"][readonly],
+fieldset[disabled] input[type="time"], input[type="url"][disabled],
+input[type="url"][readonly],
+fieldset[disabled] input[type="url"], input[type="color"][disabled],
+input[type="color"][readonly],
+fieldset[disabled] input[type="color"], textarea[disabled],
+textarea[readonly],
+fieldset[disabled] textarea {
   background-color: #DDDDDD;
   cursor: default;
 }
@@ -4336,7 +4512,8 @@ label.error {
   right: 12px;
 }
 
-.joyride-close-tip:hover, .joyride-close-tip:focus {
+.joyride-close-tip:hover,
+.joyride-close-tip:focus {
   color: #EEEEEE !important;
 }
 
@@ -4835,8 +5012,10 @@ ul.pagination li a, ul.pagination li button {
 }
 
 ul.pagination li:hover a,
-ul.pagination li a:focus, ul.pagination li:hover button,
-ul.pagination li button:focus {
+ul.pagination li a:focus,
+ul.pagination li:hover button,
+ul.pagination li
+button:focus {
   background: #e6e6e6;
 }
 
@@ -4846,7 +5025,10 @@ ul.pagination li.unavailable a, ul.pagination li.unavailable button {
   pointer-events: none;
 }
 
-ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus, ul.pagination li.unavailable:hover button, ul.pagination li.unavailable button:focus {
+ul.pagination li.unavailable:hover a,
+ul.pagination li.unavailable a:focus,
+ul.pagination li.unavailable:hover button,
+ul.pagination li.unavailable button:focus {
   background: transparent;
 }
 
@@ -4857,7 +5039,9 @@ ul.pagination li.current a, ul.pagination li.current button {
   font-weight: bold;
 }
 
-ul.pagination li.current a:hover, ul.pagination li.current a:focus, ul.pagination li.current button:hover, ul.pagination li.current button:focus {
+ul.pagination li.current a:hover,
+ul.pagination li.current a:focus, ul.pagination li.current button:hover,
+ul.pagination li.current button:focus {
   background: #008CBA;
 }
 
@@ -4943,7 +5127,8 @@ ul.pagination li {
   color: #008CBA;
 }
 
-.panel.callout a:not(.button):hover, .panel.callout a:not(.button):focus {
+.panel.callout a:not(.button):hover,
+.panel.callout a:not(.button):focus {
   color: #0078a0;
 }
 
@@ -5385,7 +5570,8 @@ ul.pagination li {
   padding: 0.4375rem 0.875rem;
 }
 
-.side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus {
+.side-nav li a:not(.button):hover,
+.side-nav li a:not(.button):focus {
   background: rgba(0, 0, 0, 0.025);
   color: #1cc7ff;
 }
@@ -5816,7 +6002,9 @@ table tr td {
   text-align: left;
 }
 
-table tr.even, table tr.alt, table tr:nth-of-type(even) {
+table tr.even,
+table tr.alt,
+table tr:nth-of-type(even) {
   background: #F9F9F9;
 }
 
@@ -5968,7 +6156,8 @@ table tr td {
           transition: all 200ms ease-out;
 }
 
-.th:hover, .th:focus {
+.th:hover,
+.th:focus {
   box-shadow: 0 0 6px 1px rgba(0, 140, 186, 0.5);
 }
 
@@ -5984,12 +6173,14 @@ table tr td {
   font-weight: bold;
 }
 
-.has-tip:hover, .has-tip:focus {
+.has-tip:hover,
+.has-tip:focus {
   border-bottom: dotted 1px #003f54;
   color: #008CBA;
 }
 
-.has-tip.tip-left, .has-tip.tip-right {
+.has-tip.tip-left,
+.has-tip.tip-right {
   float: none !important;
 }
 
@@ -6059,7 +6250,8 @@ table tr td {
     bottom: -10px;
     top: auto;
   }
-  .tooltip.tip-left, .tooltip.tip-right {
+  .tooltip.tip-left,
+  .tooltip.tip-right {
     float: none !important;
   }
   .tooltip.tip-left > .nub {
@@ -6314,11 +6506,13 @@ meta.foundation-mq-topbar {
   color: #FFFFFF;
 }
 
-.top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
+.top-bar-section ul li > a.button:hover,
+.top-bar-section ul li > a.button:focus {
   background-color: #007095;
 }
 
-.top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
+.top-bar-section ul li > a.button:hover,
+.top-bar-section ul li > a.button:focus {
   color: #FFFFFF;
 }
 
@@ -6328,11 +6522,13 @@ meta.foundation-mq-topbar {
   color: #333333;
 }
 
-.top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul li > a.button.secondary:focus {
+.top-bar-section ul li > a.button.secondary:hover,
+.top-bar-section ul li > a.button.secondary:focus {
   background-color: #b9b9b9;
 }
 
-.top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul li > a.button.secondary:focus {
+.top-bar-section ul li > a.button.secondary:hover,
+.top-bar-section ul li > a.button.secondary:focus {
   color: #333333;
 }
 
@@ -6342,11 +6538,13 @@ meta.foundation-mq-topbar {
   color: #FFFFFF;
 }
 
-.top-bar-section ul li > a.button.success:hover, .top-bar-section ul li > a.button.success:focus {
+.top-bar-section ul li > a.button.success:hover,
+.top-bar-section ul li > a.button.success:focus {
   background-color: #368a55;
 }
 
-.top-bar-section ul li > a.button.success:hover, .top-bar-section ul li > a.button.success:focus {
+.top-bar-section ul li > a.button.success:hover,
+.top-bar-section ul li > a.button.success:focus {
   color: #FFFFFF;
 }
 
@@ -6356,11 +6554,13 @@ meta.foundation-mq-topbar {
   color: #FFFFFF;
 }
 
-.top-bar-section ul li > a.button.alert:hover, .top-bar-section ul li > a.button.alert:focus {
+.top-bar-section ul li > a.button.alert:hover,
+.top-bar-section ul li > a.button.alert:focus {
   background-color: #cf2a0e;
 }
 
-.top-bar-section ul li > a.button.alert:hover, .top-bar-section ul li > a.button.alert:focus {
+.top-bar-section ul li > a.button.alert:hover,
+.top-bar-section ul li > a.button.alert:focus {
   color: #FFFFFF;
 }
 
@@ -6370,11 +6570,13 @@ meta.foundation-mq-topbar {
   color: #FFFFFF;
 }
 
-.top-bar-section ul li > a.button.warning:hover, .top-bar-section ul li > a.button.warning:focus {
+.top-bar-section ul li > a.button.warning:hover,
+.top-bar-section ul li > a.button.warning:focus {
   background-color: #cf6e0e;
 }
 
-.top-bar-section ul li > a.button.warning:hover, .top-bar-section ul li > a.button.warning:focus {
+.top-bar-section ul li > a.button.warning:hover,
+.top-bar-section ul li > a.button.warning:focus {
   color: #FFFFFF;
 }
 
@@ -6384,11 +6586,13 @@ meta.foundation-mq-topbar {
   color: #333333;
 }
 
-.top-bar-section ul li > a.button.info:hover, .top-bar-section ul li > a.button.info:focus {
+.top-bar-section ul li > a.button.info:hover,
+.top-bar-section ul li > a.button.info:focus {
   background-color: #61b6d9;
 }
 
-.top-bar-section ul li > a.button.info:hover, .top-bar-section ul li > a.button.info:focus {
+.top-bar-section ul li > a.button.info:hover,
+.top-bar-section ul li > a.button.info:focus {
   color: #FFFFFF;
 }
 
@@ -6401,11 +6605,13 @@ meta.foundation-mq-topbar {
   color: #FFFFFF;
 }
 
-.top-bar-section ul li > button:hover, .top-bar-section ul li > button:focus {
+.top-bar-section ul li > button:hover,
+.top-bar-section ul li > button:focus {
   background-color: #007095;
 }
 
-.top-bar-section ul li > button:hover, .top-bar-section ul li > button:focus {
+.top-bar-section ul li > button:hover,
+.top-bar-section ul li > button:focus {
   color: #FFFFFF;
 }
 
@@ -6415,11 +6621,13 @@ meta.foundation-mq-topbar {
   color: #333333;
 }
 
-.top-bar-section ul li > button.secondary:hover, .top-bar-section ul li > button.secondary:focus {
+.top-bar-section ul li > button.secondary:hover,
+.top-bar-section ul li > button.secondary:focus {
   background-color: #b9b9b9;
 }
 
-.top-bar-section ul li > button.secondary:hover, .top-bar-section ul li > button.secondary:focus {
+.top-bar-section ul li > button.secondary:hover,
+.top-bar-section ul li > button.secondary:focus {
   color: #333333;
 }
 
@@ -6429,11 +6637,13 @@ meta.foundation-mq-topbar {
   color: #FFFFFF;
 }
 
-.top-bar-section ul li > button.success:hover, .top-bar-section ul li > button.success:focus {
+.top-bar-section ul li > button.success:hover,
+.top-bar-section ul li > button.success:focus {
   background-color: #368a55;
 }
 
-.top-bar-section ul li > button.success:hover, .top-bar-section ul li > button.success:focus {
+.top-bar-section ul li > button.success:hover,
+.top-bar-section ul li > button.success:focus {
   color: #FFFFFF;
 }
 
@@ -6443,11 +6653,13 @@ meta.foundation-mq-topbar {
   color: #FFFFFF;
 }
 
-.top-bar-section ul li > button.alert:hover, .top-bar-section ul li > button.alert:focus {
+.top-bar-section ul li > button.alert:hover,
+.top-bar-section ul li > button.alert:focus {
   background-color: #cf2a0e;
 }
 
-.top-bar-section ul li > button.alert:hover, .top-bar-section ul li > button.alert:focus {
+.top-bar-section ul li > button.alert:hover,
+.top-bar-section ul li > button.alert:focus {
   color: #FFFFFF;
 }
 
@@ -6457,11 +6669,13 @@ meta.foundation-mq-topbar {
   color: #FFFFFF;
 }
 
-.top-bar-section ul li > button.warning:hover, .top-bar-section ul li > button.warning:focus {
+.top-bar-section ul li > button.warning:hover,
+.top-bar-section ul li > button.warning:focus {
   background-color: #cf6e0e;
 }
 
-.top-bar-section ul li > button.warning:hover, .top-bar-section ul li > button.warning:focus {
+.top-bar-section ul li > button.warning:hover,
+.top-bar-section ul li > button.warning:focus {
   color: #FFFFFF;
 }
 
@@ -6471,11 +6685,13 @@ meta.foundation-mq-topbar {
   color: #333333;
 }
 
-.top-bar-section ul li > button.info:hover, .top-bar-section ul li > button.info:focus {
+.top-bar-section ul li > button.info:hover,
+.top-bar-section ul li > button.info:focus {
   background-color: #61b6d9;
 }
 
-.top-bar-section ul li > button.info:hover, .top-bar-section ul li > button.info:focus {
+.top-bar-section ul li > button.info:hover,
+.top-bar-section ul li > button.info:focus {
   color: #FFFFFF;
 }
 
@@ -6565,18 +6781,21 @@ meta.foundation-mq-topbar {
   font-weight: normal;
 }
 
-.top-bar-section .dropdown li.title h5, .top-bar-section .dropdown li.parent-link {
+.top-bar-section .dropdown li.title h5,
+.top-bar-section .dropdown li.parent-link {
   margin-bottom: 0;
   margin-top: 0;
   font-size: 1.125rem;
 }
 
-.top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.parent-link a {
+.top-bar-section .dropdown li.title h5 a,
+.top-bar-section .dropdown li.parent-link a {
   color: #FFFFFF;
   display: block;
 }
 
-.top-bar-section .dropdown li.title h5 a:hover, .top-bar-section .dropdown li.parent-link a:hover {
+.top-bar-section .dropdown li.title h5 a:hover,
+.top-bar-section .dropdown li.parent-link a:hover {
   background: none;
 }
 
@@ -7025,7 +7244,8 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #0078a0;
 }
 
@@ -7163,7 +7383,9 @@ ul li ol {
   margin-bottom: 0;
 }
 
-ul.square li ul, ul.circle li ul, ul.disc li ul {
+ul.square li ul,
+ul.circle li ul,
+ul.disc li ul {
   list-style: inherit;
 }
 
@@ -7315,11 +7537,11 @@ blockquote p {
 }
 
 /*
- * Print styles.
- *
- * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
- * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
-*/
+       * Print styles.
+       *
+       * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+       * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
+      */
 @media print {
   * {
     background: transparent !important;
@@ -7381,7 +7603,10 @@ blockquote p {
   overflow: hidden;
 }
 
-.off-canvas-wrap.move-right, .off-canvas-wrap.move-left, .off-canvas-wrap.move-bottom, .off-canvas-wrap.move-top {
+.off-canvas-wrap.move-right,
+.off-canvas-wrap.move-left,
+.off-canvas-wrap.move-bottom,
+.off-canvas-wrap.move-top {
   min-height: 100%;
   -webkit-overflow-scrolling: touch;
 }
@@ -8365,23 +8590,28 @@ ul.off-canvas-list li a:active {
 }
 
 /* Specific visibility for tables */
-table.hide-for-landscape, table.show-for-portrait {
+table.hide-for-landscape,
+table.show-for-portrait {
   display: table !important;
 }
 
-thead.hide-for-landscape, thead.show-for-portrait {
+thead.hide-for-landscape,
+thead.show-for-portrait {
   display: table-header-group !important;
 }
 
-tbody.hide-for-landscape, tbody.show-for-portrait {
+tbody.hide-for-landscape,
+tbody.show-for-portrait {
   display: table-row-group !important;
 }
 
-tr.hide-for-landscape, tr.show-for-portrait {
+tr.hide-for-landscape,
+tr.show-for-portrait {
   display: table-row !important;
 }
 
-td.hide-for-landscape, td.show-for-portrait,
+td.hide-for-landscape,
+td.show-for-portrait,
 th.hide-for-landscape,
 th.show-for-portrait {
   display: table-cell !important;
@@ -8397,19 +8627,24 @@ th.show-for-portrait {
     display: none !important;
   }
   /* Specific visibility for tables */
-  table.show-for-landscape, table.hide-for-portrait {
+  table.show-for-landscape,
+  table.hide-for-portrait {
     display: table !important;
   }
-  thead.show-for-landscape, thead.hide-for-portrait {
+  thead.show-for-landscape,
+  thead.hide-for-portrait {
     display: table-header-group !important;
   }
-  tbody.show-for-landscape, tbody.hide-for-portrait {
+  tbody.show-for-landscape,
+  tbody.hide-for-portrait {
     display: table-row-group !important;
   }
-  tr.show-for-landscape, tr.hide-for-portrait {
+  tr.show-for-landscape,
+  tr.hide-for-portrait {
     display: table-row !important;
   }
-  td.show-for-landscape, td.hide-for-portrait,
+  td.show-for-landscape,
+  td.hide-for-portrait,
   th.show-for-landscape,
   th.hide-for-portrait {
     display: table-cell !important;
@@ -8426,19 +8661,24 @@ th.show-for-portrait {
     display: none !important;
   }
   /* Specific visibility for tables */
-  table.show-for-portrait, table.hide-for-landscape {
+  table.show-for-portrait,
+  table.hide-for-landscape {
     display: table !important;
   }
-  thead.show-for-portrait, thead.hide-for-landscape {
+  thead.show-for-portrait,
+  thead.hide-for-landscape {
     display: table-header-group !important;
   }
-  tbody.show-for-portrait, tbody.hide-for-landscape {
+  tbody.show-for-portrait,
+  tbody.hide-for-landscape {
     display: table-row-group !important;
   }
-  tr.show-for-portrait, tr.hide-for-landscape {
+  tr.show-for-portrait,
+  tr.hide-for-landscape {
     display: table-row !important;
   }
-  td.show-for-portrait, td.hide-for-landscape,
+  td.show-for-portrait,
+  td.hide-for-landscape,
   th.show-for-portrait,
   th.hide-for-landscape {
     display: table-cell !important;
@@ -8528,7 +8768,8 @@ th.hide-for-touch {
   width: 1px;
 }
 
-.show-on-focus:focus, .show-on-focus:active {
+.show-on-focus:focus,
+.show-on-focus:active {
   position: static !important;
   height: auto;
   width: auto;
@@ -8569,41 +8810,6 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important;
   }
-}
-/* layout styling*/
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #f2f2f2;
-  font-size: 12px;
-}
-
-body * {
-  box-sizing: border-box;
-}
-
-body .center-content {
-  text-align: center;
-}
-
-@media only screen and (max-width: 40em) {
-  .row {
-    max-width: 20.5rem;
-  }
-}
-
-section {
-  padding: 60px 0;
-}
-
-.theme-1 {
-  background-color: #4E4E4E;
-  color: #F3F3F3;
-}
-
-#copyright {
-  text-align: center;
 }
 
 /* this is a tests*/
@@ -8656,4 +8862,53 @@ section {
   width: 80px;
   height: 20px;
   font-size: 10px;
+}
+
+/* layout styling*/
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+body .center-content {
+  text-align: center;
+}
+
+@media only screen and (max-width: 40em) {
+  .row {
+    max-width: 20.5rem;
+  }
+}
+
+section {
+  padding: 60px 0;
+}
+
+.section-title {
+  margin-top: 40px;
+  margin-bottom: 25px;
+  font-family: Montserrat, sans-serif;
+  font-size: 6.5em;
+  line-height: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.theme-1 {
+  background-color: #4E4E4E;
+  color: #F3F3F3;
+}
+
+.theme-1 h2 {
+  color: #F3F3F3;
+}
+
+#copyright {
+  text-align: center;
 }
