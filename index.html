@@ -32,6 +32,7 @@
     <section id="gatherings" class="theme-1">
       <div class="row">
         <h2 class="section-title">Gatherings</h2>
+        <div id="clock"></div>
         <div class="next-service">
           until our next<br> Sunday Morning Worship Service
         </div>
@@ -93,8 +94,11 @@
       <div id="copyright">Church of Philadelphia. All Rights Reserved.</div>
     </div>
   </footer>
-  <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
-  <script src="bower_components/moment/min/moment.min.js" charset="utf-8"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/jquery-ui/ui/widget.js"></script>
+  <script src="bower_components/moment/min/moment.min.js"></script>
+  <script src="components/countdown-timer/plugin.js"></script>
+  <script src="js/page.js"></script>
   <script>
     $("#copyright").prepend("&copy;" + moment().format('YYYY')+ " ");
   </script>

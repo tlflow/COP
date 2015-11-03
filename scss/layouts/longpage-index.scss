@@ -43,10 +43,14 @@ section {
   margin-top: 40px;
   margin-bottom: rem-calc(25);
   font-family: $montserrat;
-  font-size: 6.5em;
   line-height: 1em;
   text-align: center;
   text-transform: uppercase;
+
+  @media #{$large-up} {
+    font-size: 5em;
+  }
+
 }
 
 .theme-1 {
