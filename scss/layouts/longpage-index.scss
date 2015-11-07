@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: red;
 
   * {
     box-sizing: border-box;
@@ -62,11 +62,101 @@ html {
   }
 }
 
+
+#global {
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0,0,0, 0.7);
+  height: rem-calc(60);
+  transition: height 0.3s ease-in;
+
+  &.active {
+    height: 100%;
+    transition: height 0.3s ease-in;
+
+    #menu {
+      top: 85%;
+      transition: top 0.3s ease-in;
+    }
+  }
+
+  #menu {
+    color: #fff;
+    font-family: $montserrat;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    top: rem-calc(5);
+    background-color: transparent;
+    margin: 0 auto;
+    display: block;
+    transition: top 0.3s ease-in;
+  }
+}
+
 // custom section styling
 #masthead {
   background-color: $darkgrey;
 }
 
+#slider {
+  display: none;
+}
+.slides {
+  height: rem-calc(400);
+
+  &.slide-1 {
+    background-color: red;
+  }
+  &.slide-2 {
+    background-color: blue;
+  }
+  &.slide-3 {
+    background-color: green;
+  }
+}
+
+#about {
+  padding-bottom: 0;
+  min-height: rem-calc(400);
+
+  button {
+    margin-bottom: 3.25rem;
+  }
+}
+
+.sub-section {
+  background-color: $tertiary;
+  max-height: 0;
+  transition: max-height 0.3s ease-in;
+
+  .content {
+    opacity: 0;
+    // display: none;
+  }
+
+  &.active {
+    max-height: rem-calc(700);
+    transition: max-height 0.3s ease-in;
+
+    .content {
+      opacity: 1;
+      // display: block;
+      transition: opacity 0.3s 0.5s;
+    }
+  }
+
+  h3 {
+    margin-top: rem-calc(60);
+  }
+  ul {
+    margin-bottom: rem-calc(60);
+  }
+}
+
+// #gatherings {
+//
+// }
 
 #contact-us {
   box-shadow: 0 rem-calc(20) 0 lighten($darkgrey, 58%) inset;
@@ -77,12 +167,24 @@ html {
   background-size: cover;
 }
 
+// connect
+#connect h3 {
+  background: url(https://placeimg.com/640/480/people/sepia) no-repeat 0 0 transparent;
+  height: rem-calc(200);
+  color: #fff;
+  text-align: center;
+  padding-top: rem-calc(95);
+  text-transform: uppercase;
+  font-family: $montserrat;
+}
+
 // gatherings
 #next-service {
+  font-family: $montserrat;
   text-transform: uppercase;
   text-align: center;
-  font-size: 2rem;
-  line-height: 2;
+  //font-size: 2rem;
+  line-height: 1.4;
   margin-top: 8rem;
 }
 

@@ -4,34 +4,100 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <title>Church of Philadelphia</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick-theme.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,800,400|Montserrat:700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/styles.css">
-
 </head>
 <body>
   <div id="page">
+    <nav id="global">
+      <button id="menu">menu</button>
+    </nav>
     <div id="masthead">
       <div class="row">
         (show a picture or something)
       </div>
     </div>
     <div id="slider">
-      <div class="slide1">Show Slide 1</div>
-      <div class="slide2">Show Slide 2</div>
-      <div class="slide3">Show Slide 3</div>
+      <div class="slide-1 slides">
+        <h2>Show Slide 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, accusantium. Totam vel omnis blanditiis, dolorem perferendis, eos ex, perspiciatis molestiae, iste delectus mollitia atque assumenda nesciunt. Cumque aut delectus blanditiis.</p>
+      </div>
+      <div class="slide-2 slides">Show Slide 2</div>
+      <div class="slide-3 slides">Show Slide 3</div>
     </div>
     <section id="about">
       <div class="row">
-        <div class="small-12">
+        <div class="small-12 columns">
           <h2 class="section-title">About Our Church</h2>
           <p>We desire to be a place where people of all colors, creeds, and nationalities can come and encounter a life-changing relationship with Jesus the Living Savior, exalt God through worship, be equipped to participate in ministry, encourage one another through love and fellowship, and establish strong families and communities.</p>
         </div>
       </div>
       <div class="row">
-        <div class="small-12 large-4 columns center-content"><button>Our Vision</button></div>
-        <div class="small-12 large-4 columns center-content"><button>Our Beliefs</button></div>
-        <div class="small-12 large-4 columns center-content"><button>Our Values</button></div>
+        <div class="small-12 large-4 columns center-content"><button data-subtitle="vision">Our Vision</button></div>
+        <div class="small-12 large-4 columns center-content"><button data-subtitle="beliefs">Our Beliefs</button></div>
+        <div class="small-12 large-4 columns center-content"><button data-subtitle="values">Our Values</button></div>
+      </div>
+      <div id="vision" class="sub-section">
+        <div class="row">
+          <div class="small-12">
+            <div class="content">
+              <h3>Our Vision</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid totam saepe ea labore at voluptate corporis itaque ducimus. Iusto suscipit, delectus quos, amet doloribus fugiat autem laboriosam officiis nulla architecto!</p>
+              <ul>
+                <li>topic 1</li>
+                <li>topic 2</li>
+                <li>topic 3</li>
+                <li>topic 4</li>
+                <li>topic 5</li>
+                <li>topic 6</li>
+                <li>topic 7</li>
+                <li>topic 8</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="beliefs" class="sub-section">
+        <div class="row">
+          <div class="small-12">
+            <div class="content">
+              <h3>Our Beliefs</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid totam saepe ea labore at voluptate corporis itaque ducimus. Iusto suscipit, delectus quos, amet doloribus fugiat autem laboriosam officiis nulla architecto!</p>
+              <ul>
+                <li>topic 1</li>
+                <li>topic 2</li>
+                <li>topic 3</li>
+                <li>topic 4</li>
+                <li>topic 5</li>
+                <li>topic 6</li>
+                <li>topic 7</li>
+                <li>topic 8</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="values" class="sub-section">
+        <div class="row">
+          <div class="small-12">
+            <div class="content">
+              <h3>Our Values</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid totam saepe ea labore at voluptate corporis itaque ducimus. Iusto suscipit, delectus quos, amet doloribus fugiat autem laboriosam officiis nulla architecto!</p>
+              <ul>
+                <li>topic 1</li>
+                <li>topic 2</li>
+                <li>topic 3</li>
+                <li>topic 4</li>
+                <li>topic 5</li>
+                <li>topic 6</li>
+                <li>topic 7</li>
+                <li>topic 8</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section id="gatherings" class="theme-1">
@@ -58,7 +124,7 @@
     </section>
     <section id="location">
       <div class="row">
-        <div class="small-12">
+        <div class="small-12 columns">
           <h2 class="section-title">Where to Find Us</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga soluta est obcaecati ex reiciendis, libero iusto sapiente velit cumque, nam suscipit beatae, architecto sunt. Laborum non et sequi dolorum laboriosam?</p>
         </div>
