@@ -8946,10 +8946,12 @@ body .center-content {
 #global {
   width: 100%;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.85);
   height: 3.75rem;
   -webkit-transition: height 0.3s ease-in;
           transition: height 0.3s ease-in;
+  color: #F3F3F3;
+  z-index: 1;
 }
 
 #global.active {
@@ -8964,6 +8966,12 @@ body .center-content {
           transition: top 0.3s ease-in;
 }
 
+#global.active ul {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s 0.5s ease-in;
+          transition: opacity 0.3s 0.5s ease-in;
+}
+
 #global #menu {
   color: #fff;
   font-family: Montserrat, sans-serif;
@@ -8974,15 +8982,36 @@ body .center-content {
   background-color: transparent;
   margin: 0 auto;
   display: block;
-  -webkit-transition: top 0.3s ease-in;
-          transition: top 0.3s ease-in;
+  -webkit-transition: top 0.3s 0.15s;
+          transition: top 0.3s 0.15s;
+}
+
+#global ul {
+  list-style: none;
+  position: relative;
+  top: 2.5rem;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in;
+          transition: opacity 0.3s ease-in;
+}
+
+#global li {
+  margin: 1.25rem 0;
+  text-align: center;
+}
+
+#global li a {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: #fff;
+  font-family: Open Sans, sans-serif;
 }
 
 #masthead {
   background-color: #4E4E4E;
 }
 
-#slider {
+#news {
   display: none;
 }
 

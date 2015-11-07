@@ -13,13 +13,21 @@
   <div id="page">
     <nav id="global">
       <button id="menu">menu</button>
+      <ul>
+        <li><a data-link="news" href="#">news</a></li>
+        <li><a data-link="about" href="#">about us</a></li>
+        <li><a data-link="gatherings" href="#">gatherings</a></li>
+        <li><a data-link="connect" href="#">connect</a></li>
+        <li><a data-link="location" href="#">location</a></li>
+        <li><a data-link="contact-us" href="#">contact us</a></li>
+      </ul>
     </nav>
     <div id="masthead">
       <div class="row">
         (show a picture or something)
       </div>
     </div>
-    <div id="slider">
+    <div id="news">
       <div class="slide-1 slides">
         <h2>Show Slide 1</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, accusantium. Totam vel omnis blanditiis, dolorem perferendis, eos ex, perspiciatis molestiae, iste delectus mollitia atque assumenda nesciunt. Cumque aut delectus blanditiis.</p>
@@ -170,10 +178,8 @@
   <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
   <script src="bower_components/moment/min/moment.min.js"></script>
   <script src="components/countdown-timer/plugin.js"></script>
+  <script src="components/pagenav/plugin.js"></script>
   <script src="js/page.js"></script>
-  <script>
-    $("#copyright").prepend("&copy;" + moment().format('YYYY')+ " ");
-  </script>
 
 </body>
 </html>

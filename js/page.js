@@ -1,6 +1,7 @@
 $(document).ready(function(){
   $('#gatherings').timer();
-  $('#slider').slick({
+  $('#global').pageNavigation();
+  $('#news').slick({
     dots: true,
     infinite: true,
     speed: 500,
@@ -16,14 +17,7 @@ $(document).ready(function(){
     $('#'+sectiontitle).toggleClass( 'active' );
   });
 
-  // menu navigation
+  // copyright
+  $("#copyright").prepend("&copy;" + moment().format('YYYY')+ " ");
 
-  $( 'body').on( 'click', '#menu', function(evt){
-    evt.preventDefault();
-
-    var menubutton = $(this),
-        menuscreen = $('#global');
-
-    menuscreen.toggleClass('active');    
-  })
 });

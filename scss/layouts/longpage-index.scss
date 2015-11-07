@@ -66,9 +66,11 @@ html {
 #global {
   width: 100%;
   position: fixed;
-  background-color: rgba(0,0,0, 0.7);
+  background-color: rgba(0,0,0, 0.85);
   height: rem-calc(60);
   transition: height 0.3s ease-in;
+  color: #F3F3F3;
+  z-index: 1;
 
   &.active {
     height: 100%;
@@ -77,6 +79,11 @@ html {
     #menu {
       top: 85%;
       transition: top 0.3s ease-in;
+    }
+
+    ul {
+      opacity: 1;
+      transition: opacity 0.3s 0.5s ease-in;
     }
   }
 
@@ -90,7 +97,27 @@ html {
     background-color: transparent;
     margin: 0 auto;
     display: block;
-    transition: top 0.3s ease-in;
+    transition: top 0.3s 0.15s;
+  }
+
+  ul {
+    list-style: none;
+    position: relative;
+    top: rem-calc(40);
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+  }
+
+  li {
+    margin: rem-calc(20) 0;
+    text-align: center;
+
+    a {
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      color: #fff;
+      font-family: $opensans;
+    }
   }
 }
 
@@ -99,7 +126,7 @@ html {
   background-color: $darkgrey;
 }
 
-#slider {
+#news {
   display: none;
 }
 .slides {
