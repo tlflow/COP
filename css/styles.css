@@ -8818,7 +8818,6 @@ th.hide-for-touch {
   text-align: center;
   width: 100%;
   display: none;
-  background-color: green;
 }
 
 #clock * {
@@ -8905,6 +8904,12 @@ body .center-content {
   }
 }
 
+#page.no-scroll {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
 #masthead, section {
   padding: 3.75rem 0;
   min-height: 37.5rem;
@@ -8972,6 +8977,10 @@ body .center-content {
           transition: opacity 0.3s 0.5s ease-in;
 }
 
+#global.active li {
+  display: block;
+}
+
 #global #menu {
   color: #fff;
   font-family: Montserrat, sans-serif;
@@ -8998,6 +9007,7 @@ body .center-content {
 #global li {
   margin: 1.25rem 0;
   text-align: center;
+  display: none;
 }
 
 #global li a {
@@ -9049,6 +9059,13 @@ body .center-content {
 
 .sub-section .content {
   opacity: 0;
+  position: relative;
+}
+
+.sub-section .close {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .sub-section.active {
@@ -9094,8 +9111,13 @@ body .center-content {
   font-family: Montserrat, sans-serif;
   text-transform: uppercase;
   text-align: center;
+  font-size: 1.4rem;
   line-height: 1.4;
   margin-top: 8rem;
+}
+
+footer {
+  background-color: #4E4E4E;
 }
 
 #copyright {

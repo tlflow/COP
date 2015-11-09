@@ -1,6 +1,9 @@
 $.widget( "COP.pageNavigation", {
 
   _create: function() {
+
+    var page = $('#page');
+
     // links
     $( 'body').on( 'click', '#global a', function(evt){
       evt.preventDefault();
@@ -17,6 +20,7 @@ $.widget( "COP.pageNavigation", {
           menuscreen = $('#global');
 
       menuscreen.toggleClass('active');
+      page.toggleClass('no-scroll');
     });
   }
 });

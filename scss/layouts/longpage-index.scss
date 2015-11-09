@@ -24,6 +24,14 @@ html {
   }
 }
 
+#page {
+  &.no-scroll {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 // section styling and themes
 #masthead, section {
   padding: rem-calc(60) 0;
@@ -85,6 +93,10 @@ html {
       opacity: 1;
       transition: opacity 0.3s 0.5s ease-in;
     }
+
+    li {
+      display: block;
+    }
   }
 
   #menu {
@@ -111,6 +123,7 @@ html {
   li {
     margin: rem-calc(20) 0;
     text-align: center;
+    display: none;
 
     a {
       text-transform: uppercase;
@@ -159,7 +172,13 @@ html {
 
   .content {
     opacity: 0;
-    // display: none;
+    position: relative;
+  }
+
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 
   &.active {
@@ -210,13 +229,17 @@ html {
   font-family: $montserrat;
   text-transform: uppercase;
   text-align: center;
-  //font-size: 2rem;
+  font-size: 1.4rem;
   line-height: 1.4;
   margin-top: 8rem;
 }
 
 
 // footer stylings
+footer {
+  background-color: $darkgrey;
+}
+
 #copyright {
   text-align: center;
 }

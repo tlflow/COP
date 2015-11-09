@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css">
   <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick-theme.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,800,400|Montserrat:700' rel='stylesheet' type='text/css'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -63,6 +64,9 @@
                 <li>topic 7</li>
                 <li>topic 8</li>
               </ul>
+              <div class="close">
+                <span class="fa fa-close">close</span>
+              </div>
             </div>
           </div>
         </div>
@@ -83,6 +87,9 @@
                 <li>topic 7</li>
                 <li>topic 8</li>
               </ul>
+              <div class="close">
+                <span class="fa fa-close">close</span>
+              </div>
             </div>
           </div>
         </div>
@@ -103,6 +110,9 @@
                 <li>topic 7</li>
                 <li>topic 8</li>
               </ul>
+              <div class="close">
+                <span class="fa fa-close">close</span>
+              </div>
             </div>
           </div>
         </div>
@@ -113,7 +123,7 @@
         <h2 class="section-title">Gatherings</h2>
         <div id="clock"></div>
         <div id="next-service">
-          until our next<br> Sunday Morning Worship Service
+          until our next<br>11:00 AM<br>Sunday Morning Worship Service
         </div>
       </div>
     </section>
@@ -167,19 +177,14 @@
         </div>
       </div>
     </section>
+    <footer>
+      <div class="row">
+        <div id="copyright">Church of Philadelphia. All Rights Reserved.</div>
+      </div>
+    </footer>
   </div>
-  <footer>
-    <div class="row">
-      <div id="copyright">Church of Philadelphia. All Rights Reserved.</div>
-    </div>
-  </footer>
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="bower_components/jquery-ui/ui/widget.js"></script>
-  <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
-  <script src="bower_components/moment/min/moment.min.js"></script>
-  <script src="components/countdown-timer/plugin.js"></script>
-  <script src="components/pagenav/plugin.js"></script>
+  <script src="js/min/libraries.build.min.js"></script>
+  <script src="js/min/component.build.min.js"></script>
   <script src="js/page.js"></script>
-
 </body>
 </html>
