@@ -4,6 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: red;
+  background-color: #f2f2f2;
 
   * {
     box-sizing: border-box;
@@ -36,6 +37,11 @@ html {
 #masthead, section {
   padding: rem-calc(60) 0;
   min-height: rem-calc(600);
+}
+
+#masthead {
+  background: url(https://placeimg.com/1000/800/people/grayscale) center center transparent;
+  background-size: cover;
 }
 
 .section-title {
@@ -74,7 +80,7 @@ html {
 #global {
   width: 100%;
   position: fixed;
-  background-color: rgba(0,0,0, 0.85);
+  background-color: rgba(0,0,0, 0.95);
   height: rem-calc(60);
   transition: height 0.3s ease-in;
   color: #F3F3F3;
@@ -135,10 +141,6 @@ html {
 }
 
 // custom section styling
-#masthead {
-  background-color: $darkgrey;
-}
-
 #news {
   display: none;
 }
@@ -194,10 +196,6 @@ html {
   }
 }
 
-// #gatherings {
-//
-// }
-
 #contact-us {
   box-shadow: 0 rem-calc(20) 0 lighten($darkgrey, 58%) inset;
 }
@@ -219,6 +217,10 @@ html {
 }
 
 // gatherings
+#gatherings {
+  background: url(https://placeimg.com/1000/800/people/grayscale) center center transparent;
+  background-size: cover;
+}
 #next-service {
   font-family: $montserrat;
   text-transform: uppercase;
@@ -231,7 +233,33 @@ html {
 
 // footer stylings
 footer {
-  background-color: $darkgrey;
+  background-color: darken($darkgrey, 10%);
+  color: #fff;
+  padding: rem-calc(20) 0;
+
+  .social {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: inline-block;
+    background-color: #008CBA;
+    color: #fff;
+    margin: rem-calc(10) rem-calc(10) rem-calc(20) 0;
+    padding: 0;
+
+    &:first-of-type {
+      margin-left: rem-calc(20);
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .social span {
+    position: relative;
+    top: rem-calc(10);
+  }
 }
 
 #copyright {
