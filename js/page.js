@@ -30,6 +30,9 @@ $(document).ready(function(){
     // close button
     $('body').on('click', '.sub-section.active .close', function(){
         $(this).closest('.sub-section').removeClass( 'active' );
+        $('body').animate({
+          scrollTop: $('#about').offset().top
+        }, 600);
     });
   });
 

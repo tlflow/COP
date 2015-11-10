@@ -8998,7 +8998,7 @@ body .center-content {
 #global ul {
   list-style: none;
   position: relative;
-  top: 2.5rem;
+  top: 0.625rem;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in;
           transition: opacity 0.3s ease-in;
@@ -9052,13 +9052,18 @@ body .center-content {
 
 .sub-section {
   background-color: #C6A7A6;
-  max-height: 0;
-  -webkit-transition: max-height 0.3s ease-in;
-          transition: max-height 0.3s ease-in;
+  display: none;
+  width: 100%;
+  min-height: 25rem;
+  padding: 2.5rem 0;
+}
+
+.sub-section .container {
+  margin: 0 auto;
+  width: 80%;
 }
 
 .sub-section .content {
-  opacity: 0;
   position: relative;
 }
 
@@ -9066,26 +9071,12 @@ body .center-content {
   position: absolute;
   top: 0;
   right: 0;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
 }
 
 .sub-section.active {
-  max-height: 43.75rem;
-  -webkit-transition: max-height 0.3s ease-in;
-          transition: max-height 0.3s ease-in;
-}
-
-.sub-section.active .content {
-  opacity: 1;
-  -webkit-transition: opacity 0.3s 0.5s;
-          transition: opacity 0.3s 0.5s;
-}
-
-.sub-section h3 {
-  margin-top: 3.75rem;
-}
-
-.sub-section ul {
-  margin-bottom: 3.75rem;
+  display: block;
 }
 
 #contact-us {

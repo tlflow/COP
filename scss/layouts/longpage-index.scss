@@ -115,7 +115,7 @@ html {
   ul {
     list-style: none;
     position: relative;
-    top: rem-calc(40);
+    top: rem-calc(10);
     opacity: 0;
     transition: opacity 0.3s ease-in;
   }
@@ -167,11 +167,17 @@ html {
 
 .sub-section {
   background-color: $tertiary;
-  max-height: 0;
-  transition: max-height 0.3s ease-in;
+  display: none;
+  width: 100%;
+  min-height: rem-calc(400);
+  padding: rem-calc(40) 0;
+
+  .container {
+    margin: 0 auto;
+    width: 80%;
+  }
 
   .content {
-    opacity: 0;
     position: relative;
   }
 
@@ -179,24 +185,12 @@ html {
     position: absolute;
     top: 0;
     right: 0;
+    font-family: $montserrat;
+    text-transform: uppercase;
   }
 
   &.active {
-    max-height: rem-calc(700);
-    transition: max-height 0.3s ease-in;
-
-    .content {
-      opacity: 1;
-      // display: block;
-      transition: opacity 0.3s 0.5s;
-    }
-  }
-
-  h3 {
-    margin-top: rem-calc(60);
-  }
-  ul {
-    margin-bottom: rem-calc(60);
+    display: block;
   }
 }
 
