@@ -9,11 +9,11 @@
     box-sizing: border-box;
   }
 
-  @media #{$small-only} {
+  @include breakpoint(small) {
     //transform: scale(.6);
     width: 100%;
   }
-  @media #{$large-up} {
+  @include breakpoint(large) {
       transform: scale(2);
       width: 40%;
       margin: 5em auto;
@@ -28,15 +28,15 @@
     font-size: 3rem;
     line-height: 1;
 
-    @media #{small-only} {
+    @include breakpoint(small) {
       width: rem-calc(50);
       transform: scale(.7);
     }
 
-    @media #{$small-up} {
-      width: rem-calc(70);
-      height: rem-calc(50);
-    }
+    // @media #{$small-up} {
+    //   width: rem-calc(70);
+    //   height: rem-calc(50);
+    // }
   }
 
   .cell span {

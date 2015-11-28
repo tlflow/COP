@@ -13,7 +13,7 @@
 <body>
   <div id="page">
     <nav id="global">
-      <button id="menu">menu</button>
+      <button class="button" id="menu">menu</button>
       <ul>
         <li><a data-link="news" href="#">news</a></li>
         <li><a data-link="about" href="#">about us</a></li>
@@ -31,14 +31,22 @@
         </div>
       </div>
     </div>
-    <div id="news">
-      <div class="slide-1 slides">
-        <h2>Show Slide 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, accusantium. Totam vel omnis blanditiis, dolorem perferendis, eos ex, perspiciatis molestiae, iste delectus mollitia atque assumenda nesciunt. Cumque aut delectus blanditiis.</p>
-      </div>
-      <div class="slide-2 slides">Show Slide 2</div>
-      <div class="slide-3 slides">Show Slide 3</div>
-    </div>
+
+    <ul id="updates" class="example-orbit" data-orbit>
+      <li class="orbit-slide">
+        <img src="http://placehold.it/1000x300/A92B48/fff" alt="slide 1" />
+        <div class="orbit-caption"> Caption One. </div>
+      </li>
+      <li class="orbit-slide">
+        <img src="http://placehold.it/1000x300/EE964D/fff" alt="slide 2" />
+        <div class="orbit-caption"> Caption Two. </div>
+      </li>
+      <li class="orbit-slide">
+        <img src="http://placehold.it/1000x300/FDC43D/fff" alt="slide 3" />
+        <div class="orbit-caption"> Caption Three. </div>
+      </li>
+    </ul>
+
     <section id="about">
       <div class="row">
         <div class="small-12 columns">
@@ -47,9 +55,9 @@
         </div>
       </div>
       <div class="row">
-        <div class="small-12 large-4 columns center-content"><button data-subtitle="vision">Our Vision</button></div>
-        <div class="small-12 large-4 columns center-content"><button data-subtitle="beliefs">Our Beliefs</button></div>
-        <div class="small-12 large-4 columns center-content"><button data-subtitle="values">Our Values</button></div>
+        <div class="small-12 large-4 columns center-content"><button class="button" data-subtitle="vision">Our Vision</button></div>
+        <div class="small-12 large-4 columns center-content"><button class="button" data-subtitle="beliefs">Our Beliefs</button></div>
+        <div class="small-12 large-4 columns center-content"><button class="button" data-subtitle="values">Our Values</button></div>
       </div>
       <div id="vision" class="sub-section">
         <div class="container">
@@ -147,15 +155,15 @@
         </div>
       </div>
       <div class="row">
-        <div class="small-12 large-6 columns center-content"><button>Directions from 85 North</button></div>
-        <div class="small-12 large-6 columns center-content"><button>Directions from N. Tryon</button></div>
+        <div class="small-12 large-6 columns center-content"><button class="button">Directions from 85 North</button></div>
+        <div class="small-12 large-6 columns center-content"><button class="button" class="button">Directions from N. Tryon</button></div>
       </div>
     </section>
     <section id="contact-us" class="theme-2">
       <div class="row">
         <h2 class="section-title">Contact Us</h2>
         <div class="small-12 large-4 columns">
-          <h3>Office Information</h3>
+          <h3>Church Office</h3>
           <div class="contact-info">
             <div class="address">
               8001 Neal Road<br>
@@ -166,7 +174,7 @@
           </div>
         </div>
         <div class="small-12 large-8 columns">
-          <h3>Comment Form</h3>
+          <h3>We'd love to hear from you!</h3>
           <form action="//formspree.io/tlflow33@gmail.com" method="POST">
             <label>Name:<input type="text" name="name"><label>
             <label>E-mail:<input type="email" name="_replyto" placeholder="Your email"></label>

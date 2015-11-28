@@ -1,12 +1,14 @@
 $(document).ready(function(){
+  $(document).foundation();
+
   $('#gatherings').timer();
   $('#global').pageNavigation();
-  $('#news').slick({
-    dots: true,
-    infinite: true,
-    speed: 500,
-    cssEase: 'linear'
-  });
+  // $('#news').slick({
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   cssEase: 'linear'
+  // });
 
   // vision, purpose and belief buttons
 
@@ -39,13 +41,24 @@ $(document).ready(function(){
   // copyright
   $("#copyright").prepend("&copy;" + moment().format('YYYY')+ " ");
 
-  enquire.register("screen and (max-width:45em)", {
-    match : function() {
-      console.log('dancing dan');
-    },
-    unmatch: function() {
-      console.log('nope');
-    }
+  // enquire.register("screen and (max-width:45em)", {
+  //   match : function() {
+  //     console.log('dancing dan');
+  //   },
+  //   unmatch: function() {
+  //     console.log('nope');
+  //   }
+  // });
+
+  console.log("testing");
+
+  var updates = new Foundation.Orbit($('#updates'), {
+    autoPlay: true,
+    navButtons: true,
+    infiniteWrap: true
   });
+
+  //
+  updates;
 
 });

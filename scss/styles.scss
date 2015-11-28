@@ -1,6 +1,7 @@
 /* import foundation */
-@import '../bower_components/foundation/scss/foundation';
+@import '../bower_components/foundation-sites/scss/foundation';
 
+@include foundation-everything;
 
 // utility settings
 $darkgrey: #4E4E4E;
