@@ -308,6 +308,11 @@ footer {
   color: #fff;
   padding: rem-calc(20) 0;
 
+  .social-icons {
+    @include flex-grid-column(8, 0);
+    text-align: center;
+  }
+
   .social {
     width: 40px;
     height: 40px;

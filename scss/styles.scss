@@ -1,7 +1,10 @@
 /* import foundation */
 @import '../bower_components/foundation-sites/scss/foundation';
+@import '../bower_components/motion-ui/motion-ui';
+
 
 @include foundation-everything;
+@include motion-ui-transitions;
 
 // utility settings
 $darkgrey: #4E4E4E;
@@ -15,11 +18,6 @@ $tertiary: #C6A7A6;
 // fonts
 $montserrat: Montserrat, sans-serif;
 $opensans: Open Sans, sans-serif;
-
-
-/* vendors styling */
-// @import '../bower_components/slick-carousel/slick/slick.scss',
-//         '../bower_components/slick-carousel/slick/slick-theme.scss';
 
 /* components */
 @import '../components/countdown-timer/styling.scss';
