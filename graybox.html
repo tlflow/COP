@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <title>Church of Philadelphia</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .row > .column:nth-child(odd) {
+      background-color: #ccc;
+    }
+    .row > .column:nth-child(even) {
+      background-color: #ddd;
+    }
+    section {
+      background-color: #dfdfdf;
+    }
+  </style>
+
+  <script>
+    $()
+  </script>
+</head>
+<body>
+  <div id="page">
+    <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
+
+    <div class="top-bar" id="example-menu">
+      <div class="top-bar-left">
+        <a href="#">Logo</a>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu" data-responsive-menu="accordion medium-dropdown">
+          <li><a href="#">News</a></li>
+          <li>
+            <a href="#">Our Church</a>
+            <ul class="menu">
+              <li><a href="#">Our Vision</a></li>
+              <li><a href="#">Our Values</a></li>
+              <li><a href="#">What We Believe</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Gatherings</a></li>
+          <li><a href="#">Connect</a></li>
+          <li><a href="#">Location</a></li>
+          <li><a href="#">Give</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="content">
+      <section>
+        <div class="row">
+        <div class="column small-4">Aligned to</div>
+        <div class="column small-4">the left</div>
+        </div>
+        <div class="row align-right">
+        <div class="column small-4">Aligned to</div>
+        <div class="column small-4">the right</div>
+        </div>
+        <div class="row align-center">
+        <div class="column small-4">Aligned to</div>
+        <div class="column small-4">the middle</div>
+        </div>
+        <div class="row align-justify">
+        <div class="column small-4">Aligned to</div>
+        <div class="column small-4">the edges</div>
+        </div>
+        <div class="row align-spaced">
+        <div class="column small-4">Aligned to</div>
+        <div class="column small-4">the space around</div>
+        </div>
+      </section>
+    </div>
+
+
+  </div>
+
+  <script src="js/min/libraries.build.min.js"></script>
+  <script src="js/min/component.build.min.js"></script>
+  <script src="js/page.js"></script>
+</body>
+</html>

@@ -50,12 +50,14 @@ $(document).ready(function(){
   //   }
   // });
 
-  console.log("testing");
-
-  var updates = new Foundation.Orbit($('#updates'), {
+  var updates = new Foundation.Orbit($('#news'), {
     autoPlay: true,
     navButtons: true,
-    infiniteWrap: true
+    infiniteWrap: true,
+    bullets: true,
+    timerDelay: 5000,
+    swipe: true,
+    pauseonHover: true
   });
 
   //

@@ -195,31 +195,39 @@ button[class*="flat-button"] {
 
 // custom section styling
 #news {
-  width: 100%;
-  .slick-dots {
-    margin: 0;
+  .orbit-bullets button {
+    overflow: hidden;
+    padding-left: 20px;
   }
-}
-.slides {
-  height: rem-calc(400);
 
-  &.slide-1 {
+  .orbit-slide {
     background-color: red;
+    width: 100%;
+
+    @include breakpoint(small) {
+      height: rem-calc(300);
+
+      .orbit-previous,.orbit-next {
+        display: none;
+      }
+    }
+    @include breakpoint(medium) {
+      height: rem-calc(500);
+    }
+
+    &[data-slide='1'] {
+      background-color: blue;
+    }
+    &[data-slide='2'] {
+      background-color: green;
+    }
   }
-  &.slide-2 {
-    background-color: blue;
-  }
-  &.slide-3 {
-    background-color: green;
-  }
+
+
 }
 
-@include breakpoint(small) {
-  .slick-arrow
-    &.slick-prev, &.slick-next {
-    display: none !important;
-  }
-}
+
+
 
 
 #about {
