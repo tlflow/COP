@@ -18,7 +18,9 @@
   </style>
 
   <script>
-    $()
+    var res = nunjucks.render('templates/foo.html');
+
+    var res = nunjucks.render('foo.html', { username: 'James' });
   </script>
 </head>
 <body>
