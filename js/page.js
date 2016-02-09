@@ -1,14 +1,8 @@
 $(document).ready(function(){
   $(document).foundation();
-
   $('#gatherings').timer();
   $('#global').pageNavigation();
-  // $('#news').slick({
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   cssEase: 'linear'
-  // });
+  $(".owl-carousel").owlCarousel();
 
   // vision, purpose and belief buttons
 
@@ -41,14 +35,6 @@ $(document).ready(function(){
   // copyright
   $("#copyright").prepend("&copy;" + moment().format('YYYY')+ " ");
 
-  // enquire.register("screen and (max-width:45em)", {
-  //   match : function() {
-  //     console.log('dancing dan');
-  //   },
-  //   unmatch: function() {
-  //     console.log('nope');
-  //   }
-  // });
 
   var updates = new Foundation.Orbit($('#news'), {
     autoPlay: true,

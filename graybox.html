@@ -6,79 +6,161 @@
   <title>Church of Philadelphia</title>
   <link rel="stylesheet" href="css/styles.css">
   <style>
-    .row > .column:nth-child(odd) {
+    .row > .columns:nth-child(odd) {
       background-color: #ccc;
     }
-    .row > .column:nth-child(even) {
+    .row > .columns:nth-child(even) {
       background-color: #ddd;
     }
     section {
       background-color: #dfdfdf;
     }
+
+    h2 {
+      text-align: center;
+    }
+
+    .owl-carousel .owl-item {
+      background-color: #c2c2c2;
+      height: 200px;
+    }
+
+    .sec-theme-1 {
+      background-color: #2e2e2e;
+    }
+    .sec-theme-2 {
+      background: url(https://daks2k3a4ib2z.cloudfront.net/);
+    }
+    .sec-theme-3 {
+      background-color: #8f7294;
+    }
+    .sec-theme-4 {
+      background-color: #fff;
+    }
+
+    .top-bar {
+      width: 100%;
+    }
   </style>
-
-  <script>
-    var res = nunjucks.render('templates/foo.html');
-
-    var res = nunjucks.render('foo.html', { username: 'James' });
-  </script>
 </head>
 <body>
   <div id="page">
-    <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-      <button class="menu-icon" type="button" data-toggle></button>
-      <div class="title-bar-title">Menu</div>
-    </div>
 
-    <div class="top-bar" id="example-menu">
-      <div class="top-bar-left">
-        <a href="#">Logo</a>
+    <div class="sticky-container" data-sticky-container>
+      <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title">Menu</div>
       </div>
-      <div class="top-bar-right">
-        <ul class="menu" data-responsive-menu="accordion medium-dropdown">
-          <li><a href="#">News</a></li>
-          <li>
-            <a href="#">Our Church</a>
-            <ul class="menu">
-              <li><a href="#">Our Vision</a></li>
-              <li><a href="#">Our Values</a></li>
-              <li><a href="#">What We Believe</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Gatherings</a></li>
-          <li><a href="#">Connect</a></li>
-          <li><a href="#">Location</a></li>
-          <li><a href="#">Give</a></li>
-        </ul>
+      <div class="top-bar" id="example-menu" data-sticky>
+        <div class="top-bar-left">
+          <a href="#">Logo</a>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu" data-responsive-menu="accordion medium-dropdown">
+            <li><a href="#">News</a></li>
+            <li>
+              <a href="#">Our Church</a>
+              <ul class="menu">
+                <li><a href="#">Our Vision</a></li>
+                <li><a href="#">Our Values</a></li>
+                <li><a href="#">What We Believe</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Gatherings</a></li>
+            <li><a href="#">Connect</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Give</a></li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <div id="content">
+
       <section>
+        <h2>masthead</h2>
+      </section>
+
+      <div class="owl-carousel">
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+      </div>
+
+      <section>
+        <h2>Our Church</h2>
         <div class="row">
-        <div class="column small-4">Aligned to</div>
-        <div class="column small-4">the left</div>
+          <div class="columns small-12 medium-12">
+            <p>We desire to be a place where people of all colors, creeds, and nationalities can come and encounter a life-changing relationship with Jesus the Living Savior, exalt God through worship, be equipped to participate in ministry, encourage one another through love and fellowship, and establish strong families and communities.</p>
+          </div>
         </div>
-        <div class="row align-right">
-        <div class="column small-4">Aligned to</div>
-        <div class="column small-4">the right</div>
-        </div>
-        <div class="row align-center">
-        <div class="column small-4">Aligned to</div>
-        <div class="column small-4">the middle</div>
-        </div>
-        <div class="row align-justify">
-        <div class="column small-4">Aligned to</div>
-        <div class="column small-4">the edges</div>
-        </div>
-        <div class="row align-spaced">
-        <div class="column small-4">Aligned to</div>
-        <div class="column small-4">the space around</div>
+        <div class="row">
+          <div class="small-12 medium-4 columns">
+            <h3>Our Vision</h3>
+          </div>
+          <div class="small-12 medium-4 columns">
+            <h3>Our Beliefs</h3>
+          </div>
+          <div class="small-12 medium-4 columns">
+            <h3>Our Values<Values></Values></h3>
+          </div>
         </div>
       </section>
+
+      <section>
+        <h2>Gatherings</h2>
+        <div class="row align-center">
+          <div class="columns small-3">Days</div>
+          <div class="columns small-3">Hrs</div>
+          <div class="columns small-3">Mins</div>
+          <div class="columns small-3">Secs</div>
+        </div>
+        <div class="row align-center">
+          <div class="columns small-12 medium-6 ">
+            <p>until our next 11:00 am Sunday Morning Worship Service</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Connect</h2>
+        <div class="row">
+          <div class="small-12 medium-6 columns">
+            <h3>Become a Partner</h3>
+          </div>
+          <div class="small-12 medium-6 columns">
+            <h3>Community Outreach</h3>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Our Location</h2>
+        <div class="row">
+          <div class="columns small-12 medium-12">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, nam animi provident expedita facere quod. Tempore dolores recusandae distinctio, quas rerum culpa, dolor rem laborum, earum nam facere voluptates optio!</p>
+          </div>
+        </div>
+        <div class="row align-center">
+          <div class="columns small-12 medium-4">Directions from 85 North</div>
+          <div class="columns small-12 medium-4">Directions from N. Tryon</div>
+        </div>
+      </section>
+    <!-- end #content -->
     </div>
 
-
+    <footer>
+      <ul class="social-icons menu">
+        <li><a href="#" class="social"><span class="fa fa-facebook">&nbsp;</span></a></li>
+        <li><a href="#" class="social"><span class="fa fa-twitter">&nbsp;</span></a></li>
+        <li><a href="#" class="social"><span class="fa fa-instagram">&nbsp;</span></a></li>
+      </ul>
+    </footer>
+  <!-- end #page -->
   </div>
 
   <script src="js/min/libraries.build.min.js"></script>
