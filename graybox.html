@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <title>Church of Philadelphia</title>
+
+		<!-- <script src="https://rawgit.com/janpaepke/ScrollMagic/master/js/jquery.scrollmagic.debug.js"></script> -->
   <link rel="stylesheet" href="css/styles.css">
   <style>
     .row > .columns:nth-child(odd) {
@@ -12,36 +14,62 @@
     .row > .columns:nth-child(even) {
       background-color: #ddd;
     }
-    section {
-      background-color: #dfdfdf;
-    }
 
     h2 {
       text-align: center;
     }
 
-    .owl-carousel .owl-item {
-      background-color: #c2c2c2;
-      height: 200px;
+    /* Make each section 100% of the browser viewport height */
+    section {
+      height: 100%;
+      color: white;
+      position: relative;
+      text-align: center;
+      /* Center the content of the sections */
+    }
+
+    section .inner {
+      margin: 0 auto;
+      max-width: 85%;
     }
 
     .sec-theme-1 {
-      background-color: #2e2e2e;
+      background-color: #00679a;
     }
+
     .sec-theme-2 {
-      background: url(https://daks2k3a4ib2z.cloudfront.net/);
+      background-color: #01abff;
     }
+
     .sec-theme-3 {
-      background-color: #8f7294;
+      background-color: #004567;
     }
+
     .sec-theme-4 {
-      background-color: #fff;
+      background-color: #002334;
+    }
+
+    #parallax-1, #parallax-2, #parallax-3 {
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .parallaxParent {
+    	height: 100vh;
+    	overflow: hidden;
+    }
+    .parallaxParent > * {
+  		height: 200%;
+  		position: relative;
+  		top: -100%;
     }
 
     .top-bar {
       width: 100%;
     }
   </style>
+
+
 </head>
 <body>
   <div id="page">
@@ -76,80 +104,36 @@
     </div>
 
     <div id="content">
-
-      <section>
-        <h2>masthead</h2>
+      <section class="sec-theme-1">
+        <h2>Section Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero et molestiae praesentium culpa exercitationem fugiat natus excepturi dolores voluptate repellat nam, rem ex eveniet aliquid cupiditate neque doloribus optio rerum.</p>
       </section>
-
-      <div class="owl-carousel">
-        <div> Your Content </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
+      <div id="parallax1" class="parallaxParent">
+	      <div style="background-image: url(https://placeimg.com/640/480/people/grayscale);"></div>
       </div>
-
-      <section>
-        <h2>Our Church</h2>
-        <div class="row">
-          <div class="columns small-12 medium-12">
-            <p>We desire to be a place where people of all colors, creeds, and nationalities can come and encounter a life-changing relationship with Jesus the Living Savior, exalt God through worship, be equipped to participate in ministry, encourage one another through love and fellowship, and establish strong families and communities.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="small-12 medium-4 columns">
-            <h3>Our Vision</h3>
-          </div>
-          <div class="small-12 medium-4 columns">
-            <h3>Our Beliefs</h3>
-          </div>
-          <div class="small-12 medium-4 columns">
-            <h3>Our Values<Values></Values></h3>
-          </div>
-        </div>
+      <section class="sec-theme-2">
+        <h2>Section Title</h2>
+        <p>Doloribus iste neque architecto sunt corporis quia, optio quas. Necessitatibus pariatur veritatis iure nobis repudiandae ullam cumque corporis neque fuga eveniet in aliquam sed vel sit quaerat dignissimos, magni hic.</p>
+      </section>
+      <section class="sec-theme-3">
+        <h2>Section Title</h2>
+        <p>Commodi quos consequuntur vel officiis eligendi, quod dolor ipsam numquam minus facilis, totam maxime dignissimos sit ut dolorum aliquid laboriosam omnis cupiditate facere autem reiciendis distinctio neque. Neque, ut, sed.</p>
+      </section>
+      <div id="parallax2" class="parallaxParent">
+	      <div style="background-image: url(https://placeimg.com/640/480/people/grayscale);"></div>
+      </div>
+      <section class="sec-theme-4">
+        <h2>Section Title</h2>
+        <p>Esse eveniet beatae iusto exercitationem ex cumque neque adipisci, iure alias laborum quod vitae, id harum ipsa expedita enim provident dolorum quis optio minima nemo dicta repellendus. Aspernatur, sunt, omnis.</p>
+      </section>
+      <div id="parallax3" class="parallaxParent">
+	      <div style="background-image: url(https://placeimg.com/640/480/people/grayscale);"></div>
+      </div>
+      <section class="sec-theme-1">
+        <h2>Section Title</h2>
+        <p>Veritatis magnam, quas vel alias pariatur modi quasi incidunt odio rem perspiciatis, ratione soluta porro repellendus eaque delectus eum dolores excepturi nam explicabo dicta! Corrupti laborum numquam dolor quis cupiditate.</p>
       </section>
 
-      <section>
-        <h2>Gatherings</h2>
-        <div class="row align-center">
-          <div class="columns small-3">Days</div>
-          <div class="columns small-3">Hrs</div>
-          <div class="columns small-3">Mins</div>
-          <div class="columns small-3">Secs</div>
-        </div>
-        <div class="row align-center">
-          <div class="columns small-12 medium-6 ">
-            <p>until our next 11:00 am Sunday Morning Worship Service</p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>Connect</h2>
-        <div class="row">
-          <div class="small-12 medium-6 columns">
-            <h3>Become a Partner</h3>
-          </div>
-          <div class="small-12 medium-6 columns">
-            <h3>Community Outreach</h3>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>Our Location</h2>
-        <div class="row">
-          <div class="columns small-12 medium-12">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, nam animi provident expedita facere quod. Tempore dolores recusandae distinctio, quas rerum culpa, dolor rem laborum, earum nam facere voluptates optio!</p>
-          </div>
-        </div>
-        <div class="row align-center">
-          <div class="columns small-12 medium-4">Directions from 85 North</div>
-          <div class="columns small-12 medium-4">Directions from N. Tryon</div>
-        </div>
-      </section>
     <!-- end #content -->
     </div>
 
@@ -166,5 +150,42 @@
   <script src="js/min/libraries.build.min.js"></script>
   <script src="js/min/component.build.min.js"></script>
   <script src="js/page.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+  <script src="bower_components/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+  <script type="text/javascript">
+  /* Using jQuery */
+  (function($) {
+
+      // Init ScrollMagic
+      var ctrl = new ScrollMagic.Controller({
+        globalSceneOptions: {
+          triggerHook: "onEnter",
+          duration: "200%"
+        }
+      });
+
+      // Create scene
+      $(".parallaxParent").each(function() {
+
+          var name = $(this).attr('id');
+
+          new ScrollMagic.Scene({
+              triggerElement: this
+          })
+          // .setPin(this)
+          .setTween("#parallax-1 > div", {y: "80%", ease: Linear.easeNone})
+          .addIndicators({
+              colorStart: "rgba(255,255,255,0.5)",
+              colorEnd: "rgba(255,255,255,0.5)",
+              colorTrigger : "rgba(255,255,255,1)",
+              name:name
+          })
+          .addTo(ctrl);
+
+      });
+
+  })(jQuery);
+	</script>
 </body>
 </html>

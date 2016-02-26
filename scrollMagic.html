@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Testing ScrollMagic</title>
+</head>
+<body>
+<style type="text/css">
+
+.sec-theme-1 {
+  background-color: #00679a;
+}
+
+.sec-theme-2 {
+  /*background-color: #01abff;*/
+  background-image: url(images/example_parallax_bg1.png);
+}
+
+.sec-theme-3 {
+  background-image: url(images/example_parallax_bg2.png);
+}
+
+.sec-theme-4 {
+  background-image: url(images/example_parallax_bg3.png);
+}
+
+.parallaxParent {
+  height: 100vh;
+  overflow: hidden;
+}
+.parallaxParent > * {
+  height: 200%;
+  position: relative;
+  top: -100%;
+}
+</style>
+<div class="spacer s0"></div>
+<div id="parallax1" class="parallaxParent">
+<div class="sec-theme-3"></div>
+</div>
+<div class="spacer s1">
+<div class="box2 blue">
+  <p>Content 1</p>
+  <a href="#" class="viewsource">view source</a>
+</div>
+</div>
+<div class="spacer s0"></div>
+<div id="parallax2" class="parallaxParent">
+  <div class="sec-theme-4"></div>
+</div>
+<div class="spacer s1">
+<div class="box2 blue">
+  <p>Content 2</p>
+  <a href="#" class="viewsource">view source</a>
+</div>
+</div>
+<div class="spacer s0"></div>
+<div id="parallax3" class="parallaxParent">
+<div class="sec-theme-2"></div>
+</div>
+<div class="spacer s2"></div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="js/lib/greensock/TweenMax.min.js"></script>
+<script src="bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
+<script src="bower_components/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+<script src="bower_components/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+<script>
+
+// build scenes
+$( document ).ready(function() {
+
+  // init controller
+  var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+
+  // build parallax
+  $('.parallaxParent').each(function(){
+
+    var name = $(this).attr('id');
+
+    new ScrollMagic.Scene({
+      triggerElement: this
+    })
+    .setTween("#"+name+" > div", {y: "80%", ease: Linear.easeNone})
+    .addIndicators()
+    .addTo(controller);
+
+  })
+});
+
+
+
+
+</script>
+</body>
+</html>

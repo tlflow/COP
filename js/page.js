@@ -1,52 +1,9 @@
 $(document).ready(function(){
   $(document).foundation();
   $('#gatherings').timer();
-  $('#global').pageNavigation();
-  $(".owl-carousel").owlCarousel();
-
-  // vision, purpose and belief buttons
-
-  $('body').on('click', '#about button', function(evt){
-    evt.preventDefault();
-
-    var sectiontitle = $(this).data( 'subtitle' ),
-        offset = 60;
-
-    // show section
-    $('#'+sectiontitle).toggleClass( 'active' );
-
-    // scroll to section automatically
-    function scrolltoSubsection(){
-      $('body').animate({
-          scrollTop: $('#'+sectiontitle).offset().top - offset
-      }, 800);
-    }
-    setTimeout(function(){ scrolltoSubsection() }, 1000);
-
-    // close button
-    $('body').on('click', '.sub-section.active .close', function(){
-        $(this).closest('.sub-section').removeClass( 'active' );
-        $('body').animate({
-          scrollTop: $('#about').offset().top
-        }, 600);
-    });
-  });
+  // $('#global').pageNavigation(); // doesnt do anything yet
+  // $(".owl-carousel").owlCarousel(); // uncomment for carousel eventually
 
   // copyright
   $("#copyright").prepend("&copy;" + moment().format('YYYY')+ " ");
-
-
-  var updates = new Foundation.Orbit($('#news'), {
-    autoPlay: true,
-    navButtons: true,
-    infiniteWrap: true,
-    bullets: true,
-    timerDelay: 5000,
-    swipe: true,
-    pauseonHover: true
-  });
-
-  //
-  updates;
-
 });
