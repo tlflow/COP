@@ -19,3 +19,29 @@ body {
     @include menu-direction(horizontal);
   }
 }
+
+.title-bar, .top-bar {
+  position: fixed;
+  width: 100%;
+}
+
+.top-bar {
+  z-index: 1000;
+  @include breakpoint(small) {
+    .top-bar-left {
+      display: none;
+    }
+    top: 42px;
+  }
+  @include breakpoint(medium) {
+    .top-bar-left {
+      display: block;
+    }
+    top: 0;
+  }
+}
+
+.title-bar {
+  z-index: 1001;
+  top: 0;
+}

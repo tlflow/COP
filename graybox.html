@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <title>Church of Philadelphia</title>
-
-		<!-- <script src="https://rawgit.com/janpaepke/ScrollMagic/master/js/jquery.scrollmagic.debug.js"></script> -->
   <link rel="stylesheet" href="css/styles.css">
   <style>
     .row > .columns:nth-child(odd) {
@@ -38,20 +36,16 @@
     }
 
     .sec-theme-2 {
-      background-color: #01abff;
+      /*background-color: #01abff;*/
+      background-image: url(images/example_parallax_bg1.png);
     }
 
     .sec-theme-3 {
-      background-color: #004567;
+      background-image: url(images/example_parallax_bg2.png);
     }
 
     .sec-theme-4 {
-      background-color: #002334;
-    }
-
-    #parallax-1, #parallax-2, #parallax-3 {
-      background-size: cover;
-      background-repeat: no-repeat;
+      background-image: url(images/example_parallax_bg3.png);
     }
 
     .parallaxParent {
@@ -74,12 +68,12 @@
 <body>
   <div id="page">
 
-    <div class="sticky-container" data-sticky-container>
+    <!-- <div class="sticky-container" data-sticky-container> -->
       <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
         <button class="menu-icon" type="button" data-toggle></button>
         <div class="title-bar-title">Menu</div>
       </div>
-      <div class="top-bar" id="example-menu" data-sticky>
+      <div class="top-bar" id="example-menu">
         <div class="top-bar-left">
           <a href="#">Logo</a>
         </div>
@@ -101,38 +95,42 @@
           </ul>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
 
     <div id="content">
-      <section class="sec-theme-1">
-        <h2>Section Title</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero et molestiae praesentium culpa exercitationem fugiat natus excepturi dolores voluptate repellat nam, rem ex eveniet aliquid cupiditate neque doloribus optio rerum.</p>
-      </section>
+      <div class="spacer s0"></div>
       <div id="parallax1" class="parallaxParent">
-	      <div style="background-image: url(https://placeimg.com/640/480/people/grayscale);"></div>
+        <div class="sec-theme-3"></div>
       </div>
-      <section class="sec-theme-2">
-        <h2>Section Title</h2>
-        <p>Doloribus iste neque architecto sunt corporis quia, optio quas. Necessitatibus pariatur veritatis iure nobis repudiandae ullam cumque corporis neque fuga eveniet in aliquam sed vel sit quaerat dignissimos, magni hic.</p>
-      </section>
-      <section class="sec-theme-3">
-        <h2>Section Title</h2>
-        <p>Commodi quos consequuntur vel officiis eligendi, quod dolor ipsam numquam minus facilis, totam maxime dignissimos sit ut dolorum aliquid laboriosam omnis cupiditate facere autem reiciendis distinctio neque. Neque, ut, sed.</p>
-      </section>
+      <div class="spacer s1">
+      <div class="box2 blue">
+        <h1>This is a test</h1>
+        <h2>Not an extra</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, a id incidunt! Provident ullam suscipit tenetur consequatur, doloribus eius sapiente dolorem, placeat cupiditate porro libero minus expedita quis ut iste.</p>
+        <p>Laborum molestias ullam commodi placeat aperiam, facere, eaque accusantium, qui atque nemo perferendis minus in dolorum quam consequatur! Voluptas dolores minima soluta, odit magnam vero, sed placeat harum dolore ducimus!</p>
+      </div>
+      </div>
+      <div class="spacer s0"></div>
       <div id="parallax2" class="parallaxParent">
-	      <div style="background-image: url(https://placeimg.com/640/480/people/grayscale);"></div>
+        <div class="sec-theme-4"></div>
       </div>
-      <section class="sec-theme-4">
-        <h2>Section Title</h2>
-        <p>Esse eveniet beatae iusto exercitationem ex cumque neque adipisci, iure alias laborum quod vitae, id harum ipsa expedita enim provident dolorum quis optio minima nemo dicta repellendus. Aspernatur, sunt, omnis.</p>
-      </section>
+      <div class="spacer s1">
+      <div class="box2 blue">
+        <h2>Overhaul for section 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, a id incidunt! Provident ullam suscipit tenetur consequatur, doloribus eius sapiente dolorem, placeat cupiditate porro libero minus expedita quis ut iste.</p>
+        <p>Laborum molestias ullam commodi placeat aperiam, facere, eaque accusantium, qui atque nemo perferendis minus in dolorum quam consequatur! Voluptas dolores minima soluta, odit magnam vero, sed placeat harum dolore ducimus!</p>
+
+      </div>
+      </div>
+      <div class="spacer s0"></div>
       <div id="parallax3" class="parallaxParent">
-	      <div style="background-image: url(https://placeimg.com/640/480/people/grayscale);"></div>
+      <div class="sec-theme-2"></div>
       </div>
-      <section class="sec-theme-1">
-        <h2>Section Title</h2>
-        <p>Veritatis magnam, quas vel alias pariatur modi quasi incidunt odio rem perspiciatis, ratione soluta porro repellendus eaque delectus eum dolores excepturi nam explicabo dicta! Corrupti laborum numquam dolor quis cupiditate.</p>
-      </section>
+      <div class="spacer s2"></div>
+      <div class="box2 blue">
+        <p>Content 1</p>
+        <a href="#" class="viewsource">view source</a>
+      </div>
 
     <!-- end #content -->
     </div>
@@ -150,42 +148,34 @@
   <script src="js/min/libraries.build.min.js"></script>
   <script src="js/min/component.build.min.js"></script>
   <script src="js/page.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+
+  <script src="js/lib/greensock/TweenMax.min.js"></script>
+  <script src="bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
+  <script src="bower_components/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
   <script src="bower_components/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
-  <script type="text/javascript">
-  /* Using jQuery */
-  (function($) {
+  <script>
 
-      // Init ScrollMagic
-      var ctrl = new ScrollMagic.Controller({
-        globalSceneOptions: {
-          triggerHook: "onEnter",
-          duration: "200%"
-        }
-      });
+  // build scenes
+  $( document ).ready(function() {
 
-      // Create scene
-      $(".parallaxParent").each(function() {
+    // init controller
+    var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
 
-          var name = $(this).attr('id');
+    // build parallax
+    $('.parallaxParent').each(function(){
 
-          new ScrollMagic.Scene({
-              triggerElement: this
-          })
-          // .setPin(this)
-          .setTween("#parallax-1 > div", {y: "80%", ease: Linear.easeNone})
-          .addIndicators({
-              colorStart: "rgba(255,255,255,0.5)",
-              colorEnd: "rgba(255,255,255,0.5)",
-              colorTrigger : "rgba(255,255,255,1)",
-              name:name
-          })
-          .addTo(ctrl);
+      var name = $(this).attr('id');
 
-      });
+      new ScrollMagic.Scene({
+        triggerElement: this
+      })
+      .setTween("#"+name+" > div", {y: "80%", ease: Linear.easeNone})
+      .addIndicators()
+      .addTo(controller);
+    })
+  });
 
-  })(jQuery);
-	</script>
+  </script>
+
 </body>
 </html>
