@@ -4394,7 +4394,7 @@ body {
   margin: 0 auto;
 }
 
-h1 {
+#content h1 {
   font-family: inherit;
   font-weight: 600;
   font-style: inherit;
@@ -4404,7 +4404,7 @@ h1 {
   margin-bottom: 0rem;
 }
 
-h2 {
+#content h2 {
   font-family: inherit;
   font-weight: 600;
   font-style: inherit;
@@ -4414,7 +4414,7 @@ h2 {
   margin-bottom: 1.6875rem;
 }
 
-h3 {
+#content h3 {
   font-family: inherit;
   font-weight: 600;
   font-style: inherit;
@@ -4424,7 +4424,7 @@ h3 {
   margin-bottom: 0rem;
 }
 
-h4 {
+#content h4 {
   font-family: inherit;
   font-weight: 600;
   font-style: inherit;
@@ -4434,7 +4434,7 @@ h4 {
   margin-bottom: 0rem;
 }
 
-h5 {
+#content h5 {
   font-family: inherit;
   font-weight: 400;
   font-style: italic;
@@ -4444,37 +4444,37 @@ h5 {
   margin-bottom: 0rem;
 }
 
-p, ul, ol, pre, table, blockquote {
+#content p, #content ul, #content ol, #content pre, #content table, #content blockquote {
   margin-top: 0rem;
   margin-bottom: 1.6875rem;
 }
 
-ul ul, ol ol, ul ol, ol ul {
+#content ul ul, #content ol ol, #content ul ol, #content ol ul {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-hr {
+#content hr {
   border: 1px solid;
   margin: -1px 0;
 }
 
-b, strong, em, small, code {
+#content b, #content strong, #content em, #content small, #content code {
   line-height: 1;
 }
 
-sup {
+#content sup {
   line-height: 0;
   position: relative;
   vertical-align: baseline;
   top: -0.5em;
 }
 
-sub {
+#content sub {
   bottom: -0.25em;
 }
 
-a {
+#content a {
   color: #268ED9;
 }
 
