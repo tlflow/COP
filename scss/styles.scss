@@ -1,9 +1,9 @@
 /* import foundation */
 @import '../bower_components/foundation-sites/scss/foundation';
-// @import '../bower_components/motion-ui/motion-ui';
+@import '../bower_components/motion-ui/motion-ui';
 @import '../bower_components/owlcarousel/owl-carousel/owl.carousel.css';
 @import '../bower_components/owlcarousel/owl-carousel/owl.theme.css';
-
+@import '../bower_components/wow/css/libs/animate.css';
 
 @include foundation-everything;
 // @include motion-ui-transitions;

@@ -21,6 +21,10 @@
       max-width: 85%;
     }
 
+    #parallax2 > div {
+      background-size: cover;
+    }
+
     .sec-theme-1 {
       background-color: #00679a;
     }
@@ -31,7 +35,9 @@
     }
 
     .sec-theme-3 {
-      background-image: url(images/example_parallax_bg2.png);
+      /*background-image: url(images/example_parallax_bg2.png);*/
+      /*background-image: url();
+      background-repeat: no-repeat;*/
     }
 
     .sec-theme-4 {
@@ -39,8 +45,7 @@
     }
 
     .parallaxParent {
-    	height: 600px
-      ;
+    	height: 600px;
     	overflow: hidden;
     }
     .parallaxParent > * {
@@ -99,12 +104,17 @@
         <div class="sec-theme-2"></div>
       </div>
       <section>
-        <h1>heading 1</h1>
-        <h2>heading 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure delectus harum ad id aut voluptate iusto cupiditate assumenda dolore tenetur eum eveniet illum necessitatibus cum veritatis, fugit minima reprehenderit maxime.</p>
+          <div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="5s">
+            <h1>heading 1se</h1>
+            <h2>heading 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure delectus harum ad id aut voluptate iusto cupiditate assumenda dolore tenetur eum eveniet illum necessitatibus cum veritatis, fugit minima reprehenderit maxime.</p>
+
+          </div>
+
       </section>
       <div id="parallax2" class="parallaxParent">
-        <div class="sec-theme-3"></div>
+        <!-- <div class="sec-theme-3"></div> -->
+        <div data-interchange="[images/stock/open-uri20160306-23892-vc1dh3.jpg, small]"></div>
       </div>
       <section>
         <h1>heading 1</h1>
@@ -112,15 +122,14 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure delectus harum ad id aut voluptate iusto cupiditate assumenda dolore tenetur eum eveniet illum necessitatibus cum veritatis, fugit minima reprehenderit maxime.</p>
       </section>
       <div id="parallax3" class="parallaxParent">
-        <div class="sec-theme-4
-
-        "></div>
+        <div class="sec-theme-4"></div>
       </div>
       <section>
-        .row
-        <h1>heading 1</h1>
-        <h2>heading 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure delectus harum ad id aut voluptate iusto cupiditate assumenda dolore tenetur eum eveniet illum necessitatibus cum veritatis, fugit minima reprehenderit maxime.</p>
+        <div class="row">
+          <h1>heading 1</h1>
+          <h2>heading 2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure delectus harum ad id aut voluptate iusto cupiditate assumenda dolore tenetur eum eveniet illum necessitatibus cum veritatis, fugit minima reprehenderit maxime.</p>
+        </div>
       </section>
 
     <!-- end #content -->
@@ -144,25 +153,32 @@
   <script src="bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
   <script src="bower_components/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
   <!-- <script src="bower_components/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> -->
   <script>
 
   // build scenes
   $( document ).ready(function() {
 
-    // init controller
+    console.log(Foundation.MediaQuery.current);
+    //
+    // $(window).on('changed.zf.mediaquery', function(event, newSize, oldSize){
+    //   console.log(newSize)
+    // });
+
+    var wow = new WOW();
+    wow.init();
+
+    // parallax using ScrollMagic
     var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
 
-    // build parallax
     $('.parallaxParent').each(function(){
-
       var name = $(this).attr('id');
-      console.log(name);
 
       new ScrollMagic.Scene({
         triggerElement: this
       })
       .setTween("#"+name+" > div", {y: "80%", ease: Linear.easeNone})
-      // .addIndicators()
+      // .addIndicators() // only for debug purposes
       .addTo(controller);
     })
   });
