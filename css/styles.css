@@ -5534,10 +5534,13 @@ footer .copyright {
   background-color: #282828;
   padding: 20px 0;
   font-size: 0.75rem;
+  text-align: center;
 }
 
-footer .copyright .rights {
-  text-align: center;
+@media screen and (min-width: 40em) {
+  footer .copyright {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 40em) {
@@ -5547,13 +5550,29 @@ footer .copyright .rights {
 }
 
 footer .social-icons {
-  -webkit-flex: 0 0 66.66667%;
-      -ms-flex: 0 0 66.66667%;
-          flex: 0 0 66.66667%;
-  padding-left: 0;
-  padding-right: 0;
-  max-width: 66.66667%;
   text-align: center;
+  list-style-type: none;
+  padding: 2.5rem;
+}
+
+@media screen and (min-width: 40em) {
+  footer .social-icons {
+    float: right;
+    padding: 0;
+  }
+}
+
+footer .social-icons li {
+  display: inline-block;
+  margin: 0.625rem 0.625rem 1.25rem 0.625rem;
+}
+
+footer .social-icons li:first-of-type {
+  margin-left: 0;
+}
+
+footer .social-icons li:last-of-type {
+  margin-right: 0;
 }
 
 footer .social {
@@ -5563,16 +5582,7 @@ footer .social {
   display: inline-block;
   background-color: #008CBA;
   color: #fff;
-  margin: 0.625rem 0.625rem 1.25rem 0;
   padding: 0;
-}
-
-footer .social:first-of-type {
-  margin-left: 1.25rem;
-}
-
-footer .social:last-of-type {
-  margin-right: 0;
 }
 
 footer .social span {

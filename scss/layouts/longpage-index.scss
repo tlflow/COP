@@ -345,23 +345,44 @@ footer {
   }
 
   .copyright {
-    // background-color: #3d3d3d;
     background-color: darken($darkgrey, 15%);
     padding: 20px 0;
     font-size: rem-calc(12);
+    text-align: center;
+
+    @include breakpoint(medium) {
+      text-align: left;
+    }
   }
 
   .copyright .rights {
-    text-align: center;
-
     @include breakpoint(medium) {
       text-align: right;
     }
   }
 
   .social-icons {
-    @include flex-grid-column(8, 0);
     text-align: center;
+    list-style-type: none;
+    padding: rem-calc(40);
+
+    @include breakpoint(medium) {
+      float: right;
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+      margin: rem-calc(10) rem-calc(10) rem-calc(20) rem-calc(10);
+    }
+
+    li:first-of-type {
+      margin-left: 0;
+    }
+
+    li:last-of-type {
+      margin-right: 0;
+    }
   }
 
   .social {
@@ -371,16 +392,7 @@ footer {
     display: inline-block;
     background-color: #008CBA;
     color: #fff;
-    margin: rem-calc(10) rem-calc(10) rem-calc(20) 0;
     padding: 0;
-
-    &:first-of-type {
-      margin-left: rem-calc(20);
-    }
-
-    &:last-of-type {
-      margin-right: 0;
-    }
   }
 
   .social span {
