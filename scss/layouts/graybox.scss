@@ -8,9 +8,7 @@ body {
   }
 }
 
-// .animate-fade-in {
-//   @include mui-animation(fadeInUp);
-// }
+
 
 @include breakpoint(small) {
   ul.menu {

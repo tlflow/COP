@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <title>Church of Philadelphia</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300,900' rel='stylesheet' type='text/css'>
   <style>
 
     /* Make each section 100% of the browser viewport height */
@@ -124,11 +125,67 @@
       <div id="parallax3" class="parallaxParent">
         <div class="sec-theme-4"></div>
       </div>
-      <section>
+      <section id="get_connected">
         <div class="row">
-          <h1>heading 1</h1>
-          <h2>heading 2</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure delectus harum ad id aut voluptate iusto cupiditate assumenda dolore tenetur eum eveniet illum necessitatibus cum veritatis, fugit minima reprehenderit maxime.</p>
+          <div class="columns medium-4">
+            <h2>Get Connected</h2>
+            <p>If you’re new or if you’ve visited Church of Philadelphia a few times, help us connect with you by filling out this form. We promise not to spam or sign you up for anything.</p>
+          </div>
+          <div class="columns medium-8">
+            <form>
+              <div class="row">
+                <div class="medium-6 columns">
+                  <label class="text-left">Name
+                    <input type="text" placeholder="name">
+                  </label>
+                </div>
+                <div class="medium-6 columns">
+                  <label class="text-left">Date of Service Attended
+                    <input type="date" placeholder="date">
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="small-6 columns">
+                  <label class="text-left">Email
+                    <input type="email" placeholder="Your e-mail">
+                  </label>
+                </div>
+                <div class="small-6 columns">
+                  <label class="text-left">Phone
+                    <input type="tel" placeholder="Your phone number">
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="medium-6 columns">
+                  <label class="text-left">Status
+                    <select name="" id="">
+                      <option value="going-to-visit">Would like to visit</option>
+                      <option value="first-time">First Time Visitor</option>
+                      <option value="second-time">Second Time Visitor</option>
+                      <option value="regular-attender">Regular Attender</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="medium-6 columns">
+                  <label class="text-left">Time to Call
+                    <input type="time">
+                  </label>
+                </div>
+              </div>
+              <fieldset>
+                <div class="row">
+                  <div class="small-6 columns">
+                    <input id="checkbox1" type="checkbox"><label for="checkbox1">More information about Church of Philadelphia</label>
+                  </div>
+                  <div class="small-6 columns">
+                    <input id="checkbox2" type="checkbox"><label for="checkbox2">Join a small group</label>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
         </div>
       </section>
 
@@ -136,11 +193,36 @@
     </div>
 
     <footer>
-      <ul class="social-icons menu">
-        <li><a href="#" class="social"><span class="fa fa-facebook">&nbsp;</span></a></li>
-        <li><a href="#" class="social"><span class="fa fa-twitter">&nbsp;</span></a></li>
-        <li><a href="#" class="social"><span class="fa fa-instagram">&nbsp;</span></a></li>
-      </ul>
+      <div class="row">
+        <div class="medium-6 columns">
+          <div class="information">
+            <h2>Church Information</h2>
+            <h3>Sunday Services Address</h3>
+            <div class="address">
+              Nathaniel Alexander Elementary School<br>
+              7910 Neal Road<br>
+              Charlotte, NC 28262
+            </div>
+            <i class="phone"></i>980.819.8848<br>
+            <i class="email"></i>info@churchofphiladelphia.com
+          </div>
+        </div>
+        <div class="medium-6 columns">
+          <ul class="social-icons menu float-right">
+            <li><a href="#" class="social"><span class="fa fa-facebook">&nbsp;</span></a></li>
+            <li><a href="#" class="social"><span class="fa fa-twitter">&nbsp;</span></a></li>
+            <li><a href="#" class="social"><span class="fa fa-instagram">&nbsp;</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="row">
+          <div class="medium-9 columns">&copy; 2016 Church of Philadelphia</div>
+          <div class="rights medium-3 columns">All rights reserved.</div>
+        </div>
+      </div>
+
     </footer>
   <!-- end #page -->
   </div>

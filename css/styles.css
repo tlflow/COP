@@ -5496,10 +5496,54 @@ button[class*="flat-button"]:active {
   margin-top: 8rem;
 }
 
-footer {
+#get_connected {
   background-color: #353535;
-  color: #fff;
-  padding: 1.25rem 0;
+  height: 28.125rem;
+  min-height: auto;
+  color: #d8d8d8;
+}
+
+#get_connected label {
+  color: #d8d8d8;
+}
+
+footer {
+  background-color: #2e2e2e;
+  color: #929292;
+  padding-top: 1.25rem;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 0.875rem;
+}
+
+footer h2 {
+  display: none;
+}
+
+@media screen and (min-width: 40em) {
+  footer .information {
+    padding-bottom: 5.625rem;
+  }
+}
+
+footer .information > .address {
+  line-height: 1.4;
+  padding-bottom: 0.75rem;
+}
+
+footer .copyright {
+  background-color: #282828;
+  padding: 20px 0;
+  font-size: 0.75rem;
+}
+
+footer .copyright .rights {
+  text-align: center;
+}
+
+@media screen and (min-width: 40em) {
+  footer .copyright .rights {
+    text-align: right;
+  }
 }
 
 footer .social-icons {
@@ -5534,10 +5578,6 @@ footer .social:last-of-type {
 footer .social span {
   position: relative;
   top: 0.625rem;
-}
-
-#copyright {
-  text-align: center;
 }
 
 body {

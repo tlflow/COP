@@ -310,11 +310,54 @@ button[class*="flat-button"] {
 }
 
 
+#get_connected {
+  background-color: darken($darkgrey, 10%);
+  height: rem-calc(450);
+  min-height: auto;
+  color: darken(#f2f2f2, 10%);
+
+  label {
+    color: darken(#f2f2f2, 10%);
+  }
+}
+
 // footer stylings
 footer {
-  background-color: darken($darkgrey, 10%);
-  color: #fff;
-  padding: rem-calc(20) 0;
+  background-color: darken($darkgrey, 12.5%);
+  color: lighten(#787878, 10%);
+  padding-top: rem-calc(20);
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: rem-calc(14);
+
+  h2 {
+    display: none;
+  }
+
+  .information {
+    @include breakpoint(medium) {
+      padding-bottom: rem-calc(90);
+    }
+  }
+
+  .information > .address {
+    line-height: 1.4;
+    padding-bottom: rem-calc(12);
+  }
+
+  .copyright {
+    // background-color: #3d3d3d;
+    background-color: darken($darkgrey, 15%);
+    padding: 20px 0;
+    font-size: rem-calc(12);
+  }
+
+  .copyright .rights {
+    text-align: center;
+
+    @include breakpoint(medium) {
+      text-align: right;
+    }
+  }
 
   .social-icons {
     @include flex-grid-column(8, 0);
@@ -344,8 +387,4 @@ footer {
     position: relative;
     top: rem-calc(10);
   }
-}
-
-#copyright {
-  text-align: center;
 }
