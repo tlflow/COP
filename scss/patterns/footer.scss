@@ -1,0 +1,83 @@
+footer {
+  background-color: darken($darkgrey, 12.5%);
+  color: lighten(#787878, 10%);
+  padding-top: rem-calc(20);
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: rem-calc(14);
+
+  h2 {
+    display: none;
+  }
+
+  .information {
+    @include breakpoint(medium) {
+      padding-bottom: rem-calc(90);
+    }
+
+    i {
+      margin-right: 10px;
+    }
+  }
+
+  .information > .address {
+    line-height: 1.4;
+    padding-bottom: rem-calc(12);
+  }
+
+  .copyright {
+    background-color: darken($darkgrey, 15%);
+    padding: 20px 0;
+    font-size: rem-calc(12);
+    text-align: center;
+
+    @include breakpoint(medium) {
+      text-align: left;
+    }
+  }
+
+  .copyright .rights {
+    @include breakpoint(medium) {
+      text-align: right;
+    }
+  }
+
+  .social-icons {
+    text-align: center;
+    list-style-type: none;
+    padding: rem-calc(40);
+
+    @include breakpoint(medium) {
+      float: right;
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+      margin: rem-calc(10) rem-calc(10) rem-calc(20) rem-calc(10);
+    }
+
+    li:first-of-type {
+      margin-left: 0;
+    }
+
+    li:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .social {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: inline-block;
+    // background-color: #008CBA;
+    color: lighten(#787878, 10%);
+    padding: rem-calc(4) 0 0;
+    font-size: rem-calc(24);
+  }
+
+  .social span {
+    position: relative;
+    top: rem-calc(10);
+  }
+}

@@ -21,11 +21,17 @@ $tertiary: #C6A7A6;
 $montserrat: Montserrat, sans-serif;
 $opensans: Open Sans, sans-serif;
 
+/* typography and icons */
+@import 'copcons';  // icomoon fonts
+@import 'baseline';
+
 /* components */
 @import '../components/countdown-timer/styling.scss';
 
+/* pattern stylings */
+@import 'patterns/footer';
+@import 'patterns/header';
 
 /* layout styling*/
-@import 'layouts/baseline';
 @import 'layouts/longpage-index';
 @import 'layouts/graybox';

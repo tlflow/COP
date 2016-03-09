@@ -1,60 +1,5 @@
 
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: red;
-  background-color: #f2f2f2;
 
-  * {
-    box-sizing: border-box;
-  }
-
-html {
-  font-family: $opensans;
-}
-
-  .center-content {
-    text-align: center;
-  }
-}
-
-// content styling
-@include breakpoint(small) {
-  p {
-    text-align: center;
-  }
-
-  h2 {
-    font-family: $opensans;
-    font-size: 1.6785rem;
-
-    &.section-title {
-      margin-top: rem-calc(40);
-      margin-bottom: rem-calc(25);
-      font-family: $montserrat;
-      line-height: 1;
-      text-align: center;
-      text-transform: uppercase;
-    }
-  }
-  h3 {
-    font-family: $opensans;
-    font-size: 1.2rem;
-  }
-}
-
-@include breakpoint(medium) {
-  h2 {
-    font-size: 3rem;
-  }
-}
-
-@include breakpoint(large) {
-  h2 {
-    font-size: 4rem;
-  }
-}
 
 //button styling
 /* #Graphite Flat Button
@@ -99,7 +44,8 @@ button[class*="flat-button"] {
 }
 
 // section styling and themes
-#masthead, section {
+#masthead,
+section {
   padding: rem-calc(60) 0;
   min-height: rem-calc(600);
 }
@@ -108,8 +54,6 @@ button[class*="flat-button"] {
   background: url(https://placeimg.com/1000/800/people/grayscale) center center transparent;
   background-size: cover;
 }
-
-
 
 .theme-1 {
   background-color: $darkgrey;
@@ -128,106 +72,6 @@ button[class*="flat-button"] {
     color: $darkgrey;
   }
 }
-
-
-#global {
-  width: 100%;
-  position: fixed;
-  background-color: rgba(0,0,0, 0.95);
-  height: rem-calc(60);
-  transition: height 0.3s ease-in;
-  color: #F3F3F3;
-  z-index: 1;
-
-  &.active {
-    height: 100%;
-    transition: height 0.3s ease-in;
-
-    #menu {
-      top: 85%;
-      transition: top 0.3s ease-in;
-    }
-
-    ul {
-      opacity: 1;
-      transition: opacity 0.3s 0.5s ease-in;
-    }
-
-    li {
-      display: block;
-    }
-  }
-
-  #menu {
-    color: #fff;
-    font-family: $montserrat;
-    text-transform: uppercase;
-    text-align: center;
-    position: relative;
-    top: rem-calc(5);
-    background-color: transparent;
-    margin: 0 auto;
-    display: block;
-    transition: top 0.3s 0.15s;
-  }
-
-  ul {
-    list-style: none;
-    position: relative;
-    top: rem-calc(10);
-    opacity: 0;
-    transition: opacity 0.3s ease-in;
-  }
-
-  li {
-    margin: rem-calc(20) 0;
-    text-align: center;
-    display: none;
-
-    a {
-      text-transform: uppercase;
-      font-size: 1.4rem;
-      color: #fff;
-      font-family: $opensans;
-    }
-  }
-}
-
-// custom section styling
-#news {
-  .orbit-bullets button {
-    overflow: hidden;
-    padding-left: 20px;
-  }
-
-  .orbit-slide {
-    background-color: red;
-    width: 100%;
-
-    @include breakpoint(small) {
-      height: rem-calc(300);
-
-      .orbit-previous,.orbit-next {
-        display: none;
-      }
-    }
-    @include breakpoint(medium) {
-      height: rem-calc(500);
-    }
-
-    &[data-slide='1'] {
-      background-color: blue;
-    }
-    &[data-slide='2'] {
-      background-color: green;
-    }
-  }
-
-
-}
-
-
-
 
 
 #about {
@@ -318,85 +162,5 @@ button[class*="flat-button"] {
 
   label {
     color: darken(#f2f2f2, 10%);
-  }
-}
-
-// footer stylings
-footer {
-  background-color: darken($darkgrey, 12.5%);
-  color: lighten(#787878, 10%);
-  padding-top: rem-calc(20);
-  font-family: 'Lato', Arial, sans-serif;
-  font-size: rem-calc(14);
-
-  h2 {
-    display: none;
-  }
-
-  .information {
-    @include breakpoint(medium) {
-      padding-bottom: rem-calc(90);
-    }
-  }
-
-  .information > .address {
-    line-height: 1.4;
-    padding-bottom: rem-calc(12);
-  }
-
-  .copyright {
-    background-color: darken($darkgrey, 15%);
-    padding: 20px 0;
-    font-size: rem-calc(12);
-    text-align: center;
-
-    @include breakpoint(medium) {
-      text-align: left;
-    }
-  }
-
-  .copyright .rights {
-    @include breakpoint(medium) {
-      text-align: right;
-    }
-  }
-
-  .social-icons {
-    text-align: center;
-    list-style-type: none;
-    padding: rem-calc(40);
-
-    @include breakpoint(medium) {
-      float: right;
-      padding: 0;
-    }
-
-    li {
-      display: inline-block;
-      margin: rem-calc(10) rem-calc(10) rem-calc(20) rem-calc(10);
-    }
-
-    li:first-of-type {
-      margin-left: 0;
-    }
-
-    li:last-of-type {
-      margin-right: 0;
-    }
-  }
-
-  .social {
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    display: inline-block;
-    background-color: #008CBA;
-    color: #fff;
-    padding: 0;
-  }
-
-  .social span {
-    position: relative;
-    top: rem-calc(10);
   }
 }

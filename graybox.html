@@ -70,28 +70,30 @@
         <button class="menu-icon" type="button" data-toggle></button>
         <div class="title-bar-title">Menu</div>
       </div>
-      <div class="top-bar" id="example-menu">
-        <div class="top-bar-left">
-          <a href="#">Logo</a>
+      <nav id="global" class="top-bar">
+        <div class="row show-line">
+          <div class="top-bar-left">
+            <a href="#">Logo</a>
+          </div>
+          <div class="top-bar-right">
+            <ul class="menu" data-responsive-menu="accordion medium-dropdown">
+              <li><a href="#">News</a></li>
+              <li>
+                <a href="#">Our Church</a>
+                <ul class="menu">
+                  <li><a href="#">Our Vision</a></li>
+                  <li><a href="#">Our Values</a></li>
+                  <li><a href="#">What We Believe</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Gatherings</a></li>
+              <li><a href="#">Connect</a></li>
+              <li><a href="#">Location</a></li>
+              <li><a href="#">Give</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="top-bar-right">
-          <ul class="menu" data-responsive-menu="accordion medium-dropdown">
-            <li><a href="#">News</a></li>
-            <li>
-              <a href="#">Our Church</a>
-              <ul class="menu">
-                <li><a href="#">Our Vision</a></li>
-                <li><a href="#">Our Values</a></li>
-                <li><a href="#">What We Believe</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Gatherings</a></li>
-            <li><a href="#">Connect</a></li>
-            <li><a href="#">Location</a></li>
-            <li><a href="#">Give</a></li>
-          </ul>
-        </div>
-      </div>
+      </nav>
 
 
     <div id="content">
@@ -184,6 +186,12 @@
                   </div>
                 </div>
               </fieldset>
+              <div class="row">
+                <div class="small-12 text-right">
+                  <input type="submit" class="button" value="Submit">
+                </div>
+              </div>
+
             </form>
           </div>
         </div>
@@ -203,15 +211,15 @@
               7910 Neal Road<br>
               Charlotte, NC 28262
             </div>
-            <i class="phone"></i>980.819.8848<br>
-            <i class="email"></i>info@churchofphiladelphia.com
+            <i class="icon-phone"></i>980.819.8848<br>
+            <i class="icon-mail"></i>info@churchofphiladelphia.com
           </div>
         </div>
         <div class="medium-6 columns">
           <ul class="social-icons">
-            <li><a href="#" class="social"><span class="fa fa-facebook">&nbsp;</span></a></li>
-            <li><a href="#" class="social"><span class="fa fa-twitter">&nbsp;</span></a></li>
-            <li><a href="#" class="social"><span class="fa fa-instagram">&nbsp;</span></a></li>
+            <li><a href="#" class="social"><i class="icon-facebook2"></i></a></li>
+            <li><a href="#" class="social"><i class="icon-twitter"></i></a></li>
+            <li><a href="#" class="social"><i class="icon-instagram"></i></a></li>
           </ul>
         </div>
       </div>
@@ -235,12 +243,25 @@
   // build scenes
   $( document ).ready(function() {
 
-    console.log(Foundation.MediaQuery.current);
+    // console.log(Foundation.MediaQuery.current);
     //
     // $(window).on('changed.zf.mediaquery', function(event, newSize, oldSize){
     //   console.log(newSize)
     // });
 
+    $(window).on('scroll', function(){
+      var $global   = $("#global"),
+          myWindow  = $(window);
+
+      if ( myWindow.scrollTop()===0 ) {
+        $global.removeClass("has-scrolled");
+      } else {
+        $global.addClass("has-scrolled");
+      }
+
+    })
+
+    // activate wow.js for animate.css transitions (content fade ins)
     var wow = new WOW();
     wow.init();
 
