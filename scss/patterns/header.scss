@@ -5,16 +5,39 @@
   font-weight: 700;
   font-size: rem-calc(15);
   background-color: transparent;
+  z-index: 1001;
 
   a {
     color: #f2f2f2;
   }
 
-  .top-bar-right > ul {
+  ul.menu {
     background-color: transparent;
+
+    @include breakpoint(medium down) {
+      font-size: rem-calc(32);
+    }
+
+    & ul.menu {
+      padding-left: rem-calc(20);
+      font-size: rem-calc(28);
+    }
+
+    & ul.menu a {
+      color: darken(#ccc, 20%);
+    }
   }
 
-  @include breakpoint(medium) {
+  @include breakpoint(medium down) {
+    opacity: 0;
+
+    &.show {
+      opacity: 1;
+      transition: opacity 0.3s 0.5s;
+    }
+  }
+
+  @include breakpoint(large) {
     &.has-scrolled {
       background-color: rgba($darkgrey, 0.3);
       transition: background-color 0.3s ease;

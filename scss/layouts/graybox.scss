@@ -10,13 +10,13 @@ body {
 
 
 
-@include breakpoint(small) {
+@include breakpoint(medium down) {
   ul.menu {
     @include menu-direction(vertical);
   }
 }
 
-@include breakpoint(medium) {
+@include breakpoint(large) {
   ul.menu {
     @include menu-direction(horizontal);
   }
@@ -29,13 +29,13 @@ body {
 
 .top-bar {
   z-index: 1000;
-  @include breakpoint(small) {
+  @include breakpoint(medium down) {
     .top-bar-left {
       display: none;
     }
     top: 42px;
   }
-  @include breakpoint(medium) {
+  @include breakpoint(large) {
     .top-bar-left {
       display: block;
     }
@@ -46,4 +46,26 @@ body {
 .title-bar {
   z-index: 1001;
   top: 0;
+  height: rem-calc(40);
+  transition: height 0.3s ease-in;
+
+  &.active {
+    height: 100vh;
+    transition: height 0.3s ease-in;
+  }
+}
+
+.title-bar-title {
+  text-transform: uppercase;
+  font-family: "Lato", Arial, sans-serif;
+}
+
+button.menu-icon {
+  cursor: none;
+}
+
+#get_connected input[type=submit] {
+  @include breakpoint(medium) {
+    float: right;
+  }
 }

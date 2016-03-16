@@ -66,7 +66,7 @@
   <div id="page">
 
 
-      <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+      <div class="title-bar" data-responsive-toggle="global" data-hide-for="large">
         <button class="menu-icon" type="button" data-toggle></button>
         <div class="title-bar-title">Menu</div>
       </div>
@@ -76,7 +76,7 @@
             <a href="#">Logo</a>
           </div>
           <div class="top-bar-right">
-            <ul class="menu" data-responsive-menu="accordion medium-dropdown">
+            <ul class="menu" data-responsive-menu="accordion large-dropdown">
               <li><a href="#">News</a></li>
               <li>
                 <a href="#">Our Church</a>
@@ -111,7 +111,6 @@
             <h1>heading 1se</h1>
             <h2>heading 2</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure delectus harum ad id aut voluptate iusto cupiditate assumenda dolore tenetur eum eveniet illum necessitatibus cum veritatis, fugit minima reprehenderit maxime.</p>
-
           </div>
 
       </section>
@@ -187,7 +186,7 @@
                 </div>
               </fieldset>
               <div class="row">
-                <div class="small-12 text-right">
+                <div class="small-12 columns">
                   <input type="submit" class="button" value="Submit">
                 </div>
               </div>
@@ -249,8 +248,9 @@
     //   console.log(newSize)
     // });
 
+    var $global   = $("#global");
+
     $(window).on('scroll', function(){
-      var $global   = $("#global"),
           myWindow  = $(window);
 
       if ( myWindow.scrollTop()===0 ) {
@@ -258,7 +258,12 @@
       } else {
         $global.addClass("has-scrolled");
       }
+    });
 
+    $('button.menu-icon').on('click', function(){
+      $(this)
+        .closest('.title-bar').toggleClass('active');
+        $global.toggleClass('show');
     })
 
     // activate wow.js for animate.css transitions (content fade ins)
