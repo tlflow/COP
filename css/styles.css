@@ -5382,17 +5382,19 @@ footer .social span {
 
 #global ul.menu {
   background-color: transparent;
+  padding-top: 0.875rem;
 }
 
 @media screen and (max-width: 63.9375em) {
   #global ul.menu {
-    font-size: 2rem;
+    font-size: 1.3125rem;
   }
 }
 
 #global ul.menu ul.menu {
+  padding-top: 0;
   padding-left: 1.25rem;
-  font-size: 1.75rem;
+  font-size: 1.125rem;
 }
 
 #global ul.menu ul.menu a {
@@ -5621,6 +5623,12 @@ body * {
   }
 }
 
+@media screen and (min-width: 40em) {
+  .top-bar .top-bar-right {
+    float: left;
+  }
+}
+
 @media screen and (min-width: 64em) {
   .top-bar {
     top: 0;
@@ -5633,8 +5641,10 @@ body * {
 .title-bar {
   z-index: 1001;
   top: 0;
-  height: 2.5rem;
+  height: 5rem;
+  padding-top: 1.5625rem;
   transition: height 0.3s ease-in;
+  background-color: #2e2e2e;
 }
 
 .title-bar.active {
@@ -5649,6 +5659,12 @@ body * {
 
 button.menu-icon {
   cursor: none;
+}
+
+@media screen and (max-width: 63.9375em) {
+  #page {
+    padding-top: 5rem;
+  }
 }
 
 @media screen and (min-width: 40em) {

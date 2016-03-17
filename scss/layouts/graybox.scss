@@ -35,6 +35,12 @@ body {
     }
     top: 42px;
   }
+  @include breakpoint(medium) {
+    .top-bar-right {
+      float: left;
+    }
+  }
+
   @include breakpoint(large) {
     .top-bar-left {
       display: block;
@@ -46,8 +52,10 @@ body {
 .title-bar {
   z-index: 1001;
   top: 0;
-  height: rem-calc(40);
+  height: rem-calc(80);
+  padding-top: rem-calc(25);
   transition: height 0.3s ease-in;
+  background-color: #2e2e2e;
 
   &.active {
     height: 100vh;
@@ -62,6 +70,12 @@ body {
 
 button.menu-icon {
   cursor: none;
+}
+
+#page {
+  @include breakpoint(medium down) {
+    padding-top: rem-calc(80);
+  }
 }
 
 #get_connected input[type=submit] {
