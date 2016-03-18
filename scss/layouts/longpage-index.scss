@@ -1,45 +1,99 @@
 
 
 
-//button styling
-/* #Graphite Flat Button
+/*button styling
 ==================================================*/
-button[class*="flat-button"] {
-  position: relative;
-  vertical-align: top;
-  height: rem-calc(45);
-  padding: rem-calc(12) rem-calc(18);
-  color:#fff;
-  width: rem-calc(150);
-  height: rem-calc(55);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+@mixin button-color($hex, $dark-percentage, $light-percentage) {
+  background-color: $hex;
+  box-shadow: 0px 5px 0px 0px darken($hex, $dark-percentage);
+  border: 1px solid darken($hex, $dark-percentage);
 
-  &:hover, &:focus {
-    background-color: red;
+  &:hover {
+    background-color: lighten($hex, $light-percentage);
   }
+}
+
+a[class*="custom-btn"] {
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  transition: all 0.25s ease-out;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 0.85em 1em;
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+  background: $darkgrey;
+  color: #f2f2f2;
+  text-decoration: none;
 
   &:active {
-    top: 1px;
-    outline: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
   }
 }
 
-.graphite-flat-button {
-  background: #454545;
-  border: 0;
-  border-bottom: 2px solid #2f2e2e;
-  cursor: pointer;
-  -webkit-box-shadow: inset 0 -2px #2f2e2e;
-  box-shadow: inset 0 -2px #2f2e2e;
+/* darkgray Button */
+a.graphite-custom-btn {
+  @include button-color($darkgrey, 10%, 20%);
 }
+
+/* concrete gray Button */
+a.concrete-custom-btn {
+  @include button-color(#7f8c8d, 10%, 20%);
+}
+
+
 
 #page {
   &.no-scroll {
     overflow: hidden;
     width: 100%;
     height: 100%;
+  }
+  @include breakpoint(medium down) {
+    padding-top: rem-calc(80);
+  }
+}
+
+.parallaxParent {
+  height: 600px;
+  overflow: hidden;
+}
+.parallaxParent > * {
+  height: 200%;
+  position: relative;
+  top: -100%;
+  text-align: center;
+}
+
+#parallax1 > div,
+#parallax2 > div {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#parallax1 {
+  .text {
+    position: relative;
+    top: rem-calc(400);
+  }
+
+  .section-heading {
+    line-height: 2.6rem;
+    font-family: "Lato",sans-serif;
+  }
+
+  @include breakpoint(small) {
+    div[data-interchange] {
+      background-size: 300%;
+      background-repeat: no-repeat;
+      background-position: -180px center;
+    }
   }
 }
 
@@ -51,108 +105,27 @@ section {
 }
 
 #masthead {
-  background: url(https://placeimg.com/1000/800/people/grayscale) center center transparent;
+  background-image: url(/images/proverbs.bible-study.orig.JPG);
   background-size: cover;
+  height: 100vh;
+  background-position: -270px 0;
+  background-repeat: no-repeat;
 }
 
-.theme-1 {
-  background-color: $darkgrey;
-  color: $lightgrey;
+#welcome {
+  background-color: #ecf0f1;
 
-  h2 {
-    color: $lightgrey;
+  .section-heading {
+    margin-bottom: rem-calc(20);
+  }
+  p {
+    font-size: rem-calc(28);
+    line-height: 1.26;
+  }
+  span {
+    font-weight: bold;
   }
 }
-
-.theme-2 {
-  background-color: lighten($darkgrey, 60%);
-  color: $darkgrey;
-
-  h2 {
-    color: $darkgrey;
-  }
-}
-
-
-#about {
-  padding-bottom: 0;
-  min-height: rem-calc(400);
-
-  button {
-    margin-bottom: 3.25rem;
-  }
-}
-
-.sub-section {
-  background-color: $tertiary;
-  display: none;
-  width: 100%;
-  min-height: rem-calc(400);
-  padding: rem-calc(40) 0;
-
-  .container {
-    margin: 0 auto;
-    width: 80%;
-  }
-
-  .content {
-    position: relative;
-  }
-
-  .close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-family: $montserrat;
-    text-transform: uppercase;
-  }
-
-  &.active {
-    display: block;
-  }
-}
-
-#contact-us {
-  box-shadow: 0 rem-calc(20) 0 lighten($darkgrey, 58%) inset;
-
-  .e-mail {
-    @include breakpoint(small) {
-      margin-bottom: rem-calc(40);
-    }
-  }
-}
-
-#location {
-  background: url(/images/charlotte-skyline-faded.jpg) no-repeat transparent 0 0;
-  background-size: cover;
-  box-shadow: 0 1px 0 0 lighten($darkgrey, 58%) inset;
-}
-
-// connect
-#connect h3 {
-  background: url(https://placeimg.com/640/480/people/sepia) no-repeat 0 0 transparent;
-  height: rem-calc(200);
-  color: #fff;
-  text-align: center;
-  padding-top: rem-calc(95);
-  text-transform: uppercase;
-  font-family: $montserrat;
-}
-
-// gatherings
-#gatherings {
-  background: url(https://placeimg.com/1000/800/people/grayscale) center center transparent;
-  background-size: cover;
-}
-#next-service {
-  font-family: $montserrat;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 1.4rem;
-  line-height: 1.4;
-  margin-top: 8rem;
-}
-
 
 #get_connected {
   background-color: darken($darkgrey, 10%);
@@ -162,5 +135,11 @@ section {
 
   label {
     color: darken(#f2f2f2, 10%);
+  }
+
+  input[type=submit] {
+    @include breakpoint(medium) {
+      float: right;
+    }
   }
 }

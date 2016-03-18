@@ -8,8 +8,6 @@ body {
   }
 }
 
-
-
 @include breakpoint(medium down) {
   ul.menu {
     @include menu-direction(vertical);
@@ -70,16 +68,4 @@ body {
 
 button.menu-icon {
   cursor: none;
-}
-
-#page {
-  @include breakpoint(medium down) {
-    padding-top: rem-calc(80);
-  }
-}
-
-#get_connected input[type=submit] {
-  @include breakpoint(medium) {
-    float: right;
-  }
 }

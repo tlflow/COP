@@ -22,10 +22,7 @@
       max-width: 85%;
     }
 
-    #parallax1 > div,
-    #parallax2 > div {
-      background-size: cover;
-    }
+
 
     .sec-theme-1 {
       background-color: #00679a;
@@ -46,15 +43,7 @@
       background-image: url(images/example_parallax_bg3.png);
     }
 
-    .parallaxParent {
-    	height: 600px;
-    	overflow: hidden;
-    }
-    .parallaxParent > * {
-  		height: 200%;
-  		position: relative;
-  		top: -100%;
-    }
+
 
     .top-bar {
       width: 100%;
@@ -98,21 +87,36 @@
 
     <div id="content">
 
-      <section>
-        <h1>Welcome</h1>
-        <p>Imagine a church that's working to create better communities, encourages growth of the family, and cultivates leaders for the church of tomorrow. That's the Church of Philadelphia... that's our church.</p>
-        <a class="button" href="/">what to expect</a>
+      <section id="masthead">
+        <a class="gray-custom-btn" href="/">learn more</a>
+      </section>
+      <section id="welcome">
+        <div class="row">
+          <div class="column small-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h1 class="section-heading">Welcome</h1>
+            <p>Imagine a church that's working to create better communities, encourages growth of the family, and cultivates leaders for the church of tomorrow.<br>That's the<br><span>Church of Philadelphia</span>.</p><p><em>That's our church.</em></p>
+            <a class="concrete-custom-btn" href="/">learn more</a>
+          </div>
+        </div>
       </section>
       <div id="parallax1" class="parallaxParent">
-        <div data-interchange="[images/stock/lightstock_74990_comp.small.jpg, small]"></div>
+        <div data-interchange="[/images/stock/lightstock_115117_comp.jpg, small]">
+          <div class="text">
+            <div class="row">
+              <div class="column small-12">
+                <h2 class="section-heading">We Look Forward to Seeing You</h2>
+                <a class="graphite-custom-btn" href="">What to Expect</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <section>
-          <div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="5s">
-            <h1>heading 1se</h1>
-            <h2>heading 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure delectus harum ad id aut voluptate iusto cupiditate assumenda dolore tenetur eum eveniet illum necessitatibus cum veritatis, fugit minima reprehenderit maxime.</p>
-          </div>
-
+        <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+          <h1>heading 1se</h1>
+          <h2>heading 2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure delectus harum ad id aut voluptate iusto cupiditate assumenda dolore tenetur eum eveniet illum necessitatibus cum veritatis, fugit minima reprehenderit maxime.</p>
+        </div>
       </section>
       <div id="parallax2" class="parallaxParent">
         <!-- <div class="sec-theme-3"></div> -->
