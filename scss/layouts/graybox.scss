@@ -26,6 +26,7 @@ body {
 }
 
 .top-bar {
+  width: 100%;
   z-index: 1000;
   @include breakpoint(medium down) {
     .top-bar-left {

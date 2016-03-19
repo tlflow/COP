@@ -4,6 +4,7 @@
 //@prepros-append ../bower_components/wow/dist/wow.min.js
 
 //@prepros-append ../bower_components/moment/min/moment.min.js
+//@prepros-append ../bower_components/flipclock/compiled/flipclock.min.js
 
 //@prepros-append ../bower_components/foundation-sites/dist/foundation.min.js
 

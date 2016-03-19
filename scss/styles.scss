@@ -1,9 +1,6 @@
 /* import foundation */
-@import '../bower_components/foundation-sites/scss/foundation';
-@import '../bower_components/motion-ui/motion-ui';
-@import '../bower_components/owlcarousel/owl-carousel/owl.carousel.css';
-@import '../bower_components/owlcarousel/owl-carousel/owl.theme.css';
-@import '../bower_components/wow/css/libs/animate.css';
+@import '../bower_components/foundation-sites/scss/foundation',
+        '../bower_components/motion-ui/motion-ui';
 
 @include foundation-everything;
 // @include motion-ui-transitions;
@@ -22,16 +19,16 @@ $montserrat: Montserrat, sans-serif;
 $opensans: Open Sans, sans-serif;
 
 /* typography and icons */
-@import 'copcons';  // icomoon fonts
-@import 'baseline';
+@import 'copcons',  // icomoon fonts
+        'baseline';
 
 /* components */
 @import '../components/countdown-timer/styling.scss';
 
 /* pattern stylings */
-@import 'patterns/footer';
-@import 'patterns/header';
+@import 'patterns/footer',
+        'patterns/header';
 
 /* layout styling*/
-@import 'layouts/longpage-index';
-@import 'layouts/graybox';
+@import 'layouts/longpage-index',
+        'layouts/graybox';

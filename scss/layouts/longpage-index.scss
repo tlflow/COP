@@ -5,7 +5,7 @@
 ==================================================*/
 @mixin button-color($hex, $dark-percentage, $light-percentage) {
   background-color: $hex;
-  box-shadow: 0px 5px 0px 0px darken($hex, $dark-percentage);
+  box-shadow: 0px 3px 0px 0px darken($hex, $dark-percentage);
   border: 1px solid darken($hex, $dark-percentage);
 
   &:hover {
@@ -77,15 +77,16 @@ a.concrete-custom-btn {
   background-repeat: no-repeat;
 }
 
-#parallax1 {
+#parallax1,
+#parallax2 {
   .text {
     position: relative;
-    top: rem-calc(400);
   }
 
   .section-heading {
     line-height: 2.6rem;
     font-family: "Lato",sans-serif;
+    color: #bdc3c7;
   }
 
   @include breakpoint(small) {
@@ -97,11 +98,22 @@ a.concrete-custom-btn {
   }
 }
 
+#parallax1 .text {
+  top: rem-calc(400);
+}
+
+#parallax2 .text {
+  top: rem-calc(-90);
+}
+
 // section styling and themes
 #masthead,
 section {
   padding: rem-calc(60) 0;
   min-height: rem-calc(600);
+  color: #505050;
+  position: relative;
+  text-align: center;
 }
 
 #masthead {
@@ -114,6 +126,7 @@ section {
 
 #welcome {
   background-color: #ecf0f1;
+  box-shadow: inset 0 -1px 0 #666;
 
   .section-heading {
     margin-bottom: rem-calc(20);
@@ -124,6 +137,34 @@ section {
   }
   span {
     font-weight: bold;
+  }
+}
+
+#gatherings {
+  background-color: darken($darkgrey, 10%);
+  color: #f2f2f2;
+}
+
+#sunday-clock {
+  width: 460px;
+  margin: rem-calc(50) auto;
+  margin-bottom: 0;
+
+  .flip-clock-dot {
+    background-color: #f2f2f2;
+  }
+
+  .flip-clock-label {
+    color: #f2f2f2;
+    top: -2em;
+  }
+
+  @include breakpoint(small) {
+    zoom: 70%;
+
+    .flip-clock-label {
+      font-size: 18px;
+    }
   }
 }
 
