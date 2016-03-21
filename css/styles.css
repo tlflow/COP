@@ -5484,19 +5484,19 @@ a.concrete-custom-btn:hover {
 }
 
 .parallaxParent {
-  height: 600px;
+  height: 100vh;
   overflow: hidden;
 }
 
 .parallaxParent > * {
   height: 200%;
   position: relative;
-  top: -100%;
+  top: -120%;
   text-align: center;
 }
 
-#parallax1 > div,
-#parallax2 > div {
+#parallax1 > div[data-interchange],
+#parallax2 > div[data-interchange] {
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -5520,12 +5520,8 @@ a.concrete-custom-btn:hover {
   background-position: -180px center;
 }
 
-#parallax1 .text {
+#parallax1 .text, #parallax2 .text {
   top: 25rem;
-}
-
-#parallax2 .text {
-  top: -5.625rem;
 }
 
 #masthead,
@@ -5540,9 +5536,16 @@ section {
 #masthead {
   background-image: url(/images/proverbs.bible-study.orig.JPG);
   background-size: cover;
-  height: 100vh;
-  background-position: -270px 0;
   background-repeat: no-repeat;
+  background-position: -270px center;
+  height: 100vh;
+}
+
+@media screen and (min-width: 64em) {
+  #masthead {
+    background-position: center center;
+    height: 50rem;
+  }
 }
 
 #welcome {
