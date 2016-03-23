@@ -2,11 +2,17 @@ footer {
   background-color: darken($darkgrey, 12.5%);
   color: lighten(#787878, 10%);
   padding-top: rem-calc(20);
-  font-family: 'Lato', Arial, sans-serif;
+  font-family: $lato;
   font-size: rem-calc(14);
 
   h2 {
     display: none;
+  }
+
+  h3 {
+    font-family: $lato;
+    font-weight: bold;
+    font-size: rem-calc(18);
   }
 
   .information {
@@ -70,7 +76,6 @@ footer {
     height: 40px;
     text-align: center;
     display: inline-block;
-    // background-color: #008CBA;
     color: lighten(#787878, 10%);
     padding: rem-calc(4) 0 0;
     font-size: rem-calc(24);

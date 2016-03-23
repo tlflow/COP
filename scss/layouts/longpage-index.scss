@@ -1,6 +1,3 @@
-
-
-
 /*button styling
 ==================================================*/
 @mixin button-color($hex, $dark-percentage, $light-percentage) {
@@ -71,21 +68,21 @@ a.concrete-custom-btn {
   text-align: center;
 }
 
-#parallax1 > div[data-interchange],
-#parallax2 > div[data-interchange] {
+#about-us > div[data-interchange],
+#what-to-expect > div[data-interchange] {
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-#parallax1,
-#parallax2 {
+#what-to-expect,
+#about-us {
   .text {
     position: relative;
   }
 
   .section-heading {
     line-height: 2.6rem;
-    font-family: "Lato",sans-serif;
+    font-family: $lato;
     color: #bdc3c7;
   }
 
@@ -98,7 +95,7 @@ a.concrete-custom-btn {
   }
 }
 
-#parallax1 .text, #parallax2 .text {
+#what-to-expect .text, #about-us .text {
   top: rem-calc(400);
 }
 
@@ -107,7 +104,6 @@ a.concrete-custom-btn {
 // }
 
 // section styling and themes
-#masthead,
 section {
   padding: rem-calc(60) 0;
   min-height: rem-calc(600);
@@ -116,23 +112,15 @@ section {
   text-align: center;
 }
 
-#masthead {
-  background-image: url(/images/proverbs.bible-study.orig.JPG);
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  @include breakpoint(small) {
-    background-position: -270px center;
-    height: 100vh;
+#welcome {
+  h1 {
+    font-family: $montserrat;
+    font-weight: 700;
+    text-transform: uppercase;
   }
-
-  @include breakpoint(large) {
-    background-position: center center;
-    height: rem-calc(800);
-  };
 }
 
-#welcome {
+#introduction {
   background-color: #ecf0f1;
   box-shadow: inset 0 -1px 0 #666;
 
@@ -146,6 +134,14 @@ section {
   span {
     font-weight: bold;
   }
+}
+
+#about-us {
+  color: #f2f2f2;  
+}
+
+#what-to-expect {
+  color: #f2f2f2;
 }
 
 #gatherings {
@@ -174,6 +170,10 @@ section {
       font-size: 18px;
     }
   }
+}
+
+#visitors {
+  color: #f2f2f2;
 }
 
 #get_connected {
