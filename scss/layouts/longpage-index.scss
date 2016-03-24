@@ -76,7 +76,8 @@ a.concrete-custom-btn {
 }
 
 #what-to-expect,
-#about-us {
+#about-us,
+#connect {
   .text {
     position: relative;
   }
@@ -95,14 +96,6 @@ a.concrete-custom-btn {
     }
   }
 }
-
-#what-to-expect .text, #about-us .text {
-  top: rem-calc(400);
-}
-
-// #parallax2 .text {
-//   top: rem-calc(-90);
-// }
 
 // section styling and themes
 section {
@@ -123,7 +116,7 @@ section {
 
 #introduction {
   background-color: #ecf0f1;
-  
+
   .section-heading {
     margin-bottom: rem-calc(20);
   }
@@ -142,10 +135,18 @@ section {
   .section-heading {
     color: $darkgrey;
   }
+
+  .text {
+    top: rem-calc(450);
+  }
 }
 
 #what-to-expect {
   color: #f2f2f2;
+
+  .text {
+    top: rem-calc(400);
+  }
 }
 
 #gatherings {
@@ -176,9 +177,8 @@ section {
   }
 }
 
-#connect {
-  background-size: 300%;
-  background-repeat: no-repeat;
+#visitors {
+  color: #f2f2f2;
 }
 
 #get_connected {
