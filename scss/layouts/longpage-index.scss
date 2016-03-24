@@ -69,7 +69,8 @@ a.concrete-custom-btn {
 }
 
 #about-us > div[data-interchange],
-#what-to-expect > div[data-interchange] {
+#what-to-expect > div[data-interchange],
+#connect {
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -122,8 +123,7 @@ section {
 
 #introduction {
   background-color: #ecf0f1;
-  box-shadow: inset 0 -1px 0 #666;
-
+  
   .section-heading {
     margin-bottom: rem-calc(20);
   }
@@ -137,7 +137,11 @@ section {
 }
 
 #about-us {
-  color: #f2f2f2;  
+  color: $darkgrey;
+
+  .section-heading {
+    color: $darkgrey;
+  }
 }
 
 #what-to-expect {
@@ -172,8 +176,9 @@ section {
   }
 }
 
-#visitors {
-  color: #f2f2f2;
+#connect {
+  background-size: 300%;
+  background-repeat: no-repeat;
 }
 
 #get_connected {
