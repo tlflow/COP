@@ -61,7 +61,12 @@
 
     <div id="content">
 
-      <section id="welcome" data-interchange="[/images/stock/lightstock_67225_comp.jpg, small]">
+      <section id="welcome"
+        data-interchange="[images/unchurch/opt/unchurch_small.jpg, small],
+        [images/unchurch/opt/unchurch_medium.jpg, medium],
+        [images/unchurch/opt/unchurch_large.jpg, large],
+        [images/unchurch/opt/unchurch_xlarge.jpg, xlarge]">
+
         <h1 class="section-heading">Welcome</h1>
       </section>
 
@@ -75,7 +80,10 @@
       </section>
 
       <div id="about-us" class="parallaxParent">
-        <div data-interchange="[/images/stock/lightstock_1272_comp.jpg, small]">
+        <div data-interchange="[/images/home/sky_large.jpg, small],
+          [/images/home/sky_medium.jpg, medium],
+          [/images/home/sky_large.jpg, large],
+          [/images/home/sky_xlarge.jpg, xlarge]">
           <div class="text">
             <div class="row">
               <div class="column small-12">
@@ -113,7 +121,10 @@
         </div>
       </div>
 
-      <section id="connect" data-interchange="[images/stock/lightstock_329158_comp.jpg, small]">
+      <section id="connect" data-interchange="[/images/home/connect_large.jpg, small],
+        [/images/home/connect_medium.jpg, medium],
+        [/images/home/connect_large.jpg, large],
+        [/images/home/connect_xlarge.jpg, xlarge]">
         <div class="row wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
           <div class="columns small-12">
             <h2 class="section-heading">Connect</h2>
@@ -126,7 +137,7 @@
       <section id="get_connected">
         <div class="row">
           <div class="columns medium-4">
-            <h2>Get Connected</h2>
+            <h2>We'd Like to Hear from You</h2>
             <p>If you’re new or if you’ve visited Church of Philadelphia a few times, help us connect with you by filling out this form. We promise not to spam or sign you up for anything.</p>
           </div>
           <div class="columns medium-8">
@@ -268,7 +279,12 @@
     wow.init();
 
     // parallax using ScrollMagic
-    var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+
+    var controller = new ScrollMagic.Controller({
+      globalSceneOptions: {
+        triggerHook: "onEnter", duration: "200%"
+      }
+    });
 
     $('.parallaxParent').each(function(){
       var name = $(this).attr('id');
@@ -279,7 +295,24 @@
       .setTween("#"+name+" > div", {y: "80%", ease: Linear.easeNone})
       // .addIndicators() // only for debug purposes
       .addTo(controller);
-    })
+    });
+
+    $(window).on('load', function(){
+      if (Foundation.MediaQuery.current=='small' || Foundation.MediaQuery.current=='medium') {
+        controller.enabled(false);
+      } else {
+        controller.enabled(true);
+      }
+    });
+
+    $(window).on('changed.zf.mediaquery', function(event, newSize, oldSize){
+      if (newSize=='small' || newSize=='medium') {
+        controller.enabled(false);
+      } else {
+        controller.enabled(true);
+      }
+    });
+
   });
 
   </script>

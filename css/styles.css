@@ -5365,6 +5365,18 @@ footer .social span {
   top: 0.625rem;
 }
 
+.title-bar-title {
+  position: absolute;
+  right: 60px;
+  top: 26px;
+}
+
+.menu-icon {
+  position: absolute;
+  right: 20px;
+  top: 32px;
+}
+
 #global {
   font-family: 'Lato', Arial, sans-serif;
   text-transform: uppercase;
@@ -5412,7 +5424,7 @@ footer .social span {
 
 @media screen and (min-width: 64em) {
   #global.has-scrolled {
-    background-color: rgba(78, 78, 78, 0.3);
+    background-color: rgba(17, 17, 17, 0.9);
     transition: background-color 0.3s ease;
   }
   #global.has-scrolled .show-line {
@@ -5501,6 +5513,14 @@ a.concrete-custom-btn:hover {
   text-align: center;
 }
 
+@media screen and (max-width: 63.9375em) {
+  .parallaxParent > * {
+    top: 0;
+    height: inherit;
+  }
+}
+
+#welcome,
 #about-us > div[data-interchange],
 #what-to-expect > div[data-interchange],
 #connect {
@@ -5527,7 +5547,16 @@ a.concrete-custom-btn:hover {
 #connect div[data-interchange] {
   background-size: 300%;
   background-repeat: no-repeat;
-  background-position: -180px center;
+}
+
+@media screen and (min-width: 75em) {
+  #what-to-expect div[data-interchange],
+  #about-us div[data-interchange],
+  #connect div[data-interchange] {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 
 section {
@@ -5542,6 +5571,12 @@ section {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 40em) {
+  #welcome {
+    background-position: center;
+  }
 }
 
 #introduction {
@@ -5565,20 +5600,35 @@ section {
   color: #4E4E4E;
 }
 
+#about-us div[data-interchange] {
+  -webkit-filter: sepia(100%) grayscale(80%);
+  filter: sepia(100%) grayscale(80%);
+}
+
 #about-us .section-heading {
   color: #4E4E4E;
 }
 
-#about-us .text {
-  top: 28.125rem;
+@media screen and (min-width: 0em) and (max-width: 39.9375em) {
+  #about-us .text {
+    top: 6.25rem;
+    font-size: 1.5rem;
+  }
 }
 
 #what-to-expect {
   color: #f2f2f2;
 }
 
+@media screen and (min-width: 0em) and (max-width: 39.9375em) {
+  #what-to-expect {
+    background-position: -180px center;
+  }
+}
+
 #what-to-expect .text {
-  top: 25rem;
+  top: 6.25rem;
+  font-size: 1.3125rem;
 }
 
 #gatherings {
@@ -5589,8 +5639,10 @@ section {
 #sunday-clock {
   width: 460px;
   margin: 3.125rem auto;
-  margin-bottom: 0;
   zoom: 70%;
+  margin-bottom: 1.875rem;
+  position: relative;
+  top: 10px;
 }
 
 #sunday-clock .flip-clock-dot {
@@ -5608,6 +5660,25 @@ section {
 
 #visitors {
   color: #f2f2f2;
+}
+
+#connect {
+  -webkit-filter: sepia(100%) grayscale(80%);
+  filter: sepia(50%) grayscale(80%);
+  color: #fff;
+  padding-top: 5.625rem;
+  background-position: -75px center;
+}
+
+#connect .section-heading {
+  color: #fff;
+}
+
+#connect p {
+  font-size: 21px;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 #get_connected {

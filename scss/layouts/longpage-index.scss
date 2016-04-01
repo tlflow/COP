@@ -66,8 +66,14 @@ a.concrete-custom-btn {
   position: relative;
   top: -120%;
   text-align: center;
+
+  @include breakpoint(medium down) {
+    top: 0;
+    height: inherit;
+  }
 }
 
+#welcome,
 #about-us > div[data-interchange],
 #what-to-expect > div[data-interchange],
 #connect {
@@ -92,7 +98,14 @@ a.concrete-custom-btn {
     div[data-interchange] {
       background-size: 300%;
       background-repeat: no-repeat;
-      background-position: -180px center;
+
+    }
+  }
+  @include breakpoint(xlarge) {
+    div[data-interchange] {
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
     }
   }
 }
@@ -111,6 +124,10 @@ section {
     font-family: $montserrat;
     font-weight: 700;
     text-transform: uppercase;
+  }
+
+  @include breakpoint(medium) {
+    background-position: center;
   }
 }
 
@@ -132,20 +149,35 @@ section {
 #about-us {
   color: $darkgrey;
 
+  div[data-interchange] {
+    -webkit-filter: sepia(100%) grayscale(80%);
+    filter: sepia(100%) grayscale(80%);
+  }
+
   .section-heading {
     color: $darkgrey;
   }
 
   .text {
-    top: rem-calc(450);
+    @include breakpoint(small only) {
+      top: rem-calc(100);
+      font-size: rem-calc(24);
+    }
   }
 }
 
 #what-to-expect {
   color: #f2f2f2;
 
+  @include breakpoint(small only) {
+    background-position: -180px center;
+  }
+
   .text {
-    top: rem-calc(400);
+    @include breakpoint(small) {
+      top: rem-calc(100);
+      font-size: rem-calc(21);
+    }
   }
 }
 
@@ -157,7 +189,6 @@ section {
 #sunday-clock {
   width: 460px;
   margin: rem-calc(50) auto;
-  margin-bottom: 0;
 
   .flip-clock-dot {
     background-color: #f2f2f2;
@@ -170,6 +201,9 @@ section {
 
   @include breakpoint(small) {
     zoom: 70%;
+    margin-bottom: rem-calc(30);
+    position: relative;
+    top: 10px;
 
     .flip-clock-label {
       font-size: 18px;
@@ -179,6 +213,27 @@ section {
 
 #visitors {
   color: #f2f2f2;
+}
+
+#connect {
+  -webkit-filter: sepia(100%) grayscale(80%);
+  filter: sepia(50%) grayscale(80%);
+  color: #fff;
+  padding-top: rem-calc(90);
+
+  @include breakpoint(small) {
+    background-position: -75px center;
+
+    .section-heading {
+      color: #fff;
+    }
+    p {
+      font-size: 21px;
+      width: 75%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 #get_connected {
