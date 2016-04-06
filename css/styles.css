@@ -5502,8 +5502,13 @@ a.concrete-custom-btn:hover {
 }
 
 .parallaxParent {
-  height: 100vh;
   overflow: hidden;
+}
+
+@media screen and (min-width: 0em) and (max-width: 39.9375em) {
+  .parallaxParent {
+    height: 100vh;
+  }
 }
 
 .parallaxParent > * {
@@ -5561,10 +5566,13 @@ a.concrete-custom-btn:hover {
 
 section {
   padding: 3.75rem 0;
-  min-height: 37.5rem;
   color: #505050;
   position: relative;
   text-align: center;
+}
+
+#welcome {
+  background-position: center;
 }
 
 #welcome h1 {
@@ -5573,9 +5581,9 @@ section {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
   #welcome {
-    background-position: center;
+    height: 37.5rem;
   }
 }
 
@@ -5616,6 +5624,12 @@ section {
   }
 }
 
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  #about-us {
+    height: 18.75rem;
+  }
+}
+
 #what-to-expect {
   color: #f2f2f2;
 }
@@ -5626,9 +5640,17 @@ section {
   }
 }
 
-#what-to-expect .text {
-  top: 6.25rem;
-  font-size: 1.3125rem;
+@media screen and (min-width: 0em) and (max-width: 39.9375em) {
+  #what-to-expect .text {
+    top: 6.25rem;
+    font-size: 1.3125rem;
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  #what-to-expect {
+    height: 18.75rem;
+  }
 }
 
 #gatherings {
@@ -5667,25 +5689,33 @@ section {
   filter: sepia(50%) grayscale(80%);
   color: #fff;
   padding-top: 5.625rem;
-  background-position: -75px center;
 }
 
-#connect .section-heading {
-  color: #fff;
-}
-
-#connect p {
-  font-size: 21px;
-  width: 75%;
-  margin: 0 auto;
-  margin-bottom: 20px;
+@media screen and (min-width: 0em) and (max-width: 39.9375em) {
+  #connect {
+    background-position: -75px center;
+  }
+  #connect .section-heading {
+    color: #fff;
+  }
+  #connect p {
+    font-size: 21px;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
 
 #get_connected {
   background-color: #353535;
-  height: 28.125rem;
   min-height: auto;
   color: #d8d8d8;
+}
+
+@media screen and (min-width: 0em) and (max-width: 39.9375em) {
+  #get_connected {
+    height: 28.125rem;
+  }
 }
 
 #get_connected label {
