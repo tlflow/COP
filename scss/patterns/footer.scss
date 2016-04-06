@@ -16,6 +16,10 @@ footer {
   }
 
   .information {
+    @include breakpoint(small only) {
+      text-align: center;
+    }
+
     @include breakpoint(medium) {
       padding-bottom: rem-calc(90);
     }

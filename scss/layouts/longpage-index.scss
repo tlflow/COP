@@ -10,7 +10,9 @@
   }
 }
 
-a[class*="custom-btn"] {
+a[class*="custom-btn"],
+button[class*="custom-btn"],
+input[class*="custom-btn"] {
   display: inline-block;
   text-align: center;
   line-height: 1;
@@ -28,19 +30,19 @@ a[class*="custom-btn"] {
   text-decoration: none;
 
   &:active {
-  transform: translate(0px, 5px);
-  -webkit-transform: translate(0px, 5px);
-  box-shadow: 0px 1px 0px 0px;
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
   }
 }
 
 /* darkgray Button */
-a.graphite-custom-btn {
+a.graphite-custom-btn, input.graphite-custom-btn {
   @include button-color($darkgrey, 10%, 20%);
 }
 
 /* concrete gray Button */
-a.concrete-custom-btn {
+a.concrete-custom-btn, input.concrete-custom-btn {
   @include button-color(#7f8c8d, 10%, 20%);
 }
 
@@ -58,13 +60,16 @@ a.concrete-custom-btn {
 }
 
 .parallaxParent {
-  height: 100vh;
   overflow: hidden;
+
+  @include breakpoint(small only) {
+    height: 100vh;
+  }
 }
 .parallaxParent > * {
-  height: 200%;
+  // height: 200%;
   position: relative;
-  top: -120%;
+  // top: -120%;
   text-align: center;
 
   @include breakpoint(medium down) {
@@ -93,30 +98,26 @@ a.concrete-custom-btn {
     font-family: $lato;
     color: #bdc3c7;
   }
-
-  @include breakpoint(small) {
-    div[data-interchange] {
-      background-size: 300%;
-      background-repeat: no-repeat;
-
-    }
-  }
-  @include breakpoint(xlarge) {
-    div[data-interchange] {
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-  }
 }
 
 // section styling and themes
 section {
   padding: rem-calc(60) 0;
-  min-height: rem-calc(600);
   color: #505050;
   position: relative;
   text-align: center;
+}
+
+#welcome,
+#introduction,
+#about-us,
+#gatherings,
+#what-to-expect,
+#connect {
+  @include breakpoint(small only) {
+    background-position: center;
+    min-height: 100vh;
+  }
 }
 
 #welcome {
@@ -128,6 +129,10 @@ section {
 
   @include breakpoint(medium) {
     background-position: center;
+    min-height: rem-calc(500);
+  }
+  @include breakpoint(large) {
+    min-height: rem-calc(600);
   }
 }
 
@@ -160,6 +165,10 @@ section {
 
   .text {
     @include breakpoint(small only) {
+      top: rem-calc(100);
+      font-size: rem-calc(24);
+    }
+    @include breakpoint(medium) {
       top: rem-calc(100);
       font-size: rem-calc(24);
     }
@@ -199,7 +208,7 @@ section {
     top: -2em;
   }
 
-  @include breakpoint(small) {
+  @include breakpoint(small only) {
     zoom: 70%;
     margin-bottom: rem-calc(30);
     position: relative;
@@ -221,7 +230,7 @@ section {
   color: #fff;
   padding-top: rem-calc(90);
 
-  @include breakpoint(small) {
+  @include breakpoint(small only) {
     background-position: -75px center;
 
     .section-heading {
@@ -238,7 +247,6 @@ section {
 
 #get_connected {
   background-color: darken($darkgrey, 10%);
-  height: rem-calc(450);
   min-height: auto;
   color: darken(#f2f2f2, 10%);
 
@@ -250,5 +258,9 @@ section {
     @include breakpoint(medium) {
       float: right;
     }
+  }
+
+  @include breakpoint(small only) {
+    padding: 40px 0;
   }
 }
