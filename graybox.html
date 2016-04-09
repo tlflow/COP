@@ -250,7 +250,9 @@
   // build scenes
   $( document ).ready(function() {
 
-    // console.log(Foundation.MediaQuery.current);
+    // console.log("Current Browser Breakpoint:", %c Foundation.MediaQuery.current);
+
+    console.log('%c Current Browser Breakpoint: ', 'color: #bada55', Foundation.MediaQuery.current);
     //
     // $(window).on('changed.zf.mediaquery', function(event, newSize, oldSize){
     //   console.log(newSize)
