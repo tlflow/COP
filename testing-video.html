@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Testing Video</title>
+  <link rel="dns-prefetch" href="http://media1.churchofphiladelphia.com">
+
+  <style>
+  /* ============================================================
+  PRIMARY STRUCTURE
+  ============================================================ */
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  main {
+    display: block;
+    padding: 20px 0;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+    /* ============================================================
+    DEMO 1 - EXPLORING ATTRIBUTES
+    ============================================================ */
+    video#cmn-video-demo1__video {
+      width: 100%;
+    }
+
+    /* ============================================================
+    DEMO 2 - CUSTOM CONTROLS
+    ============================================================ */
+    video#cmn-video-demo2__video {
+      width: 100%;
+    }
+
+    #cmn-video-demo2__controls button {
+      display: inline-block;
+      margin: 0;
+      padding: 10px 20px;
+      background-color: tomato;
+      color: #fff;
+      font-family: "Roboto Slab", serif;
+      font-size: 12px;
+      outline: none;
+      cursor: pointer;
+      border: none;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      border-radius: 3px;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+  </style>
+
+</head>
+<body>
+  <main>
+    <div class="container">
+      <video id="cmn-video-demo2__video" controls autoplay loop>
+        <source src="http://media1.churchofphiladelphia.com/demo.mp4" type="video/mp4">
+        <source src="http://media1.churchofphiladelphia.com/demo.ogv" type="video/ogg">
+        <source src="http://media1.churchofphiladelphia.com/demo.webm" type="video/webm">
+        Your browser doesn't support HTML5 video. Here's a <a href="#">link</a> to download the video.
+      </video>
+      <div id="cmn-video-demo2__controls">
+        <button id="cmn-video-demo2__controls--play">Play</button>
+        <button id="cmn-video-demo2__controls--mute">Mute</button>
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function{
+
+    // cache vars
+    var cmn_video = $("#cmn-video-demo2"),
+        cmn_playback = $("#cmn-video-demo2__controls--playback"),
+        cmn_mute = $("#cmn-video-demo2__controls--mute");
+
+    // listen for playback
+    cmn_playback.on( "click", function(e) {
+      e.preventDefault();
+      if (cmn_video.paused) {
+        cmn_video.play();
+        cmn_playback.innerHTML = "Pause";
+      } else {
+        cmn_video.pause();
+        cmn_playback.innerHTML = "Play";
+      }
+    } );
+
+    // listen for mute/unmute
+    cmn_mute.on( "click", function(e) {
+      e.preventDefault();
+      if (cmn_video.muted) {
+        cmn_video.muted = false;
+        cmn_mute.innerHTML = "Mute";
+      } else {
+        cmn_video.muted = true;
+        cmn_mute.innerHTML = "Unmute";
+      }
+    });
+
+  });
+  </script>
+</body>
+</html>

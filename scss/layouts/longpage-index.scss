@@ -129,6 +129,11 @@ section {
     font-family: $montserrat;
     font-weight: 700;
     text-transform: uppercase;
+    display: none;
+  }
+
+  @include breakpoint(small only) {
+    height: 100vh;
   }
 
   @include breakpoint(medium only) {
@@ -253,10 +258,6 @@ section {
   background-color: darken($darkgrey, 10%);
   min-height: auto;
   color: darken(#f2f2f2, 10%);
-
-  @include breakpoint(small only) {
-    height: rem-calc(450);
-  }
 
   label {
     color: darken(#f2f2f2, 10%);

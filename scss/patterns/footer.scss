@@ -5,6 +5,10 @@ footer {
   font-family: $lato;
   font-size: rem-calc(14);
 
+  @include breakpoint(large) {
+    padding-top: rem-calc(40);
+  }
+
   h2 {
     display: none;
   }

@@ -5280,6 +5280,12 @@ footer {
   font-size: 0.875rem;
 }
 
+@media screen and (min-width: 64em) {
+  footer {
+    padding-top: 2.5rem;
+  }
+}
+
 footer h2 {
   display: none;
 }
@@ -5375,6 +5381,25 @@ footer .social span {
   position: absolute;
   right: 20px;
   top: 32px;
+}
+
+.title-bar .logo {
+  position: relative;
+  top: -12px;
+  left: 15px;
+  width: 22.5px;
+}
+
+.title-bar .logo .st0, .title-bar .logo .st1 {
+  fill: #f2f2f2;
+}
+
+#global .logo {
+  width: 35px;
+}
+
+#global .logo .st0, #global .logo .st1 {
+  fill: #7F3F98;
 }
 
 #global {
@@ -5579,6 +5604,13 @@ section {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+  display: none;
+}
+
+@media screen and (min-width: 0em) and (max-width: 39.9375em) {
+  #welcome {
+    height: 100vh;
+  }
 }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
@@ -5710,12 +5742,6 @@ section {
   background-color: #353535;
   min-height: auto;
   color: #d8d8d8;
-}
-
-@media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  #get_connected {
-    height: 28.125rem;
-  }
 }
 
 #get_connected label {
