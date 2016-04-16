@@ -20,6 +20,10 @@ footer {
   }
 
   .information {
+    @include breakpoint(small only) {
+      text-align: center;
+    }
+
     @include breakpoint(medium) {
       padding-bottom: rem-calc(90);
     }
@@ -55,6 +59,7 @@ footer {
     text-align: center;
     list-style-type: none;
     padding: rem-calc(40);
+    margin: 0;
 
     @include breakpoint(medium) {
       float: right;

@@ -22,7 +22,7 @@ a[class*="custom-btn"] {
   border-radius: 2px;
   padding: 0.85em 1em;
   margin: 0 0 1rem 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
   background: $darkgrey;
   color: #f2f2f2;
   text-decoration: none;
@@ -42,6 +42,11 @@ a.graphite-custom-btn {
 /* concrete gray Button */
 a.concrete-custom-btn {
   @include button-color(#7f8c8d, 10%, 20%);
+}
+
+/* blue button */
+a.blue-custom-btn {
+  @include button-color(#2199e8, 10%, 20%);
 }
 
 #page {
@@ -111,6 +116,8 @@ section {
 
 #welcome {
   background-position: center;
+  background-size: cover;;
+  background-repeat: no-repeat;
 
   h1 {
     font-family: $montserrat;
@@ -143,8 +150,8 @@ section {
   color: $darkgrey;
 
   div[data-interchange] {
-    -webkit-filter: sepia(100%) grayscale(80%);
-    filter: sepia(100%) grayscale(80%);
+    // -webkit-filter: sepia(100%) grayscale(80%);
+    // filter: sepia(100%) grayscale(80%);
   }
 
   .section-heading {
@@ -213,8 +220,8 @@ section {
 }
 
 #connect {
-  -webkit-filter: sepia(100%) grayscale(80%);
-  filter: sepia(50%) grayscale(80%);
+  // -webkit-filter: sepia(100%) grayscale(80%);
+  // filter: sepia(50%) grayscale(80%);
   color: #fff;
   padding-top: rem-calc(90);
 
