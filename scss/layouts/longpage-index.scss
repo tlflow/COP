@@ -44,9 +44,9 @@ a.concrete-custom-btn {
   @include button-color(#7f8c8d, 10%, 20%);
 }
 
-
-
 #page {
+  background-color: red;
+
   &.no-scroll {
     overflow: hidden;
     width: 100%;
@@ -57,18 +57,17 @@ a.concrete-custom-btn {
   }
 }
 
-.parallaxParent {
+.parallax__parent {
   overflow: hidden;
-
-  @include breakpoint(small only) {
-    height: 100vh;
-  }
+  height: 100vh;
 }
-.parallaxParent > * {
+
+.parallax__child {
   height: 200%;
   position: relative;
   top: -120%;
   text-align: center;
+  background-size: cover;
 
   @include breakpoint(medium down) {
     top: 0;
@@ -76,50 +75,38 @@ a.concrete-custom-btn {
   }
 }
 
-#welcome,
-#about-us > div[data-interchange],
-#what-to-expect > div[data-interchange],
-#connect {
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#what-to-expect,
-#about-us,
-#connect {
-  .text {
-    position: relative;
-  }
-
-  .section-heading {
-    line-height: 2.6rem;
-    font-family: $lato;
-    color: #bdc3c7;
-  }
-
-  @include breakpoint(small) {
-    div[data-interchange] {
-      background-size: 300%;
-      background-repeat: no-repeat;
-
-    }
-  }
-  @include breakpoint(xlarge) {
-    div[data-interchange] {
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-  }
-}
+// #connect {
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//
+//   .text {
+//     position: relative;
+//   }
+//
+//
+// }
 
 // section styling and themes
 section {
   padding: rem-calc(60) 0;
-  // min-height: rem-calc(600);
   color: #505050;
   position: relative;
   text-align: center;
+}
+
+.home  {
+  p {
+    font-size: rem-calc(28);
+    line-height: 1.26;
+  }
+
+  #welcome,
+  #gatherings
+  {
+    @include breakpoint(large) {
+      min-height: rem-calc(600);
+    }
+  }
 }
 
 #welcome {
@@ -136,7 +123,7 @@ section {
     height: 100vh;
   }
 
-  @include breakpoint(medium only) {
+  @include breakpoint(medium) {
     height: rem-calc(600);
   }
 }
@@ -147,11 +134,7 @@ section {
   .section-heading {
     margin-bottom: rem-calc(20);
   }
-  p {
-    font-size: rem-calc(28);
-    line-height: 1.26;
-  }
-  span {
+  p span {
     font-weight: bold;
   }
 }
@@ -217,20 +200,16 @@ section {
     top: -2em;
   }
 
-  @include breakpoint(small) {
+  @include breakpoint(small only) {
     zoom: 70%;
     margin-bottom: rem-calc(30);
     position: relative;
     top: 10px;
 
     .flip-clock-label {
-      font-size: 18px;
+      font-size: rem-calc(18);
     }
   }
-}
-
-#visitors {
-  color: #f2f2f2;
 }
 
 #connect {
@@ -239,12 +218,15 @@ section {
   color: #fff;
   padding-top: rem-calc(90);
 
+  .section-heading {
+    line-height: 2.6rem;
+    font-family: $lato;
+    color: #bdc3c7;
+  }
+
   @include breakpoint(small only) {
     background-position: -75px center;
 
-    .section-heading {
-      color: #fff;
-    }
     p {
       font-size: 21px;
       width: 75%;
@@ -258,6 +240,10 @@ section {
   background-color: darken($darkgrey, 10%);
   min-height: auto;
   color: darken(#f2f2f2, 10%);
+
+  p {
+    font-size: 1rem;
+  }
 
   label {
     color: darken(#f2f2f2, 10%);

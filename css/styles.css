@@ -5395,11 +5395,30 @@ footer .social span {
 }
 
 #global .logo {
-  width: 35px;
+  width: 25px;
+  height: 65px;
+  top: 5px;
+}
+
+@media screen and (min-width: 64em) {
+  #global .logo {
+    position: relative;
+    left: 20px;
+  }
 }
 
 #global .logo .st0, #global .logo .st1 {
   fill: #7F3F98;
+}
+
+@media screen and (min-width: 40em) {
+  #global .logo span {
+    position: relative;
+    top: -47px;
+    left: 38px;
+    width: 279px;
+    display: block;
+  }
 }
 
 #global {
@@ -5414,6 +5433,12 @@ footer .social span {
 
 #global a {
   color: #f2f2f2;
+}
+
+#global a.active {
+  background: #686868;
+  color: #fff;
+  border-radius: 4px;
 }
 
 #global ul.menu {
@@ -5449,7 +5474,7 @@ footer .social span {
 
 @media screen and (min-width: 64em) {
   #global.has-scrolled {
-    background-color: rgba(17, 17, 17, 0.9);
+    background-color: rgba(17, 17, 17, 0.95);
     transition: background-color 0.3s ease;
   }
   #global.has-scrolled .show-line {
@@ -5514,6 +5539,10 @@ a.concrete-custom-btn:hover {
   background-color: #b5bcbd;
 }
 
+#page {
+  background-color: red;
+}
+
 #page.no-scroll {
   overflow: hidden;
   width: 100%;
@@ -5526,66 +5555,23 @@ a.concrete-custom-btn:hover {
   }
 }
 
-.parallaxParent {
+.parallax__parent {
   overflow: hidden;
+  height: 100vh;
 }
 
-@media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  .parallaxParent {
-    height: 100vh;
-  }
-}
-
-.parallaxParent > * {
+.parallax__child {
   height: 200%;
   position: relative;
   top: -120%;
   text-align: center;
+  background-size: cover;
 }
 
 @media screen and (max-width: 63.9375em) {
-  .parallaxParent > * {
+  .parallax__child {
     top: 0;
     height: inherit;
-  }
-}
-
-#welcome,
-#about-us > div[data-interchange],
-#what-to-expect > div[data-interchange],
-#connect {
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#what-to-expect .text,
-#about-us .text,
-#connect .text {
-  position: relative;
-}
-
-#what-to-expect .section-heading,
-#about-us .section-heading,
-#connect .section-heading {
-  line-height: 2.6rem;
-  font-family: "Lato", Arial, sans-serif;
-  color: #bdc3c7;
-}
-
-#what-to-expect div[data-interchange],
-#about-us div[data-interchange],
-#connect div[data-interchange] {
-  background-size: 300%;
-  background-repeat: no-repeat;
-}
-
-@media screen and (min-width: 75em) {
-  #what-to-expect div[data-interchange],
-  #about-us div[data-interchange],
-  #connect div[data-interchange] {
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
   }
 }
 
@@ -5594,6 +5580,18 @@ section {
   color: #505050;
   position: relative;
   text-align: center;
+}
+
+.home p {
+  font-size: 1.75rem;
+  line-height: 1.26;
+}
+
+@media screen and (min-width: 64em) {
+  .home #welcome,
+  .home #gatherings {
+    min-height: 37.5rem;
+  }
 }
 
 #welcome {
@@ -5613,7 +5611,7 @@ section {
   }
 }
 
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+@media screen and (min-width: 40em) {
   #welcome {
     height: 37.5rem;
   }
@@ -5627,12 +5625,7 @@ section {
   margin-bottom: 1.25rem;
 }
 
-#introduction p {
-  font-size: 1.75rem;
-  line-height: 1.26;
-}
-
-#introduction span {
+#introduction p span {
   font-weight: bold;
 }
 
@@ -5693,10 +5686,6 @@ section {
 #sunday-clock {
   width: 460px;
   margin: 3.125rem auto;
-  zoom: 70%;
-  margin-bottom: 1.875rem;
-  position: relative;
-  top: 10px;
 }
 
 #sunday-clock .flip-clock-dot {
@@ -5708,12 +5697,16 @@ section {
   top: -2em;
 }
 
-#sunday-clock .flip-clock-label {
-  font-size: 18px;
-}
-
-#visitors {
-  color: #f2f2f2;
+@media screen and (min-width: 0em) and (max-width: 39.9375em) {
+  #sunday-clock {
+    zoom: 70%;
+    margin-bottom: 1.875rem;
+    position: relative;
+    top: 10px;
+  }
+  #sunday-clock .flip-clock-label {
+    font-size: 1.125rem;
+  }
 }
 
 #connect {
@@ -5723,12 +5716,15 @@ section {
   padding-top: 5.625rem;
 }
 
+#connect .section-heading {
+  line-height: 2.6rem;
+  font-family: "Lato", Arial, sans-serif;
+  color: #bdc3c7;
+}
+
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
   #connect {
     background-position: -75px center;
-  }
-  #connect .section-heading {
-    color: #fff;
   }
   #connect p {
     font-size: 21px;
@@ -5742,6 +5738,10 @@ section {
   background-color: #353535;
   min-height: auto;
   color: #d8d8d8;
+}
+
+#get_connected p {
+  font-size: 1rem;
 }
 
 #get_connected label {
@@ -5796,7 +5796,7 @@ body * {
   }
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .top-bar .top-bar-right {
     float: left;
   }

@@ -22,10 +22,26 @@
 }
 
 #global .logo {
-  width: 35px;
+  width: 25px;
+  height: 65px;
+  top: 5px;
+  @include breakpoint(large) {
+    position: relative;
+    left: 20px;
+  }
 
   .st0, .st1 {
     fill: #7F3F98;
+  }
+
+  span {
+    @include breakpoint(medium) {
+      position: relative;
+      top: -47px;
+      left: 38px;
+      width: 279px;
+      display: block;
+    }
   }
 }
 
@@ -40,6 +56,12 @@
 
   a {
     color: #f2f2f2;
+
+    &.active {
+      background: lighten($darkgrey, 10%);
+      color: #fff;
+      border-radius: 4px;
+    }
   }
 
   ul.menu {
@@ -72,7 +94,7 @@
 
   @include breakpoint(large) {
     &.has-scrolled {
-      background-color: rgba(#111, 0.9);
+      background-color: rgba(#111, 0.95);
       transition: background-color 0.3s ease;
 
       .show-line {
