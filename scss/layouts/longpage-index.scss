@@ -118,6 +118,7 @@ section {
   background-position: center;
   background-size: cover;;
   background-repeat: no-repeat;
+  border: 10px solid lighten(#ccffff, 15%);
 
   h1 {
     font-family: $montserrat;
@@ -149,11 +150,6 @@ section {
 #about-us {
   color: $darkgrey;
 
-  div[data-interchange] {
-    // -webkit-filter: sepia(100%) grayscale(80%);
-    // filter: sepia(100%) grayscale(80%);
-  }
-
   .section-heading {
     color: $darkgrey;
   }
@@ -166,7 +162,7 @@ section {
   }
 
   @include breakpoint(medium only) {
-    height: rem-calc(300);
+    height: rem-calc(500);
   }
 }
 
@@ -185,7 +181,7 @@ section {
   }
 
   @include breakpoint(medium only) {
-    height: rem-calc(300);
+    height: rem-calc(500);
   }
 }
 

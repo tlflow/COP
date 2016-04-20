@@ -6013,6 +6013,17 @@ footer .social span {
   top: 0.625rem;
 }
 
+.top-bar-left {
+  padding-left: 2.5rem;
+}
+
+.top-bar-right {
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 2.5rem;
+}
+
 .title-bar-title {
   position: absolute;
   right: 60px;
@@ -6078,17 +6089,16 @@ footer .social span {
 }
 
 #global a.active {
-  background: #686868;
+  background: #303333;
   color: #fff;
   border-radius: 4px;
 }
 
 #global ul.menu {
   background-color: transparent;
-  padding-top: 0.875rem;
 }
 
-@media screen and (max-width: 39.9375em) {
+@media screen and (max-width: 63.9375em) {
   #global ul.menu {
     padding-top: 60px;
   }
@@ -6103,14 +6113,12 @@ footer .social span {
   }
 }
 
-#global ul.menu ul.menu {
-  padding-top: 0;
-  padding-left: 1.25rem;
-  font-size: 1.125rem;
-}
-
-#global ul.menu ul.menu a {
-  color: #999999;
+@media screen and (min-width: 64em) {
+  #global ul.menu {
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 
 @media screen and (max-width: 63.9375em) {
@@ -6128,12 +6136,12 @@ footer .social span {
     background-color: rgba(17, 17, 17, 0.95);
     transition: background-color 0.3s ease;
   }
-  #global.has-scrolled .show-line {
+  #global.has-scrolled.show-line {
     box-shadow: 0 1px 0 rgba(242, 242, 242, 0);
     padding: 0.5rem 0;
     transition: all 0.3s ease;
   }
-  #global .show-line {
+  #global.show-line {
     box-shadow: 0 1px 0 rgba(242, 242, 242, 0.4);
     padding: 1.125rem 0;
     transition: all 0.3s ease;
@@ -6260,6 +6268,7 @@ section {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border: 10px solid white;
 }
 
 #welcome h1 {
@@ -6310,7 +6319,7 @@ section {
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   #about-us {
-    height: 18.75rem;
+    height: 31.25rem;
   }
 }
 
@@ -6333,7 +6342,7 @@ section {
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   #what-to-expect {
-    height: 18.75rem;
+    height: 31.25rem;
   }
 }
 

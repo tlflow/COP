@@ -1,3 +1,11 @@
+.top-bar-left {
+  padding-left: rem-calc(40);
+}
+.top-bar-right {
+  justify-content: flex-end;
+  padding-right: rem-calc(40);
+}
+
 .title-bar-title {
   position: absolute;
   right: 60px;
@@ -58,7 +66,7 @@
     color: #f2f2f2;
 
     &.active {
-      background: lighten($darkgrey, 10%);
+      background: rgba(#303333, 20%);
       color: #fff;
       border-radius: 4px;
     }
@@ -66,9 +74,9 @@
 
   ul.menu {
     background-color: transparent;
-    padding-top: rem-calc(14);
+    // padding-top: rem-calc(14);
 
-    @include breakpoint(small only) {
+    @include breakpoint(medium down) {
       padding-top: 60px;
 
       a.active {
@@ -79,17 +87,11 @@
     @include breakpoint(medium down) {
       font-size: rem-calc(21);
     }
-
-    & ul.menu {
-      padding-top: 0;
-      padding-left: rem-calc(20);
-      font-size: rem-calc(18);
-    }
-
-    & ul.menu a {
-      color: darken(#ccc, 20%);
+    @include breakpoint(large) {
+      justify-content: flex-end;
     }
   }
+
 
   @include breakpoint(medium down) {
     opacity: 0;
@@ -105,19 +107,17 @@
       background-color: rgba(#111, 0.95);
       transition: background-color 0.3s ease;
 
-      .show-line {
+      &.show-line {
         box-shadow: 0 1px 0 rgba(#f2f2f2, 0);
         padding: rem-calc(8) 0;
         transition: all 0.3s ease;
       }
     }
 
-    .show-line {
+    &.show-line {
       box-shadow: 0 1px 0 rgba(#f2f2f2, 0.4);
       padding: rem-calc(18) 0;
       transition: all 0.3s ease;
     }
   }
-
-
 }
