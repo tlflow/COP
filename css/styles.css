@@ -6080,12 +6080,12 @@ footer .social span {
   padding: 0;
   font-weight: 700;
   font-size: 0.9375rem;
-  background-color: transparent;
+  background-color: #e6e6e6;
   z-index: 1001;
 }
 
 #global a {
-  color: #f2f2f2;
+  color: #222;
 }
 
 #global a.active {
@@ -6136,15 +6136,16 @@ footer .social span {
     background-color: rgba(17, 17, 17, 0.95);
     transition: background-color 0.3s ease;
   }
+  #global.has-scrolled a {
+    color: #f2f2f2;
+  }
   #global.has-scrolled.show-line {
-    box-shadow: 0 1px 0 rgba(242, 242, 242, 0);
-    padding: 0.5rem 0;
-    transition: all 0.3s ease;
+    height: 80px;
+    transition: height 0.3s ease;
   }
   #global.show-line {
-    box-shadow: 0 1px 0 rgba(242, 242, 242, 0.4);
-    padding: 1.125rem 0;
-    transition: all 0.3s ease;
+    height: 100px;
+    transition: height 0.3s ease;
   }
 }
 
@@ -6210,7 +6211,7 @@ a.blue-custom-btn:hover {
 }
 
 #page {
-  background-color: red;
+  background-color: #f2f2f2;
 }
 
 #page.no-scroll {
@@ -6264,18 +6265,47 @@ section {
   }
 }
 
+#masthead {
+  border: 10px solid #e6e6e6;
+  box-sizing: content-box;
+  width: calc(100% - 20px);
+  height: 95vh;
+}
+
+#masthead .image-1, #masthead .image-2 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+}
+
+#masthead .image-1 {
+  background-color: #33FFFF;
+  z-index: 1;
+}
+
+#masthead .image-2 {
+  background-color: #99FF99;
+  z-index: 0;
+}
+
+#masthead .text {
+  position: relative;
+  top: 20%;
+  z-index: 2;
+}
+
+#masthead h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 #welcome {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 10px solid white;
-}
-
-#welcome h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  display: none;
 }
 
 @media screen and (max-width: 39.9375em) {

@@ -54,13 +54,23 @@
 
         <div id="content">
 
-            <section id="welcome" data-interchange="[images/unchurch/opt/unchurch_small.jpg, small],
-              [images/unchurch/opt/unchurch_medium.jpg, medium],
-              [images/unchurch/opt/unchurch_large.jpg, large],
-              [images/unchurch/opt/unchurch_xlarge.jpg, xlarge]">
+          <section id="masthead">
+            <div class="text">
+              <div class="row">
+                <h1 class="section-heading">Welcome</h1>
+              </div>
 
-              <h1 class="section-heading">Welcome</h1>
-            </section>
+            </div>
+            <div class="image-1"></div>
+            <div class="image-2"></div>
+          </section>
+
+          <section id="welcome" data-interchange="[images/unchurch/opt/unchurch_small.jpg, small],
+            [images/unchurch/opt/unchurch_medium.jpg, medium],
+            [images/unchurch/opt/unchurch_large.jpg, large],
+            [images/unchurch/opt/unchurch_xlarge.jpg, xlarge]">
+
+          </section>
 
             <section id="introduction">
                 <div class="row align-center">
@@ -257,17 +267,61 @@
             //   console.log(newSize)
             // });
 
-            var $global = $("#global");
 
             $(window).on('scroll', function() {
-                myWindow = $(window);
-
-                if (myWindow.scrollTop() === 0) {
-                    $global.removeClass("has-scrolled");
-                } else {
-                    $global.addClass("has-scrolled");
-                }
+                showHeader();
+                fadingImage();
             });
+
+            //////////// code for clear or solid header  //////////////////
+            function showHeader() {
+
+              var $_global = $('#global'),
+                  scrollPos = document.body.scrollTop;
+
+              if (scrollPos === 0) {
+                  $_global.removeClass("has-scrolled");
+              } else {
+                  $_global.addClass("has-scrolled");
+              }
+            }
+
+            //////////// code for fading masthead image //////////////////
+            function fadingImage() {
+
+              	stuff = {
+              		_init: function() {
+              			var $_topImage  = $('.image-1'),
+              					fadeStart = $_topImage.offset().top,
+              					fadeUntil = $_topImage.height();
+              			this.setEvents( fadeStart, fadeUntil, $_topImage );
+              		},
+              		setEvents: function( fadeStart, fadeUntil, $_topImage ) {
+              			var self = this;
+
+              			$(window).on('scroll', function() {
+              				self.checkPosition( fadeStart, fadeUntil, $_topImage );
+              			});
+              		},
+              		checkPosition: function( fadeStart, fadeUntil, $_topImage ) {
+
+              			var scrollPos = document.body.scrollTop;
+              			var opacity   = 0;
+
+              			if ( scrollPos<=fadeStart ) {
+              				opacity = 1;
+              			} else if( scrollPos<=fadeUntil ) {
+              				opacity = 1-scrollPos/fadeUntil;
+              			}
+
+              			$_topImage.css('opacity', opacity);
+
+              		}
+              	}
+
+              	stuff._init();
+            }
+
 
             $('button.menu-icon').on('click', function() {
                 $(this)

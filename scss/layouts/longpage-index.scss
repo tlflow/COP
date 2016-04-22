@@ -50,7 +50,7 @@ a.blue-custom-btn {
 }
 
 #page {
-  background-color: red;
+  background-color: #f2f2f2;
 
   &.no-scroll {
     overflow: hidden;
@@ -80,18 +80,6 @@ a.blue-custom-btn {
   }
 }
 
-// #connect {
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//
-//   .text {
-//     position: relative;
-//   }
-//
-//
-// }
-
-// section styling and themes
 section {
   padding: rem-calc(60) 0;
   color: #505050;
@@ -114,18 +102,49 @@ section {
   }
 }
 
-#welcome {
-  background-position: center;
-  background-size: cover;;
-  background-repeat: no-repeat;
-  border: 10px solid lighten(#ccffff, 15%);
+#masthead {
+  border: 10px solid #e6e6e6;
+	box-sizing: content-box;
+	width: calc(100% - 20px);
+	height: 95vh;
+
+
+  .image-1, .image-2 {
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		position: absolute;
+    top: 0;
+	}
+
+	.image-1 {
+		// background: url(https://placeimg.com/640/480/people) no-repeat 0 0;
+		background-color: #33FFFF;
+		z-index: 1;
+	}
+	.image-2 {
+		// background: url(https://placeimg.com/640/480/nature) no-repeat 0 0;
+		background-color: #99FF99;
+		z-index: 0;
+	}
+
+  .text {
+    position: relative;
+    top: 20%;
+    z-index: 2;
+  }
 
   h1 {
     font-family: $montserrat;
     font-weight: 700;
     text-transform: uppercase;
-    display: none;
   }
+}
+
+#welcome {
+  background-position: center;
+  background-size: cover;;
+  background-repeat: no-repeat;
 
   @include breakpoint(small only) {
     height: 100vh;
