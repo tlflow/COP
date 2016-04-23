@@ -6281,12 +6281,11 @@ section {
 }
 
 #masthead .image-1 {
-  background-color: #33FFFF;
   z-index: 1;
 }
 
 #masthead .image-2 {
-  background-color: #99FF99;
+  background-color: #33FFFF;
   z-index: 0;
 }
 
@@ -6408,6 +6407,8 @@ section {
 }
 
 #connect {
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #fff;
   padding-top: 5.625rem;
 }

@@ -119,12 +119,12 @@ section {
 
 	.image-1 {
 		// background: url(https://placeimg.com/640/480/people) no-repeat 0 0;
-		background-color: #33FFFF;
 		z-index: 1;
 	}
 	.image-2 {
 		// background: url(https://placeimg.com/640/480/nature) no-repeat 0 0;
-		background-color: #99FF99;
+		// background-color: #99FF99;
+    background-color: #33FFFF;
 		z-index: 0;
 	}
 
@@ -235,8 +235,8 @@ section {
 }
 
 #connect {
-  // -webkit-filter: sepia(100%) grayscale(80%);
-  // filter: sepia(50%) grayscale(80%);
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #fff;
   padding-top: rem-calc(90);
 
