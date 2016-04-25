@@ -55,17 +55,23 @@
         <div id="content">
 
           <section id="masthead">
-            <div class="text">
+            <!-- <div class="text">
               <div class="row">
                 <h1 class="section-heading">Welcome</h1>
               </div>
+            </div> -->
 
-            </div>
             <div class="image-1" data-interchange="[/images/home/charlotte-downtown_large.jpg, small],
               [/images/home/charlotte-downtown_medium.jpg, medium],
               [/images/home/charlotte-downtown_large.jpg, large],
               [/images/home/charlotte-downtown_xlarge.jpg, xlarge]"></div>
-            <div class="image-2"></div>
+
+            <div class="image-2" data-interchange="[/images/home/charlotte-downtown-bw_large.jpg, small],
+              [/images/home/charlotte-downtown-bw_medium.jpg, medium],
+              [/images/home/charlotte-downtown-bw_large.jpg, large],
+              [/images/home/charlotte-downtown-bw_xlarge.jpg, xlarge]"></div>
+
+
           </section>
 
           <section id="welcome" data-interchange="[images/unchurch/opt/unchurch_small.jpg, small],
@@ -271,11 +277,6 @@
             // });
 
 
-            $(window).on('scroll', function() {
-                showHeader();
-                fadingImage();
-            });
-
             //////////// code for clear or solid header  //////////////////
             function showHeader() {
 
@@ -327,9 +328,12 @@
 
 
             $('button.menu-icon').on('click', function() {
+                var $_global = $('#global');
+
                 $(this)
-                    .closest('.title-bar').toggleClass('active');
-                $global.toggleClass('show');
+                  .closest('.title-bar')
+                  .toggleClass('active');
+                $_global.toggleClass('show');
             })
 
             // activate wow.js for animate.css transitions (content fade ins)
@@ -360,10 +364,14 @@
             });
 
             $(window).on('load', function() {
-                if (Foundation.MediaQuery.current == 'small' || Foundation.MediaQuery.current == 'medium') {
+                if (Foundation.MediaQuery.current == 'small' || Foundation.MediaQuery.current == 'medium' || Foundation.MediaQuery.current == 'large' ) {
                     controller.enabled(false);
                 } else {
                     controller.enabled(true);
+                    $(window).on('scroll', function() {
+                        showHeader();
+                        fadingImage();
+                    });
                 }
             });
 
@@ -372,6 +380,10 @@
                     controller.enabled(false);
                 } else {
                     controller.enabled(true);
+                    $(window).on('scroll', function() {
+                        showHeader();
+                        fadingImage();
+                    });
                 }
             });
 
