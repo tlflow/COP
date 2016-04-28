@@ -211,6 +211,7 @@ section {
 
 	.image-1 {
 		z-index: 1;
+    filter: sepia(40%);
 	}
 	.image-2 {
 		z-index: 0;
@@ -220,6 +221,20 @@ section {
     position: relative;
     top: 10%;
     z-index: 2;
+
+    @include breakpoint(large) {
+      top: 40%;
+
+      h1 {
+        font-size: 5rem;
+
+        span {
+          display: block;
+          margin-top: 20px;
+          font-size: 6rem;
+        }
+      }
+    }
   }
 
   h1, h2 {
@@ -231,11 +246,11 @@ section {
   }
 
   h1 {
-    color: #EC5840;
+    color: #e6e6e6;
     margin-bottom: 0;
 
     span {
-      color: #F5A598;
+      color: #BF74E4;
     }
   }
 
@@ -325,6 +340,11 @@ section {
       top: rem-calc(100);
       font-size: rem-calc(24);
     }
+
+    @include breakpoint(large) {
+      top: 40%;
+      font-size: rem-calc(28);
+    }
   }
 
   @include breakpoint(medium only) {
@@ -345,6 +365,11 @@ section {
     @include breakpoint(small only) {
       top: rem-calc(100);
       font-size: rem-calc(21);
+    }
+
+    @include breakpoint(large) {
+      top: 40%;
+      font-size: rem-calc(28);
     }
   }
 
@@ -390,10 +415,10 @@ section {
   color: #fff;
   padding-top: rem-calc(90);
 
-  .section-heading {
-    line-height: 2.6rem;
-    font-family: $lato;
-    color: #bdc3c7;
+  .text {
+    background-color: rgba(#111, 0.5);
+    padding: rem-calc(30);
+    margin-bottom: rem-calc(40);
   }
 
   @include breakpoint(small only) {
@@ -428,6 +453,6 @@ section {
   }
 
   fieldset {
-    margin-bottom: rem-calc(30);  
+    margin-bottom: rem-calc(30);
   }
 }
