@@ -177,9 +177,23 @@ section {
   color: #505050;
   position: relative;
   text-align: center;
+
+  .section-heading {
+    @include breakpoint(large) {
+      font-family: 'Montserrat';
+      // text-transform: uppercase;
+      font-size: 3.2rem;
+    }
+  }
 }
 
-.home  {
+.box.black-bkg {
+  background-color: rgba(#111, 0.5);
+  padding: rem-calc(30);
+  margin-bottom: rem-calc(40);
+}
+
+#page.home  {
   p {
     font-size: rem-calc(28);
     line-height: 1.26;
@@ -223,7 +237,8 @@ section {
     z-index: 2;
 
     @include breakpoint(large) {
-      top: 40%;
+      // top: 40%;
+      margin-top: 30%;
 
       h1 {
         font-size: 5rem;
@@ -414,12 +429,6 @@ section {
   background-repeat: no-repeat;
   color: #fff;
   padding-top: rem-calc(90);
-
-  .text {
-    background-color: rgba(#111, 0.5);
-    padding: rem-calc(30);
-    margin-bottom: rem-calc(40);
-  }
 
   @include breakpoint(small only) {
     background-position: -75px center;

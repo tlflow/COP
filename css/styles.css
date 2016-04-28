@@ -6365,14 +6365,27 @@ section {
   text-align: center;
 }
 
-.home p {
+@media screen and (min-width: 64em) {
+  section .section-heading {
+    font-family: 'Montserrat';
+    font-size: 3.2rem;
+  }
+}
+
+.box.black-bkg {
+  background-color: rgba(17, 17, 17, 0.5);
+  padding: 1.875rem;
+  margin-bottom: 2.5rem;
+}
+
+#page.home p {
   font-size: 1.75rem;
   line-height: 1.26;
 }
 
 @media screen and (min-width: 64em) {
-  .home #welcome,
-  .home #gatherings {
+  #page.home #welcome,
+  #page.home #gatherings {
     min-height: 37.5rem;
   }
 }
@@ -6411,7 +6424,7 @@ section {
 
 @media screen and (min-width: 64em) {
   #masthead .text {
-    top: 40%;
+    margin-top: 30%;
   }
   #masthead .text h1 {
     font-size: 5rem;
@@ -6637,12 +6650,6 @@ section {
   background-repeat: no-repeat;
   color: #fff;
   padding-top: 5.625rem;
-}
-
-#connect .text {
-  background-color: rgba(17, 17, 17, 0.5);
-  padding: 1.875rem;
-  margin-bottom: 2.5rem;
 }
 
 @media screen and (max-width: 39.9375em) {
