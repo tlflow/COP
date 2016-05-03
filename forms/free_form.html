@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <form method="post">
+
+      <div class="row">
+          <div class="medium-6 columns">
+              <!-- NAME -->
+              <div id="name-group" class="form-group">
+                <label class="text-left">Name
+                    <input type="text" name="name" placeholder="Your First &amp; Last Name">
+                </label>
+              </div>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="small-6 columns">
+            <!-- EMAIL -->
+            <div id="email-group" class="form-group">
+              <label class="text-left">Email
+                  <input type="email" name="email" placeholder="Your e-mail">
+              </label>
+            </div>
+          </div>
+          <div class="small-6 columns">
+            <!-- PHONE -->
+            <div id="phone-group" class="form-group">
+              <label class="text-left">Phone
+                  <input type="tel" name="phone" placeholder="Your phone number">
+              </label>
+            </div>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="medium-6 columns">
+              <!-- STATUS -->
+              <div id="status-group" class="form-group">
+                <label class="text-left">Status
+                    <select name="status">
+                        <option value="going-to-visit">Would like to visit</option>
+                        <option value="first-time">First Time Visitor</option>
+                        <option value="second-time">Second Time Visitor</option>
+                        <option value="regular-attender">Regular Attender</option>
+                    </select>
+                </label>
+              </div>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="small-12 columns">
+          <!-- COMMENTS -->
+          <div id="comment-group" class="form-group">
+            <label class="text-left">Comments
+              <textarea name="comment" rows="5" cols="40"></textarea>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <fieldset class="text-left">
+          <div class="row">
+              <div class="small-12 medium-6 columns">
+                  <input id="checkbox1" type="checkbox" name="moreinfo">
+                  <label for="checkbox1">More information about Church of Philadelphia</label>
+              </div>
+              <div class="small-12 medium-6 columns">
+                  <input id="checkbox2" type="checkbox" name="joingroup">
+                  <label for="checkbox2">Join a small group</label>
+              </div>
+          </div>
+      </fieldset>
+      <div class="row">
+          <div class="small-12 columns">
+              <input type="submit" name="submit" value="submit">
+          </div>
+      </div>
+
+  </form>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      $('form').submit( function( event ) {
+
+        event.preventDefault();
+
+        var trimmedComment = $.trim( $('textarea').val() );
+
+        var formData = {
+
+            'name'      : $('input[name=name]').val(),
+            'email'     : $('input[name=email]').val(),
+            'phone'     : $('input[name=phone]').val(),
+            'status'    : $('select[name=status]').val(),
+            'moreinfo'  : $('input[name=moreinfo]').is(':checked'),
+            'joingroup' : $('input[name=joingroup]').is(':checked'),
+            'comment'   : trimmedComment
+
+        };
+
+        $.ajax({
+
+          type     : 'POST',
+          url      : 'process_home-form.php',
+          data     : formData,
+          dataType : 'json',
+          encode   : true
+
+        }).done( function( data ) {
+
+          console.log( data );
+
+          if ( ! data.success ) {
+
+            // if ( data.errors.name ) {
+            //
+            // }
+            console.log("show error messages");
+
+          } else {
+
+            // ITS ALL GOOD! SHOW SUCCESS
+            $('form').append( '<div class="alert alert-success">' + data.message + '</div>' )
+
+          }
+
+
+        });
+
+      });
+
+    });
+  </script>
+</body>
+</html>

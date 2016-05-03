@@ -56,20 +56,17 @@
 
           <section id="masthead">
             <div class="row align-center">
-
-            <div class="column large-8">
-
-
-              <div class="text box black-bkg">
-                  <h1 class="section-heading">We Love You, <span>Charlotte</span></h1>
-                  <h2>and we're here to help</h2>
-                  <a class="blue-custom-btn" href="/">learn more</a>
-                  <ul class="social-icons">
-                      <li><a href="#" class="social"><i class="icon-facebook2"></i></a></li>
-                      <li><a href="#" class="social"><i class="icon-twitter"></i></a></li>
-                      <li><a href="#" class="social"><i class="icon-instagram"></i></a></li>
-                  </ul>
-              </div>
+              <div class="column large-8">
+                  <div class="text box black-bkg">
+                      <h1 class="section-heading">We Love You, <span>Charlotte</span></h1>
+                      <h2>and we're here to help</h2>
+                      <a class="blue-custom-btn" href="/">learn more</a>
+                      <ul class="social-icons">
+                          <li><a href="#" class="social"><i class="icon-facebook2"></i></a></li>
+                          <li><a href="#" class="social"><i class="icon-twitter"></i></a></li>
+                          <li><a href="#" class="social"><i class="icon-instagram"></i></a></li>
+                      </ul>
+                  </div>
               </div>
             </div>
 
@@ -190,59 +187,56 @@
                           <div class="row">
                               <div class="medium-6 columns">
                                   <label class="text-left">Name
-                                      <input type="text" placeholder="Your name">
+                                      <input type="text" name="name" placeholder="Your First &amp; Last Name">
                                   </label>
                               </div>
                               <div class="medium-6 columns">
-                                  <label class="text-left">Date of Service Attended
-                                      <input type="date" placeholder="date">
-                                  </label>
+																<label class="text-left">Email
+																		<input type="email" name="email" placeholder="Your e-mail">
+																</label>
                               </div>
                           </div>
                           <div class="row">
                               <div class="small-6 columns">
-                                  <label class="text-left">Email
-                                      <input type="email" placeholder="Your e-mail">
-                                  </label>
+																<label class="text-left">Phone
+																		<input type="tel" name="phone" placeholder="Your phone number">
+																</label>
                               </div>
                               <div class="small-6 columns">
-                                  <label class="text-left">Phone
-                                      <input type="tel" placeholder="Your phone number">
-                                  </label>
+																<label class="text-left">Status
+																		<select name="status">
+																				<option value="going-to-visit">Would like to visit</option>
+																				<option value="first-time">First Time Visitor</option>
+																				<option value="second-time">Second Time Visitor</option>
+																				<option value="regular-attender">Regular Attender</option>
+																		</select>
+																</label>
                               </div>
                           </div>
+
                           <div class="row">
-                              <div class="medium-6 columns">
-                                  <label class="text-left">Status
-                                      <select name="" id="">
-                                          <option value="going-to-visit">Would like to visit</option>
-                                          <option value="first-time">First Time Visitor</option>
-                                          <option value="second-time">Second Time Visitor</option>
-                                          <option value="regular-attender">Regular Attender</option>
-                                      </select>
-                                  </label>
-                              </div>
-                              <div class="medium-6 columns">
-                                  <label class="text-left">Time to Call
-                                      <input type="time">
-                                  </label>
-                              </div>
+                            <div class="small-12 columns">
+															<label class="text-left">Comments
+																<textarea name="comment" rows="5" cols="40"></textarea>
+															</label>
+                            </div>
                           </div>
                           <fieldset class="text-left">
                               <div class="row">
                                   <div class="small-12 medium-6 columns">
-                                      <input id="checkbox1" type="checkbox">
+                                      <input id="checkbox1" type="checkbox" name="moreinfo">
                                       <label for="checkbox1">More information about Church of Philadelphia</label>
                                   </div>
                                   <div class="small-12 medium-6 columns">
-                                      <input id="checkbox2" type="checkbox">
+                                      <input id="checkbox2" type="checkbox" name="joingroup">
                                       <label for="checkbox2">Join a small group</label>
                                   </div>
                               </div>
                           </fieldset>
                           <div class="row">
                               <div class="small-12 columns">
-                                  <a class="blue-custom-btn" href="/">submit</a>
+                                  <!-- <a class="blue-custom-btn submit-btn" href="/">submit</a> -->
+																	<input type="submit" name="submit" value="submit">
                               </div>
                           </div>
 
@@ -304,6 +298,57 @@
             // $(window).on('changed.zf.mediaquery', function(event, newSize, oldSize){
             //   console.log(newSize)
             // });
+
+            //////////// code for comment form  //////////////////
+
+						$('form').submit( function( event ) {
+
+							event.preventDefault();
+
+							var trimmedComment = $.trim( $('textarea').val() );
+
+							var formData = {
+
+									'name'      : $('input[name=name]').val(),
+									'email'     : $('input[name=email]').val(),
+									'phone'     : $('input[name=phone]').val(),
+									'status'    : $('select[name=status]').val(),
+									'moreinfo'  : $('input[name=moreinfo]').is(':checked'),
+									'joingroup' : $('input[name=joingroup]').is(':checked'),
+									'comment'   : trimmedComment
+
+							};
+
+							$.ajax({
+
+								type     : 'POST',
+								url      : '/forms/process_home-form.php',
+								data     : formData,
+								dataType : 'json',
+								encode   : true
+
+							}).done( function( data ) {
+
+								console.log( data );
+
+								if ( ! data.success ) {
+
+									// if ( data.errors.name ) {
+									//
+									// }
+									console.log("show error messages");
+
+								} else {
+
+									// ITS ALL GOOD! SHOW SUCCESS
+									$('form').append( '<div class="alert alert-success">' + data.message + '</div>' )
+
+								}
+
+
+							});
+
+						});
 
 
             //////////// code for clear or solid header  //////////////////
