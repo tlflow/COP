@@ -1,16 +1,33 @@
-<!-- footer.nunjucks -->
-
 <footer>
-  <div class="row align-center">
-    <div class="social-icons">
-      <a href="#" class="social"><span class="fa fa-facebook">&nbsp;</span></a>
-      <a href="#" class="social"><span class="fa fa-twitter">&nbsp;</span></a>
-      <a href="#" class="social"><span class="fa fa-instagram">&nbsp;</span></a>
+    <div class="row">
+        <div class="small-12 medium-6 columns">
+            <div class="information">
+                <h2>Church Information</h2>
+                <h3>Sunday Services Address</h3>
+                <div class="address">
+                    Nathaniel Alexander Elementary School
+                    <br> 7910 Neal Road
+                    <br> Charlotte, NC 28262
+                </div>
+                <i class="icon-phone"></i><a href="tel:980.819.8848">980.819.8848</a>
+                <br>
+                <i class="icon-mail"></i><a href="mailto:info@churchofphiladelphia.com">info@churchofphiladelphia.com</a>
+            </div>
+        </div>
+        <div class="small-12 medium-6 columns">
+            <ul class="social-icons">
+                <li><a href="#" class="social"><i class="icon-facebook2"></i></a></li>
+                <li><a href="#" class="social"><i class="icon-twitter"></i></a></li>
+                <li><a href="#" class="social"><i class="icon-instagram"></i></a></li>
+            </ul>
+        </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="small-12 columns">
-      <div id="copyright">Copyright Info</div>
+
+    <div class="copyright">
+        <div class="row">
+            <div class="medium-9 columns">&copy; 2016 Church of Philadelphia</div>
+            <div class="rights medium-3 columns">All rights reserved. p</div>
+        </div>
     </div>
-  </div>
+
 </footer>

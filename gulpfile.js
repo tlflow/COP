@@ -37,7 +37,7 @@ gulp.task('nunjucks', function() {
   // Renders template with nunjucks
   .pipe(nunjucksRender())
   // output files in app folder
-  .pipe(gulp.dest(''))
+  .pipe(gulp.dest('dist'))
 });
 
 // Concatenate & Minify JS
