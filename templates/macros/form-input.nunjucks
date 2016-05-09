@@ -1,0 +1,3 @@
+{% macro input(name, value='', type='text') %}
+  <label for="{{ name }}">
+{% endmacro %}

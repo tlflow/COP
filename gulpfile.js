@@ -2,13 +2,17 @@
 var gulp = require('gulp');
 
 // Include Our Plugins
-var jshint = require('gulp-jshint');
-var sass = require('gulp-sass');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
+var jshint         = require('gulp-jshint');
+var marked         = require('marked');
+var sass           = require('gulp-sass');
+var concat         = require('gulp-concat');
+var uglify         = require('gulp-uglify');
+var rename         = require('gulp-rename');
+var data           = require('gulp-data');
+var frontMatter    = require('gulp-front-matter');
+var wrap           = require('gulp-wrap');
+var markdown       = require('nunjucks-markdown');
 var nunjucksRender = require('gulp-nunjucks-render');
-var data = require('gulp-data');
 
 // Lint Task
 gulp.task('lint', function() {
@@ -26,16 +30,32 @@ gulp.task('sass', function() {
 
 // Render nunjucks templates
 gulp.task('nunjucks', function() {
-  nunjucksRender.nunjucks.configure(['templates/']);
+  var env = nunjucksRender.nunjucks.configure(['templates/']);
+
+  // marked.setOptions({
+  //   renderer: new marked.Renderer(),
+  //   gfm: true,
+  //   tables: true,
+  //   breaks: false,
+  //   pendantic: false,
+  //   sanitize: true,
+  //   smartLists: true,
+  //   smartypants: false
+  // });
+
+  markdown.register(env, marked);
 
   // Gets .html and .nunjucks files in pages
-  return gulp.src('pages/**/*.+(html|nunjucks)')
+  return gulp.src('pages/**/*.+(md|html|nunjucks)')
+
   // Adding data to Nunjucks
   .pipe(data(function() {
     return require('./page-data.json')
   }))
+
   // Renders template with nunjucks
   .pipe(nunjucksRender())
+
   // output files in app folder
   .pipe(gulp.dest('dist'))
 });

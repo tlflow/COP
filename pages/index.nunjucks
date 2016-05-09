@@ -1,8 +1,16 @@
-{% set pageName = 'news' %}
+{% set pageName = 'about' %}
 {% set pageTitle = 'Work of Philadelphia' %}
 {% extends 'homepage-layout.nunjucks' %}
 
 {% block content %}
 <h1>This is the index page</h1>
+
+{% markdown %}
+Hello World
+==========
+# Do stuff please work
+{% endmarkdown %}
+
+{% markdown "content/example.md" %}
 
 {% endblock %}
