@@ -1,0 +1,3 @@
+<script src="js/libraries.build.min.js"></script>
+<script src="js/component.build.min.js"></script>
+<script src="js/page.js"></script>

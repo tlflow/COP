@@ -9,17 +9,13 @@
 </head>
 <body>
   <div id="page" class="home">
-    {% import 'macros/_globalnav.nunjucks' as globalNav %}
-    {{globalNav.active( {{ pageName }} )}}
+    {% include 'partials/_globalnav.nunjucks'%}
 
+    <!-- You write code for this content block in another file -->
+    {% block content %} {% endblock %}
 
-
-  <!-- You write code for this content block in another file -->
-  {% block content %} {% endblock %}
-
-  {% include "partials/footer.nunjucks" %}
-  <script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/something.js"></script>
+    {% include "partials/footer.nunjucks" %}
+  </div>
+  {% include 'partials/jspaths.nunjucks' %}
 </body>
 </html>
