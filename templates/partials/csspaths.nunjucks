@@ -1,9 +1,8 @@
 {% if pageName == 'home' %}
 <link rel="stylesheet" href="css/libraries.css">
 <link rel="stylesheet" href="css/styles.css">
-<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
 {% else %}
-<link rel="stylesheet" href="css/libraries.css">
-<link rel="stylesheet" href="css/styles-two.css">
-<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../css/libraries.css">
+<link rel="stylesheet" href="../css/styles.css">
 {% endif %}
+<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300,900|Montserrat:400,700' rel='stylesheet' type='text/css'>

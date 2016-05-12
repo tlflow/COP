@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% set globalTitle = 'Church of Philadelphia' %}
+  <title>{% if pageTitle %}{{ pageTitle }}{% else %}{{ globalTitle }}{% endif %}</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  {% include 'partials/csspaths.nunjucks' %}
+</head>
+<body>
+  <div id="page" class="{{ pageName }}">
+    {% include 'partials/_globalnav.nunjucks'%}
+
+    <div id="content">
+
+      <section id="masthead">
+        <div class="row align-center">
+          <div class="column large-8">
+              <div class="text box black-bkg">
+                  <h1 class="section-heading">We Love You, <span>Charlotte</span></h1>
+                  <h2>and we're here to help</h2>
+                  <a class="blue-custom-btn" href="/">learn more</a>
+                  <ul class="social-icons">
+                      <li><a href="#" class="social"><i class="icon-facebook2"></i></a></li>
+                      <li><a href="#" class="social"><i class="icon-twitter"></i></a></li>
+                      <li><a href="#" class="social"><i class="icon-instagram"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+
+        <div class="image-1" data-interchange="[/images/home/charlotte-downtown_small.jpg, small],
+          [/images/home/charlotte-downtown_medium.jpg, medium],
+          [/images/home/charlotte-downtown_large.jpg, large],
+          [/images/home/charlotte-downtown_xlarge.jpg, xlarge]"></div>
+
+      </section>
+      <!-- You write code for this content block in another file -->
+      {% block content %} {% endblock %}
+    </div>
+
+    {% include "partials/footer.nunjucks" %}
+  </div>
+  {% include 'partials/jspaths.nunjucks' %}
+</body>
+</html>

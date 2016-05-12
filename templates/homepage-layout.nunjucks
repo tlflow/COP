@@ -8,11 +8,13 @@
   {% include 'partials/csspaths.nunjucks' %}
 </head>
 <body>
-  <div id="page" class="home">
+  <div id="page" class="{{ pageName }}">
     {% include 'partials/_globalnav.nunjucks'%}
 
-    <!-- You write code for this content block in another file -->
-    {% block content %} {% endblock %}
+    <div id="content">
+      <!-- You write code for this content block in another file -->
+      {% block content %} {% endblock %}
+    </div>
 
     {% include "partials/footer.nunjucks" %}
   </div>

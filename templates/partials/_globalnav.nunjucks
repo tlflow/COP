@@ -14,7 +14,7 @@
 <nav id="global" class="top-bar show-line">
   <div class="top-bar-left">
     <div class="logo">
-      <a href="#">
+      <a href="/">
         <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 68 145" style="enable-background:new 0 0 68 145;" xml:space="preserve">
           <path class="st0" d="M65,29.9L5.4,0.4C2.5-1,0,1.2,0,5.5v133.1c0,4.2,2.5,6.7,5.4,5.6L65,120.9c1.1-0.4,2.1-2.9,2.1-5.4v-80 C67.1,33,66.2,30.5,65,29.9L65,29.9z M61,81.2c0,2.6-1.1,4.7-2.6,4.8L41,86.8v15.8l6.7-1.2v11.2l-5.6,1.5l-15.7,4.2l-11.1,2.9V107 l6.6-1.1V37.7l-6.6-1.9v-19l11.1,4.7h0l32,13.4c1.4,0.6,2.6,3.2,2.6,5.8V81.2L61,81.2z" />
           <path class="st1" d="M52.6,42.2L36.8,37c-1.4-0.5-2.6,1-2.6,3.3v29.3c0,2.3,1.2,4.2,2.6,4.3l15.8,0.7c1.1,0.1,2-1.5,2-3.5V60.6 l-6.1-1v3.7l-6.7-0.9V50.5l6.7,1.6v3.7l6.1,1.2V46.3C54.6,44.4,53.7,42.5,52.6,42.2L52.6,42.2z" />
@@ -25,11 +25,11 @@
   </div>
   <div class="top-bar-right">
       <ul class="menu" data-responsive-menu="accordion large-dropdown">
-          <li><a class="{%if pageName == 'news' %} active {% endif %}" href="#">News</a></li>
-          <li><a class="{%if pageName == 'about' %} active {% endif %}" href="#">Our Church</a></li>
-          <li><a class="{%if pageName == 'gatherings' %} active {% endif %}" href="#">Gatherings</a></li>
-          <li><a class="{%if pageName == 'connect' %} active {% endif %}" href="#">Connect</a></li>
-          <li><a class="{%if pageName == 'give' %} active {% endif %}" href="#">Give</a></li>
+          <li><a class="{%if pageName == 'news' %} active {% endif %}" href="/news/">News</a></li>
+          <li><a class="{%if pageName == 'about' %} active {% endif %}" href="/about/">Our Church</a></li>
+          <li><a class="{%if pageName == 'gatherings' %} active {% endif %}" href="/gatherings/">Gatherings</a></li>
+          <li><a class="{%if pageName == 'connect' %} active {% endif %}" href="/connect/">Connect</a></li>
+          <li><a class="{%if pageName == 'give' %} active {% endif %}" href="/give/">Give</a></li>
       </ul>
   </div>
 </nav>
