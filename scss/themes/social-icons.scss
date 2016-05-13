@@ -1,0 +1,15 @@
+.social-icons {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  list-style: none;
+
+  li {
+    flex-flow: row nowrap;
+  }
+
+  a {
+    color: #fff;
+  }
+}
