@@ -8,19 +8,6 @@
   {% include 'partials/csspaths.nunjucks' %}
 </head>
 <body>
-<<<<<<< HEAD
-  <div id="page" class="home">
-    {% include 'partials/_globalnav.nunjucks'%}
-
-    <!-- You write code for this content block in another file -->
-    {% block content %} {% endblock %}
-
-    {% include "partials/footer.nunjucks" %}
-  </div>
-  <script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/something.js"></script>
-=======
   <div id="page" class="{{ pageName }}">
     {% include 'partials/_globalnav.nunjucks'%}
 
@@ -32,6 +19,5 @@
     {% include "partials/footer.nunjucks" %}
   </div>
   {% include 'partials/jspaths.nunjucks' %}
->>>>>>> master
 </body>
 </html>

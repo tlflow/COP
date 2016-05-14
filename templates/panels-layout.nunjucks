@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% set globalTitle = 'Church of Philadelphia' %}
+  <title>{% if pageTitle %}{{ pageTitle }}{% else %}{{ globalTitle }}{% endif %}</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  {% include 'partials/csspaths.nunjucks' %}
+</head>
+<body>
+  <div id="page" class="{{ pageName }}">
+    {% include 'partials/_globalnav.nunjucks'%}
+
+    <div id="content">
+
+      <section id="masthead" data-interchange="[/images/home/charlotte-downtown_small.jpg, small],
+        [/images/home/charlotte-downtown_medium.jpg, medium],
+        [/images/home/charlotte-downtown_large.jpg, large],
+        [/images/home/charlotte-downtown_xlarge.jpg, xlarge]">
+        <div class="row align-center">
+          <div class="column large-8">
+              <div class="text box black-bkg">
+                  <h1 class="section-heading">We Love You, <span>Charlotte</span></h1>
+                  <h2>and we're here to help</h2>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        {% block content %} {% endblock %}
+      </section>
+
+      <section>
+        <div class="row align-center">
+          <div class="pic"></div>
+          <div class="text">
+            {% block content_1 %} {% endblock %}
+          </div>
+        </div>
+      </section>
+
+      <section>
+        {% block content_2 %} {% endblock %}
+      </section>
+
+      <section>
+        <div class="row align-center">
+          <div class="text">
+            {% block content_3 %} {% endblock %}
+          </div>
+          <div class="pic"></div>
+        </div>
+      </section>
+
+      <section>
+        {% block content_4 %} {% endblock %}
+      </section>
+
+
+    </div>
+
+    {% include "partials/footer.nunjucks" %}
+  </div>
+  {% include 'partials/jspaths.nunjucks' %}
+</body>
+</html>

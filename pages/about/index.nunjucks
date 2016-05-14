@@ -1,21 +1,23 @@
 {% set pageName = 'about' %}
-{% set pageTitle = 'Work of Philadelphia' %}
-{% extends 'subpage-layout.nunjucks' %}
+{% set pageTitle = 'About Our Church' %}
+{% extends 'panels-layout.nunjucks' %}
 
 {% block content %}
+  {% markdown "content/example.md" %}
+{% endblock %}
 
-<div class="row align-center">
-  <div class="column small-12 large-10">
-    <h1>This is the about page</h1>
-    {% markdown %}
-    Hello World
-    ==========
-    # Do stuff please work
-    {% endmarkdown %}
+{% block content_1 %}
+  {% markdown "content/example.md" %}
+{% endblock %}
 
-    {% markdown "content/example.md" %}
-  </div>
-</div>
+{% block content_2 %}
+  {% markdown "content/example.md" %}
+{% endblock %}
 
+{% block content_3 %}
+  {% markdown "content/example.md" %}
+{% endblock %}
 
+{% block content_4 %}
+  {% markdown "content/example.md" %}
 {% endblock %}
