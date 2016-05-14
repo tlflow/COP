@@ -1,0 +1,11 @@
+/*button styling
+==================================================*/
+@mixin button-color($hex, $dark-percentage, $light-percentage) {
+  background-color: $hex;
+  box-shadow: 0px 3px 0px 0px darken($hex, $dark-percentage);
+  border: 1px solid darken($hex, $dark-percentage);
+
+  &:hover {
+    background-color: lighten($hex, $light-percentage);
+  }
+}

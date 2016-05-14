@@ -1,3 +1,8 @@
+{% if pageName == 'home' %}
 <link rel="stylesheet" href="css/libraries.css">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/homepage-styling.css">
+{% else %}
+<link rel="stylesheet" href="../css/libraries.css">
+<link rel="stylesheet" href="../css/subpage-styling.css">
+{% endif %}
 <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300,900|Montserrat:400,700' rel='stylesheet' type='text/css'>

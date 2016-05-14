@@ -1,0 +1,21 @@
+{% set pageName = 'about' %}
+{% set pageTitle = 'Work of Philadelphia' %}
+{% extends 'subpage-layout.nunjucks' %}
+
+{% block content %}
+
+<div class="row align-center">
+  <div class="column small-12 large-10">
+    <h1>This is the about page</h1>
+    {% markdown %}
+    Hello World
+    ==========
+    # Do stuff please work
+    {% endmarkdown %}
+
+    {% markdown "content/example.md" %}
+  </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,9 @@
+{% if pageName == 'home' %}
+<script src="js/libraries.build.min.js"></script>
+<script src="js/component.build.min.js"></script>
+<script src="js/page.js"></script>
+{% else %}
+<script src="../js/libraries.build.min.js"></script>
+<script src="../js/component.build.min.js"></script>
+<script src="../js/page.js"></script>
+{% endif %}
