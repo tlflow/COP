@@ -3,7 +3,7 @@
 {% extends 'panels-layout.nunjucks' %}
 
 {% block content %}
-  {% markdown "content/example.md" %}
+  {% markdown "content/about/tagline.md" %}
 {% endblock %}
 
 {% block content_1 %}

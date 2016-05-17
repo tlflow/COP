@@ -11,49 +11,50 @@
   <div id="page" class="{{ pageName }}">
     {% include 'partials/_globalnav.nunjucks'%}
 
+    <div id="masthead">
+      <video id="cmn-video-demo2__video" autoplay loop>
+        <!-- <source src="http://media1.churchofphiladelphia.com/demo.mp4" type="video/mp4">
+        <source src="http://media1.churchofphiladelphia.com/demo.ogv" type="video/ogg">
+        <source src="http://media1.churchofphiladelphia.com/demo.webm" type="video/webm"> -->
+        <source src="http://media1.churchofphiladelphia.com/library/video/lightstock_99475_comp.mp4" type="video/mp4">
+        Your browser doesn't support HTML5 video. Here's a <a href="#">link</a> to download the video.
+      </video>
+    </div>
+
     <div id="content">
-
-      <section id="masthead" data-interchange="[/images/home/charlotte-downtown_small.jpg, small],
-        [/images/home/charlotte-downtown_medium.jpg, medium],
-        [/images/home/charlotte-downtown_large.jpg, large],
-        [/images/home/charlotte-downtown_xlarge.jpg, xlarge]">
-        <div class="row align-center">
-          <div class="column large-8">
-              <div class="text box black-bkg">
-                  <h1 class="section-heading">We Love You, <span>Charlotte</span></h1>
-                  <h2>and we're here to help</h2>
-              </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
+      <section class="panel-theme-1">
         {% block content %} {% endblock %}
       </section>
 
-      <section>
+      <section class="no-pad">
         <div class="row align-center">
-          <div class="pic"></div>
-          <div class="text">
+          <div class="columns large-6 pic" data-interchange="[/dist/images/stock/lightstock_74990_comp.jpg, small],
+            [/dist/images/stock/lightstock_74990_comp.jpg, medium],
+            [/dist/images/stock/lightstock_74990_comp.jpg, large],
+            [/dist/images/stock/lightstock_74990_comp.jpg, xlarge]"></div>
+          <div class="columns large-6">
             {% block content_1 %} {% endblock %}
           </div>
         </div>
       </section>
 
-      <section>
+      <section class="panel-theme-1">
         {% block content_2 %} {% endblock %}
       </section>
 
-      <section>
+      <section class="no-pad">
         <div class="row align-center">
-          <div class="text">
+          <div class="columns large-6">
             {% block content_3 %} {% endblock %}
           </div>
-          <div class="pic"></div>
+          <div class="columns large-6 pic" data-interchange="[/dist/images/stock/open-uri20160306-23892-vc1dh3.jpg, small],
+            [/dist/images/stock/open-uri20160306-23892-vc1dh3.jpg, medium],
+            [/dist/images/stock/open-uri20160306-23892-vc1dh3.jpg, large],
+            [/dist/images/stock/open-uri20160306-23892-vc1dh3.jpg, xlarge]"></div>
         </div>
       </section>
 
-      <section>
+      <section class="panel-theme-1">
         {% block content_4 %} {% endblock %}
       </section>
 

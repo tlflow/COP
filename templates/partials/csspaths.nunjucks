@@ -1,8 +1,9 @@
+<link rel="stylesheet" href="/dist/css/libraries.css">
 {% if pageName == 'home' %}
-<link rel="stylesheet" href="css/libraries.css">
-<link rel="stylesheet" href="css/homepage-styling.css">
+<link rel="stylesheet" href="/dist/css/homepage-styling.css">
+{% elif pageName == 'about' %}
+<link rel="stylesheet" href="/dist/css/panels-styling.css">
 {% else %}
-<link rel="stylesheet" href="/css/libraries.css">
-<link rel="stylesheet" href="/css/subpage-styling.css">
+<link rel="stylesheet" href="/dist/css/subpage-styling.css">
 {% endif %}
 <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
