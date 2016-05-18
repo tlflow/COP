@@ -12,9 +12,10 @@
 }
 
 #masthead {
-  max-height: 500px;
+  max-height: rem-calc(500);
   width: 100%;
   overflow: hidden;
+  margin-top: rem-calc(140);
 
   video#cmn-video-demo2__video {
     width: 100%;

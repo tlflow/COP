@@ -22,43 +22,7 @@
     </div>
 
     <div id="content">
-      <section class="panel-theme-1">
-        {% block content %} {% endblock %}
-      </section>
-
-      <section class="no-pad">
-        <div class="row align-center">
-          <div class="columns large-6 pic" data-interchange="[/dist/images/stock/lightstock_74990_comp.jpg, small],
-            [/dist/images/stock/lightstock_74990_comp.jpg, medium],
-            [/dist/images/stock/lightstock_74990_comp.jpg, large],
-            [/dist/images/stock/lightstock_74990_comp.jpg, xlarge]"></div>
-          <div class="columns large-6">
-            {% block content_1 %} {% endblock %}
-          </div>
-        </div>
-      </section>
-
-      <section class="panel-theme-1">
-        {% block content_2 %} {% endblock %}
-      </section>
-
-      <section class="no-pad">
-        <div class="row align-center">
-          <div class="columns large-6">
-            {% block content_3 %} {% endblock %}
-          </div>
-          <div class="columns large-6 pic" data-interchange="[/dist/images/stock/open-uri20160306-23892-vc1dh3.jpg, small],
-            [/dist/images/stock/open-uri20160306-23892-vc1dh3.jpg, medium],
-            [/dist/images/stock/open-uri20160306-23892-vc1dh3.jpg, large],
-            [/dist/images/stock/open-uri20160306-23892-vc1dh3.jpg, xlarge]"></div>
-        </div>
-      </section>
-
-      <section class="panel-theme-1">
-        {% block content_4 %} {% endblock %}
-      </section>
-
-
+      {% block content %} {% endblock %}
     </div>
 
     {% include "partials/footer.nunjucks" %}

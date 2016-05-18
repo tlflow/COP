@@ -1,0 +1,12 @@
+{% set segmentName = 'about' %}
+{% set pageName = 'vision' %}
+{% set pageTitle = 'Our Church Vision' %}
+{% extends 'subpage-layout.nunjucks' %}
+
+{% block content %}
+  <div class="row">
+    <div class="columns small-12">
+      {% markdown "content/about/our-vision.md" %}
+    </div>
+  </div>
+{% endblock %}

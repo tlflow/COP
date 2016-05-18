@@ -1,5 +1,6 @@
-{% set pageName = 'about' %}
-{% set pageTitle = 'Work of Philadelphia' %}
+{% set segmentName = 'connect' %}
+{% set pageName = 'connect' %}
+{% set pageTitle = 'Connecting at Church of Philadelphia' %}
 {% extends 'subpage-layout.nunjucks' %}
 
 {% block content %}

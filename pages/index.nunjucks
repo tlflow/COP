@@ -1,6 +1,6 @@
 
 {% set pageName = 'home' %}
-{% set pageTitle = 'Work of Philadelphia' %}
+{% set pageTitle = 'Church of Philadelphia' %}
 {% extends 'homepage-layout.nunjucks' %}
 
 {% block content %}

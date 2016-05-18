@@ -24,15 +24,19 @@ $.widget( "COP.pageNavigation", {
     });
 
     //////////// code for clear or solid header  //////////////////
-    function showHeader() {
+    function showHeader(page) {
 
-      var $_global = $('#global'),
-          scrollPos = document.body.scrollTop;
+      if (page.hasClass('home')) {
 
-      if (scrollPos === 0) {
-          $_global.removeClass("has-scrolled");
-      } else {
-          $_global.addClass("has-scrolled");
+        var $_global = $('#global'),
+            scrollPos = document.body.scrollTop;
+
+        if (scrollPos === 0) {
+            $_global.removeClass("has-scrolled");
+        } else {
+            $_global.addClass("has-scrolled");
+        }
+        
       }
     }
 
