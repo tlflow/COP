@@ -11,20 +11,9 @@
   <div id="page" class="{{ pageName }}">
     {% include 'partials/_globalnav.nunjucks'%}
 
-    <div id="masthead" data-interchange="[/dist/images/stock/lightstock_74990_comp.jpg, small],
-      [/dist/images/stock/lightstock_74990_comp.jpg, medium],
-      [/dist/images/stock/lightstock_74990_comp.jpg, large],
-      [/dist/images/stock/lightstock_74990_comp.jpg, xlarge]">
-      <div class="text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quisquam dolor accusamus porro ut architecto consectetur, quasi natus earum, accusantium!</p>
-      </div>
-    </div>
-
+    {% block masthead %} {% endblock %}
     <div id="content">
-      
-      <!-- You write code for this content block in another file -->
       {% block content %} {% endblock %}
-
     </div>
 
     {% include "partials/footer.nunjucks" %}

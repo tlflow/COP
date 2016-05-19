@@ -3,6 +3,17 @@
 {% set pageTitle = 'Our Church Vision' %}
 {% extends 'subpage-layout.nunjucks' %}
 
+{% block masthead %}
+<div id="masthead" data-interchange="[/dist/images/stock/lightstock_74990_comp.jpg, small],
+  [/dist/images/stock/lightstock_74990_comp.jpg, medium],
+  [/dist/images/stock/lightstock_74990_comp.jpg, large],
+  [/dist/images/stock/lightstock_74990_comp.jpg, xlarge]">
+  <div class="text">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quisquam dolor accusamus porro ut architecto consectetur, quasi natus earum, accusantium!</p>
+  </div>
+</div>
+{% endblock %}
+
 {% block content %}
   <div class="row">
     <div class="columns small-12">
