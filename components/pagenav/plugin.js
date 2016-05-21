@@ -24,7 +24,9 @@ $.widget( "COP.pageNavigation", {
     });
 
     //////////// code for clear or solid header  //////////////////
-    function showHeader(page) {
+    function showHeader() {
+
+      var page = $('#page');
 
       if (page.hasClass('home')) {
 
@@ -36,7 +38,7 @@ $.widget( "COP.pageNavigation", {
         } else {
             $_global.addClass("has-scrolled");
         }
-        
+
       }
     }
 

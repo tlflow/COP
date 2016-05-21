@@ -1,22 +1,23 @@
-{% set segmentName = 'connect' %}
-{% set pageName = 'connect' %}
-{% set pageTitle = 'Connecting at Church of Philadelphia' %}
+{% set segmentName = 'about' %}
+{% set pageName = 'vision' %}
+{% set pageTitle = 'Our Church Vision' %}
 {% extends 'subpage-layout.nunjucks' %}
 
-{% block content %}
-
-<div class="row align-center">
-  <div class="column small-12 large-10">
-    <h1>This is the about page</h1>
-    {% markdown %}
-    Hello World
-    ==========
-    # Do stuff please work
-    {% endmarkdown %}
-
-    {% markdown "content/example.md" %}
+{% block masthead %}
+<div id="masthead" data-interchange="[/dist/images/stock/lightstock_74990_comp.jpg, small],
+  [/dist/images/stock/lightstock_74990_comp.jpg, medium],
+  [/dist/images/stock/lightstock_74990_comp.jpg, large],
+  [/dist/images/stock/lightstock_74990_comp.jpg, xlarge]">
+  <div class="text">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quisquam dolor accusamus porro ut architecto consectetur, quasi natus earum, accusantium!</p>
   </div>
 </div>
+{% endblock %}
 
-
+{% block content %}
+  <div class="row">
+    <div class="columns small-12">
+      {% markdown "content/about/our-vision.md" %}
+    </div>
+  </div>
 {% endblock %}

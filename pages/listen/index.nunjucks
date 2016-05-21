@@ -1,0 +1,71 @@
+{% set segmentName = 'listen' %}
+{% set pageName = 'listen' %}
+{% set pageTitle = 'Listen to Our Latest Sermons' %}
+{% extends 'subpage-layout.nunjucks' %}
+
+{% block masthead %}{% endblock %}
+
+{% block content %}
+  <div class="row">
+    <div class="columns small-12">
+      <div id="current-series" data-interchange="[/dist/images/stock/lightstock_74990_comp.jpg, small],
+        [/dist/images/stock/lightstock_74990_comp.jpg, medium],
+        [/dist/images/stock/lightstock_74990_comp.jpg, large],
+        [/dist/images/stock/lightstock_74990_comp.jpg, xlarge]">
+      </div>
+    </div>
+  </div>
+  <div id="current-series-selections" class="row medium-unstack">
+
+    {% for i in range(0, 4) %}
+      <div class="columns">
+        <div class="series-entry-{{ i }}">
+          <a class="thumb" href="#"></a>
+          <div class="title">this is a title</div>
+          <div class="date">Sunday, June 4th</div>
+          <div class="speaker">Senior Pastor Lincoln</div>
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+
+  <div class="row align-right">
+    <div class="columns small-12 large-3 text-end">
+      <a href="#">more content</a>
+    </div>
+  </div>
+
+  <section>
+    <div class="row">
+      <div class="columns small-12">
+        <h2 class="section-heading">Other Series</h2>
+      </div>
+    </div>
+    <div id="other-series" class="row medium-unstack">
+
+      {% for i in range(0, 4) %}
+        <div class="columns">
+          <div class="series-{{ i }}">
+            <a class="thumb" href="#"></a>
+            <div class="title">this is a title</div>
+            <div class="description">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident nobis, molestias nam. Minus, aliquid.</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+
+    </div>
+
+    <div class="row align-right">
+      <div class="columns small-12 large-3 text-end">
+        <a href="#">more content</a>
+      </div>
+    </div>
+
+  </section>
+{% endblock %}
+
+/// TODO:
+Do we want to setup an area for periscope stuff?
