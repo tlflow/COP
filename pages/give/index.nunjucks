@@ -1,6 +1,6 @@
-{% set segmentName = 'connect' %}
-{% set pageName = 'connect' %}
-{% set pageTitle = 'Our Church Vision' %}
+{% set segmentName = 'give' %}
+{% set pageName = 'give' %}
+{% set pageTitle = 'Giving' %}
 {% extends 'subpage-layout.nunjucks' %}
 
 {% block masthead %}
