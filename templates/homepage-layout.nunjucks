@@ -9,7 +9,7 @@
 </head>
 <body>
   <div id="page" class="{{ pageName }}">
-    {% include 'partials/_globalnav.nunjucks'%}
+    {% include 'partials/header.nunjucks'%}
 
     <div id="content">
       <!-- You write code for this content block in another file -->

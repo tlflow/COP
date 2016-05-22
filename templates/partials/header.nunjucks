@@ -25,11 +25,7 @@
   </div>
   <div class="top-bar-right">
       <ul class="menu" data-responsive-menu="accordion large-dropdown">
-        <li><a class="{%if segmentName == 'news' %} active {% endif %}" href="/news/">News</a></li>
-        <li><a class="{%if segmentName == 'about' %} active {% endif %}" href="/about/">Our Church</a></li>
-        <li><a class="{%if segmentName == 'gatherings' %} active {% endif %}" href="/gatherings/">Gatherings</a></li>
-        <li><a class="{%if segmentName == 'connect' %} active {% endif %}" href="/connect/">Connect</a></li>
-        <li><a class="{%if segmentName == 'give' %} active {% endif %}" href="/give/">Give</a></li>
+        {% include "partials/globalnav.nunjucks" %}
       </ul>
   </div>
 </nav>
@@ -37,13 +33,7 @@
 <nav>
   <div id="regional">
     <ul class="menu">
-      {%if segmentName == 'about' %}
-      <li><a href="#">Our Purpose</a></li>
-      <li><a href="./our-vision.html">Our Vision</a></li>
-      <li><a href="#">What We Believe</a></li>
-      <li><a href="#">What to Expect</a></li>
-      <li><a href="#">Our Location</a></li>
-      {% endif %}
+      {% include "partials/regionalnav.nunjucks" %}
     </ul>
   </div>
 </nav>
