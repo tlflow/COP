@@ -7,13 +7,20 @@
 {# {{ link.subsection.length }} #}
 {# {{link.subsection[0].name}} #}
 
+{# {%if segmentName == '{{link.url}}' %}active{% endif %} #}
+
+{% set segmentName = 'about' %}
+
 <ul>
 {% for link in navigation.section %}
-  <li><a href="{{link.url}}">{{link.name}}</a></li>
+  <li><a class="{%if segmentName == '{{link.name}}' %}active{% endif %}" href="{{link.url}}">{{link.name}}</a>
     <ul>
         {% for sublink in link.subsection %}
           <li><a href="{{link.url}}{{sublink.url}}"></a>{{sublink.name}}</li>
         {% endfor %}
     </ul>
+  </li>
 {% endfor %}
 </ul>
+
+<a class="{%if segmentName == '/about/' %}active{% endif %}" href="/about">About Copy</a>

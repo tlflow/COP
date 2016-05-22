@@ -2,7 +2,6 @@
   "developed_with": "http://www.objgen.com/json/models/hpE",
   "images": [
     {
-      "": {},
       "image": [
         {
           "src": "image-one.jpg",
@@ -20,7 +19,6 @@
       {
         "name": "about",
         "url": "/about/",
-        "": {},
         "subsection": [
           {
             "name": "our vision",
@@ -38,16 +36,43 @@
       },
       {
         "name": "connect",
-        "url": "/connect/"
+        "url": "/connect/",
+        "subsection": [
+          {
+            "name": "become a partner",
+            "url": "become-a-partner.html"
+          },
+          {
+            "name": "partner class",
+            "url": "partner-class.html"
+          },
+          {
+            "name": "community outreach",
+            "url": "community-outreach.html"
+          },
+          {
+            "name": "volunteering",
+            "url": "volunteering.html"
+          }
+        ]
       },
       {
         "name": "gatherings",
-        "url": "/gatherings/"
+        "url": "/gatherings/",
+        "subsection": [
+          {
+            "name": "church events",
+            "url": "church-events.html"
+          },
+          {
+            "name": "social events",
+            "url": "social-events.html"
+          }
+        ]
       },
       {
         "name": "give",
         "url": "/give/",
-        "": {},
         "subsection": [
           {
             "name": "why we give",
@@ -58,7 +83,6 @@
       {
         "name": "welcome",
         "url": "/welcome/",
-        "": {},
         "subsection": [
           {
             "name": "what to expect",
@@ -78,7 +102,6 @@
           }
         ]
       }
-    ],
-    "": {}
+    ]
   }
 }
