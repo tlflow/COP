@@ -1,9 +1,84 @@
 {
-  "images": [{
-    "src": "image-one.png",
-    "alt": "Image one alt text"
-  }, {
-    "src": "image-two.png",
-    "alt": "Image two alt text"
-  }]
+  "developed_with": "http://www.objgen.com/json/models/hpE",
+  "images": [
+    {
+      "": {},
+      "image": [
+        {
+          "src": "image-one.jpg",
+          "alt": "image one alt tag"
+        },
+        {
+          "src": "image-one.jpg",
+          "alt": "image one alt tag"
+        }
+      ]
+    }
+  ],
+  "navigation": {
+    "section": [
+      {
+        "name": "about",
+        "url": "/about/",
+        "": {},
+        "subsection": [
+          {
+            "name": "our vision",
+            "url": "our-vision.html"
+          },
+          {
+            "name": "our purpose",
+            "url": "our-purpose.html"
+          },
+          {
+            "name": "what we believe",
+            "url": "what-we-believe.html"
+          }
+        ]
+      },
+      {
+        "name": "connect",
+        "url": "/connect/"
+      },
+      {
+        "name": "gatherings",
+        "url": "/gatherings/"
+      },
+      {
+        "name": "give",
+        "url": "/give/",
+        "": {},
+        "subsection": [
+          {
+            "name": "why we give",
+            "url": "why-we-give.html"
+          }
+        ]
+      },
+      {
+        "name": "welcome",
+        "url": "/welcome/",
+        "": {},
+        "subsection": [
+          {
+            "name": "what to expect",
+            "url": "what-to-expect.html"
+          },
+          {
+            "name": "children",
+            "url": "children.html"
+          },
+          {
+            "name": "adults",
+            "url": "adults.html"
+          },
+          {
+            "name": "our location",
+            "url": "our-location.html"
+          }
+        ]
+      }
+    ],
+    "": {}
+  }
 }

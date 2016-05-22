@@ -1,0 +1,19 @@
+{# {% for img in images.image %}
+  <div class="gallery__item">
+    <img src="{{img.src}}" alt="{{img.alt}}">
+  </div>
+{% endfor %} #}
+
+{# {{ link.subsection.length }} #}
+{# {{link.subsection[0].name}} #}
+
+<ul>
+{% for link in navigation.section %}
+  <li><a href="{{link.url}}">{{link.name}}</a></li>
+    <ul>
+        {% for sublink in link.subsection %}
+          <li><a href="{{link.url}}{{sublink.url}}"></a>{{sublink.name}}</li>
+        {% endfor %}
+    </ul>
+{% endfor %}
+</ul>
