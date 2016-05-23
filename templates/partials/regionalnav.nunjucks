@@ -1,15 +1,18 @@
 {%if segmentName == 'about' %}
-  <li><a href="#">Our Purpose</a></li>
+  <li><a href="./our-purpose.html">Our Purpose</a></li>
   <li><a href="./our-vision.html">Our Vision</a></li>
-  <li><a href="#">What We Believe</a></li>
-  <li><a href="#">What to Expect</a></li>
-  <li><a href="#">Our Location</a></li>
+  <li><a href="./what-we-believe.html">What We Believe</a></li>
+  <li><a href="./what-to-expect.html">What to Expect</a></li>
+  <li><a href="./our-location.html">Our Location</a></li>
+
 {% elif segmentName=='connect' %}
     <li><a href="#">Get Started</a></li>
     <li><a href="#">Volunteer</a></li>
+
 {% elif segmentName=='listen' %}
     <li><a href="#">Series Archives</a></li>
     <li><a href="#">Current Series</a><li>
+
 {% elif segmentName=='give' %}
     <li><a href="#">Why We Give</a></li>
     <li><a href="#">Building Initative</a><li>

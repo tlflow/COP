@@ -193,12 +193,4 @@
     </div>
 </section>
 
-{% markdown %}
-Hello World
-==========
-# Do stuff please work
-{% endmarkdown %}
-
-{% markdown "content/example.md" %}
-
 {% endblock %}

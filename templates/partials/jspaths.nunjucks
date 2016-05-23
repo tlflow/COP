@@ -1,9 +1,12 @@
-{% if pageName == 'home' %}
-<script src="js/libraries.build.min.js"></script>
-<script src="js/component.build.min.js"></script>
-<script src="js/homepage.js"></script>
+{% if pageName=='home' %}
+<script type="text/javascript" src="js/libraries.build.min.js"></script>
+<script type="text/javascript" src="js/component.build.min.js"></script>
+<script type="text/javascript" src="js/homepage.js"></script>
+{% elif pageName=='location' %}
+<script type="text/javascript" src="../js/libraries_map.build.min.js"></script>
+<script type="text/javascript" src="../js/googlelocation.js"></script>
 {% else %}
-<script src="../js/libraries.build.min.js"></script>
-<script src="../js/component.build.min.js"></script>
-<script src="../js/subpage.js"></script>
+<script type="text/javascript" src="../js/libraries.build.min.js"></script>
+<script type="text/javascript" src="../js/component.build.min.js"></script>
+<script type="text/javascript" src="../js/subpage.js"></script>
 {% endif %}
