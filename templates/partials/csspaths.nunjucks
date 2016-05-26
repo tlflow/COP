@@ -1,9 +1,24 @@
-<link rel="stylesheet" href="/dist/css/libraries.css">
+{% for setting in settings %}
+  {# {{ setting.environment }} #}
+  {% if 1==1 %}
+      {% set _path = 'smartie/' %}
+  {% elif condition %}
+      {% set _path = 'mainstream/' %}
+  {% endif %}
+{% endfor %}
+
+
+{# {%if segmentName == '{{link.url}}' %}active{% endif %} #}
+
+
+
+<link rel="stylesheet" href="{{ _path }}css/libraries.css">
+
 {% if pageName == 'home' %}
-<link rel="stylesheet" href="/dist/css/homepage-styling.css">
+<link rel="stylesheet" href="{{ _path }}css/homepage-styling.css">
 {% elif pageName == 'about' %}
-<link rel="stylesheet" href="/dist/css/panels-styling.css">
+<link rel="stylesheet" href="{{ _path }}css/panels-styling.css">
 {% else %}
-<link rel="stylesheet" href="/dist/css/subpage-styling.css">
+<link rel="stylesheet" href="{{ _path }}css/subpage-styling.css">
 {% endif %}
 <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300,900|Montserrat:400,700' rel='stylesheet' type='text/css'>

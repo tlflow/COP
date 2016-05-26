@@ -1,5 +1,10 @@
 {
   "developed_with": "http://www.objgen.com/json/models/hpE",
+  "settings": [
+    {
+      "environment": "development"
+    }
+  ],
   "images": [
     {
       "image": [

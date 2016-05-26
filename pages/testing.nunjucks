@@ -4,11 +4,24 @@
   </div>
 {% endfor %} #}
 
+{% for setting in settings %}
+  {% if {{setting.environment}} %}
+  yes
+  {% endif %}
+{% endfor %}
+
+
+
+
+
+{# //////// working on site navigation /////////#}
+
 {# {{ link.subsection.length }} #}
 {# {{link.subsection[0].name}} #}
 
 {# {%if segmentName == '{{link.url}}' %}active{% endif %} #}
 
+{#
 {% set segmentName = 'about' %}
 
 <ul>
@@ -23,4 +36,4 @@
 {% endfor %}
 </ul>
 
-<a class="{%if segmentName == '/about/' %}active{% endif %}" href="/about">About Copy</a>
+<a class="{%if segmentName == '/about/' %}active{% endif %}" href="/about">About Copy</a> #}
