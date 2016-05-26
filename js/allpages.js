@@ -7,21 +7,52 @@ $(function() {
   ///// global page scroll controllers  ////
   //////////////////////////////////////////
 
-  $(window).on('scroll.pageScroll', _.debounce(function() {
+  var scrollPos, $_page;
 
-  	var scrollPos, $_page;
+  $_page = $('#page');
 
-  	$_page = $('#page');
-  	scrollPos = document.body.scrollTop;
+  $(window).on('scroll.pageScroll_1ms', _.debounce(function() {
 
-  	animateHeader._init( scrollPos );
+    scrollPos = document.body.scrollTop;
 
-  	if ( $_page.hasClass( 'home' )) {
-  		// fadingMasthead._init();
-  	}
-  }, 300));
+    animateHeader._init( scrollPos );
+    // console.log(scrollPos);
+
+  }, 100));
 
 
+  // $(window).on('scroll.pageScroll_3ms', _.debounce(function() {
+  //
+  // 	if ( $_page.hasClass( 'home' )) {
+  // 		// fadingMasthead._init();
+  // 	}
+  // }, 300));
+
+  /////////////////////////////
+  /// cue header animation ////
+  /////////////////////////////
+
+  var animateHeader = {
+
+    resize: function( scrollPos ) {
+      var $_global, $_regional;
+
+      $_global = $('#global');
+      $_regional = $('#regional');
+
+      if (scrollPos === 0) {
+        $_global.removeClass("has-scrolled");
+        $_regional.removeClass("has-scrolled");
+      } else {
+        $_global.addClass("has-scrolled");
+        $_regional.addClass("has-scrolled");
+      }
+    },
+
+    _init: function( scrollPos ) {
+      this.resize( scrollPos );
+    }
+  };
 
   /////////////////////////////////////////
   ///// global navigation controllers  ////
@@ -29,87 +60,79 @@ $(function() {
 
   var navigationControl = {
 
-  	clickEvents: function() {
+  	clickEvents: function($_page) {
 
-  		var $_menubutton, $_menu, $_global, $_page;
+  		var $_menubutton, $_global, $_titlebar;
 
-  		$_menubutton = $('button.menu-icon');
-  		$_page = $('#page');
-  		$_menu = $('#menu');
+      $_titlebar = $('.title-bar');
   		$_global = $('#global');
 
-  		$('body').on( 'click', $_menu, function( evt ){
+  		$('body').on( 'click.menubutton', 'button.menu-icon', function( evt ){
   			evt.preventDefault();
 
   			$_global.toggleClass( 'active' );
   			$_page.toggleClass( 'no-scroll' );
-  		} );
-
-  		$('body').on( 'click', $_menubutton, function( evt ){
-  			evt.preventDefault();
-
-  			var self = $(this);
-  			self.closest('.title-bar')
-            .toggleClass('active');
-
-  			$_global.toggleClass('show');
+        $_titlebar.toggleClass('active');
   		} );
 
   	},
 
   	_init: function() {
-  		this.clickEvents();
+  		this.clickEvents($_page);
   	}
   }
 
-  navigationControl._init();
+  navigationControl._init($_page);
 
 
-  /////////////////////////////////////////
-  ///// global navigation controllers  ////
-  /////////////////////////////////////////
 
-  function showHeader() {
+  /////////////////////////////////////
+  ///// per media query settings   ////
+  /////////////////////////////////////
 
-    var page = $('#page');
+  if ($_page.hasClass('home')) {
 
-    if (page.hasClass('home')) {
+    //////////////////////////
+    ///  parallax controls ///
+    //////////////////////////
 
-      var $_global = $('#global'),
-          scrollPos = document.body.scrollTop;
 
-      if (scrollPos === 0) {
-          $_global.removeClass("has-scrolled");
-      } else {
-          $_global.addClass("has-scrolled");
-      }
+    var controller = new ScrollMagic.Controller({
+        globalSceneOptions: {
+            triggerHook: "onEnter",
+            duration: "200%"
+        }
 
+    });
+
+    $('.parallax__parent').each(function() {
+        var name = $(this).attr('id');
+
+        new ScrollMagic.Scene({
+                triggerElement: this
+            })
+            .setTween("#" + name + " > div", {
+                y: "80%",
+                ease: Linear.easeNone
+            })
+            // .addIndicators() // only for debug purposes
+            .addTo(controller);
+    });
+
+    if (Foundation.MediaQuery.current == 'small' || Foundation.MediaQuery.current == 'medium' || Foundation.MediaQuery.current == 'large' ) {
+      controller.enabled(false);
+    } else {
+      controller.enabled(true);
     }
-  }
 
-
-  $(window).on('load', function() {
-      if (Foundation.MediaQuery.current == 'small' || Foundation.MediaQuery.current == 'medium' || Foundation.MediaQuery.current == 'large' ) {
-          controller.enabled(false);
-      } else {
-          controller.enabled(true);
-          $(window).on('scroll', function() {
-              showHeader();
-              // fadingImage();
-          });
-      }
-  });
-
-  $(window).on('changed.zf.mediaquery', function(event, newSize, oldSize) {
+    $(window).on('changed.zf.mediaquery', function(event, newSize, oldSize) {
       if (newSize == 'small' || newSize == 'medium') {
           controller.enabled(false);
       } else {
           controller.enabled(true);
-          $(window).on('scroll', function() {
-              showHeader();
-              fadingImage();
-          });
       }
-  });
+    });
+
+  }
 
 });

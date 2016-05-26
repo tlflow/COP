@@ -32,42 +32,4 @@ $(function(){
   	}
   };
 
-  //////////////////////////////////
-  /// homepage parallax controls ///
-  //////////////////////////////////
-
-  var parallaxScrolling = {
-
-  	setup: function() {
-
-  		var controller = new ScrollMagic.Controller({
-          globalSceneOptions: {
-              triggerHook: "onEnter",
-              duration: "200%"
-          }
-      });
-
-      $('.parallax__parent').each(function() {
-          var name = $(this).attr('id');
-
-          new ScrollMagic.Scene({
-                  triggerElement: this
-              })
-              .setTween("#" + name + " > div", {
-                  y: "80%",
-                  ease: Linear.easeNone
-              })
-              // .addIndicators() // only for debug purposes
-              .addTo(controller);
-      });
-
-  	},
-
-  	_init: function() {
-  		this.setup();
-  	}
-
-  }
-
-  parallaxScrolling._init();
 });

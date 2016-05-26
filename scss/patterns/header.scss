@@ -59,7 +59,7 @@
   padding: 0;
   font-weight: 700;
   font-size: rem-calc(15);
-  background-color: #e6e6e6;
+  // background-color: #e6e6e6;
   z-index: 1001;
 
   a {
@@ -72,34 +72,10 @@
     }
   }
 
-  ul.menu {
-    background-color: transparent;
-    // padding-top: rem-calc(14);
-
-    @include breakpoint(medium down) {
-      padding-top: 60px;
-
-      a {
-        color: #f2f2f2;
-        &.active {
-          border-radius: 0;
-        }
-      }
-
-
-    }
-    @include breakpoint(medium down) {
-      font-size: rem-calc(21);
-    }
-    @include breakpoint(large) {
-      justify-content: flex-end;
-    }
-  }
-
   @include breakpoint(medium down) {
     opacity: 0;
 
-    &.show {
+    &.active {
       opacity: 1;
       transition: opacity 0.3s 0.5s;
       background-color: transparent;
@@ -128,22 +104,33 @@
   }
 }
 
-
-@include breakpoint(medium down) {
-  ul.menu {
+#global ul.menu {
+  @include breakpoint(medium down) {
     @include menu-direction(vertical);
-  }
-}
+    background-color: transparent;
+    padding-top: 60px;
+    font-size: rem-calc(21);
 
-@include breakpoint(large) {
-  ul.menu {
-    @include menu-direction(horizontal);
+    a {
+      color: #f2f2f2;
+      &.active {
+        border-radius: 0;
+      }
+    }
+  }
+  @include breakpoint(large) {
+    // @include menu-direction(horizontal);
+    justify-content: flex-end;
   }
 }
 
 .title-bar, .top-bar {
   position: fixed;
   width: 100%;
+}
+
+.top-bar ul {
+  background-color: transparent;
 }
 
 .top-bar {
@@ -194,11 +181,17 @@ button.menu-icon {
 
 #regional {
   position: relative;
-  top: 80px;
   width: 100%;
   z-index: 1000;
   background-color: #ccc;
   color: #999;
+
+  @include breakpoint(medium down) {
+    ul.menu {
+      display: block;
+      padding-bottom: rem-calc(15);
+    }
+  }
 
   @include breakpoint(large) {
     position: fixed;
@@ -208,6 +201,13 @@ button.menu-icon {
     display: flex;
     justify-content: center;
     font-size: 16px;
+    transition: top 0.3s ease;
+
+    &.has-scrolled {
+      top: rem-calc(80);
+      transition: height 0.3s ease;
+    }
+
 
     ul.menu {
       width: auto;

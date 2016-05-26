@@ -6,31 +6,39 @@
 
 {% block content %}
   <section class="panel-theme-1">
-    {% markdown "content/about/tagline.md" %}
+    <div class="row">
+      <div class="columns small-12">
+        {% markdown "content/example.md" %}
+      </div>
+    </div>
   </section>
 
   <section class="no-pad">
     <div class="row align-center">
-      <div class="columns large-6 pic" data-interchange="[/dist/images/stock/lightstock_74990_comp.jpg, small],
+      <div class="columns small-12 large-6 pic" data-interchange="[/dist/images/stock/lightstock_74990_comp.jpg, small],
       [/dist/images/stock/lightstock_74990_comp.jpg, medium],
       [/dist/images/stock/lightstock_74990_comp.jpg, large],
       [/dist/images/stock/lightstock_74990_comp.jpg, xlarge]"></div>
-      <div class="columns large-6">
+      <div class="columns small-12 large-6">
         {% markdown "content/example.md" %}
       </div>
     </div>
   </section>
 
   <section class="panel-theme-1">
-    {% markdown "content/example.md" %}
+    <div class="row">
+      <div class="columns small-12">
+        {% markdown "content/example.md" %}
+      </div>
+    </div>
   </section>
 
   <section class="no-pad">
     <div class="row align-center">
-      <div class="columns large-6">
+      <div class="columns small-12 large-6">
         {% markdown "content/example.md" %}
       </div>
-      <div class="columns large-6 pic" data-interchange="[/dist/images/stock/open-uri20160306-23892-vc1dh3.jpg, small],
+      <div class="columns small-12 large-6 pic" data-interchange="[/dist/images/stock/open-uri20160306-23892-vc1dh3.jpg, small],
         [/dist/images/stock/open-uri20160306-23892-vc1dh3.jpg, medium],
         [/dist/images/stock/open-uri20160306-23892-vc1dh3.jpg, large],
         [/dist/images/stock/open-uri20160306-23892-vc1dh3.jpg, xlarge]"></div>
@@ -38,7 +46,11 @@
   </section>
 
   <section class="panel-theme-1">
-    {% markdown "content/example.md" %}
+    <div class="row">
+      <div class="columns small-12">
+        {% markdown "content/example.md" %}
+      </div>
+    </div>
   </section>
 
 {% endblock %}
