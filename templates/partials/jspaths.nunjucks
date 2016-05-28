@@ -1,15 +1,17 @@
 {% if pageName=='home' %}
-<script type="text/javascript" src="js/libraries.build.min.js"></script>
-<script type="text/javascript" src="js/component.build.min.js"></script>
-<script type="text/javascript" src="js/homepage.js"></script>
-<script type="text/javascript" src="js/allpages.js"></script>
+<script type="text/javascript" src="{{ urlpath }}js/libraries.build.min.js"></script>
+<script type="text/javascript" src="{{ urlpath }}js/component.build.min.js"></script>
+<script type="text/javascript" src="{{ urlpath }}js/homepage.js"></script>
+<script type="text/javascript" src="{{ urlpath }}js/allpages.js"></script>
+
 {% elif pageName=='location' %}
-<script type="text/javascript" src="js/libraries_map.build.min.js"></script>
-<script type="text/javascript" src="js/googlelocation.js"></script>
-<script type="text/javascript" src="js/allpages.js"></script>
+<script type="text/javascript" src="{{ urlpath }}js/libraries_map.build.min.js"></script>
+<script type="text/javascript" src="{{ urlpath }}js/googlelocation.js"></script>
+<script type="text/javascript" src="{{ urlpath }}js/allpages.js"></script>
+
 {% else %}
-<script type="text/javascript" src="js/libraries.build.min.js"></script>
-<script type="text/javascript" src="js/component.build.min.js"></script>
-<script type="text/javascript" src="js/subpage.js"></script>
-<script type="text/javascript" src="js/allpages.js"></script>
+<script type="text/javascript" src="{{ urlpath }}js/libraries.build.min.js"></script>
+<script type="text/javascript" src="{{ urlpath }}js/component.build.min.js"></script>
+<script type="text/javascript" src="{{ urlpath }}js/subpage.js"></script>
+<script type="text/javascript" src="{{ urlpath }}js/allpages.js"></script>
 {% endif %}

@@ -1,13 +1,13 @@
 {% set segmentName = 'give' %}
-{% set pageName = 'give' %}
-{% set pageTitle = 'Giving' %}
+{% set pageName = 'why-we-give' %}
+{% set pageTitle = 'Why We Give' %}
 {% extends 'subpage-layout.nunjucks' %}
 
 {% block masthead %}
-<div id="masthead" data-interchange="[/dist/images/stock/lightstock_74990_comp.jpg, small],
-  [/dist/images/stock/lightstock_74990_comp.jpg, medium],
-  [/dist/images/stock/lightstock_74990_comp.jpg, large],
-  [/dist/images/stock/lightstock_74990_comp.jpg, xlarge]">
+<div id="masthead" data-interchange="[{{urlpath}}images/stock/lightstock_74990_comp.jpg, small],
+  [{{urlpath}}images/stock/lightstock_74990_comp.jpg, medium],
+  [{{urlpath}}images/stock/lightstock_74990_comp.jpg, large],
+  [{{urlpath}}images/stock/lightstock_74990_comp.jpg, xlarge]">
   <div class="text">
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quisquam dolor accusamus porro ut architecto consectetur, quasi natus earum, accusantium!</p>
@@ -20,11 +20,10 @@
     <div class="columns small-12">
       <div class="row">
         <div class="columns small-12">
-          <h1>Giving</h1>
+          <h1>Why We Give</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolorem, dolore sint voluptatem, assumenda labore beatae ad necessitatibus non architecto delectus eum sunt dicta cum quam, iste perspiciatis nostrum enim!</p>
-          <form action="">
-            <label><input type="number" min="3" step="10" name="amount" id="amount"></label>
-          </form>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse aperiam, porro, excepturi fugit error ipsa vero cupiditate amet culpa reiciendis nemo, quisquam ab expedita obcaecati quaerat earum doloremque animi nostrum?</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam in ipsa rem quos, doloribus ad obcaecati quo cupiditate, dolor impedit a culpa modi, eveniet perferendis atque aliquam dolore provident odit!</p>
         </div>
       </div>
       <div class="row">

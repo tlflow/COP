@@ -4,16 +4,6 @@
   </div>
 {% endfor %} #}
 
-{% for setting in settings %}
-  {% if {{setting.environment}} %}
-  yes
-  {% endif %}
-{% endfor %}
-
-
-
-
-
 {# //////// working on site navigation /////////#}
 
 {# {{ link.subsection.length }} #}
