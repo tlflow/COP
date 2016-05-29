@@ -1,4 +1,4 @@
-{% set segmentName = 'about' %}
+  {% set segmentName = 'about' %}
 {% set pageName = 'what-we-believe' %}
 {% set pageTitle = 'What We Believe' %}
 {% extends 'subpage-layout.nunjucks' %}
