@@ -2,18 +2,32 @@
   <li><a href="{{ urlpath }}{{ segmentName }}/our-purpose.html">Our Purpose</a></li>
   <li><a href="{{ urlpath }}{{ segmentName }}/our-vision.html">Our Vision</a></li>
   <li><a href="{{ urlpath }}{{ segmentName }}/what-we-believe.html">What We Believe</a></li>
+
+{% elif segmentName=='welcome' %}
   <li><a href="{{ urlpath }}{{ segmentName }}/what-to-expect.html">What to Expect</a></li>
   <li><a href="{{ urlpath }}{{ segmentName }}/our-location.html">Our Location</a></li>
+  <li><a href="{{ urlpath }}{{ segmentName }}/children.html">Children</a></li>
+  <li><a href="{{ urlpath }}{{ segmentName }}/adukts.html">Adults</a></li>
 
 {% elif segmentName=='connect' %}
-    <li><a href="#">Get Started</a></li>
-    <li><a href="#">Volunteer</a></li>
+  <li><a href="{{ urlpath }}{{ segmentName }}/get-started.html">Get Started</a></li>
+  <li><a href="{{ urlpath }}{{ segmentName }}/partner-class.html">Partner Class</a></li>
+  <li><a href="{{ urlpath }}{{ segmentName }}/community-outreach.html">Community Outreach</a></li>
+  <li><a href="{{ urlpath }}{{ segmentName }}/volunteering.html">volunteering</a></li>
+
+{% elif segmentName=='gatherings' %}
+  <li><a href="{{ urlpath }}{{ segmentName }}/church-events.html">Church Events</a></li>
+  <li><a href="{{ urlpath }}{{ segmentName }}/social-events.html">Social Events</a></li>
+  <li><a href="{{ urlpath }}{{ segmentName }}/sunday-service.html">Sunday Service</a></li>
+  <li><a href="{{ urlpath }}{{ segmentName }}/bible-study.html">Bible Study</a></li>
 
 {% elif segmentName=='listen' %}
-    <li><a href="#">Series Archives</a></li>
-    <li><a href="#">Current Series</a><li>
+  <li><a href="{{ urlpath }}{{ segmentName }}/series-archive.html">Service Archive</a></li>
+  <li><a href="{{ urlpath }}{{ segmentName }}/current-series.html">Partner Class</a></li>
 
 {% elif segmentName=='give' %}
-    <li><a href="#">Why We Give</a></li>
-    <li><a href="#">Building Initative</a><li>
+  <li><a href="{{ urlpath }}{{ segmentName }}/why-we-give.html">Get Started</a></li>
+  <li><a href="{{ urlpath }}{{ segmentName }}/community-initiatives.html">Community Initiatives</a></li>
+  <li><a href="{{ urlpath }}{{ segmentName }}/international-initiatives.html">International Initiatives</a></li>
+
 {% endif %}
