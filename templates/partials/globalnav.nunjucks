@@ -1,4 +1,11 @@
-<li><a class="{%if segmentName == 'news' %} active {% endif %}" href="{{urlpath}}news/">News</a></li>
+<li>
+  <a class="{%if segmentName == 'news' %} active {% endif %}" href="{{urlpath}}news/">News</a>
+  <ul class="menu hide-for-large">
+    <li><a href="#">One</a></li>
+    <li><a href="#">Two</a></li>
+    <li><a href="#">Three</a></li>
+  </ul>
+</li>
 <li><a class="{%if segmentName == 'about' %} active {% endif %}" href="{{urlpath}}about/">Our Church</a></li>
 <li><a class="{%if segmentName == 'gatherings' %} active {% endif %}" href="{{urlpath}}gatherings/">Gatherings</a></li>
 <li><a class="{%if segmentName == 'connect' %} active {% endif %}" href="{{urlpath}}connect/">Connect</a></li>
