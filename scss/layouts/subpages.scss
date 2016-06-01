@@ -1,9 +1,13 @@
 #masthead, #current-series {
   min-height: rem-calc(500);
   width: 100%;
-  margin-top: rem-calc(140);
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: yellow;
+
+  @include breakpoint(large) {
+    margin-top: rem-calc(140);
+  }
 }
 
 #content {

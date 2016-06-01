@@ -1,0 +1,56 @@
+{% set segmentName = 'about' %}
+{% set pageName = 'about'%}
+{% set pageTitle = 'About Our Church' %}
+
+{% extends 'panels-layout.nunjucks' %}
+
+{% block content %}
+  <section class="panel-theme-1">
+    <div class="row">
+      <div class="columns small-12">
+        {% markdown "content/example.md" %}
+      </div>
+    </div>
+  </section>
+
+  <section class="no-pad">
+    <div class="row align-center">
+      <div class="columns small-12 large-6 pic" data-interchange="[{{urlpath}}images/stock/lightstock_74990_comp.jpg, small],
+      [{{urlpath}}images/stock/lightstock_74990_comp.jpg, medium],
+      [{{urlpath}}images/stock/lightstock_74990_comp.jpg, large],
+      [{{urlpath}}images/stock/lightstock_74990_comp.jpg, xlarge]"></div>
+      <div class="columns small-12 large-6">
+        {% markdown "content/example.md" %}
+      </div>
+    </div>
+  </section>
+
+  <section class="panel-theme-1">
+    <div class="row">
+      <div class="columns small-12">
+        {% markdown "content/example.md" %}
+      </div>
+    </div>
+  </section>
+
+  <section class="no-pad">
+    <div class="row align-center">
+      <div class="columns small-12 large-6">
+        {% markdown "content/example.md" %}
+      </div>
+      <div class="columns small-12 large-6 pic" data-interchange="[{{urlpath}}images/stock/open-uri20160306-23892-vc1dh3.jpg, small],
+        [{{urlpath}}images/stock/open-uri20160306-23892-vc1dh3.jpg, medium],
+        [{{urlpath}}images/stock/open-uri20160306-23892-vc1dh3.jpg, large],
+        [{{urlpath}}images/stock/open-uri20160306-23892-vc1dh3.jpg, xlarge]"></div>
+    </div>
+  </section>
+
+  <section class="panel-theme-1">
+    <div class="row">
+      <div class="columns small-12">
+        {% markdown "content/example.md" %}
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

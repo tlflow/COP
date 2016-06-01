@@ -1,0 +1,28 @@
+{% set segmentName = 'about' %}
+{% set pageName = 'vision' %}
+{% set pageTitle = 'Our Church Vision' %}
+{% extends 'subpage-layout.nunjucks' %}
+
+{% block masthead %}
+<div id="masthead" data-interchange="[{{urlpath}}images/stock/lightstock_74990_comp.jpg, small],
+  [{{urlpath}}images/stock/lightstock_74990_comp.jpg, medium],
+  [{{urlpath}}images/stock/lightstock_74990_comp.jpg, large],
+  [{{urlpath}}images/stock/lightstock_74990_comp.jpg, xlarge]">
+  <div class="text">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quisquam dolor accusamus porro ut architecto consectetur, quasi natus earum, accusantium!</p>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+  <div class="row">
+    <div class="columns small-12">
+      <h1>Our Vision</h1>
+      <p>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ipsa perspiciatis neque enim hic. Nemo hic voluptates cupiditate, sunt, facilis aliquid tenetur! Officia, dolore! Odit dolor eligendi laboriosam optio qui.</span>
+        <span>Voluptas temporibus accusantium, dolore reprehenderit quasi, voluptatum dicta alias quia quo repellat dolor voluptates porro, consectetur non nemo perspiciatis aliquam. Iusto fugiat ad amet quaerat quas voluptatum maiores nesciunt illum.</span>
+        <span>Alias delectus quisquam necessitatibus, laboriosam ducimus eos repellat, quasi possimus, sint vero voluptatum! Deserunt voluptatibus at, qui rem autem et eius asperiores, cumque possimus, necessitatibus, amet repudiandae numquam quibusdam molestias!</span>
+      </p>
+    </div>
+  </div>
+{% endblock %}

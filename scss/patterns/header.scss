@@ -189,7 +189,9 @@ button.menu-icon {
   @include breakpoint(medium down) {
     ul.menu {
       display: block;
+      padding-top: rem-calc(15);
       padding-bottom: rem-calc(15);
+      @include menu-direction(vertical);
     }
   }
 

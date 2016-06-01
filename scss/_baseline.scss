@@ -18,6 +18,10 @@ body {
     line-height: 3.375rem;
     margin-top: 1.6875rem;
     margin-bottom: 0rem;
+
+    @include breakpoint(small) {
+      font-size: 2rem;
+    }
   }
   h2 {
     font-family: inherit;
