@@ -8,7 +8,12 @@
   <section class="panel-theme-1">
     <div class="row">
       <div class="columns small-12">
-        {% markdown "content/example.md" %}
+        <h1>About Our Church</h1>
+        <p>We strive to be a ministry that brings souls into the Kingdom of God through teaching and preaching the Gospel of Jesus Christ. We desire to be a
+          place where people of all colors, creeds, and nationalities can come and encounter a life-changing relationship with Jesus the Living Savior, exalt
+          God through worship, be equipped to participate in ministry, encourage one another through love and fellowship,
+          and establish strong families and communities.
+        </p>
       </div>
     </div>
   </section>
@@ -28,7 +33,10 @@
   <section class="panel-theme-1">
     <div class="row">
       <div class="columns small-12">
-        {% markdown "content/example.md" %}
+        <blockquote>
+          "Maybe this would be a great place to a rotate two or three testimonials every minute or so"?
+          <cite>- A Church Goer</cite>
+        </blockquote>
       </div>
     </div>
   </section>
@@ -48,7 +56,9 @@
   <section class="panel-theme-1">
     <div class="row">
       <div class="columns small-12">
-        {% markdown "content/example.md" %}
+        <p>
+          We are a church founded on the Word of God, where the demonstration of the power and the love of God is at its best
+        </p>
       </div>
     </div>
   </section>

@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="{{ urlpath }}css/libraries.css">
-<link hre"f='https://fonts.googleapis.com/css?family=Lato:400,700,300,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Istok+Web:400,700|Lato:400,700' rel='stylesheet' type='text/css'>
 
 {% if pageName == 'home' %}
 <link rel="stylesheet" href="{{ urlpath }}css/homepage-styling.css">

@@ -22,12 +22,13 @@
     {% include 'partials/header.nunjucks'%}
 
     {% block masthead %} {% endblock %}
-    <div id="content">
+    <div id="content" class="no-pad-bottom">
       {% block content %} {% endblock %}
     </div>
 
     {% include "partials/footer.nunjucks" %}
   </div>
+  {% block extra %} {% endblock %}
   {% include 'partials/jspaths.nunjucks' %}
 </body>
 </html>

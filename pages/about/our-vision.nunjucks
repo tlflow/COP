@@ -18,11 +18,73 @@
   <div class="row">
     <div class="columns small-12">
       <h1>Our Vision</h1>
-      <p>
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ipsa perspiciatis neque enim hic. Nemo hic voluptates cupiditate, sunt, facilis aliquid tenetur! Officia, dolore! Odit dolor eligendi laboriosam optio qui.</span>
-        <span>Voluptas temporibus accusantium, dolore reprehenderit quasi, voluptatum dicta alias quia quo repellat dolor voluptates porro, consectetur non nemo perspiciatis aliquam. Iusto fugiat ad amet quaerat quas voluptatum maiores nesciunt illum.</span>
-        <span>Alias delectus quisquam necessitatibus, laboriosam ducimus eos repellat, quasi possimus, sint vero voluptatum! Deserunt voluptatibus at, qui rem autem et eius asperiores, cumque possimus, necessitatibus, amet repudiandae numquam quibusdam molestias!</span>
-      </p>
+      <p>The vision that God has given to Church of Philadelphia is build in the frame work of a 5 point mandate, which is to:</p>
+      <ul>
+        <li>Win the Lost at any Cost <a data-open="matthew25_36">(Matthew 25:36)</a></li>
+        <li>Build Strong Families <a data-open="joshua24_15">(Joshua 24:15)</a></li>
+        <li>Equip the Saints for the Work of Ministry <a data-open="ephesians4_11-13">(Ephesians 4:11-13)</a></li>
+        <li>Teach the People of God Sound Economic Principle <a data-open="deuteronomy8_18">(Deuteronomy 8:18)</a></li>
+        <li  class="mg-bottom-50">Heal the Broken Hearted <a data-open="acts10_38">(Acts 10:38)</a></li>
+      </ul>
     </div>
+  </div>
+  <section class="related">
+    <div class="row">
+      <div class="columns small-12">
+        <h2>Related Topics</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columns small-12 large-6">
+        <h3>What We Believe</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vel autem quos perspiciatis.</p>
+        <a href="{{urlpath}}/about/what-we-believe.html">learn more</a>
+      </div>
+      <div class="columns small-12 large-6">
+        <h3>Our Values</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vel autem quos perspiciatis.</p>
+        <a href="{{urlpath}}/about/our-values.html">learn more</a>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
+{% block extra %}
+  <div class="reveal" id="matthew25_36" data-reveal>
+    <h2>Matthew 25:36</h2>
+    <p><span>36</span> Naked, and ye clothed me: I was sick, and ye visited me: I was in prison, and ye came unto me.</p>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="reveal" id="joshua24_15" data-reveal>
+    <h2>Joshua 24:15</h2>
+    <p><span>36</span> And I have given you a land for which ye did not labour, and cities which ye built not, and ye dwell in them; of the vineyards and oliveyards which ye planted not do ye eat.</p>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="reveal" id="ephesians4_11-13" data-reveal>
+    <h2>Ephesians 4:11-13</h2>
+    <p><span>11</span> And he gave some, apostles; and some, prophets; and some, evangelists; and some, pastors and teachers;</p>
+    <p><span>12</span> For the perfecting of the saints, for the work of the ministry, for the edifying of the body of Christ:</p>
+    <p><span>13</span> Till we all come in the unity of the faith, and of the knowledge of the Son of God, unto a perfect man, unto the measure of the stature of the fulness of Christ:</p>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="reveal" id="deuteronomy8_18" data-reveal>
+    <h2>Deuteronomy 8:18</h2>
+    <p><span>18</span> But thou shalt remember the Lord thy God: for it is he that giveth thee power to get wealth, that he may establish his covenant which he sware unto thy fathers, as it is this day.</p>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="reveal" id="acts10_38" data-reveal>
+    <h2>Acts 10:38</h2>
+    <p><span>38</span> How God anointed Jesus of Nazareth with the Holy Ghost and with power: who went about doing good, and healing all that were oppressed of the devil; for God was with him.</p>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
   </div>
 {% endblock %}
