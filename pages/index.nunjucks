@@ -21,15 +21,15 @@
     </div>
   </div>
 
-  <div class="image-1" data-interchange="[images/home/charlotte-downtown_small.jpg, small],
-    [images/home/charlotte-downtown_medium.jpg, medium],
-    [images/home/charlotte-downtown_large.jpg, large],
-    [images/home/charlotte-downtown_xlarge.jpg, xlarge]"></div>
+  <div class="image-1" data-interchange="[{{urlpath}}images/home/charlotte-downtown_small.jpg, small],
+    [{{urlpath}}images/home/charlotte-downtown_medium.jpg, medium],
+    [{{urlpath}}images/home/charlotte-downtown_large.jpg, large],
+    [{{urlpath}}images/home/charlotte-downtown_xlarge.jpg, xlarge]"></div>
 
-  <!-- <div class="image-2" data-interchange="[images/home/charlotte-downtown-bw_small.jpg, small],
-    [images/home/charlotte-downtown-bw_medium.jpg, medium],
-    [images/home/charlotte-downtown-bw_large.jpg, large],
-    [images/home/charlotte-downtown-bw_xlarge.jpg, xlarge]"></div> -->
+  <!-- <div class="image-2" data-interchange="[{{urlpath}}images/home/charlotte-downtown-bw_small.jpg, small],
+    [{{urlpath}}images/home/charlotte-downtown-bw_medium.jpg, medium],
+    [{{urlpath}}images/home/charlotte-downtown-bw_large.jpg, large],
+    [{{urlpath}}images/home/charlotte-downtown-bw_xlarge.jpg, xlarge]"></div> -->
 
 </section>
 
@@ -46,10 +46,10 @@
 </section>
 
 <div id="about-us" class="parallax__parent">
-  <div class="parallax__child" data-interchange="[images/home/sky_large.jpg, small],
-    [images/home/sky_medium.jpg, medium],
-    [images/home/sky_large.jpg, large],
-    [images/home/sky_xlarge.jpg, xlarge]">
+  <div class="parallax__child" data-interchange="[{{urlpath}}images/home/sky_large.jpg, small],
+    [{{urlpath}}images/home/sky_medium.jpg, medium],
+    [{{urlpath}}images/home/sky_large.jpg, large],
+    [{{urlpath}}images/home/sky_xlarge.jpg, xlarge]">
         <div class="text">
             <div class="row align-center">
                 <div class="column small-12 large-9">
@@ -57,16 +57,16 @@
                   <p>We strive to be a ministry that brings souls into the Kingdom of God through teaching and preaching the Gospel of Jesus Christ.</p>
                 </div>
             </div>
-            <div class="row align-justify">
-              <div class="column small-12 large-4">
+            <div class="row align-justify show-for-large">
+              <div class="column large-4">
                 <h3>Our Vision</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, omnis.</p>
               </div>
-              <div class="column small-12 large-4">
+              <div class="column large-4">
                 <h3>Our Beliefs</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, iure, provident!</p>
               </div>
-              <div class="column small-12 large-4">
+              <div class="column large-4">
                 <h3>Core Values</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               </div>
@@ -91,10 +91,10 @@
 </section>
 
 <div id="what-to-expect" class="parallax__parent">
-    <div class="parallax__child" data-interchange="[images/home/visitor_large.jpg, small],
-      [images/home/visitor_medium.jpg, medium],
-      [images/home/visitor_large.jpg, large],
-      [images/home/visitor_xlarge.jpg, xlarge]">
+    <div class="parallax__child" data-interchange="[{{urlpath}}images/home/visitor_large.jpg, small],
+      [{{urlpath}}images/home/visitor_medium.jpg, medium],
+      [{{urlpath}}images/home/visitor_large.jpg, large],
+      [{{urlpath}}images/home/visitor_xlarge.jpg, xlarge]">
         <div class="text">
             <div class="row align-center">
                 <div class="column small-12 large-9">
@@ -107,10 +107,10 @@
     </div>
 </div>
 
-<section id="connect" data-interchange="[images/home/connect_large.jpg, small],
-  [images/home/connect_medium.jpg, medium],
-  [images/home/connect_large.jpg, large],
-  [images/home/connect_xlarge.jpg, xlarge]">
+<section id="connect" data-interchange="[{{urlpath}}images/home/connect_large.jpg, small],
+  [{{urlpath}}images/home/connect_medium.jpg, medium],
+  [{{urlpath}}images/home/connect_large.jpg, large],
+  [{{urlpath}}images/home/connect_xlarge.jpg, xlarge]">
     <div class="row align-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
         <div class="columns small-12 large-8">
           <div class="text box black-bkg">
@@ -131,7 +131,7 @@
             <p>If you’re new or if you’ve visited Church of Philadelphia a few times, help us connect with you by filling out this form. We promise not to spam or sign you up for anything.</p>
         </div>
         <div class="columns small-12 medium-8">
-            <form>
+            <form method="post">
                 <div class="row">
                     <div class="medium-6 columns">
                         <label class="text-left">Name
@@ -183,7 +183,6 @@
                 </fieldset>
                 <div class="row">
                     <div class="small-12 columns">
-                        <!-- <a class="blue-custom-btn submit-btn" href="/">submit</a> -->
                         <input type="submit" name="submit" value="submit">
                     </div>
                 </div>

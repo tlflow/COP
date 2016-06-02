@@ -1,13 +1,16 @@
-<link rel="stylesheet" href="{{ urlpath }}css/libraries.css">
+
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Istok+Web:400,700|Lato:400,700' rel='stylesheet' type='text/css'>
 
 {% if pageName == 'home' %}
+<link rel="stylesheet" href="{{ urlpath }}css/libraries_homepage.css">
 <link rel="stylesheet" href="{{ urlpath }}css/homepage-styling.css">
 
 {% elif pageName == 'about' %}
+<link rel="stylesheet" href="{{ urlpath }}css/libraries.css">
 <link rel="stylesheet" href="{{ urlpath }}css/panels-styling.css">
 
 {% else %}
+<link rel="stylesheet" href="{{ urlpath }}css/libraries.css">
 <link rel="stylesheet" href="{{ urlpath }}css/subpage-styling.css">
 
 {% endif %}

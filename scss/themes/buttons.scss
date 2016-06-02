@@ -1,0 +1,38 @@
+a[class*="custom-btn"], input[type="submit"] {
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  transition: all 0.25s ease-out;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 0.85em 1em;
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  background: $darkgrey;
+  color: #f2f2f2;
+  text-decoration: none;
+
+  &:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+  }
+}
+
+/* darkgray Button */
+a.graphite-custom-btn {
+  @include button-color($darkgrey, 10%, 20%);
+}
+
+/* concrete gray Button */
+a.concrete-custom-btn {
+  @include button-color(#7f8c8d, 10%, 20%);
+}
+
+/* blue button */
+a.blue-custom-btn {
+  @include button-color(#2199e8, 10%, 20%);
+}

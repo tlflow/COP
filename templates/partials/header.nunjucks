@@ -30,6 +30,7 @@
   </div>
 </nav>
 
+{% if pageName != 'home' %}
 <nav>
   <div id="regional">
     <ul class="menu">
@@ -37,3 +38,4 @@
     </ul>
   </div>
 </nav>
+{% endif %}

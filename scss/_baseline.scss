@@ -13,13 +13,16 @@ body {
     font-family: Montserrat;
     font-weight: 700;
     font-style: inherit;
-    font-size: 4.375rem;
     line-height: 8rem;
     margin-top: 2rem;
     margin-bottom: 0rem;
 
-    @include breakpoint(small) {
+    @include breakpoint(small only) {
       font-size: 2rem;
+    }
+
+    @include breakpoint(large) {
+      font-size: 4.375rem;
     }
   }
   h2 {

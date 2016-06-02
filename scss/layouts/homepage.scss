@@ -20,6 +20,10 @@
   background-color: rgba(#111, 0.5);
   padding: rem-calc(30);
   margin-bottom: rem-calc(40);
+
+  @include breakpoint(small only) {
+    padding: rem-calc(30) 0;
+  }
 }
 
 #page.home  {
@@ -30,6 +34,24 @@
   p {
     font-size: rem-calc(28);
     line-height: 1.26;
+  }
+
+  h2.section-heading {
+    font-family: $montserrat;
+    font-weight: bold;
+
+    @include breakpoint(small only) {
+      font-size: 2.25rem;
+    }
+  }
+
+  h3 {
+    font-family: $montserrat;
+    font-weight: bold;
+
+    @include breakpoint(small only) {
+      font-size: 2rem;
+    }
   }
 
   #welcome,
@@ -69,8 +91,10 @@
     top: 10%;
     z-index: 2;
 
-    @include breakpoint(small) {
-      font-size: 3rem;
+    @include breakpoint(small only) {
+      h1 {
+        font-size: 3rem;
+      }
     }
 
     @include breakpoint(large) {
@@ -271,7 +295,7 @@
 
     p {
       font-size: 21px;
-      width: 75%;
+      width: 90%;
       margin: 0 auto;
       margin-bottom: 20px;
     }

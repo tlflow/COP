@@ -16,7 +16,7 @@ footer {
   h3 {
     font-family: $lato;
     font-weight: bold;
-    font-size: rem-calc(18);
+    font-size: rem-calc(18) !important;
   }
 
   .information {

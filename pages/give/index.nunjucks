@@ -18,25 +18,22 @@
 {% block content %}
   <div class="row">
     <div class="columns small-12">
-      <div class="row">
-        <div class="columns small-12">
-          <h1>Giving</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolorem, dolore sint voluptatem, assumenda labore beatae ad necessitatibus non architecto delectus eum sunt dicta cum quam, iste perspiciatis nostrum enim!</p>
-          <form action="">
-            <label><input type="number" min="3" step="10" name="amount" id="amount"></label>
-          </form>
-        </div>
-      </div>
-      <div class="row">
-        <div class="columns small-12 large-6">
-          <h2>This is a thought</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vel autem quos perspiciatis saepe fuga iste eveniet odio! Accusamus, possimus.</p>
-        </div>
-        <div class="columns small-12 large-6">
-          <h2>Another thing</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi minima, ullam sint commodi blanditiis, voluptates?</p>
-        </div>
-      </div>
+      <h1>Giving</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolorem, dolore sint voluptatem, assumenda labore beatae ad necessitatibus non architecto delectus eum sunt dicta cum quam, iste perspiciatis nostrum enim!</p>
+      <form action="">
+        <label><input type="number" min="3" step="10" name="amount" id="amount"></label>
+      </form>
     </div>
   </div>
+  <div class="row">
+    <div class="columns small-12 large-6">
+      <h2>This is a thought</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vel autem quos perspiciatis saepe fuga iste eveniet odio! Accusamus, possimus.</p>
+    </div>
+    <div class="columns small-12 large-6">
+      <h2>Another thing</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi minima, ullam sint commodi blanditiis, voluptates?</p>
+    </div>
+  </div>
+
 {% endblock %}

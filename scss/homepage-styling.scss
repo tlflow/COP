@@ -1,4 +1,20 @@
-@import 'global';
+@import '../bower_components/foundation-sites/scss/foundation';
+@include foundation-everything(true);
+
+/* generics */
+@import '_copcons', // icomoon fonts
+        '_variables',
+        '_mixins';
+
+/* some theme-like additions */
+@import 'themes/form-checkboxes',
+        'themes/buttons',
+        'themes/social-icons';
+
+/* pattern stylings */
+@import 'patterns/page',
+        'patterns/footer',
+        'patterns/header';
 
 /* components */
 @import '../components/countdown-timer/styling';
