@@ -24,7 +24,7 @@
     </div>
   </div>
   <div class="top-bar-right">
-      <ul class="menu" data-responsive-menu="accordion large-dropdown">
+      <ul class="menu" data-responsive-menu="accordion">
         {% include "partials/globalnav.nunjucks" %}
       </ul>
   </div>

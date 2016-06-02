@@ -1,6 +1,6 @@
-{% set segmentName = 'about' %}
-{% set pageName = 'what-to-expect' %}
-{% set pageTitle = 'First Time? Here is what to expect.' %}
+  {% set segmentName = 'about' %}
+{% set pageName = 'what-we-believe' %}
+{% set pageTitle = 'What We Believe' %}
 {% extends 'subpage-layout.nunjucks' %}
 
 {% block masthead %}
@@ -17,7 +17,7 @@
 {% block content %}
   <div class="row">
     <div class="columns small-12">
-      <h1>What to Expect</h1>
+      <h1>What We Believe</h1>
       <p>
         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ipsa perspiciatis neque enim hic. Nemo hic voluptates cupiditate, sunt, facilis aliquid tenetur! Officia, dolore! Odit dolor eligendi laboriosam optio qui.</span>
         <span>Voluptas temporibus accusantium, dolore reprehenderit quasi, voluptatum dicta alias quia quo repellat dolor voluptates porro, consectetur non nemo perspiciatis aliquam. Iusto fugiat ad amet quaerat quas voluptatum maiores nesciunt illum.</span>

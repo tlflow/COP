@@ -58,15 +58,15 @@
                 </div>
             </div>
             <div class="row align-justify">
-              <div class="column large-4">
+              <div class="column small-12 large-4">
                 <h3>Our Vision</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, omnis.</p>
               </div>
-              <div class="column large-4">
+              <div class="column small-12 large-4">
                 <h3>Our Beliefs</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, iure, provident!</p>
               </div>
-              <div class="column large-4">
+              <div class="column small-12 large-4">
                 <h3>Core Values</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               </div>

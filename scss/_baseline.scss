@@ -17,6 +17,10 @@ body {
     line-height: 8rem;
     margin-top: 2rem;
     margin-bottom: 0rem;
+
+    @include breakpoint(small) {
+      font-size: 2rem;
+    }
   }
   h2 {
     font-family: Montserrat;
