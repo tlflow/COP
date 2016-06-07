@@ -1,88 +1,180 @@
-body {
-  font-family: Istok Web, Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.125rem;
-  line-height: 2rem;
-  padding: 2rem;
-  margin: 0 auto;
+@import '../bower_components/modular-scale/stylesheets/_modular-scale.scss';
+@import '../bower_components/typi/scss/_typi.scss';
+
+// so painful but I got my baseline looking tight
+// reference:
+// http://www.modularscale.com/
+// http://type-scale.com/
+// http://zellwk.com/blog/modular-scale/
+
+
+
+// fonts
+$lato: 'Lato', Helvetica, Arial, sans-serif;
+$opensans: Open Sans, Arial, sans-serif;
+$cabin: 'Cabin Condensed', Helvetica, Arial, sans-serif;
+
+/// using Typi to set Modular Scale settings for font/line-height sizes
+
+$font-breakpoints: (
+  small: 640px,
+  medium: 1024px,
+  large: 1200px
+);
+
+$typi: (
+  null: (16px, 1.45),
+  small: 18px,
+  large: 21px
+);
+
+$typi-ms: (
+ null: 1.2,
+ small: 1.2 1.5,
+ med: (1em, 1.5),
+ large: (1em 2em, 1.618)
+);
+
+html {
+  @include typi-base($breakpoints: $font-breakpoints);
 }
 
-#content {
-  h1 {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-style: inherit;
-    line-height: 8rem;
-    margin-top: 2rem;
-    margin-bottom: 0rem;
+body {
+  font-family: $lato;
+  font-weight: 400;
+  font-style: normal;
+}
 
-    @include breakpoint(small only) {
-      font-size: 2rem;
-    }
+h1 {
+  font-family: $lato;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+}
 
-    @include breakpoint(large) {
-      font-size: 4.375rem;
-    }
-  }
-  h2 {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-style: inherit;
-    font-size: 2.8125rem;
-    line-height: 4rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-  h3 {
-    font-family: Montserrat;
-    font-weight: 400;
-    font-style: inherit;
-    font-size: 1.75rem;
-    line-height: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-  h4 {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-style: inherit;
-    font-size: 1.125rem;
-    line-height: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 0rem;
-  }
-  h5 {
-    font-family: inherit;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 1.125rem;
-    line-height: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 0rem;
-  }
-  p, ul, ol, pre, table, blockquote {
-    margin-top: 0rem;
-    margin-bottom: 2rem;
-  }
-  ul ul, ol ol, ul ol, ol ul {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  hr {
-    border: 1px solid;
-    margin: -1px 0;
-  }
-  b, strong, em, small, code {
-    line-height: 1;
-  }
-  sup {
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-    top: -0.5em;
-  }
-  sub {
-    bottom: -0.25em;
-  }
+h2 {
+  font-family: $cabin;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: $cabin;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-style: italic;
+}
+
+h4, h5, h6 {
+  font-family: $lato;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p {
+  margin: 0 0 vr(1);
+}
+
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+b, strong, em, small, code {
+  line-height: 1;
+}
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+$h1-font-map: (
+  null: 3,
+  small: 3,
+  medium: 4,
+  large: 5
+);
+
+$h2-font-map: (
+  null: 2,
+  small: 2,
+  medium: 3,
+  large: 4
+);
+
+$h3-font-map: (
+  null: 1,
+  small: 1,
+  medium: 2,
+  large: 3
+);
+
+$h4-font-map: (
+  null: 1,
+  small: 1,
+  medium: 2,
+  large: 3
+);
+
+$h5-font-map: (
+  null: 0
+);
+
+$h6-font-map: (
+  null: 0
+);
+
+h1 {
+  @include typi(
+    $h1-font-map,
+    $breakpoints: $font-breakpoints
+  );
+  margin-bottom: vr(1.5); // margin: 1.5rem 0
+}
+h2 {
+  @include typi(
+    $h2-font-map,
+    $breakpoints: $font-breakpoints
+  );
+}
+h3 {
+  @include typi(
+    $h3-font-map,
+    $breakpoints: $font-breakpoints
+  );
+}
+h4 {
+  @include typi(
+    $h4-font-map,
+    $breakpoints: $font-breakpoints
+  );
+}
+h5 {
+  @include typi(
+    $h5-font-map,
+    $breakpoints: $font-breakpoints
+  );
+}
+h6 {
+  @include typi(
+    $h6-font-map,
+    $breakpoints: $font-breakpoints
+  );
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
 }

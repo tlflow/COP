@@ -31,27 +31,22 @@
     text-align: center;
   }
 
-  p {
-    font-size: rem-calc(28);
-    line-height: 1.26;
-  }
-
   h2.section-heading {
-    font-family: $montserrat;
+    font-family: $lato;
     font-weight: bold;
 
-    @include breakpoint(small only) {
-      font-size: 2.25rem;
-    }
+    // @include breakpoint(small only) {
+    //   font-size: 2.25rem;
+    // }
   }
 
   h3 {
-    font-family: $montserrat;
+    font-family: $lato;
     font-weight: bold;
 
-    @include breakpoint(small only) {
-      font-size: 2rem;
-    }
+    // @include breakpoint(small only) {
+    //   font-size: 2rem;
+    // }
   }
 
   #welcome,
@@ -91,29 +86,29 @@
     top: 10%;
     z-index: 2;
 
-    @include breakpoint(small only) {
-      h1 {
-        font-size: 3rem;
-      }
-    }
+    // @include breakpoint(small only) {
+    //   h1 {
+    //     font-size: 3rem;
+    //   }
+    // }
 
     @include breakpoint(large) {
       margin-top: 30%;
 
       h1 {
-        font-size: 5rem;
+        // font-size: 5rem;
 
         span {
           display: block;
           margin-top: rem-calc(20);
-          font-size: 6rem;
+          // font-size: 6rem;
         }
       }
     }
   }
 
   h1, h2 {
-    font-family: $montserrat;
+    font-family: $lato;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -131,7 +126,7 @@
 
   h2 {
     color: #f2f2f2;
-    font-size: 1.8rem;
+    // font-size: 1.8rem;
     margin-top: 0;
   }
 
@@ -144,7 +139,7 @@
 
     a {
       padding: 20px;
-      font-size: 1.5rem;
+      // font-size: 1.5rem;
     }
   }
 }
@@ -213,12 +208,12 @@
 
     @include breakpoint(small only) {
       top: rem-calc(100);
-      font-size: rem-calc(24);
+      // font-size: rem-calc(24);
     }
 
     @include breakpoint(large) {
       top: 40%;
-      font-size: rem-calc(28);
+      // font-size: rem-calc(28);
     }
   }
 
@@ -239,12 +234,12 @@
 
     @include breakpoint(small only) {
       top: rem-calc(100);
-      font-size: rem-calc(21);
+      // font-size: rem-calc(21);
     }
 
     @include breakpoint(large) {
       top: 40%;
-      font-size: rem-calc(28);
+      // font-size: rem-calc(28);
     }
   }
 
@@ -278,9 +273,9 @@
     position: relative;
     top: 10px;
 
-    .flip-clock-label {
-      font-size: rem-calc(18);
-    }
+    // .flip-clock-label {
+    //   // font-size: rem-calc(18);
+    // }
   }
 }
 

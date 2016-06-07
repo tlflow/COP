@@ -1,0 +1,123 @@
+html {
+  font-size: 100%;
+  line-height: 1.45;
+}
+
+@media all and (min-width: 640px) {
+  html {
+    font-size: 112.5%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  html {
+    font-size: 131.25%;
+  }
+}
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Cabin Condensed", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Cabin Condensed", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-style: italic;
+}
+
+h4, h5, h6 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+
+b, strong, em, small, code {
+  line-height: 1;
+}
+
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+h1 {
+  font-size: 1.95313rem;
+}
+
+@media all and (min-width: 640px) {
+  h1 {
+    font-size: 2.82715rem;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  h1 {
+    font-size: 3.99758rem;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  h1 {
+    font-size: 7.59375rem;
+  }
+}
+
+h2 {
+  font-size: 1.5625rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}

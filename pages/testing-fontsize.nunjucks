@@ -1,0 +1,32 @@
+  {% set segmentName = 'about' %}
+{% set pageName = 'what-we-believe' %}
+{% set pageTitle = 'What We Believe' %}
+{% extends 'subpage-layout.nunjucks' %}
+
+{% block masthead %}
+<div id="masthead" data-interchange="[{{urlpath}}images/stock/lightstock_74990_comp.jpg, small],
+  [{{urlpath}}images/stock/lightstock_74990_comp.jpg, medium],
+  [{{urlpath}}images/stock/lightstock_74990_comp.jpg, large],
+  [{{urlpath}}images/stock/lightstock_74990_comp.jpg, xlarge]">
+  <div class="text">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quisquam dolor accusamus porro ut architecto consectetur, quasi natus earum, accusantium!</p>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+  <div class="row">
+    <div class="columns small-12">
+      <h1>Giving This Real Titles</h1>
+		<h2>Not the Test Stuff</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas iusto aliquid quaerat voluptates dolor molestiae ex vero enim voluptate sint!</p>
+		<h3>For Real This Time</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quaerat consectetur, tempora suscipit modi corrupti ea deleniti aliquam maiores hic quo illo dicta saepe debitis. Eum, dolor similique aliquam earum!</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore sed nisi cum dolorum incidunt aspernatur id, illo numquam fugit qui officiis maxime? Eaque nesciunt et quam delectus corporis nemo. Aliquam.</p>
+		<h4>This is a Rare Heading 4</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis rerum cupiditate consequatur hic, voluptatum nemo omnis enim natus recusandae esse, error ipsa corporis. Nulla consequuntur dolor, sed nemo assumenda voluptas.</p>
+		<h5>This is a Rare Heading 5</h5>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis rerum cupiditate consequatur hic, voluptatum nemo omnis enim natus recusandae esse, error ipsa corporis. Nulla consequuntur dolor, sed nemo assumenda voluptas.</p>
+    </div>
+  </div>
+{% endblock %}

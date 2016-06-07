@@ -186,6 +186,10 @@ button.menu-icon {
   background-color: #ccc;
   color: #999;
 
+  ul {
+    font-family: $lato;
+  }
+
   @include breakpoint(medium down) {
     ul.menu {
       display: block;
