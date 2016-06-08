@@ -1,6 +1,6 @@
 {% set segmentName = 'about' %}
-{% set pageName = 'vision' %}
-{% set pageTitle = 'Our Church Vision' %}
+{% set pageName = 'mission' %}
+{% set pageTitle = 'Our Church Mission' %}
 {% set themeSetting = 'show-related' %}
 {% extends 'subpage-layout.nunjucks' %}
 
@@ -18,17 +18,20 @@
 {% block content %}
   <div class="row align-center">
     <div class="columns small-12 large-10">
-      <h1>Our Vision</h1>
-      <p>We strive to be a ministry that brings souls into the Kingdom of God through teaching and preaching the Gospel of Jesus Christ. We desire to be a place where people of all colors, creeds, and nationalities can come and encounter a life-changing relationship with Jesus the Living Savior, exalt God through worship, be equipped to participate in ministry, encourage one another through love and fellowship, and establish strong families and communities.
+      <h1>Our Church Mission</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-      <p>The vision that God has given to Church of Philadelphia is build in the frame work of a 5 point mandate, which is to:</p>
-      <ol>
-        <li>Win the Lost at any Cost <a data-open="matthew25_36">(Matthew 25:36)</a></li>
-        <li>Build Strong Families <a data-open="joshua24_15">(Joshua 24:15)</a></li>
-        <li>Equip the Saints for the Work of Ministry <a data-open="ephesians4_11-13">(Ephesians 4:11-13)</a></li>
-        <li>Teach the People of God Sound Economic Principle <a data-open="deuteronomy8_18">(Deuteronomy 8:18)</a></li>
-        <li  class="mg-bottom-50">Heal the Broken Hearted <a data-open="acts10_38">(Acts 10:38)</a></li>
-      </ol>
+      <p>We aim to:</p>
+      <ul>
+        <li>Build an edifice unto God that will allow the lost to come into the fellowship of the righteous.</li>
+        <li>Build a school that offers early childhood training and alternatives to secular intermediate education, as well as educate and reinforce the entire family.</li>
+        <li>Build a multi-purpose facility that offers a refuge for our youth, young adults, and elders to come enjoy through prayer, atheletics, games, computer labs, fellowship and entertainment.</li>
+        <li>Build a facility that will allow us to train and equip the people of God for the work of the ministry and spread the Word of God on local, national and eventually international levels.</li>
+        <li>Build a place that will teach economic empowerment and entreprenuer training.</li>
+        <li>Build a church that will reach out to the "broken hearted" to promote healing through sound Godly counsel while providing ministry support systems.</li>
+        <li class="mg-bottom-50">Our vision is based upon our mission to build a Bible-centered, spirit-filled, communuity-based church, while raising up Kingdom-minded disciples and leaders.</li>
+      </ul>
     </div>
   </div>
   <section class="related">
@@ -52,9 +55,9 @@
         </p>
       </div>
       <div class="columns small-12 large-3">
-        <h3>Our Mission</h3>
+        <h3>Our Purpose</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vel autem quos perspiciatis.
-          <br><a href="{{urlpath}}/about/our-mission.html">learn more</a>
+          <br><a href="{{urlpath}}/about/our-purpose.html">learn more</a>
         </p>
       </div>
 

@@ -1,5 +1,5 @@
 #masthead, #current-series {
-  min-height: rem-calc(500);
+  min-height: rem-calc(350);
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,9 +10,24 @@
   }
 }
 
-// #content {
-//   padding-bottom: rem-calc(100);
-// }
+#content {
+
+  @include breakpoint(large) {
+    padding-top: rem-calc(70);
+    padding-bottom: rem-calc(200);
+
+    h1 {
+      padding-bottom: vr(1);
+      box-shadow: 0 1px 0 #ccc;
+    }
+  }
+
+  &.has-related {
+    @include breakpoint(large) {
+      padding-bottom: 0;
+    }
+  }
+}
 
 #current-series-selections > div {
   margin: 20px 0;
@@ -44,6 +59,23 @@
 
 section {
   &.related {
-    background-color: #cacaca;
+    background-color: #ddd;
+
+    h2 {
+      text-transform: uppercase;
+    }
+
+    @include breakpoint(medium) {
+      h3 {
+        margin-top: vr(1);
+      }
+    }
+
+    @include breakpoint(large) {
+      h2 {
+        font-size: ms(1);
+        margin-bottom: vr(1);
+      }
+    }
   }
 }

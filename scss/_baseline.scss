@@ -1,5 +1,3 @@
-@import '../bower_components/modular-scale/stylesheets/_modular-scale.scss';
-@import '../bower_components/typi/scss/_typi.scss';
 
 // so painful but I got my baseline looking tight
 // reference:
@@ -7,12 +5,12 @@
 // http://type-scale.com/
 // http://zellwk.com/blog/modular-scale/
 
-
-
-// fonts
-$lato: 'Lato', Helvetica, Arial, sans-serif;
+// font families
+$lato: 'Lato', Arial, sans-serif;
 $opensans: Open Sans, Arial, sans-serif;
-$cabin: 'Cabin Condensed', Helvetica, Arial, sans-serif;
+$oxygen: 'Oxygen', Arial, sans-serif;
+$sourcesans: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+
 
 /// using Typi to set Modular Scale settings for font/line-height sizes
 
@@ -23,15 +21,15 @@ $font-breakpoints: (
 );
 
 $typi: (
-  null: (16px, 1.45),
+  null: (18px, 1.25),
   small: 18px,
   large: 21px
 );
 
 $typi-ms: (
- null: 1.2,
- small: 1.2 1.5,
- med: (1em, 1.5),
+ null: 1.333,
+ small: 1.250,
+ medium: (1em, 1.5),
  large: (1em 2em, 1.618)
 );
 
@@ -40,30 +38,37 @@ html {
 }
 
 body {
-  font-family: $lato;
+  font-family: $sourcesans;
   font-weight: 400;
   font-style: normal;
+  color: #333;
 }
 
 h1 {
   font-family: $lato;
   font-weight: 900;
   font-style: normal;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 
 h2 {
-  font-family: $cabin;
+  font-family: $oxygen;
   font-weight: 700;
   font-style: normal;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 
 h3 {
-  font-family: $cabin;
-  font-weight: 500;
+  font-family: $lato;
+  font-weight: 900;
   font-style: normal;
-  text-transform: uppercase;
+  // text-transform: uppercase;
+}
+
+h4 {
+  font-family: $oxygen;
+  font-weight: 700;
+  font-style: normal;
 }
 
 h5 {
@@ -103,7 +108,7 @@ sub {
 
 $h1-font-map: (
   null: 3,
-  small: 3,
+  small: 4,
   medium: 4,
   large: 5
 );
@@ -111,7 +116,7 @@ $h1-font-map: (
 $h2-font-map: (
   null: 2,
   small: 2,
-  medium: 3,
+  medium: 2,
   large: 4
 );
 

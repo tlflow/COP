@@ -1,4 +1,6 @@
 @import '../bower_components/foundation-sites/scss/foundation';
+@import '../bower_components/modular-scale/stylesheets/_modular-scale.scss';
+@import '../bower_components/typi/scss/_typi.scss';
 @include foundation-everything(true);
 
 /* generics */

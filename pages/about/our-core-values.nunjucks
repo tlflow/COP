@@ -18,17 +18,17 @@
 {% block content %}
   <div class="row align-center">
     <div class="columns small-12 large-10">
-      <h1>Our Vision</h1>
-      <p>We strive to be a ministry that brings souls into the Kingdom of God through teaching and preaching the Gospel of Jesus Christ. We desire to be a place where people of all colors, creeds, and nationalities can come and encounter a life-changing relationship with Jesus the Living Savior, exalt God through worship, be equipped to participate in ministry, encourage one another through love and fellowship, and establish strong families and communities.
+      <h1>Our Core Values</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-      <p>The vision that God has given to Church of Philadelphia is build in the frame work of a 5 point mandate, which is to:</p>
-      <ol>
-        <li>Win the Lost at any Cost <a data-open="matthew25_36">(Matthew 25:36)</a></li>
-        <li>Build Strong Families <a data-open="joshua24_15">(Joshua 24:15)</a></li>
-        <li>Equip the Saints for the Work of Ministry <a data-open="ephesians4_11-13">(Ephesians 4:11-13)</a></li>
-        <li>Teach the People of God Sound Economic Principle <a data-open="deuteronomy8_18">(Deuteronomy 8:18)</a></li>
-        <li  class="mg-bottom-50">Heal the Broken Hearted <a data-open="acts10_38">(Acts 10:38)</a></li>
-      </ol>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, saepe.</p>
+      <ul>
+        <li>Prayer: Pray with ceasing (1 Thessalonians 5:17),</li>
+        <li>Worship: Thou shalt worship the Lord thy God, and him only shalt thou serve (Matthew 4:10),</li>
+        <li>Praise: Let everything that hath breath praise the Lord (Psalms 150:6)</li>
+        <li>Discipleship: Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost; teaching them to observe all things whatsover I have commanded you. (Matthew 28:19-20),</li>
+        <li>Evangelism: But ye shall recieve power, after the Holy Ghost is come upon you: and ye shall be witnesses unto me both in Jerusalem, and in all Judea, and in Samaria, and unto the uttermost part of the earth. (Acts 1:8)</li>
+      </ul>
     </div>
   </div>
   <section class="related">
@@ -46,9 +46,9 @@
         </p>
       </div>
       <div class="columns small-12 large-3">
-        <h3>Our Core Values</h3>
+        <h3>Our Vision</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vel autem quos perspiciatis.
-          <br><a href="{{urlpath}}/about/our-core-values.html">learn more</a>
+          <br><a href="{{urlpath}}/about/our-vision.html">learn more</a>
         </p>
       </div>
       <div class="columns small-12 large-3">

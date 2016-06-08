@@ -1,7 +1,8 @@
 {%if segmentName == 'about' %}
-  <li><a href="{{ urlpath }}{{ segmentName }}/our-purpose.html">Our Purpose</a></li>
-  <li><a href="{{ urlpath }}{{ segmentName }}/our-vision.html">Our Vision</a></li>
   <li><a href="{{ urlpath }}{{ segmentName }}/what-we-believe.html">What We Believe</a></li>
+  <li><a href="{{ urlpath }}{{ segmentName }}/our-core-values.html">Our Core Values</a></li>
+  <li><a href="{{ urlpath }}{{ segmentName }}/our-vision.html">Our Vision</a></li>
+  <li><a href="{{ urlpath }}{{ segmentName }}/our-mission.html">Our Mission</a></li>
 
 {% elif segmentName=='welcome' %}
   <li><a href="{{ urlpath }}{{ segmentName }}/what-to-expect.html">What to Expect</a></li>

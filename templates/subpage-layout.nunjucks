@@ -22,7 +22,7 @@
     {% include 'partials/header.nunjucks'%}
 
     {% block masthead %} {% endblock %}
-    <div id="content" class="no-pad-bottom">
+    <div id="content" class="{%if themeSetting == 'show-related' %} has-related {% endif %}">
       {% block content %} {% endblock %}
     </div>
 

@@ -1,6 +1,7 @@
   {% set segmentName = 'about' %}
 {% set pageName = 'what-we-believe' %}
 {% set pageTitle = 'What We Believe' %}
+{% set themeSetting = 'show-related' %}
 {% extends 'subpage-layout.nunjucks' %}
 
 {% block masthead %}
@@ -14,15 +15,60 @@
 </div>
 {% endblock %}
 
+{% block masthead %}
+<div id="masthead" data-interchange="[{{urlpath}}images/stock/lightstock_74990_comp.jpg, small],
+  [{{urlpath}}images/stock/lightstock_74990_comp.jpg, medium],
+  [{{urlpath}}images/stock/lightstock_74990_comp.jpg, large],
+  [{{urlpath}}images/stock/lightstock_74990_comp.jpg, xlarge]">
+  <div class="text">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quisquam dolor accusamus porro ut architecto consectetur, quasi natus earum, accusantium!</p>
+  </div>
+</div>
+{% endblock %}
+
 {% block content %}
-  <div class="row">
-    <div class="columns small-12">
+  <div class="row align-center">
+    <div class="columns small-12 large-10">
       <h1>What We Believe</h1>
-      <p>
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ipsa perspiciatis neque enim hic. Nemo hic voluptates cupiditate, sunt, facilis aliquid tenetur! Officia, dolore! Odit dolor eligendi laboriosam optio qui.</span>
-        <span>Voluptas temporibus accusantium, dolore reprehenderit quasi, voluptatum dicta alias quia quo repellat dolor voluptates porro, consectetur non nemo perspiciatis aliquam. Iusto fugiat ad amet quaerat quas voluptatum maiores nesciunt illum.</span>
-        <span>Alias delectus quisquam necessitatibus, laboriosam ducimus eos repellat, quasi possimus, sint vero voluptatum! Deserunt voluptatibus at, qui rem autem et eius asperiores, cumque possimus, necessitatibus, amet repudiandae numquam quibusdam molestias!</span>
-      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>We believe:</p>
+      <ul>
+        <li>the Bible is to be our daily guide to living for Jesus Christ.</li>
+        <li>in water baptism in the name of Jesus according to <a data-open="mark28_19">Mark 28:19</a>,<a data-open="romans6_4">Romans 6:4</a>, and <a data-open="acts2_38">Acts 2:38</a>.</li>
+        <li>in the baptism of the Holy Spirit according to <a data-open="acts2_4">Acts 2:4</a>.</li>
+        <li>speaking in tongues is the outward demonstration of the physical evidence of the Holy Ghost.</li>
+        <li>in the full operation of the gifts through the Holy Ghost as stated in <a data-open="icorinthians12_8-11">I Corinthians 12:8-11</a></li>
+        <li class="mg-bottom-50">God has commanded us to go into the highways &amp; hedges to tell of His goodness to the land of the living. <a data-open="luke14_23">Luke 14:23</a></li>
+      </ul>
     </div>
   </div>
+  <section class="related">
+    <div class="row align-center">
+      <div class="columns small-12 large-11">
+        <h2>Related Topics</h2>
+      </div>
+    </div>
+    <div class="row align-spaced">
+
+      <div class="columns small-12 large-3">
+        <h3>Our Purpose</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vel autem quos perspiciatis.
+          <br><a href="{{urlpath}}/about/our-purpose.html">learn more</a>
+        </p>
+      </div>
+      <div class="columns small-12 large-3">
+        <h3>Our Core Values</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vel autem quos perspiciatis.
+          <br><a href="{{urlpath}}/about/our-core-values.html">learn more</a>
+        </p>
+      </div>
+      <div class="columns small-12 large-3">
+        <h3>Our Mission</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vel autem quos perspiciatis.
+          <br><a href="{{urlpath}}/about/our-mission.html">learn more</a>
+        </p>
+      </div>
+
+    </div>
+  </section>
 {% endblock %}
