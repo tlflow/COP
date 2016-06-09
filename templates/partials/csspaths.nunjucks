@@ -2,15 +2,14 @@
 <link href='https://fonts.googleapis.com/css?family=Oxygen:700|Lato:700,900|Source+Sans+Pro:400,700,600' rel='stylesheet' type='text/css'>
 
 {% if pageName == 'home' %}
-<link rel="stylesheet" href="{{ urlpath }}css/libraries_homepage.css">
-<link rel="stylesheet" href="{{ urlpath }}css/homepage-styling.css">
+<link rel="stylesheet" href="{{ sitevars.urlpath }}css/libraries_homepage.css">
+<link rel="stylesheet" href="{{ sitevars.urlpath }}css/homepage-styling.css">
 
 {% elif pageName == 'about' %}
-<link rel="stylesheet" href="{{ urlpath }}css/libraries.css">
-<link rel="stylesheet" href="{{ urlpath }}css/panels-styling.css">
+<link rel="stylesheet" href="{{ sitevars.urlpath }}css/libraries.css">
+<link rel="stylesheet" href="{{ sitevars.urlpath }}css/panels-styling.css">
 
 {% else %}
-<link rel="stylesheet" href="{{ urlpath }}css/libraries.css">
-<link rel="stylesheet" href="{{ urlpath }}css/subpage-styling.css">
-
+<link rel="stylesheet" href="{{ sitevars.urlpath }}css/libraries.css">
+<link rel="stylesheet" href="{{ sitevars.urlpath }}css/subpage-styling.css">
 {% endif %}

@@ -27,3 +27,6 @@
 </ul>
 
 <a class="{%if segmentName == '/about/' %}active{% endif %}" href="/about">About Copy</a> #}
+{% import "_site-settings.nunjucks" as sitevars %}
+
+{{ sitevars.globalTitle }}

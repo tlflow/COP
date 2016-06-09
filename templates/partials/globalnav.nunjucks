@@ -1,6 +1,6 @@
-<li><a class="{%if segmentName == 'news' %} active {% endif %}" href="{{urlpath}}news/">News</a></li>
-<li><a class="{%if segmentName == 'about' %} active {% endif %}" href="{{urlpath}}about/">Our Church</a></li>
-<li><a class="{%if segmentName == 'gatherings' %} active {% endif %}" href="{{urlpath}}gatherings/">Gatherings</a></li>
-<li><a class="{%if segmentName == 'connect' %} active {% endif %}" href="{{urlpath}}connect/">Connect</a></li>
-<li><a class="{%if segmentName == 'listen' %} active {% endif %}" href="{{urlpath}}listen/">Listen</a></li>
-<li><a class="{%if segmentName == 'give' %} active {% endif %}" href="{{urlpath}}give/">Give</a></li>
+<li><a class="{%if segmentName == 'news' %} active {% endif %}" href="{{ sitevars.urlpath }}news/">News</a></li>
+<li><a class="{%if segmentName == 'about' %} active {% endif %}" href="{{ sitevars.urlpath }}about/">Our Church</a></li>
+<li><a class="{%if segmentName == 'gatherings' %} active {% endif %}" href="{{ sitevars.urlpath }}gatherings/">Gatherings</a></li>
+<li><a class="{%if segmentName == 'connect' %} active {% endif %}" href="{{ sitevars.urlpath }}connect/">Connect</a></li>
+<li><a class="{%if segmentName == 'listen' %} active {% endif %}" href="{{ sitevars.urlpath }}listen/">Listen</a></li>
+<li><a class="{%if segmentName == 'give' %} active {% endif %}" href="{{ sitevars.urlpath }}give/">Give</a></li>

@@ -1,12 +1,4 @@
-{% set globalTitle = 'Church of Philadelphia' %}
-{% set environment = 'development' %}
-
-{% if environment=='development' %}
-  {% set urlpath = '/dist/' %}
-{% else %}
-  {% set urlpath = '/' %}
-{% endif %}
-
+{% import "_site-settings.nunjucks" as sitevars %}
 
 <!DOCTYPE html>
 <html lang="en">

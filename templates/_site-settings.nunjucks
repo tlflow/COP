@@ -1,0 +1,11 @@
+{# Global Meta #}
+{% set globalTitle = 'Church of Philadelphia' %}
+
+{# Enviroment Settings #}
+{% set environment = 'dev' %}
+
+{% if environment=='dev' %}
+  {% set urlpath = '/dist/' %}
+{% else %}
+  {% set urlpath = '/' %}
+{% endif %}

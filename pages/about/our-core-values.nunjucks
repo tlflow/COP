@@ -5,10 +5,10 @@
 {% extends 'subpage-layout.nunjucks' %}
 
 {% block masthead %}
-<div id="masthead" data-interchange="[{{urlpath}}images/stock/lightstock_74990_comp.jpg, small],
-  [{{urlpath}}images/stock/lightstock_74990_comp.jpg, medium],
-  [{{urlpath}}images/stock/lightstock_74990_comp.jpg, large],
-  [{{urlpath}}images/stock/lightstock_74990_comp.jpg, xlarge]">
+<div id="masthead" data-interchange="[{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, small],
+  [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, medium],
+  [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, large],
+  [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, xlarge]">
   <div class="text">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quisquam dolor accusamus porro ut architecto consectetur, quasi natus earum, accusantium!</p>
   </div>
@@ -42,19 +42,19 @@
       <div class="columns small-12 large-3">
         <h3>What We Believe</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vel autem quos perspiciatis.
-          <br><a href="{{urlpath}}/about/what-we-believe.html">learn more</a>
+          <br><a href="{{ sitevars.urlpath }}about/what-we-believe.html">learn more</a>
         </p>
       </div>
       <div class="columns small-12 large-3">
         <h3>Our Vision</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vel autem quos perspiciatis.
-          <br><a href="{{urlpath}}/about/our-vision.html">learn more</a>
+          <br><a href="{{ sitevars.urlpath }}about/our-vision.html">learn more</a>
         </p>
       </div>
       <div class="columns small-12 large-3">
         <h3>Our Mission</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vel autem quos perspiciatis.
-          <br><a href="{{urlpath}}/about/our-mission.html">learn more</a>
+          <br><a href="{{ sitevars.urlpath }}about/our-mission.html">learn more</a>
         </p>
       </div>
 

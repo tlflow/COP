@@ -1,13 +1,12 @@
 {% set segmentName = 'about' %}
 {% set pageName = 'about'%}
 {% set pageTitle = 'About Our Church' %}
-
 {% extends 'panels-layout.nunjucks' %}
 
 {% block content %}
   <section class="panel-theme-1">
-    <div class="row">
-      <div class="columns small-12">
+    <div class="row align-center">
+      <div class="columns small-12 large-10 text-align-center">
         <h1>About Our Church</h1>
         <p>We strive to be a ministry that brings souls into the Kingdom of God through teaching and preaching the Gospel of Jesus Christ. We desire to be a
           place where people of all colors, creeds, and nationalities can come and encounter a life-changing relationship with Jesus the Living Savior, exalt
@@ -18,38 +17,62 @@
     </div>
   </section>
 
-  <section class="no-pad">
+  <section class="panel-theme-2">
     <div class="row align-center">
-      <div class="columns small-12 large-6 pic" data-interchange="[{{urlpath}}images/stock/lightstock_74990_comp.jpg, small],
-      [{{urlpath}}images/stock/lightstock_74990_comp.jpg, medium],
-      [{{urlpath}}images/stock/lightstock_74990_comp.jpg, large],
-      [{{urlpath}}images/stock/lightstock_74990_comp.jpg, xlarge]"></div>
-      <div class="columns small-12 large-6">
-        {% markdown "content/example.md" %}
+      <div class="columns small-12 large-6 pic" data-interchange="[{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, small],
+      [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, medium],
+      [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, large],
+      [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, xlarge]"></div>
+      <div class="columns small-12 large-6 text">
+        <h2>What Makes Us, Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <br><a href="{{ sitevars.urlpath }}about/what-we-believe.html">learn more about "What We Believe"</a>
+        </p>
       </div>
     </div>
   </section>
 
   <section class="panel-theme-1">
-    <div class="row">
-      <div class="columns small-12">
-        <blockquote>
+    <div class="row align-center">
+      <div class="columns small-12 large-10">
+        <!--<blockquote>
           "Maybe this would be a great place to a rotate two or three testimonials every minute or so"?
           <cite>- A Church Goer</cite>
-        </blockquote>
+        </blockquote>-->
+        <div class="owl-carousel owl-theme">
+          <div class="owl-stage-outer">
+            <div class="owl-stage">
+              <div class="item"><h4>1</h4></div>
+              <div class="item"><h4>2</h4></div>
+              <div class="item"><h4>3</h4></div>
+              <div class="item"><h4>4</h4></div>
+              <div class="item"><h4>5</h4></div>
+              <div class="item"><h4>6</h4></div>
+              <div class="item"><h4>7</h4></div>
+              <div class="item"><h4>8</h4></div>
+              <div class="item"><h4>9</h4></div>
+              <div class="item"><h4>10</h4></div>
+              <div class="item"><h4>11</h4></div>
+              <div class="item"><h4>12</h4></div>
+            </div>
+          </div>
+          <!--<div class="owl-nav">
+            <div class="owl-prev">prev</div>
+            <div class="owl-next">next</div>
+          </div>          -->
       </div>
     </div>
   </section>
 
-  <section class="no-pad">
+  <section class="panel-theme-2">
     <div class="row align-center">
       <div class="columns small-12 large-6">
         {% markdown "content/example.md" %}
       </div>
-      <div class="columns small-12 large-6 pic" data-interchange="[{{urlpath}}images/stock/open-uri20160306-23892-vc1dh3.jpg, small],
-        [{{urlpath}}images/stock/open-uri20160306-23892-vc1dh3.jpg, medium],
-        [{{urlpath}}images/stock/open-uri20160306-23892-vc1dh3.jpg, large],
-        [{{urlpath}}images/stock/open-uri20160306-23892-vc1dh3.jpg, xlarge]"></div>
+      <div class="columns small-12 large-6 pic" data-interchange="[{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, small],
+        [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, medium],
+        [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, large],
+        [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, xlarge]"></div>
     </div>
   </section>
 

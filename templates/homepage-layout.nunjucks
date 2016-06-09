@@ -1,3 +1,5 @@
+{% import "_site-settings.nunjucks" as sitevars %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +14,6 @@
     {% include 'partials/header.nunjucks'%}
 
     <div id="content">
-      <!-- You write code for this content block in another file -->
       {% block content %} {% endblock %}
     </div>
 
