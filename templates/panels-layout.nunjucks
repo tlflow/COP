@@ -12,15 +12,7 @@
   <div id="page" class="{{ pageName }}">
     {% include 'partials/header.nunjucks'%}
 
-    <div id="masthead">
-      <video id="cmn-video-demo2__video" autoplay loop>
-        <!-- <source src="http://media1.churchofphiladelphia.com/demo.mp4" type="video/mp4">
-        <source src="http://media1.churchofphiladelphia.com/demo.ogv" type="video/ogg">
-        <source src="http://media1.churchofphiladelphia.com/demo.webm" type="video/webm"> -->
-        <source src="http://media1.churchofphiladelphia.com/library/video/lightstock_99475_comp.mp4" type="video/mp4">
-        Your browser doesn't support HTML5 video. Here's a <a href="#">link</a> to download the video.
-      </video>
-    </div>
+    {% block masthead %} {% endblock %}
 
     <div id="content">
       {% block content %} {% endblock %}

@@ -1,0 +1,29 @@
+1) FOR SERVER SIDE (like apps)
+
+Putting this is the browser address bar:
+https://api.instagram.com/oauth/authorize/?client_id=53e609419e13469981290aa020845345&redirect_uri=http://churchofphiladelphia.com/thankyou.html&response_type=code&scope=public_content
+
+Returned:
+code = b537966f5e874e4e85a270ecf6e4f54a
+
+Use this below to get the access token:
+
+curl -F 'client_id=53e609419e13469981290aa020845345' \
+-F 'client_secret=6f97d4cbc79a472d83ee7b0a813ccf8c' \
+-F 'grant_type=authorization_code' \
+-F 'redirect_uri=http://churchofphiladelphia.com/thankyou.html' \
+-F 'code=b537966f5e874e4e85a270ecf6e4f54a' \
+https://api.instagram.com/oauth/access_token
+
+
+So, now I can do...
+
+2) FOR CLIENT SIDE (Using JavaScript) Putting this in browser:
+https://api.instagram.com/oauth/authorize/?client_id=53e609419e13469981290aa020845345&redirect_uri=http://churchofphiladelphia.com/thankyou.html&response_type=token
+
+Which Returned:
+access_token=3017550723.53e6094.139b798ac6d44832acb1c637cca8a005
+
+and I can use in a request that goes off of the "copcharlotte" tag, like:
+
+https://api.instagram.com/v1/tags/copcharlotte?access_token=3017550723.53e6094.139b798ac6d44832acb1c637cca8a005

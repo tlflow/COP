@@ -5,13 +5,14 @@
 {% extends 'subpage-layout.nunjucks' %}
 
 {% block masthead %}
-<div id="masthead" data-interchange="[{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, small],
-  [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, medium],
-  [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, large],
-  [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, xlarge]">
-  <div class="text">
+<div id="masthead" data-interchange="[{{ sitevars.urlpath }}images/prayer.w_480.jpg, small],
+  [{{ sitevars.urlpath }}images/prayer.w_618.jpg, medium],
+  [{{ sitevars.urlpath }}images/prayer.w_940.jpg, large],
+  [{{ sitevars.urlpath }}images/prayer.w_1182.jpg, xlarge],
+  [{{ sitevars.urlpath }}images/prayer.w_1422.jpg, xxlarge]">
+  <!--<div class="text">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quisquam dolor accusamus porro ut architecto consectetur, quasi natus earum, accusantium!</p>
-  </div>
+  </div>-->
 </div>
 {% endblock %}
 

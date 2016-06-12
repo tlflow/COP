@@ -1,0 +1,32 @@
+{% set segmentName = 'news' %}
+{% set pageName = 'news'%}
+{% set pageTitle = 'What\'s Going On at Church of Philadelphia' %}
+
+{% extends 'panels-layout.nunjucks' %}
+
+{% block masthead %}
+<div id="masthead" data-interchange="[{{ sitevars.urlpath }}images/prayer.w_480.jpg, small],
+  [{{ sitevars.urlpath }}images/prayer.w_618.jpg, medium],
+  [{{ sitevars.urlpath }}images/prayer.w_940.jpg, large],
+  [{{ sitevars.urlpath }}images/prayer.w_1182.jpg, xlarge],
+  [{{ sitevars.urlpath }}images/prayer.w_1422.jpg, xxlarge]">
+  <!--<div class="text">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quisquam dolor accusamus porro ut architecto consectetur, quasi natus earum, accusantium!</p>
+  </div>-->
+</div>
+{% endblock %}
+
+{% block content %}
+  <section>
+    <div class="row align-center">
+      <div class="columns small-12 large-10">
+        <h2>Church Instagram Feed</h2>
+        <div id="instafeed">
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+{% endblock %}

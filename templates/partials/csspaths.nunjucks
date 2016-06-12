@@ -5,7 +5,8 @@
 <link rel="stylesheet" href="{{ sitevars.urlpath }}css/libraries_homepage.css">
 <link rel="stylesheet" href="{{ sitevars.urlpath }}css/homepage-styling.css">
 
-{% elif pageName == 'about' %}
+{% elif pageName=='about' or pageName=='welcome' or pageName=='connect' %}
+
 <link rel="stylesheet" href="{{ sitevars.urlpath }}css/libraries.css">
 <link rel="stylesheet" href="{{ sitevars.urlpath }}css/panels-styling.css">
 

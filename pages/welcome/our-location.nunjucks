@@ -1,6 +1,7 @@
-{% set segmentName = 'about' %}
+{% set segmentName = 'welcome' %}
 {% set pageName = 'location' %}
 {% set pageTitle = 'How to Get to Church of Philadelphia' %}
+{% set themeSetting = 'show-related' %}
 {% extends 'subpage-layout.nunjucks' %}
 
 {% block masthead %}
@@ -16,20 +17,25 @@
 {% endblock %}
 
 {% block content %}
-<div class="row">
-  <div class="columns small-12">
-    <h1>Our Location</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolorem, dolore sint voluptatem, assumenda labore beatae ad necessitatibus non architecto delectus eum sunt dicta cum quam, iste perspiciatis nostrum enim!</p>
+<div class="row align-center">
+  <div class="columns small-12 ">
+
   </div>
 </div>
-<div class="row">
-  <div class="columns small-12 large-6">
-    <h2>Directions from 85 North</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vel autem quos perspiciatis saepe fuga iste eveniet odio! Accusamus, possimus.</p>
-  </div>
-  <div class="columns small-12 large-6">
-    <h2>Directions from 77 North</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi minima, ullam sint commodi blanditiis, voluptates?</p>
+<div class="row align-center">
+  <div class="columns small-12 large-10">
+    <h1>Our Location</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolorem, dolore sint voluptatem, assumenda labore beatae ad necessitatibus non architecto delectus eum sunt dicta cum quam, iste perspiciatis nostrum enim!</p>
+    <div class="row">
+      <div class="columns small-12 large-6">
+        <h2>Directions from 85 North</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vel autem quos perspiciatis saepe fuga iste eveniet odio! Accusamus, possimus.</p>
+      </div>
+      <div class="columns small-12 large-6">
+        <h2>Directions from 77 North</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi minima, ullam sint commodi blanditiis, voluptates?</p>
+      </div>
+    </div>
   </div>
 </div>
 {% endblock %}

@@ -3,7 +3,7 @@
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: yellow;
+  background-color: #ccc;
 
   @include breakpoint(large) {
     margin-top: rem-calc(140);
@@ -45,6 +45,10 @@
     text-transform: capitalize;
     padding-top: 20px;
   }
+}
+
+#page.location {
+
 }
 
 #page.listen .section-heading {

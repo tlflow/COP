@@ -3,6 +3,18 @@
 {% set pageTitle = 'About Our Church' %}
 {% extends 'panels-layout.nunjucks' %}
 
+{% block masthead %}
+<div id="masthead">
+  <!--<video id="cmn-video-demo2__video" autoplay loop>
+    <source src="http://media1.churchofphiladelphia.com/demo.mp4" type="video/mp4">
+    <source src="http://media1.churchofphiladelphia.com/demo.ogv" type="video/ogg">
+    <source src="http://media1.churchofphiladelphia.com/demo.webm" type="video/webm">
+    <source src="http://media1.churchofphiladelphia.com/library/video/lightstock_99475_comp.mp4" type="video/mp4">
+    Your browser doesn't support HTML5 video. Here's a <a href="#">link</a> to download the video.
+  </video>-->
+</div>
+{% endblock %}
+
 {% block content %}
   <section class="panel-theme-1">
     <div class="row align-center">
@@ -35,39 +47,20 @@
   <section class="panel-theme-1">
     <div class="row align-center">
       <div class="columns small-12 large-10">
-        <!--<blockquote>
-          "Maybe this would be a great place to a rotate two or three testimonials every minute or so"?
+        <blockquote>
+          "A quick testiomony about what we do as a church should go here. I think we this is a great church because..."
           <cite>- A Church Goer</cite>
-        </blockquote>-->
-        <div class="owl-carousel owl-theme">
-          <div class="owl-stage-outer">
-            <div class="owl-stage">
-              <div class="item"><h4>1</h4></div>
-              <div class="item"><h4>2</h4></div>
-              <div class="item"><h4>3</h4></div>
-              <div class="item"><h4>4</h4></div>
-              <div class="item"><h4>5</h4></div>
-              <div class="item"><h4>6</h4></div>
-              <div class="item"><h4>7</h4></div>
-              <div class="item"><h4>8</h4></div>
-              <div class="item"><h4>9</h4></div>
-              <div class="item"><h4>10</h4></div>
-              <div class="item"><h4>11</h4></div>
-              <div class="item"><h4>12</h4></div>
-            </div>
-          </div>
-          <!--<div class="owl-nav">
-            <div class="owl-prev">prev</div>
-            <div class="owl-next">next</div>
-          </div>          -->
-      </div>
+        </blockquote>
     </div>
   </section>
 
   <section class="panel-theme-2">
     <div class="row align-center">
-      <div class="columns small-12 large-6">
-        {% markdown "content/example.md" %}
+      <div class="columns small-12 large-6 text">
+        <h2>Cue up "Values"</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <br><a href="{{ sitevars.urlpath }}about/our-core-values.html">learn more about "Our Core Values"</a>
+        </p>
       </div>
       <div class="columns small-12 large-6 pic" data-interchange="[{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, small],
         [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, medium],
@@ -77,12 +70,52 @@
   </section>
 
   <section class="panel-theme-1">
-    <div class="row">
-      <div class="columns small-12">
-        <p>
-          We are a church founded on the Word of God, where the demonstration of the power and the love of God is at its best
+    <div class="row align-center">
+      <div class="columns small-12 large-10">
+        <blockquote>
+          "A quick testiomony about what we do as a church should go here. I think we this is a great church because..."
+          <cite>- A Church Goer</cite>
+        </blockquote>
+    </div>
+  </section>
+
+  <section class="panel-theme-2">
+    <div class="row align-center">
+      <div class="columns small-12 large-6 pic" data-interchange="[{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, small],
+      [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, medium],
+      [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, large],
+      [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, xlarge]"></div>
+      <div class="columns small-12 large-6 text">
+        <h2>Cue Up "Our Vision"</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <br><a href="{{ sitevars.urlpath }}about/our-vision.html">learn more about "Our Vision"</a>
         </p>
       </div>
+    </div>
+  </section>
+
+  <section class="panel-theme-1">
+    <div class="row align-center">
+      <div class="columns small-12 large-10">
+        <blockquote>
+          "A quick testiomony about what we do as a church should go here. I think we this is a great church because..."
+          <cite>- A Church Goer</cite>
+        </blockquote>
+    </div>
+  </section>
+
+  <section class="panel-theme-2">
+    <div class="row align-center">
+      <div class="columns small-12 large-6 text">
+        <h2>Cue Up "Our Mission"</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <br><a href="{{ sitevars.urlpath }}about/our-mission.html">learn more about "Our Mission"</a>
+        </p>
+      </div>
+      <div class="columns small-12 large-6 pic" data-interchange="[{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, small],
+        [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, medium],
+        [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, large],
+        [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, xlarge]"></div>
     </div>
   </section>
 

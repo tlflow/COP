@@ -1,7 +1,7 @@
 {% set segmentName = 'connect' %}
 {% set pageName = 'connect' %}
-{% set pageTitle = 'Our Church Vision' %}
-{% extends 'subpage-layout.nunjucks' %}
+{% set pageTitle = 'How to Connect' %}
+{% extends 'panels-layout.nunjucks' %}
 
 {% block masthead %}
 <div id="masthead" data-interchange="[{{urlpath}}images/stock/lightstock_74990_comp.jpg, small],
@@ -15,9 +15,104 @@
 {% endblock %}
 
 {% block content %}
-  <div class="row">
-    <div class="columns small-12">
-      {% markdown "content/about/our-vision.md" %}
+  <section class="panel-theme-1">
+    <div class="row align-center">
+      <div class="columns small-12 large-10 text-align-center">
+        <h1>Connect</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <section class="panel-theme-2">
+    <div class="row align-center">
+      <div class="columns small-12 large-6 pic" data-interchange="[{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, small],
+      [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, medium],
+      [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, large],
+      [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, xlarge]"></div>
+      <div class="columns small-12 large-6 text">
+        <h2>Getting Started</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <br><a href="{{ sitevars.urlpath }}connect/get-started.html">learn more about "What We Believe"</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel-theme-1">
+    <div class="row align-center">
+      <div class="columns small-12 large-10">
+        <h2>Heading for Something</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+  </section>
+
+  <section class="panel-theme-2">
+    <div class="row align-center">
+      <div class="columns small-12 large-6 text">
+        <h2>New Partners Class</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <br><a href="{{ sitevars.urlpath }}connect/partners-class.html">learn more about "New Partners Class"</a>
+        </p>
+      </div>
+      <div class="columns small-12 large-6 pic" data-interchange="[{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, small],
+        [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, medium],
+        [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, large],
+        [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, xlarge]"></div>
+    </div>
+  </section>
+
+  <section class="panel-theme-1">
+    <div class="row align-center">
+      <div class="columns small-12 large-10">
+        <blockquote>
+          "A great place to quote something about what all this stuff means to building a church"
+          <cite>- A Pastor on Staff</cite>
+        </blockquote>
+    </div>
+  </section>
+
+  <section class="panel-theme-2">
+    <div class="row align-center">
+      <div class="columns small-12 large-6 pic" data-interchange="[{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, small],
+      [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, medium],
+      [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, large],
+      [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, xlarge]"></div>
+      <div class="columns small-12 large-6 text">
+        <h2>Community Outreach</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <br><a href="{{ sitevars.urlpath }}connect/community-outreach.html">learn more about "Our Vision"</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel-theme-1">
+    <div class="row align-center">
+      <div class="columns small-12 large-10">
+        <blockquote>
+          "A great place to quote something about what all this stuff means to building a church"
+          <cite>- A Pastor on Staff</cite>
+        </blockquote>
+    </div>
+  </section>
+
+  <section class="panel-theme-2">
+    <div class="row align-center">
+      <div class="columns small-12 large-6 text">
+        <h2>Volunteering</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <br><a href="{{ sitevars.urlpath }}connect/volunteering.html">learn more about "Our Mission"</a>
+        </p>
+      </div>
+      <div class="columns small-12 large-6 pic" data-interchange="[{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, small],
+        [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, medium],
+        [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, large],
+        [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, xlarge]"></div>
+    </div>
+  </section>
+
 {% endblock %}

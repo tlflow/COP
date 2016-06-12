@@ -6,6 +6,8 @@
 
 //@prepros-append ../bower_components/lodash/dist/lodash.min.js
 
+//@prepros-append ../bower_components/instafeed.js/instafeed.min.js
+
 //@prepros-append ../bower_components/moment/min/moment.min.js
 
 //@prepros-append ../bower_components/owlcarousel/owl-carousel/owl.carousel.min.js

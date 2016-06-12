@@ -7,6 +7,8 @@ $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
         margin:10,
         autoplay: true,
+        nav: true,
+        loop: true,
         responsive:{
             0:{
                 items:1
@@ -15,12 +17,23 @@ $(document).ready(function(){
                 items:3
             },
             1000:{
-                items:5,
-                nav: true,
-                loop: true
+                items:5
+
             }
         }
     });
+
+  }
+
+  if ($('#page.news').length==1) {
+
+    var feed = new Instafeed({
+      get: 'tagged',
+      tagName: 'copcharlotte',
+      clientId: '53e609419e13469981290aa020845345'
+    });
+
+    feed.run();
 
   }
 
