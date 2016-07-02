@@ -21,7 +21,7 @@
     <div class="row align-center">
       <div class="columns small-12 large-10">
         <h2>Church Instagram Feed</h2>
-        <div id="instafeed">
+        <div id="instagram">
 
         </div>
       </div>

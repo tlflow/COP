@@ -1,0 +1,39 @@
+<picture>
+  <source
+  media="(max-width: 767px)"
+  sizes="(max-width: 1534px) 100vw, 1534px"
+  srcset="
+  {{ sitevars.urlpath }}images/girl_smiling/girl_smiling_kwhmlf_ar_1_1,c_fill,g_auto__c_scale,w_250.jpg 250w,
+  {{ sitevars.urlpath }}images/girl_smiling/girl_smiling_kwhmlf_ar_1_1,c_fill,g_auto__c_scale,w_741.jpg 741w,
+  {{ sitevars.urlpath }}images/girl_smiling/girl_smiling_kwhmlf_ar_1_1,c_fill,g_auto__c_scale,w_1048.jpg 1048w,
+  {{ sitevars.urlpath }}images/girl_smiling/girl_smiling_kwhmlf_ar_1_1,c_fill,g_auto__c_scale,w_1327.jpg 1327w,
+  {{ sitevars.urlpath }}images/girl_smiling/girl_smiling_kwhmlf_ar_1_1,c_fill,g_auto__c_scale,w_1534.jpg 1534w">
+  <source
+  media="(min-width: 768px) and (max-width: 991px)"
+  sizes="(max-width: 1983px) 100vw, 1388px"
+  srcset="
+  {{ sitevars.urlpath }}images/girl_smiling/girl_smiling_kwhmlf_ar_4_3,c_fill,g_auto__c_scale,w_538.jpg 538w,
+  {{ sitevars.urlpath }}images/girl_smiling/girl_smiling_kwhmlf_ar_4_3,c_fill,g_auto__c_scale,w_826.jpg 826w,
+  {{ sitevars.urlpath }}images/girl_smiling/girl_smiling_kwhmlf_ar_4_3,c_fill,g_auto__c_scale,w_1063.jpg 1063w,
+  {{ sitevars.urlpath }}images/girl_smiling/girl_smiling_kwhmlf_ar_4_3,c_fill,g_auto__c_scale,w_1265.jpg 1265w,
+  {{ sitevars.urlpath }}images/girl_smiling/girl_smiling_kwhmlf_ar_4_3,c_fill,g_auto__c_scale,w_1388.jpg 1388w">
+  <source
+  media="(min-width: 992px) and (max-width: 1199px)"
+  sizes="(max-width: 2400px) 100vw, 1680px"
+  srcset="
+  {{ sitevars.urlpath }}images/girl_smiling/girl_smiling_kwhmlf_ar_16_9,c_fill,g_auto__c_scale,w_695.jpg 695w,
+  {{ sitevars.urlpath }}images/girl_smiling/girl_smiling_kwhmlf_ar_16_9,c_fill,g_auto__c_scale,w_1011.jpg 1011w,
+  {{ sitevars.urlpath }}images/girl_smiling/girl_smiling_kwhmlf_ar_16_9,c_fill,g_auto__c_scale,w_1260.jpg 1260w,
+  {{ sitevars.urlpath }}images/girl_smiling/girl_smiling_kwhmlf_ar_16_9,c_fill,g_auto__c_scale,w_1512.jpg 1512w,
+  {{ sitevars.urlpath }}images/girl_smiling/girl_smiling_kwhmlf_ar_16_9,c_fill,g_auto__c_scale,w_1680.jpg 1680w">
+  <img
+  sizes="(max-width: 6900px) 100vw, 2760px"
+  srcset="
+  {{ sitevars.urlpath }}images/girl_smiling/girl_smiling_kwhmlf_c_scale,w_480.jpg 480w,
+  {{ sitevars.urlpath }}images/girl_smiling/girl_smiling_kwhmlf_c_scale,w_1340.jpg 1340w,
+  {{ sitevars.urlpath }}images/girl_smiling/girl_smiling_kwhmlf_c_scale,w_1891.jpg 1891w,
+  {{ sitevars.urlpath }}images/girl_smiling/girl_smiling_kwhmlf_c_scale,w_2383.jpg 2383w,
+  {{ sitevars.urlpath }}images/girl_smiling/girl_smiling_kwhmlf_c_scale,w_2760.jpg 2760w"
+  src="{{ sitevars.urlpath }}images/girl_smiling/girl_smiling_kwhmlf_c_scale,w_2760.jpg"
+  alt="A girl ">
+</picture>

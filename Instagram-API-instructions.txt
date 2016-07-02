@@ -26,4 +26,4 @@ access_token=3017550723.53e6094.139b798ac6d44832acb1c637cca8a005
 
 and I can use in a request that goes off of the "copcharlotte" tag, like:
 
-https://api.instagram.com/v1/tags/copcharlotte?access_token=3017550723.53e6094.139b798ac6d44832acb1c637cca8a005
+https://api.instagram.com/v1/tags/copcharlotte/media/recent?access_token=3017550723.53e6094.139b798ac6d44832acb1c637cca8a005
