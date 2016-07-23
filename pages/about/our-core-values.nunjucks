@@ -5,14 +5,45 @@
 {% extends 'subpage-layout.nunjucks' %}
 
 {% block masthead %}
-<div id="masthead" data-interchange="[{{ sitevars.urlpath }}images/prayer.w_480.jpg, small],
-  [{{ sitevars.urlpath }}images/prayer.w_618.jpg, medium],
-  [{{ sitevars.urlpath }}images/prayer.w_940.jpg, large],
-  [{{ sitevars.urlpath }}images/prayer.w_1182.jpg, xlarge],
-  [{{ sitevars.urlpath }}images/prayer.w_1422.jpg, xxlarge]">
+<div id="masthead">
   <!--<div class="text">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quisquam dolor accusamus porro ut architecto consectetur, quasi natus earum, accusantium!</p>
   </div>-->
+  <picture>
+    <source
+    media="(max-width: 767px)"
+    sizes="(max-width: 1534px) 100vw, 1534px"
+    srcset="
+    {{ sitevars.urlpath }}images/values/values_bos658_ar_1_1,c_fill,g_auto__c_scale,w_250.jpg 250w,
+    values_bos658_ar_1_1,c_fill,g_auto__c_scale,w_828.jpg 828w,
+    {{ sitevars.urlpath }}images/values/values_bos658_ar_1_1,c_fill,g_auto__c_scale,w_1213.jpg 1213w,
+    {{ sitevars.urlpath }}images/values/values_bos658_ar_1_1,c_fill,g_auto__c_scale,w_1534.jpg 1534w">
+    <source
+    media="(min-width: 768px) and (max-width: 991px)"
+    sizes="(max-width: 1982px) 100vw, 1982px"
+    srcset="
+    {{ sitevars.urlpath }}images/values/values_bos658_ar_4_3,c_fill,g_auto__c_scale,w_768.jpg 768w,
+    {{ sitevars.urlpath }}images/values/values_bos658_ar_4_3,c_fill,g_auto__c_scale,w_1256.jpg 1256w,
+    {{ sitevars.urlpath }}images/values/values_bos658_ar_4_3,c_fill,g_auto__c_scale,w_1645.jpg 1645w,
+    {{ sitevars.urlpath }}images/values/values_bos658_ar_4_3,c_fill,g_auto__c_scale,w_1982.jpg 1982w">
+    <source
+    media="(min-width: 992px) and (max-width: 1199px)"
+    sizes="(max-width: 2398px) 100vw, 2398px"
+    srcset="
+    {{ sitevars.urlpath }}images/values/values_bos658_ar_16_9,c_fill,g_auto__c_scale,w_992.jpg 992w,
+    {{ sitevars.urlpath }}images/values/values_bos658_ar_16_9,c_fill,g_auto__c_scale,w_1555.jpg 1555w,
+    {{ sitevars.urlpath }}images/values/values_bos658_ar_16_9,c_fill,g_auto__c_scale,w_2003.jpg 2003w,
+    {{ sitevars.urlpath }}images/values/values_bos658_ar_16_9,c_fill,g_auto__c_scale,w_2398.jpg 2398w">
+    <img
+    sizes="(max-width: 2760px) 100vw, 2760px"
+    srcset="
+    {{ sitevars.urlpath }}images/values/values_bos658_c_scale,w_1200.jpg 1200w,
+    {{ sitevars.urlpath }}images/values/values_bos658_c_scale,w_1813.jpg 1813w,
+    {{ sitevars.urlpath }}images/values/values_bos658_c_scale,w_2314.jpg 2314w,
+    {{ sitevars.urlpath }}images/values/values_bos658_c_scale,w_2760.jpg 2760w"
+    src="{{ sitevars.urlpath }}images/values/values_bos658_c_scale,w_2760.jpg"
+    alt="Family Reading the Bible">
+  </picture>
 </div>
 {% endblock %}
 

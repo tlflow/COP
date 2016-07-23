@@ -1,5 +1,6 @@
 #masthead, #current-series {
-  min-height: rem-calc(350);
+  max-height: rem-calc(500);
+  overflow: hidden;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
