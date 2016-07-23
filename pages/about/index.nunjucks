@@ -69,9 +69,9 @@
           </picture>
       </div>
       <div class="columns small-12 large-6 text">
-        <h2>What Makes Us, Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          <br><a href="{{ sitevars.urlpath }}about/what-we-believe.html">learn more about "What We Believe"</a>
+        <h2>What We Believe</h2>
+        <p>We believe that Jesus Christ is the Son of God. We believe that He was crucified, died, and was resurrected on the third day with all power in His hands. We believe God has a purpose and plan for all of us that was purposed by Him before the foundation of the world. Here are a few key principles we stand on as we live and teach according to what we believe.
+        <br><a href="{{ sitevars.urlpath }}about/what-we-believe.html">learn more</a>
         </p>
       </div>
     </div>
@@ -90,9 +90,9 @@
   <section class="panel-theme-2">
     <div class="row align-center">
       <div class="columns small-12 large-6 text">
-        <h2>Cue up "Values"</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          <br><a href="{{ sitevars.urlpath }}about/our-core-values.html">learn more about "Our Core Values"</a>
+        <h2>Our Core Values</h2>
+        <p>The core of our ministry is centered on Christ and the love of God. Our core values are based on Mark 12:30­31: “And thou shalt love the Lord thy God with all thy heart, and with all thy soul, and with all thy mind, and with all thy strength: this is the first commandment. And the second is like, namely this, Thou shalt love thy neighbour as thyself. There is none other commandment greater than these.” We stand on these principles as the bedrock of our values.
+        <br><a href="{{ sitevars.urlpath }}about/our-core-values.html">learn more</a>
         </p>
       </div>
 
@@ -103,7 +103,7 @@
           sizes="(max-width: 1534px) 100vw, 1534px"
           srcset="
           {{ sitevars.urlpath }}images/values/values_bos658_ar_1_1,c_fill,g_auto__c_scale,w_250.jpg 250w,
-          values_bos658_ar_1_1,c_fill,g_auto__c_scale,w_828.jpg 828w,
+          {{ sitevars.urlpath }}images/values/values_bos658_ar_1_1,c_fill,g_auto__c_scale,w_828.jpg 828w,
           {{ sitevars.urlpath }}images/values/values_bos658_ar_1_1,c_fill,g_auto__c_scale,w_1213.jpg 1213w,
           {{ sitevars.urlpath }}images/values/values_bos658_ar_1_1,c_fill,g_auto__c_scale,w_1534.jpg 1534w">
           <source
@@ -186,9 +186,9 @@
         </picture>
       </div>
       <div class="columns small-12 large-6 text">
-        <h2>Cue Up "Our Vision"</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          <br><a href="{{ sitevars.urlpath }}about/our-vision.html">learn more about "Our Vision"</a>
+        <h2>Our Vision</h2>
+        <p>We aspire to be a ministry that brings souls into the Kingdom of God through teaching and preaching the Gospel of Jesus Christ. We desire to be a place where people of all colors, creeds, and nationalities can come and encounter a life­changing relationship with Jesus Christ, exalt God through worship, be equipped to participate in ministry, encourage one another through love and fellowship, and establish strong families and communities.
+        <br><a href="{{ sitevars.urlpath }}about/our-vision.html">learn more</a>
         </p>
       </div>
     </div>
@@ -207,9 +207,9 @@
   <section class="panel-theme-2">
     <div class="row align-center">
       <div class="columns small-12 large-6 text">
-        <h2>Cue Up "Our Mission"</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          <br><a href="{{ sitevars.urlpath }}about/our-mission.html">learn more about "Our Mission"</a>
+        <h2>Our Mission</h2>
+        <p>It is our purpose to spread the gospel of Jesus Christ and the love of God. We seek to be a church that demonstrates the power and the love of God to the best of our ability through serving and making disciples of God’s people and equipping them to do the same.
+          <br><a href="{{ sitevars.urlpath }}about/our-mission.html">learn more</a>
         </p>
       </div>
       <div class="columns small-12 large-6 pic">

@@ -1,6 +1,13 @@
 $(function(){
+
   $(document).foundation();
+
+  ///////////////
+  /// timer /////
+  ///////////////
+
   $('#sunday-clock').timer();
+
 
   //////////////////////////////////
   /// homepage form submission /////
@@ -27,7 +34,7 @@ $(function(){
     $.ajax({
 
       type     : 'POST',
-      url      : 'process_home-form.php',
+      url      : '/forms/process_home-form.php',
       data     : formData,
       dataType : 'json',
       encode   : true
@@ -52,6 +59,8 @@ $(function(){
 
 
     });
+
+  });
 
 
   //////////////////////////////////////////

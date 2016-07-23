@@ -6,7 +6,20 @@
 {% block content %}
 
 <section id="masthead">
-  <div class="row align-center">
+
+  <div class="text box black-bkg">
+      <h1 class="section-heading">We Love You, <span>Charlotte</span></h1>
+      <h2>and we're here to help</h2>
+      <a class="blue-custom-btn" href="/">learn more</a>
+      <ul class="social-icons">
+          <li><a href="#" class="social"><i class="icon-facebook2"></i></a></li>
+          <li><a href="#" class="social"><i class="icon-twitter"></i></a></li>
+          <li><a href="#" class="social"><i class="icon-instagram"></i></a></li>
+      </ul>
+  </div>
+
+
+  <!--<div class="row align-center">
     <div class="column large-8">
         <div class="text box black-bkg">
             <h1 class="section-heading">We Love You, <span>Charlotte</span></h1>
@@ -18,7 +31,7 @@
                 <li><a href="#" class="social"><i class="icon-instagram"></i></a></li>
             </ul>
         </div>
-    </div>
+    </div>-->
   </div>
 
   <div class="image-1" data-interchange="[{{urlpath}}images/home/charlotte-downtown_small.jpg, small],
