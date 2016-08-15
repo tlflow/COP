@@ -32,41 +32,7 @@
   <section class="panel-theme-2">
     <div class="row align-center">
       <div class="columns small-12 large-6 pic">
-        <picture>
-          <source
-          media="(max-width: 767px)"
-          sizes="(max-width: 1534px) 100vw, 1534px"
-          srcset="
-          {{ sitevars.urlpath }}images/welcomer/welcomer_uol0ar_ar_1_1,c_fill,g_auto__c_scale,w_250.jpg 250w,
-          {{ sitevars.urlpath }}images/welcomer/welcomer_uol0ar_ar_1_1,c_fill,g_auto__c_scale,w_964.jpg 964w,
-          {{ sitevars.urlpath }}images/welcomer/welcomer_uol0ar_ar_1_1,c_fill,g_auto__c_scale,w_1336.jpg 1336w,
-          {{ sitevars.urlpath }}images/welcomer/welcomer_uol0ar_ar_1_1,c_fill,g_auto__c_scale,w_1534.jpg 1534w">
-          <source
-          media="(min-width: 768px) and (max-width: 991px)"
-          sizes="(max-width: 1982px) 100vw, 1982px"
-          srcset="
-          {{ sitevars.urlpath }}images/welcomer/welcomer_uol0ar_ar_4_3,c_fill,g_auto__c_scale,w_768.jpg 768w,
-          {{ sitevars.urlpath }}images/welcomer/welcomer_uol0ar_ar_4_3,c_fill,g_auto__c_scale,w_1374.jpg 1374w,
-          {{ sitevars.urlpath }}images/welcomer/welcomer_uol0ar_ar_4_3,c_fill,g_auto__c_scale,w_1783.jpg 1783w,
-          {{ sitevars.urlpath }}images/welcomer/welcomer_uol0ar_ar_4_3,c_fill,g_auto__c_scale,w_1982.jpg 1982w">
-          <source
-          media="(min-width: 992px) and (max-width: 1199px)"
-          sizes="(max-width: 2398px) 100vw, 2398px"
-          srcset="
-          {{ sitevars.urlpath }}images/welcomer/welcomer_uol0ar_ar_16_9,c_fill,g_auto__c_scale,w_992.jpg 992w,
-          {{ sitevars.urlpath }}images/welcomer/welcomer_uol0ar_ar_16_9,c_fill,g_auto__c_scale,w_1671.jpg 1671w,
-          {{ sitevars.urlpath }}images/welcomer/welcomer_uol0ar_ar_16_9,c_fill,g_auto__c_scale,w_2127.jpg 2127w,
-          {{ sitevars.urlpath }}images/welcomer/welcomer_uol0ar_ar_16_9,c_fill,g_auto__c_scale,w_2398.jpg 2398w">
-          <img
-          sizes="(max-width: 2760px) 100vw, 2760px"
-          srcset="
-          {{ sitevars.urlpath }}images/welcomer/welcomer_uol0ar_c_scale,w_1200.jpg 1200w,
-          {{ sitevars.urlpath }}images/welcomer/welcomer_uol0ar_c_scale,w_1882.jpg 1882w,
-          {{ sitevars.urlpath }}images/welcomer/welcomer_uol0ar_c_scale,w_2443.jpg 2443w,
-          {{ sitevars.urlpath }}images/welcomer/welcomer_uol0ar_c_scale,w_2760.jpg 2760w"
-          src="{{ sitevars.urlpath }}images/welcomer/welcomer_uol0ar_c_scale,w_2760.jpg"
-          alt="Picture of a Welcomer">
-          </picture>
+        <img data-src="welcomer.jpg" class="clr-image" />
       </div>
       <div class="columns small-12 large-6 text">
         <h2>What We Believe</h2>

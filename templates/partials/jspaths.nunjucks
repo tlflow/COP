@@ -1,17 +1,30 @@
+
 {% if pageName=='home' %}
 <script type="text/javascript" src="{{ sitevars.urlpath }}js/libraries_homepage.build.min.js"></script>
 <script type="text/javascript" src="{{ sitevars.urlpath }}js/component.build.min.js"></script>
 <script type="text/javascript" src="{{ sitevars.urlpath }}js/homepage.js"></script>
-<script type="text/javascript" src="{{ sitevars.urlpath }}js/allpages.js"></script>
 
 {% elif pageName=='location' %}
 <script type="text/javascript" src="{{ sitevars.urlpath }}js/libraries_map.build.min.js"></script>
 <script type="text/javascript" src="{{ sitevars.urlpath }}js/googlelocation.js"></script>
-<script type="text/javascript" src="{{ sitevars.urlpath }}js/allpages.js"></script>
 
 {% else %}
 <script type="text/javascript" src="{{ sitevars.urlpath }}js/libraries.build.min.js"></script>
 <script type="text/javascript" src="{{ sitevars.urlpath }}js/component.build.min.js"></script>
-<script type="text/javascript" src="{{ sitevars.urlpath }}js/subpage.js"></script>
-<script type="text/javascript" src="{{ sitevars.urlpath }}js/allpages.js"></script>
 {% endif %}
+
+<script type="text/javascript" src="{{ sitevars.urlpath }}js/allpages.js"></script>
+
+<script type="text/javascript">
+  $.cloudinary.config({ cloud_name: 'church-of-philadelphia', api_key: '952514468874921'});
+
+  $(document).ready(function() {
+
+    $(".cljq-image").cloudinary({
+       width: auto,
+       height: auto,
+       gravity: 'faces'
+    });
+  });
+
+</script>

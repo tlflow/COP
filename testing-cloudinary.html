@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+
+    </script>
+</head>
+
+<body>
+    <div class="cljq-image">
+      <img src="blank.png" data-src="welcomer.jpg" class="clr-image" />
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="bower_components/cloudinary-jquery/cloudinary-jquery.min.js "type="text/javascript"></script>
+
+  <script type="text/javascript">
+    $.cloudinary.config({ cloud_name: 'church-of-philadelphia', api_key: '952514468874921'});
+
+    $(document).ready(function() {
+
+      $(".clr-image").cloudinary({
+         width: 200,
+         height: 200,
+         crop: 'thumb',
+         gravity: 'faces',
+         radius: 20
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>
