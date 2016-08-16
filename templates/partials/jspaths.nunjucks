@@ -14,17 +14,3 @@
 {% endif %}
 
 <script type="text/javascript" src="{{ sitevars.urlpath }}js/allpages.js"></script>
-
-<script type="text/javascript">
-  $.cloudinary.config({ cloud_name: 'church-of-philadelphia', api_key: '952514468874921'});
-
-  $(document).ready(function() {
-
-    $(".cljq-image").cloudinary({
-       width: auto,
-       height: auto,
-       gravity: 'faces'
-    });
-  });
-
-</script>

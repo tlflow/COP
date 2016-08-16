@@ -11,7 +11,7 @@
 
 <body>
     <div class="cljq-image">
-      <img src="blank.png" data-src="welcomer.jpg" class="clr-image" />
+      <img data-src="http://res.cloudinary.com/church-of-philadelphia/image/upload/w_auto,dpr_auto/welcomer.jpg" class="cld-responsive" />
     </div>
 
     <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
@@ -21,14 +21,17 @@
     $.cloudinary.config({ cloud_name: 'church-of-philadelphia', api_key: '952514468874921'});
 
     $(document).ready(function() {
+    //
+      // $(".cld-myresponse").cloudinary({
+      //    dpr: 'auto',
+      //    w: 'auto',
+      //    h: 'auto',
+      //    ar: '16.9',
+      //    gravity: 'faces'
+      // });
 
-      $(".clr-image").cloudinary({
-         width: 200,
-         height: 200,
-         crop: 'thumb',
-         gravity: 'faces',
-         radius: 20
-      });
+    $.cloudinary.responsive();
+
     });
 
   </script>

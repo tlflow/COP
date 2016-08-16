@@ -1,3 +1,5 @@
+$.cloudinary.config({ cloud_name: 'church-of-philadelphia', api_key: '952514468874921'});
+
 $(function() {
 
   // copyright
@@ -27,6 +29,10 @@ $(function() {
   // 		// fadingMasthead._init();
   // 	}
   // }, 300));
+
+  // use cloudinary built in responsive engine 
+  $.cloudinary.responsive();
+
 
   /////////////////////////////
   /// cue header animation ////
