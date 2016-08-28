@@ -7,11 +7,21 @@
 }
 
 .pic {
-  width: 100%;
-  // height: rem-calc(500);
-  padding: 0;
-  // background-repeat: no-repeat;
-  // background-size: cover;
+  background: yellow;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: scroll;
+  overflow: hidden;
+  min-height: 300px;
+
+  @include breakpoint(large) {
+    min-height: 400px;
+  }
+}
+
+.cover-img {
+  display: none;
 }
 
 #masthead {
@@ -29,6 +39,12 @@
 }
 
 section {
+  .text {
+    @include breakpoint(small) {
+      padding: rem-calc(30 0);
+    }
+  }
+
   &.panel-theme-2 {
     padding: 0;
 

@@ -9,3 +9,6 @@
 {% else %}
   {% set urlpath = '/' %}
 {% endif %}
+
+{# Global Cloudinary Image Path and Setting #}
+{% set cloudinaryImage = 'http://res.cloudinary.com/church-of-philadelphia/image/upload/w_auto,dpr_auto' %}

@@ -4,14 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <script type="text/javascript">
-
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation-flex.min.css" media="screen" charset="utf-8">
+    <style>
+      .cell {
+        background-color: yellow;
+      }
+      img {
+        height: 100vh;
+      }
+    </style>
 </head>
 
 <body>
-    <div class="cljq-image">
-      <img data-src="http://res.cloudinary.com/church-of-philadelphia/image/upload/w_auto,dpr_auto/welcomer.jpg" class="cld-responsive" />
+  <div class="row">
+    <div class="columns small-6">
+      <h2>This is a test</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione omnis, ea perspiciatis ad blanditiis, autem distinctio, ipsum deserunt sit commodi ab quos exercitationem inventore laboriosam sunt culpa eaque aut sint.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut suscipit aspernatur sapiente quam similique vel dignissimos iure recusandae consequatur. Odio facere, amet assumenda expedita est at dicta eius reiciendis dolorum?</p>
+      <p>Maxime natus consequatur cum explicabo illum illo reiciendis quia beatae asperiores nam dolorem eveniet quibusdam dolores laudantium mollitia quaerat, quasi adipisci iure quis ex, architecto modi. Aut ratione ipsam dolores.</p>
+      <p>Nisi nobis, unde minima voluptatem rem debitis distinctio saepe neque velit pariatur ea dolore. Hic odio eaque sint sunt dolores. Autem earum quod voluptatibus nisi quas nobis iusto quaerat ratione.</p>
+    </div>
+    <div class="columns small-6 cell">
+      <img src="http://res.cloudinary.com/church-of-philadelphia/image/upload/w_auto,ar_16:9,c_crop,dpr_auto/sky.jpg">
     </div>
 
     <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
@@ -30,7 +44,7 @@
       //    gravity: 'faces'
       // });
 
-    $.cloudinary.responsive();
+    // $.cloudinary.responsive();
 
     });
 

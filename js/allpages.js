@@ -1,6 +1,22 @@
-$.cloudinary.config({ cloud_name: 'church-of-philadelphia', api_key: '952514468874921'});
+
 
 $(function() {
+
+  $.cloudinary.config({ cloud_name: 'church-of-philadelphia', api_key: '952514468874921'});
+
+  $.cloudinary.responsive({
+    type : 'fetch',
+	  responsive_use_stoppoints : true
+  });
+
+  $(".cover-img").load(function(){
+    var self = $(this);
+    var picLink = self.attr('src');
+
+    setTimeout(function(){
+        self.closest('.pic').css('backgroundImage', 'url('+picLink+')');
+    }, 2);
+  });
 
   // copyright
   $("#copyright").prepend("&copy;" + moment().format('YYYY')+ " ");
@@ -30,7 +46,7 @@ $(function() {
   // 	}
   // }, 300));
 
-  // use cloudinary built in responsive engine 
+  // use cloudinary built in responsive engine
   $.cloudinary.responsive();
 
 

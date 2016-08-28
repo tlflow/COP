@@ -28,23 +28,22 @@
 
   <section class="panel-theme-2">
     <div class="row align-center">
-      <div class="columns small-12 large-6 pic" data-interchange="[{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, small],
-      [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, medium],
-      [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, large],
-      [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, xlarge]"></div>
+      <div class="columns small-12 large-6 pic">
+        <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/friends-meeting.jpg" class="cld-responsive cover-img" />
+      </div>
       <div class="columns small-12 large-6 text">
-        <h2>Getting Connected</h2>
-        <p>We are excited that you are thinking about joining with us. We are looking to impact our city by touching the lives of God's people one person at a time. Our team is equipped to help you maximize your partnership. For questions on how to get started, please <a href="{{ sitevars.urlpath }}connect/">click here</a> or call us at <a href="tel:980-819-8848">(980)819-8848</a>.
-        <h2>Getting Connected</h2>
-        <p>We're excited you are thinking about joining with us. We are a people looking to impact our city, by touching the lives of God's people one person at a time. Our partnership team is equipped to help you maximize your partnership now. For questions on how to get started, please <a href="{{ sitevars.urlpath }}connect/">click here</a> or call us at <a href="tel:980-819-8848">(980)819-8848</a>.
-        </p>
+        <div class="columns small-10 small-offset-1 large-12 large-offset-0">
+          <h2>Getting Connected</h2>
+          <p>We are excited that you are thinking about joining with us. We are looking to impact our city by touching the lives of God's people one person at a time. Our team is equipped to help you maximize your partnership. For questions on how to get started, please <a href="{{ sitevars.urlpath }}connect/">click here</a> or call us at <a href="tel:980-819-8848">(980)819-8848</a>.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="panel-theme-1">
     <div class="row align-center">
-      <div class="columns small-12 large-10">
+      <div class="columns small-10 small-offset-1 large-12 large-offset-0">
         <p>Since the opening of our doors, we strive to be a church to helping believers to grow in their personal faith and become established in the Word. We also want to be a church that truly helps the lost find Christ and a new hope for living. So, we extend an open invitation and open arms to you and your family. Join us and become a part of God's "great" family.</p>
     </div>
   </section>
@@ -52,16 +51,43 @@
   <section class="panel-theme-2">
     <div class="row align-center">
       <div class="columns small-12 large-6 text">
-        <h2>New Partners Class</h2>
-        <p>Church of Philadelphia takes your willingness to partner with us very seriously, and we cherish the divine connection with our Partners. That is why we do not think of our partners as just names on a list; we're a family.</p>
-        <p>This class is a small series of 1-hour classes designated to give you information about our church, what being a church partner means and how you can get connected immediately and be a part.
-          <br><a href="{{ sitevars.urlpath }}connect/partners-class.html">learn more</a>
-        </p>
+        <div class="columns small-10 small-offset-1 large-12 large-offset-0">
+          <h2>New Partners Class</h2>
+          <p>Church of Philadelphia takes your willingness to partner with us very seriously, and we cherish the divine connection with our Partners. That is why we do not think of our partners as just names on a list; we're a family.</p>
+          <p>This class is a small series of 1-hour classes designated to give you information about our church, what being a church partner means and how you can get connected immediately and be a part.
+            <br><a href="{{ sitevars.urlpath }}connect/partners-class.html">learn more</a>
+          </p>
+        </div>
       </div>
-      <div class="columns small-12 large-6 pic" data-interchange="[{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, small],
-        [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, medium],
-        [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, large],
-        [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, xlarge]"></div>
+      <div class="columns small-12 large-6 pic">
+        <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/taking-notes.jpg" class="cld-responsive cover-img" />
+      </div>
+    </div>
+  </section>
+
+  <section class="panel-theme-1">
+    <div class="row align-center">
+      <div class="columns small-10 small-offset-1 large-12 large-offset-0">
+        <blockquote>
+          "A great place to quote something about what all this stuff means to building a church"
+          <cite>- A Pastor on Staff</cite>
+        </blockquote>
+    </div>
+  </section>
+
+  <section class="panel-theme-2">
+    <div class="row align-center">
+      <div class="columns small-12 large-6 pic">
+        <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/study-group.jpg" class="cld-responsive cover-img" />
+      </div>
+      <div class="columns small-12 large-6 text">
+        <div class="columns small-10 small-offset-1 large-12 large-offset-0">
+          <h2>Small Groups</h2>
+          <p>Small groups makes a difference! Join a small group today and learn the power of unity. Our small group teams are equipped to encourage and assist you in maintaining a life of victory, while also building a closer relationship with Jesus. The emphasis of each group is placed on wholesome interaction where each group seeks to not only meet you at your point of need, but to strengthen you so that you grow holistically.
+            <br><a href="{{ sitevars.urlpath }}connect/community-outreach.html">learn more</a>
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -77,15 +103,17 @@
 
   <section class="panel-theme-2">
     <div class="row align-center">
-      <div class="columns small-12 large-6 pic" data-interchange="[{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, small],
-      [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, medium],
-      [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, large],
-      [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, xlarge]"></div>
       <div class="columns small-12 large-6 text">
-        <h2>Small Groups</h2>
-        <p>Small groups makes a difference! Join a small group today and learn the power of unity. Our small group teams are equipped to encourage and assist you in maintaining a life of victory, while also building a closer relationship with Jesus. The emphasis of each group is placed on wholesome interaction where each group seeks to not only meet you at your point of need, but to strengthen you so that you grow holistically.
-          <br><a href="{{ sitevars.urlpath }}connect/community-outreach.html">learn more</a>
-        </p>
+        <div class="columns small-10 small-offset-1 large-12 large-offset-0">
+          <h2>Volunteering</h2>
+          <p>Serving at Church of Philadelphia is a great opportunity to be a part of an exciting, life-changing team that looks to make a difference each and every way. We believe our volunteers bring something special and unique that can't be found anywhere else. Additionally, the satisfaction you will receive from serving is priceless.<p>
+          <p>Our volunteer ministry is designed to connect you to ministries and/or special projects, so that you can utilize your God-given gifts, skills and talents for the advancement of the Kingdom of God.
+            <br><a href="{{ sitevars.urlpath }}connect/volunteering.html">learn more</a>
+          </p>
+        </div>
+      </div>
+      <div class="columns small-12 large-6 pic">
+        <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/volunteer-badge.jpg" class="cld-responsive cover-img" />
       </div>
     </div>
   </section>
@@ -102,41 +130,16 @@
 
   <section class="panel-theme-2">
     <div class="row align-center">
-      <div class="columns small-12 large-6 text">
-        <h2>Volunteering</h2>
-        <p>Serving at Church of Philadelphia is a great opportunity to be a part of an exciting, life-changing team that looks to make a difference each and every way. We believe our volunteers bring something special and unique that can't be found anywhere else. Additionally, the satisfaction you will receive from serving is priceless.<p>
-        <p>Our volunteer ministry is designed to connect you to ministries and/or special projects, so that you can utilize your God-given gifts, skills and talents for the advancement of the Kingdom of God.
-          <br><a href="{{ sitevars.urlpath }}connect/volunteering.html">learn more</a>
-        </p>
+      <div class="columns small-12 large-6 pic">
+        <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/smiling-greeter.jpg" class="cld-responsive cover-img" />
       </div>
-      <div class="columns small-12 large-6 pic" data-interchange="[{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, small],
-        [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, medium],
-        [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, large],
-        [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, xlarge]"></div>
-    </div>
-  </section>
-
-  <section class="panel-theme-1">
-    <div class="row align-center">
-      <div class="columns small-12 large-10">
-        <blockquote>
-          "A great place to quote something about what all this stuff means to building a church"
-          <cite>- A Pastor on Staff</cite>
-        </blockquote>
-    </div>
-  </section>
-
-  <section class="panel-theme-2">
-    <div class="row align-center">
-      <div class="columns small-12 large-6 pic" data-interchange="[{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, small],
-      [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, medium],
-      [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, large],
-      [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, xlarge]"></div>
       <div class="columns small-12 large-6 text">
-        <h2>Community Outreach</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          <br><a href="{{ sitevars.urlpath }}connect/community-outreach.html">learn more about "Our Vision"</a>
-        </p>
+        <div class="columns small-10 small-offset-1 large-12 large-offset-0">
+          <h2>Community Outreach</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <br><a href="{{ sitevars.urlpath }}connect/community-outreach.html">learn more about "Our Vision"</a>
+          </p>
+        </div>
       </div>
     </div>
   </section>
