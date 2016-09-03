@@ -26,6 +26,26 @@
   }
 }
 
+
+.pic {
+  background: yellow;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: scroll;
+  overflow: hidden;
+  min-height: 300px;
+
+  @include breakpoint(large) {
+    min-height: 400px;
+  }
+}
+
+.cover-img {
+  display: none;
+}
+
+
 #page.home  {
   section {
     text-align: center;
@@ -68,22 +88,22 @@
   align-content: center;
   justify-content: center;
 
-  .image-1, .image-2 {
-		width: 100%;
-		height: 100%;
-		background-size: cover;
-    background-position: center;
-		position: absolute;
-    top: 0;
-	}
-
-	.image-1 {
-		z-index: 1;
-    filter: sepia(40%);
-	}
-	.image-2 {
-		z-index: 0;
-	}
+  // .image-1, .image-2 {
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	background-size: cover;
+  //   background-position: center;
+	// 	position: absolute;
+  //   top: 0;
+	// }
+  //
+	// .image-1 {
+	// 	z-index: 1;
+  //   filter: sepia(40%);
+	// }
+	// .image-2 {
+	// 	z-index: 0;
+	// }
 
   .text {
     position: absolute;

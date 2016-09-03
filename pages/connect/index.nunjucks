@@ -4,14 +4,7 @@
 {% extends 'panels-layout.nunjucks' %}
 
 {% block masthead %}
-<div id="masthead" data-interchange="[{{urlpath}}images/stock/lightstock_74990_comp.jpg, small],
-  [{{urlpath}}images/stock/lightstock_74990_comp.jpg, medium],
-  [{{urlpath}}images/stock/lightstock_74990_comp.jpg, large],
-  [{{urlpath}}images/stock/lightstock_74990_comp.jpg, xlarge]">
-  <!--<div class="text">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quisquam dolor accusamus porro ut architecto consectetur, quasi natus earum, accusantium!</p>
-  </div>-->
-</div>
+<div id="masthead"></div>
 {% endblock %}
 
 {% block content %}
@@ -43,7 +36,7 @@
 
   <section class="panel-theme-1">
     <div class="row align-center">
-      <div class="columns small-10 small-offset-1 large-12 large-offset-0">
+      <div class="columns small-10">
         <p>Since the opening of our doors, we strive to be a church to helping believers to grow in their personal faith and become established in the Word. We also want to be a church that truly helps the lost find Christ and a new hope for living. So, we extend an open invitation and open arms to you and your family. Join us and become a part of God's "great" family.</p>
     </div>
   </section>
@@ -67,7 +60,7 @@
 
   <section class="panel-theme-1">
     <div class="row align-center">
-      <div class="columns small-10 small-offset-1 large-12 large-offset-0">
+      <div class="columns small-10">
         <blockquote>
           "A great place to quote something about what all this stuff means to building a church"
           <cite>- A Pastor on Staff</cite>
@@ -93,7 +86,7 @@
 
   <section class="panel-theme-1">
     <div class="row align-center">
-      <div class="columns small-12 large-10">
+      <div class="columns small-10">
         <blockquote>
           "A great place to quote something about what all this stuff means to building a church"
           <cite>- A Pastor on Staff</cite>
@@ -113,14 +106,14 @@
         </div>
       </div>
       <div class="columns small-12 large-6 pic">
-        <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/volunteer-badge.jpg" class="cld-responsive cover-img" />
+        <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/smiling-greeter.jpg" class="cld-responsive cover-img" />
       </div>
     </div>
   </section>
 
   <section class="panel-theme-1">
     <div class="row align-center">
-      <div class="columns small-12 large-10">
+      <div class="columns small-10">
         <blockquote>
           "A great place to quote something about what all this stuff means to building a church"
           <cite>- A Pastor on Staff</cite>
@@ -131,7 +124,7 @@
   <section class="panel-theme-2">
     <div class="row align-center">
       <div class="columns small-12 large-6 pic">
-        <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/smiling-greeter.jpg" class="cld-responsive cover-img" />
+        <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/missing-piece.jpg" class="cld-responsive cover-img" />
       </div>
       <div class="columns small-12 large-6 text">
         <div class="columns small-10 small-offset-1 large-12 large-offset-0">

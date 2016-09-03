@@ -19,21 +19,18 @@
   <section class="panel-theme-1">
     <div class="row align-center">
       <div class="columns small-12 large-10 text-align-center">
-        <h1>Welcome Phrase Here</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
+        <h1>Welcome</h1>
+        <p>We are honored to have a few moments to introduce you to Church of Philadelphia and the wonderful people who call C.O.P. their church home.  Maybe you’ve been in church your entire life or maybe you’re just now giving it a try for the first time.  Whatever the case, consider this: Church of Philadelphia is where you can fit in.  Here, you can grow and serve.  You can hope and heal.  You can lead and learn.</p>
+        <p>The place to start is at our Sunday morning service where there is great music; media presentations; friendly people talking, laughing; your children being welcomed by caring leaders in the children’s ministry; not having to worry about being singled out as a visitor; wearing clothes you’d wear to a friend’s house; messages from the Bible that are tied into everyday life and a place to be yourself and discover all that God has for you.</p>
+        <p>All you have to do from here is come as you are and find out more for yourself!</p>
+       </div>
     </div>
   </section>
 
   <section class="panel-theme-2">
     <div class="row align-center">
       <div class="columns small-12 large-6 pic">
-        $.cloudinary.image("welcomer.jpg", {client_hints: true, transformation: [
-          {gravity: "auto", crop: "fill"},
-          {dpr: "auto"},
-          {width: "auto:breakpoints:387"}
-        ]})
+        <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/welcomer.jpg" class="cld-responsive cover-img" />
       </div>
       <div class="columns small-12 large-6 text">
         <h2>What Makes Us, Us</h2>
@@ -62,10 +59,9 @@
           <br><a href="{{ sitevars.urlpath }}about/our-core-values.html">learn more about "Our Core Values"</a>
         </p>
       </div>
-      <div class="columns small-12 large-6 pic" data-interchange="[{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, small],
-        [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, medium],
-        [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, large],
-        [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, xlarge]"></div>
+      <div class="columns small-12 large-6 pic">
+        <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/welcomer.jpg" class="cld-responsive cover-img" />
+      </div>
     </div>
   </section>
 
@@ -81,10 +77,9 @@
 
   <section class="panel-theme-2">
     <div class="row align-center">
-      <div class="columns small-12 large-6 pic" data-interchange="[{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, small],
-      [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, medium],
-      [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, large],
-      [{{ sitevars.urlpath }}images/stock/lightstock_74990_comp.jpg, xlarge]"></div>
+      <div class="columns small-12 large-6 pic">
+        <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/welcomer.jpg" class="cld-responsive cover-img" />
+      </div>
       <div class="columns small-12 large-6 text">
         <h2>Cue Up "Our Vision"</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -112,10 +107,9 @@
           <br><a href="{{ sitevars.urlpath }}about/our-mission.html">learn more about "Our Mission"</a>
         </p>
       </div>
-      <div class="columns small-12 large-6 pic" data-interchange="[{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, small],
-        [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, medium],
-        [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, large],
-        [{{ sitevars.urlpath }}images/stock/open-uri20160306-23892-vc1dh3.jpg, xlarge]"></div>
+      <div class="columns small-12 large-6 pic">
+        <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/study-group.jpg" class="cld-responsive cover-img" />
+      </div>
     </div>
   </section>
 
