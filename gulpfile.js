@@ -13,6 +13,12 @@ var frontMatter    = require('gulp-front-matter');
 var wrap           = require('gulp-wrap');
 var markdown       = require('nunjucks-markdown');
 var nunjucksRender = require('gulp-nunjucks-render');
+// var fs             = require('fs');
+var path           = require('path');
+var swig           = require('gulp-swig');
+
+// var temp = fs.readFileSync('./examples/test.html', 'utf8');
+// console.log(temp);
 
 // Lint Task
 gulp.task('lint', function() {
@@ -56,9 +62,22 @@ gulp.task('nunjucks', function() {
   // Renders template with nunjucks
   .pipe(nunjucksRender())
 
+  .pipe(swig())
+
   // output files in app folder
   .pipe(gulp.dest('dist'))
 });
+
+
+gulp.task('json-test', function() {
+  return gulp.src('./examples/test1.html')
+    .pipe(data(function(file) {
+      return require('./examples/' + path.basename(file.path) + '.json');
+    }))
+    .pipe(swig())
+    .pipe(gulp.dest('build'));
+});
+
 
 // Concatenate & Minify JS
 gulp.task('scripts', function() {

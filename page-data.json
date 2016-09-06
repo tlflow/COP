@@ -1,112 +1,26 @@
 {
-  "developed_with": "http://www.objgen.com/json/models/hpE",
-  "settings": [
-    {
-      "environment": "development"
-    }
-  ],
-  "images": [
-    {
-      "image": [
-        {
-          "src": "image-one.jpg",
-          "alt": "image one alt tag"
-        },
-        {
-          "src": "image-one.jpg",
-          "alt": "image one alt tag"
-        }
-      ]
-    }
-  ],
-  "navigation": {
-    "section": [
-      {
-        "name": "about",
-        "url": "/about/",
-        "subsection": [
-          {
-            "name": "our vision",
-            "url": "our-vision.html"
-          },
-          {
-            "name": "our purpose",
-            "url": "our-purpose.html"
-          },
-          {
-            "name": "what we believe",
-            "url": "what-we-believe.html"
-          }
-        ]
-      },
-      {
-        "name": "connect",
-        "url": "/connect/",
-        "subsection": [
-          {
-            "name": "become a partner",
-            "url": "become-a-partner.html"
-          },
-          {
-            "name": "partner class",
-            "url": "partner-class.html"
-          },
-          {
-            "name": "community outreach",
-            "url": "community-outreach.html"
-          },
-          {
-            "name": "volunteering",
-            "url": "volunteering.html"
-          }
-        ]
-      },
-      {
-        "name": "gatherings",
-        "url": "/gatherings/",
-        "subsection": [
-          {
-            "name": "church events",
-            "url": "church-events.html"
-          },
-          {
-            "name": "social events",
-            "url": "social-events.html"
-          }
-        ]
-      },
-      {
-        "name": "give",
-        "url": "/give/",
-        "subsection": [
-          {
-            "name": "why we give",
-            "url": "why-we-give.html"
-          }
-        ]
-      },
-      {
-        "name": "welcome",
-        "url": "/welcome/",
-        "subsection": [
-          {
-            "name": "what to expect",
-            "url": "what-to-expect.html"
-          },
-          {
-            "name": "children",
-            "url": "children.html"
-          },
-          {
-            "name": "adults",
-            "url": "adults.html"
-          },
-          {
-            "name": "our location",
-            "url": "our-location.html"
-          }
-        ]
-      }
-    ]
-  }
+  "images": [{
+    "src": "image-one.png",
+    "alt": "Image one alt text"
+  }, {
+    "src": "image-two.png",
+    "alt": "Image two alt text"
+  }],
+  "sermon_series": [{
+    "title": "We are the Body",
+    "desc": "This is where the description would go",
+    "image-url": "image.jpg",
+    "series-url": "/we-are-the-body",
+    "sermons": [{
+      "title": "Introduction",
+      "desc": "description of this particular service",
+      "date": "9-6-16",
+      "audio-url": "audio.mp3"
+    }, {
+      "title": "Sermon Two",
+      "desc": "description of this particular service",
+      "date": "9-13-16",
+      "audio-url": "audio2.mp3"
+    }]
+  }]
 }

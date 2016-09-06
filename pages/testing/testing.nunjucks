@@ -1,8 +1,8 @@
-{# {% for img in images.image %}
+{% for img in images.image %}
   <div class="gallery__item">
     <img src="{{img.src}}" alt="{{img.alt}}">
   </div>
-{% endfor %} #}
+{% endfor %}
 
 {# //////// working on site navigation /////////#}
 
@@ -27,6 +27,20 @@
 </ul>
 
 <a class="{%if segmentName == '/about/' %}active{% endif %}" href="/about">About Copy</a> #}
-{% import "_site-settings.nunjucks" as sitevars %}
+{# {% import "_site-settings.nunjucks" as sitevars %}
 
-{{ sitevars.globalTitle }}
+{{ sitevars.globalTitle }} #}
+
+
+{# Testing the JSON around for Listen Pages #}
+
+{# {% for item in sermon-series.series %}
+  <div class="sermon__item">
+    <div class="sermon">
+      {{item.title}}
+    </div>
+    <div class="description">
+      {{item.description}}
+    </div>
+  </div>
+{% endfor %} #}

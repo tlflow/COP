@@ -1,0 +1,15 @@
+<h1>Testing JSON call</h1>
+
+{% for series in sermon_series %}
+  <div class="series__item">
+    <h2>{{ series.title }}</h2>
+
+    <ul>
+      {% for sermon in series.sermons -%}
+        <li>{{ sermon.title }}</li>
+      {%- endfor %}
+    </ul>
+
+
+  </div>
+{% endfor %}

@@ -1,0 +1,8 @@
+<h1>Testing JSON call</h1>
+
+<h2>Eventually pics will be here</h2>
+{% for image in images %}
+  <div class="gallery__item">
+    <img src="{{image.src}}" alt="{{image.alt}}">
+  </div>
+  {% endfor %}

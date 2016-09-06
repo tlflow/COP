@@ -1,0 +1,23 @@
+{
+  "sermon-series": [
+    {
+      "series": [
+        {
+          "title": "We are the Body",
+          "description": "What does it mean to be a church member? We go over what the Bible says we're all to do to make the Body of Christ stronger.",
+          "image_url": "image.jpg",
+          "series_link": "we-are-the-body",
+          "sermons": [
+            {
+              "title": "Sermon 1",
+              "description": "Brief Introduction to Series",
+              "audio-url": "audio.mp3",
+              "preacher": "Pastor Lincoln Nelson",
+              "date_recorded": "9-4-2016"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
