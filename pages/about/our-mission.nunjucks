@@ -4,25 +4,18 @@
 {% set themeSetting = 'show-related' %}
 {% extends 'subpage-layout.nunjucks' %}
 
-{% block masthead %}
-<div id="masthead" data-interchange="[{{ sitevars.urlpath }}images/prayer.w_480.jpg, small],
-  [{{ sitevars.urlpath }}images/prayer.w_618.jpg, medium],
-  [{{ sitevars.urlpath }}images/prayer.w_940.jpg, large],
-  [{{ sitevars.urlpath }}images/prayer.w_1182.jpg, xlarge],
-  [{{ sitevars.urlpath }}images/prayer.w_1422.jpg, xxlarge]">
+{# {% block masthead %}
+<div id="masthead">
   <!--<div class="text">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quisquam dolor accusamus porro ut architecto consectetur, quasi natus earum, accusantium!</p>
   </div>-->
 </div>
-{% endblock %}
+{% endblock %} #}
 
 {% block content %}
   <div class="row align-center">
     <div class="columns small-12 large-10">
-      <h1>Our Church Mission</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+      <h1>Our Mission</h1>
       <p>We aim to:</p>
       <ul>
         <li>Build an edifice unto God that will allow the lost to come into the fellowship of the righteous.</li>
@@ -37,32 +30,14 @@
   </div>
   <section class="related">
     <div class="row align-center">
-      <div class="columns small-12 large-11">
+      <div class="columns small-12 large-10">
         <h2>Related Topics</h2>
+        <div class="row align-justify">
+          {% include 'partials/about-related.nunjucks' %}
+        </div>
       </div>
     </div>
-    <div class="row align-spaced">
 
-      <div class="columns small-12 large-3">
-        <h3>What We Believe</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vel autem quos perspiciatis.
-          <br><a href="{{urlpath}}/about/what-we-believe.html">learn more</a>
-        </p>
-      </div>
-      <div class="columns small-12 large-3">
-        <h3>Our Core Values</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vel autem quos perspiciatis.
-          <br><a href="{{urlpath}}/about/our-core-values.html">learn more</a>
-        </p>
-      </div>
-      <div class="columns small-12 large-3">
-        <h3>Our Purpose</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vel autem quos perspiciatis.
-          <br><a href="{{urlpath}}/about/our-purpose.html">learn more</a>
-        </p>
-      </div>
-
-    </div>
   </section>
 {% endblock %}
 

@@ -1,8 +1,8 @@
-{% for img in images.image %}
+{# {% for img in images.image %}
   <div class="gallery__item">
     <img src="{{img.src}}" alt="{{img.alt}}">
   </div>
-{% endfor %}
+{% endfor %} #}
 
 {# //////// working on site navigation /////////#}
 
@@ -44,3 +44,14 @@
     </div>
   </div>
 {% endfor %} #}
+
+var items = [{ title: "foo", id: 1 }, { title: "bar", id: 2}];
+
+<h1>Posts</h1>
+<ul>
+{% for item in items %}
+  <li>{{ item.title }}</li>
+{% else %}
+  <li>This would display if the 'item' collection were empty</li>
+{% endfor %}
+</ul>

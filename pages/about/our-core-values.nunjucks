@@ -1,95 +1,39 @@
 {% set segmentName = 'about' %}
-{% set pageName = 'vision' %}
-{% set pageTitle = 'Our Church Vision' %}
+{% set pageName = 'core-values' %}
+{% set pageTitle = 'Our Core Values' %}
 {% set themeSetting = 'show-related' %}
 {% extends 'subpage-layout.nunjucks' %}
 
-{% block masthead %}
+{# {% block masthead %}
 <div id="masthead">
   <!--<div class="text">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quisquam dolor accusamus porro ut architecto consectetur, quasi natus earum, accusantium!</p>
   </div>-->
-  <picture>
-    <source
-    media="(max-width: 767px)"
-    sizes="(max-width: 1534px) 100vw, 1534px"
-    srcset="
-    {{ sitevars.urlpath }}images/values/values_bos658_ar_1_1,c_fill,g_auto__c_scale,w_250.jpg 250w,
-    values_bos658_ar_1_1,c_fill,g_auto__c_scale,w_828.jpg 828w,
-    {{ sitevars.urlpath }}images/values/values_bos658_ar_1_1,c_fill,g_auto__c_scale,w_1213.jpg 1213w,
-    {{ sitevars.urlpath }}images/values/values_bos658_ar_1_1,c_fill,g_auto__c_scale,w_1534.jpg 1534w">
-    <source
-    media="(min-width: 768px) and (max-width: 991px)"
-    sizes="(max-width: 1982px) 100vw, 1982px"
-    srcset="
-    {{ sitevars.urlpath }}images/values/values_bos658_ar_4_3,c_fill,g_auto__c_scale,w_768.jpg 768w,
-    {{ sitevars.urlpath }}images/values/values_bos658_ar_4_3,c_fill,g_auto__c_scale,w_1256.jpg 1256w,
-    {{ sitevars.urlpath }}images/values/values_bos658_ar_4_3,c_fill,g_auto__c_scale,w_1645.jpg 1645w,
-    {{ sitevars.urlpath }}images/values/values_bos658_ar_4_3,c_fill,g_auto__c_scale,w_1982.jpg 1982w">
-    <source
-    media="(min-width: 992px) and (max-width: 1199px)"
-    sizes="(max-width: 2398px) 100vw, 2398px"
-    srcset="
-    {{ sitevars.urlpath }}images/values/values_bos658_ar_16_9,c_fill,g_auto__c_scale,w_992.jpg 992w,
-    {{ sitevars.urlpath }}images/values/values_bos658_ar_16_9,c_fill,g_auto__c_scale,w_1555.jpg 1555w,
-    {{ sitevars.urlpath }}images/values/values_bos658_ar_16_9,c_fill,g_auto__c_scale,w_2003.jpg 2003w,
-    {{ sitevars.urlpath }}images/values/values_bos658_ar_16_9,c_fill,g_auto__c_scale,w_2398.jpg 2398w">
-    <img
-    sizes="(max-width: 2760px) 100vw, 2760px"
-    srcset="
-    {{ sitevars.urlpath }}images/values/values_bos658_c_scale,w_1200.jpg 1200w,
-    {{ sitevars.urlpath }}images/values/values_bos658_c_scale,w_1813.jpg 1813w,
-    {{ sitevars.urlpath }}images/values/values_bos658_c_scale,w_2314.jpg 2314w,
-    {{ sitevars.urlpath }}images/values/values_bos658_c_scale,w_2760.jpg 2760w"
-    src="{{ sitevars.urlpath }}images/values/values_bos658_c_scale,w_2760.jpg"
-    alt="Family Reading the Bible">
-  </picture>
 </div>
-{% endblock %}
+{% endblock %} #}
 
 {% block content %}
   <div class="row align-center">
     <div class="columns small-12 large-10">
       <h1>Our Core Values</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, saepe.</p>
+      <p>Our core values include:</p>
       <ul>
         <li>Prayer: Pray with ceasing (1 Thessalonians 5:17),</li>
         <li>Worship: Thou shalt worship the Lord thy God, and him only shalt thou serve (Matthew 4:10),</li>
         <li>Praise: Let everything that hath breath praise the Lord (Psalms 150:6)</li>
         <li>Discipleship: Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost; teaching them to observe all things whatsover I have commanded you. (Matthew 28:19-20),</li>
-        <li>Evangelism: But ye shall recieve power, after the Holy Ghost is come upon you: and ye shall be witnesses unto me both in Jerusalem, and in all Judea, and in Samaria, and unto the uttermost part of the earth. (Acts 1:8)</li>
+        <li class="mg-bottom-50">Evangelism: But ye shall recieve power, after the Holy Ghost is come upon you: and ye shall be witnesses unto me both in Jerusalem, and in all Judea, and in Samaria, and unto the uttermost part of the earth. (Acts 1:8)</li>
       </ul>
     </div>
   </div>
   <section class="related">
     <div class="row align-center">
-      <div class="columns small-12 large-11">
+      <div class="columns small-12 large-10">
         <h2>Related Topics</h2>
+        <div class="row align-justify">
+          {% include 'partials/about-related.nunjucks' %}
+        </div>
       </div>
-    </div>
-    <div class="row align-spaced">
-
-      <div class="columns small-12 large-3">
-        <h3>What We Believe</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vel autem quos perspiciatis.
-          <br><a href="{{ sitevars.urlpath }}about/what-we-believe.html">learn more</a>
-        </p>
-      </div>
-      <div class="columns small-12 large-3">
-        <h3>Our Vision</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vel autem quos perspiciatis.
-          <br><a href="{{ sitevars.urlpath }}about/our-vision.html">learn more</a>
-        </p>
-      </div>
-      <div class="columns small-12 large-3">
-        <h3>Our Mission</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vel autem quos perspiciatis.
-          <br><a href="{{ sitevars.urlpath }}about/our-mission.html">learn more</a>
-        </p>
-      </div>
-
     </div>
   </section>
 {% endblock %}

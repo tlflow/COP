@@ -3,7 +3,7 @@
 {% set pageTitle = 'About Our Church' %}
 {% extends 'panels-layout.nunjucks' %}
 
-{% block masthead %}
+{# {% block masthead %}
 <div id="masthead">
   <!--<video id="cmn-video-demo2__video" autoplay loop>
     <source src="http://media1.churchofphiladelphia.com/demo.mp4" type="video/mp4">
@@ -13,7 +13,7 @@
     Your browser doesn't support HTML5 video. Here's a <a href="#">link</a> to download the video.
   </video>-->
 </div>
-{% endblock %}
+{% endblock %} #}
 
 {% block content %}
   <section class="panel-theme-1">
@@ -46,13 +46,13 @@
   </section>
 
   <section class="panel-theme-1">
-    <div class="row align-center">
+    {# <div class="row align-center">
       <div class="columns small-12 large-10">
         <blockquote>
           "A quick testiomony about what we do as a church should go here. I think we this is a great church because..."
           <cite>- A Church Goer</cite>
         </blockquote>
-    </div>
+    </div> #}
   </section>
 
   <section class="panel-theme-2">
@@ -73,13 +73,13 @@
   </section>
 
   <section class="panel-theme-1">
-    <div class="row align-center">
+    {# <div class="row align-center">
       <div class="columns small-12 large-10">
         <blockquote>
           "A quick testiomony about what we do as a church should go here. I think we this is a great church because..."
           <cite>- A Church Goer</cite>
         </blockquote>
-    </div>
+    </div> #}
   </section>
 
   <section class="panel-theme-2">
@@ -98,13 +98,13 @@
   </section>
 
   <section class="panel-theme-1">
-    <div class="row align-center">
+    {# <div class="row align-center">
       <div class="columns small-12 large-10">
         <blockquote>
           "A quick testiomony about what we do as a church should go here. I think we this is a great church because..."
           <cite>- A Church Goer</cite>
         </blockquote>
-    </div>
+    </div> #}
   </section>
 
   <section class="panel-theme-2">

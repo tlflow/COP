@@ -22,13 +22,14 @@
   margin-bottom: rem-calc(40);
 
   @include breakpoint(small only) {
-    padding: rem-calc(30) 0;
+    // padding: rem-calc(30) 0;
+    background-color: rgba(#111, 0.8);
   }
 }
 
 
 .pic {
-  background: yellow;
+  background: #cccccc;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -183,8 +184,6 @@
 }
 
 #introduction {
-  background-color: #ecf0f1;
-
   .section-heading {
     margin-bottom: rem-calc(20);
   }
@@ -194,10 +193,16 @@
 }
 
 #about-us {
+  background-color: #ecf0f1;
   color: $darkgrey;
 
   .section-heading {
-    color: $darkgrey;
+    // color: $darkgrey;
+    background: $darkgrey;
+    color: #ecf0f1;
+    text-transform: uppercase;
+    position: relative;
+    top: 320px;
   }
 
   .text {
@@ -206,6 +211,11 @@
     @include breakpoint(small only) {
       top: rem-calc(100);
       // font-size: rem-calc(24);
+
+      .blue-custom-btn {
+        position: relative;
+        top: 360px;
+      }
     }
 
     @include breakpoint(large) {
@@ -245,7 +255,7 @@
   }
 }
 
-#gatherings {
+#introduction, #gatherings {
   background-color: darken($darkgrey, 10%);
   color: #f2f2f2;
 }

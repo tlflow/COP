@@ -1,31 +1,29 @@
-{% set segmentName = 'about' %}
-{% set pageName = 'vision' %}
-{% set pageTitle = 'Our Church Vision' %}
-{% set themeSetting = 'show-related' %}
+{% set segmentName = 'sermon-series' %}
+{% set pageName = 'we-are-the-body' %}
+{% set pageTitle = 'We Are the Body' %}
 {% extends 'subpage-layout.nunjucks' %}
 
-{# {% block masthead %}
-<div id="masthead">
+{% block masthead %}
+<div id="masthead" class="pic">
   <!--<div class="text">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quisquam dolor accusamus porro ut architecto consectetur, quasi natus earum, accusantium!</p>
   </div>-->
+  <img data-stoppoints="480,768,1200,1800" data-src="{{ sitevars.cloudinaryImage }}/we-are-the-body.jpg" class="cld-responsive cover-img" />
 </div>
-{% endblock %} #}
+{% endblock %}
 
 {% block content %}
   <div class="row align-center">
     <div class="columns small-12 large-10">
-      <h1>Our Vision</h1>
-      <p>We strive to be a ministry that brings souls into the Kingdom of God through teaching and preaching the Gospel of Jesus Christ. We desire to be a place where people of all colors, creeds, and nationalities can come and encounter a life-changing relationship with Jesus the Living Savior, exalt God through worship, be equipped to participate in ministry, encourage one another through love and fellowship, and establish strong families and communities.
-      </p>
-      <p>The vision that God has given to Church of Philadelphia is build in the frame work of a 5 point mandate, which is to:</p>
-      <ol>
-        <li>Win the Lost at any Cost <a data-open="matthew25_36">(Matthew 25:36)</a></li>
-        <li>Build Strong Families <a data-open="joshua24_15">(Joshua 24:15)</a></li>
-        <li>Equip the Saints for the Work of Ministry <a data-open="ephesians4_11-13">(Ephesians 4:11-13)</a></li>
-        <li>Teach the People of God Sound Economic Principle <a data-open="deuteronomy8_18">(Deuteronomy 8:18)</a></li>
-        <li class="mg-bottom-50">Heal the Broken Hearted <a data-open="acts10_38">(Acts 10:38)</a></li>
-      </ol>
+      <h1>Our Core Values</h1>
+      <p>Our core values include:</p>
+      <ul>
+        <li>Prayer: Pray with ceasing (1 Thessalonians 5:17),</li>
+        <li>Worship: Thou shalt worship the Lord thy God, and him only shalt thou serve (Matthew 4:10),</li>
+        <li>Praise: Let everything that hath breath praise the Lord (Psalms 150:6)</li>
+        <li>Discipleship: Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost; teaching them to observe all things whatsover I have commanded you. (Matthew 28:19-20),</li>
+        <li class="mg-bottom-50">Evangelism: But ye shall recieve power, after the Holy Ghost is come upon you: and ye shall be witnesses unto me both in Jerusalem, and in all Judea, and in Samaria, and unto the uttermost part of the earth. (Acts 1:8)</li>
+      </ul>
     </div>
   </div>
   <section class="related">

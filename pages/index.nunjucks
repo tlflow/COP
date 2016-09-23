@@ -11,7 +11,7 @@
       <div class="text box black-bkg">
         <h1 class="section-heading">We Love You, <span>Charlotte</span></h1>
         <h2>and we're here to help</h2>
-        <a class="blue-custom-btn" href="/">learn more</a>
+        {# <a class="blue-custom-btn" href="/">learn more</a> #}
         <ul class="social-icons">
             <li><a href="#" class="social"><i class="icon-facebook2"></i></a></li>
             <li><a href="#" class="social"><i class="icon-twitter"></i></a></li>
@@ -39,19 +39,27 @@
                 <br>That's the
                 <br><span>Church of Philadelphia</span>.</p>
             <p><em>That's our church.</em></p>
-            <a class="blue-custom-btn" href="/">learn more</a>
+            {# <a class="blue-custom-btn" href="/">learn more</a> #}
         </div>
     </div>
 </section>
 
 <div id="about-us" class="parallax__parent">
   <div class="parallax__child pic">
-    <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/sky.jpg" class="cld-responsive cover-img" />
+    <div class="text">
+        <div class="row align-center">
+            <div class="column small-10 large-9">
+                <h2 class="section-heading">Sermon Series</h2>
+                <a class="blue-custom-btn" href="">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <img data-stoppoints="480,768,1200,1800" data-src="{{ sitevars.cloudinaryImage }}/sermon-series/we-are-the-body.jpg" class="cld-responsive cover-img" />
   </div>
 </div>
 
 <section id="gatherings">
-    <div class="row wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="row">
         <div class="small-12 columns">
             <h2 class="section-heading">Our Next Gathering</h2>
             <p>Every Sunday we come together to celebrate, praise and worship our God.<br>It's not just a church service, it's an encounter.</p>
@@ -69,7 +77,7 @@
                 <div class="column small-12 large-9 box black-bkg">
                     <h2 class="section-heading">We Look Forward<br>to Seeing You</h2>
                     <p>We know visiting a church for the first time can be an overwhelming experience. We've all been there and we want you to feel right at home when you come!</p>
-                    <a class="blue-custom-btn" href="">What to Expect</a>
+                    {# <a class="blue-custom-btn" href="">What to Expect</a> #}
                 </div>
             </div>
         </div>
@@ -77,8 +85,8 @@
     </div>
 </div>
 
-<section id="connect" class="pic">
-    <div class="row align-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+{# <section id="connect" class="pic">
+    <div class="row align-center">
         <div class="columns small-12 large-8">
           <div class="text box black-bkg">
             <h2 class="section-heading">Connect</h2>
@@ -88,6 +96,19 @@
         </div>
     </div>
     <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/hold-hands.jpg" class="cld-responsive cover-img" />
+</section> #}
+
+<section id="connect" class="pic">
+  <div class="text">
+    <div class="row align-center">
+        <div class="columns small-12 large-8 box black-bkg">
+          <h2 class="section-heading">Connect</h2>
+          <p>Not only are we helping the lost find Christ and a new hope for living, we're helping believers to grow in their personal faith and become established in the Word. We extend an open invitation to you and your family to grow with us.</p>
+          {# <a class="blue-custom-btn" href="/">Find Out More</a> #}
+        </div>
+    </div>
+    <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/hold-hands.jpg" class="cld-responsive cover-img" />
+  </div>
 </section>
 
 <section id="get_connected">
@@ -101,7 +122,7 @@
                 <div class="row">
                     <div class="medium-6 columns">
                         <label class="text-left">Name
-                            <input type="text" name="name" placeholder="Your First &amp; Last Name">
+                            <input type="text" name="name" placeholder="Your name">
                         </label>
                     </div>
                     <div class="medium-6 columns">
@@ -113,7 +134,7 @@
                 <div class="row">
                     <div class="small-6 columns">
                       <label class="text-left">Phone
-                          <input type="tel" name="phone" placeholder="Your phone number">
+                          <input type="tel" name="phone" placeholder="Your phone no.">
                       </label>
                     </div>
                     <div class="small-6 columns">

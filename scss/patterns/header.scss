@@ -207,9 +207,11 @@ button.menu-icon {
     }
 
     li {
-      @include breakpoint(medium down) {
+      @include breakpoint(small) {
         a {
-          border-bottom: 1px solid #ccc;
+          border-bottom: 1px dotted #999;
+          margin: 0 auto;
+          width: 90%;
         }
       }
 
@@ -221,6 +223,9 @@ button.menu-icon {
 
         a {
           border-right: 1px solid #ccc;
+          margin: auto;
+          width: auto;
+          border-bottom: none;
         }
       }
     }

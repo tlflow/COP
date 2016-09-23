@@ -1,0 +1,68 @@
+{% if pageName=='mission' %}
+  <div class="columns small-12 large-4">
+    <h3>What We Believe</h3>
+    <p>Here are a few key principles we stand on as we live and teach according to what we believe. <a href="{{urlpath}}/about/what-we-believe.html">learn more</a>
+    </p>
+  </div>
+  <div class="columns small-12 large-4">
+    <h3>Our Core Values</h3>
+    <p>We stand on these principles as the bedrock of our values. <a href="{{urlpath}}/about/our-core-values.html">learn more</a>
+    </p>
+  </div>
+  <div class="columns small-12 large-3">
+    <h3>Our Purpose</h3>
+    <p>We aspire to be a ministry that brings souls into the Kingdom of God. <a href="{{urlpath}}/about/our-purpose.html">learn more</a>
+    </p>
+  </div>
+
+{% elif pageName=='vision' %}
+  <div class="columns small-12 large-4">
+    <h3>What We Believe</h3>
+    <p>Here are a few key principles we stand on as we live and teach according to what we believe. <a href="{{urlpath}}/about/what-we-believe.html">learn more</a>
+    </p>
+  </div>
+  <div class="columns small-12 large-4">
+    <h3>Our Core Values</h3>
+    <p>We stand on these principles as the bedrock of our values. <a href="{{urlpath}}/about/our-core-values.html">learn more</a>
+    </p>
+  </div>
+  <div class="columns small-12 large-3">
+    <h3>Our Mission</h3>
+    <p>It is our purpose to spread the gospel of Jesus Christ and the love of God. <a href="{{urlpath}}/about/our-mission.html">learn more</a>
+    </p>
+  </div>
+
+{% elif pageName=='what-we-believe' %}
+  <div class="columns small-12 large-3">
+    <h3>Our Purpose</h3>
+    <p>We aspire to be a ministry that brings souls into the Kingdom of God. <a href="{{urlpath}}/about/our-purpose.html">learn more</a>
+    </p>
+  </div>
+  <div class="columns small-12 large-4">
+    <h3>Our Core Values</h3>
+    <p>We stand on these principles as the bedrock of our values. <a href="{{urlpath}}/about/our-core-values.html">learn more</a>
+    </p>
+  </div>
+  <div class="columns small-12 large-3">
+    <h3>Our Mission</h3>
+    <p>It is our purpose to spread the gospel of Jesus Christ and the love of God. <a href="{{urlpath}}/about/our-mission.html">learn more</a>
+    </p>
+  </div>
+{% else %}
+  <div class="columns small-12 large-3">
+    <h3>Our Purpose</h3>
+    <p>We aspire to be a ministry that brings souls into the Kingdom of God. <a href="{{urlpath}}/about/our-purpose.html">learn more</a>
+    </p>
+  </div>
+  <div class="columns small-12 large-3">
+    <h3>Our Mission</h3>
+    <p>It is our purpose to spread the gospel of Jesus Christ and the love of God. <a href="{{urlpath}}/about/our-mission.html">learn more</a>
+    </p>
+  </div>
+  <div class="columns small-12 large-4">
+    <h3>What We Believe</h3>
+    <p>Here are a few key principles we stand on as we live and teach according to what we believe. <a href="{{urlpath}}/about/what-we-believe.html">learn more</a>
+    </p>
+  </div>
+
+{% endif %}

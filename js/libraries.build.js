@@ -10,8 +10,8 @@
 
 //@prepros-append ../bower_components/moment/min/moment.min.js
 
-//@prepros-append ../bower_components/cloudinary-jquery/cloudinary-jquery.min.js 
+//@prepros-append ../bower_components/cloudinary-jquery/cloudinary-jquery.min.js
 
-//@prepros-append ../bower_components/owlcarousel/owl-carousel/owl.carousel.min.js
+//@prepros-append ../bower_components/owl.carousel/dist/owl.carousel.min.js
 
 //@prepros-append ../bower_components/foundation-sites/dist/foundation.min.js

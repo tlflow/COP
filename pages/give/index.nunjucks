@@ -4,36 +4,44 @@
 {% extends 'subpage-layout.nunjucks' %}
 
 {% block masthead %}
-<div id="masthead" data-interchange="[/dist/images/stock/lightstock_74990_comp.jpg, small],
-  [/dist/images/stock/lightstock_74990_comp.jpg, medium],
-  [/dist/images/stock/lightstock_74990_comp.jpg, large],
-  [/dist/images/stock/lightstock_74990_comp.jpg, xlarge]">
-  <div class="text">
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quisquam dolor accusamus porro ut architecto consectetur, quasi natus earum, accusantium!</p>
+<div id="masthead" class="pic text light-text">
+  <div class="row align-center">
+    <div class="columns small-6 align-middle text-center">
+      <h1>Giving</h1>
+    </div>
   </div>
+  <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/giving.jpg" class="cld-responsive cover-img" />
 </div>
 {% endblock %}
 
 {% block content %}
-  <div class="row">
-    <div class="columns small-12">
-      <h1>Giving</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolorem, dolore sint voluptatem, assumenda labore beatae ad necessitatibus non architecto delectus eum sunt dicta cum quam, iste perspiciatis nostrum enim!</p>
-      <form action="">
-        <label><input type="number" min="3" step="10" name="amount" id="amount"></label>
-      </form>
+
+<section>
+  <div class="row align-center">
+    <div class="columns small-12 large-10">
+      <h2>Your Giving Helps Build God's Kingdom</h2>
+
+      <p>It seems so few people these days give tithes and offerings. However, it is our actions, coupled with our giving, which denote whether we accept God and His word holistically.</p>
     </div>
   </div>
-  <div class="row">
-    <div class="columns small-12 large-6">
-      <h2>This is a thought</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vel autem quos perspiciatis saepe fuga iste eveniet odio! Accusamus, possimus.</p>
-    </div>
-    <div class="columns small-12 large-6">
-      <h2>Another thing</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi minima, ullam sint commodi blanditiis, voluptates?</p>
+</section>
+
+<section>
+  <div class="row align-center">
+    <div class="columns small-12 large-10">
+    <h2>Aligning Ourselves by Giving</h2>
+    <p>When you tithe, you are aligning your attitude and actions with universal principles originating with God, the great Giver (Matthew 10:8; 19:21; 20:28; Luke 6:38; 12:32; Acts 20:35). Tithing reflects the unselfish, giving nature of our Creator and Provider.</p>
     </div>
   </div>
+</section>
+
+<section>
+  <div class="row align-center">
+    <div class="columns small-12 large-10">
+    <h2>Tithing is a Decision</h2>
+    <p>Making a decision to tithe is a matter of faith. For most of us, the necessities of life consume almost all of our income. Stepping out in faith to tithe is a way of supporting the work of God and nourishing the Church.</p>
+    </div>
+  </div>
+</section>
 
 {% endblock %}
