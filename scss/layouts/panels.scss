@@ -24,6 +24,22 @@
   display: none;
 }
 
+#content {
+  @include breakpoint(small) {
+    padding-top: rem-calc(60);
+  }
+
+  @include breakpoint(large) {
+    padding-top: rem-calc(120);
+    padding-bottom: rem-calc(200);
+
+    h1 {
+      padding-bottom: vr(1);
+      box-shadow: 0 1px 0 #ccc;
+    }
+  }
+}
+
 #masthead {
   max-height: rem-calc(500);
   width: 100%;

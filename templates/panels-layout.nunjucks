@@ -5,6 +5,7 @@
 <head>
   <title>{% if pageTitle %}{{ pageTitle }}{% else %}{{ globalTitle }}{% endif %}</title>
   <meta charset="UTF-8">
+  {# <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width"> #}
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   {% include 'partials/csspaths.nunjucks' %}
 </head>

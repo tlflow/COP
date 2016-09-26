@@ -77,13 +77,22 @@
     }
   }
 
-  @include breakpoint(medium down) {
+  @media screen and #{breakpoint(medium down)} {
     opacity: 0;
+
+    .menu {
+      display: none;
+    }
 
     &.active {
       opacity: 1;
       transition: opacity 0.3s 0.5s;
       background-color: transparent;
+
+      .menu {
+        display: block;
+      }
+
     }
   }
 
@@ -111,7 +120,7 @@
 }
 
 #global ul.menu {
-  @include breakpoint(medium down) {
+  @media screen and #{breakpoint(medium down)} {
     @include menu-direction(vertical);
     background-color: transparent;
     padding-top: rem-calc(60);
@@ -142,7 +151,7 @@
 .top-bar {
   width: 100%;
   z-index: 1000;
-  @include breakpoint(medium down) {
+  @media screen and #{breakpoint(medium down)} {
     .top-bar-left {
       display: none;
     }
@@ -212,6 +221,10 @@ button.menu-icon {
           border-bottom: 1px dotted #999;
           margin: 0 auto;
           width: 90%;
+        }
+
+        &:last-child a {
+          border-bottom: none;
         }
       }
 

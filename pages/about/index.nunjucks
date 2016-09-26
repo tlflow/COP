@@ -16,7 +16,7 @@
 {% endblock %} #}
 
 {% block content %}
-  <section class="panel-theme-1">
+  <section>
     <div class="row align-center">
       <div class="columns small-12 large-10 text-align-center">
         <h1>About Our Church</h1>

@@ -8,72 +8,57 @@
   <!--<div class="text">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quisquam dolor accusamus porro ut architecto consectetur, quasi natus earum, accusantium!</p>
   </div>-->
-  <img data-stoppoints="480,768,1200,1800" data-src="{{ sitevars.cloudinaryImage }}/we-are-the-body.jpg" class="cld-responsive cover-img" />
+  <img data-stoppoints="480,768,1200,1800" data-src="{{ sitevars.cloudinaryImage }}/sermon-series/we-are-the-body.jpg" class="cld-responsive cover-img" />
 </div>
 {% endblock %}
 
 {% block content %}
-  <div class="row align-center">
-    <div class="columns small-12 large-10">
-      <h1>Our Core Values</h1>
-      <p>Our core values include:</p>
-      <ul>
-        <li>Prayer: Pray with ceasing (1 Thessalonians 5:17),</li>
-        <li>Worship: Thou shalt worship the Lord thy God, and him only shalt thou serve (Matthew 4:10),</li>
-        <li>Praise: Let everything that hath breath praise the Lord (Psalms 150:6)</li>
-        <li>Discipleship: Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost; teaching them to observe all things whatsover I have commanded you. (Matthew 28:19-20),</li>
-        <li class="mg-bottom-50">Evangelism: But ye shall recieve power, after the Holy Ghost is come upon you: and ye shall be witnesses unto me both in Jerusalem, and in all Judea, and in Samaria, and unto the uttermost part of the earth. (Acts 1:8)</li>
-      </ul>
-    </div>
-  </div>
-  <section class="related">
+  <section>
     <div class="row align-center">
-      <div class="columns small-12 large-10">
-        <h2>Related Topics</h2>
-        <div class="row align-justify">
-          {% include 'partials/about-related.nunjucks' %}
-        </div>
+      <div class="columns small-12 medium-10">
+        <h1 class="sermon-heading">We Are the Body</h1>
+        <p>Sermon topics will include:</p>
+        <ul class="hide-bullets">
+          <li class="mb-20">
+            <div class="title"><b>"My Role as a Church Member"</b></div>
+            <div class="subtitle">
+              Come and learn what it means to be a church member.
+            </div>
+          </li>
+          <li class="mb-20">
+            <div class="title"><b>"Keeping Balance in the Church"</b></div>
+            <div class="subtitle">
+              How can you help keep balance? Come and find out.
+            </div>
+          </li>
+          <li class="mb-20">
+            <div class="title"><b>"Let the Church <em>Be</em> the Church"</b></div>
+            <div class="subtitle">
+              We are to live a sanctified life. Come find out how.
+            </div>
+          </li>
+          <li class="mb-20">
+            <div class="title"><b>"Praying for My Church Leaders"</b></div>
+            <div class="subtitle">
+              It is the will of God for his body to prosper and be in health.
+            </div>
+          </li>
+          <li class="mb-20">
+            <div class="title"><b>"Healthy Family/Healthy Church"</b></div>
+            <div class="subtitle">
+              Come and learn what it means to be a church member.
+            </div>
+          </li>
+
+          <li class="mb-20">
+            <div class="title"><b>I <em>Get</em> to Do This (This Is a Privilege)</b></div>
+            <div class="subtitle">
+              We're looking at responsibility from a totally different angle.
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
-{% endblock %}
 
-{% block extra %}
-  <div class="reveal" id="matthew25_36" data-reveal>
-    <h2>Matthew 25:36</h2>
-    <p><span>36</span> Naked, and ye clothed me: I was sick, and ye visited me: I was in prison, and ye came unto me.</p>
-    <button class="close-button" data-close aria-label="Close modal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="reveal" id="joshua24_15" data-reveal>
-    <h2>Joshua 24:15</h2>
-    <p><span>36</span> And I have given you a land for which ye did not labour, and cities which ye built not, and ye dwell in them; of the vineyards and oliveyards which ye planted not do ye eat.</p>
-    <button class="close-button" data-close aria-label="Close modal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="reveal" id="ephesians4_11-13" data-reveal>
-    <h2>Ephesians 4:11-13</h2>
-    <p><span>11</span> And he gave some, apostles; and some, prophets; and some, evangelists; and some, pastors and teachers;</p>
-    <p><span>12</span> For the perfecting of the saints, for the work of the ministry, for the edifying of the body of Christ:</p>
-    <p><span>13</span> Till we all come in the unity of the faith, and of the knowledge of the Son of God, unto a perfect man, unto the measure of the stature of the fulness of Christ:</p>
-    <button class="close-button" data-close aria-label="Close modal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="reveal" id="deuteronomy8_18" data-reveal>
-    <h2>Deuteronomy 8:18</h2>
-    <p><span>18</span> But thou shalt remember the Lord thy God: for it is he that giveth thee power to get wealth, that he may establish his covenant which he sware unto thy fathers, as it is this day.</p>
-    <button class="close-button" data-close aria-label="Close modal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="reveal" id="acts10_38" data-reveal>
-    <h2>Acts 10:38</h2>
-    <p><span>38</span> How God anointed Jesus of Nazareth with the Holy Ghost and with power: who went about doing good, and healing all that were oppressed of the devil; for God was with him.</p>
-    <button class="close-button" data-close aria-label="Close modal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
 {% endblock %}

@@ -16,6 +16,54 @@
   display: none;
 }
 
+.mb-20 {
+  margin-bottom: rem-calc(20);
+}
+
+.white-text {
+  color: #fff;
+}
+
+.hide-bullets {
+  list-style: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.purple {
+  background-color: $primary;
+}
+
+.darkgrey-1 {
+  background-color: darken($darkgrey, 10.5%);
+}
+
+h1 {
+
+  &.color-bkg {
+    @include breakpoint(medium down) {
+      color: #fff;
+      background-color: $primary;
+      text-transform: uppercase;
+    }
+
+    @include breakpoint(small only) {
+      font-size: rem-calc(28);
+      text-align: center;
+      padding: rem-calc(20) 0;
+    }
+  }
+
+  &.sermon-heading {
+    @include breakpoint(small only) {
+      font-size: rem-calc(32);
+      text-align: center;
+    }
+  }
+}
+
 #masthead, #current-series {
   max-height: rem-calc(500);
   overflow: hidden;
@@ -26,10 +74,6 @@
 
     .row {
       height: calc(100% - 20px);
-
-      h1 {
-        text-transform: uppercase;
-      }
     }
 
     @include breakpoint(small) {
@@ -44,14 +88,22 @@
       // margin-top: rem-calc(140);
       height: rem-calc(400)
     }
+  }
+}
 
-    &.light-text {
-      color: #fff;
-    }
+#masthead + #content {
+  @include breakpoint(small) {
+    padding-top: 0;
 
-    &.text-center {
-      text-align: center;
+    section {
+      padding-top: rem-calc(30);
     }
+  }
+}
+
+#masthead {
+  @include breakpoint(large) {
+    margin-top: rem-calc(100);
   }
 }
 
@@ -135,7 +187,7 @@ section {
       padding: rem-calc(20) 0;
 
       h2 {
-        margin-bottom: rem-calc(3op0);
+        margin-bottom: rem-calc(30);
       }
     }
 
