@@ -13,9 +13,9 @@
         <h2>and we're here to help</h2>
         {# <a class="blue-custom-btn" href="/">learn more</a> #}
         <ul class="social-icons row align-center">
-            <li class="columns small-1"><a href="#" class="social"><i class="icon-facebook2"></i></a></li>
-            <li class="columns small-1"><a href="#" class="social"><i class="icon-twitter"></i></a></li>
-            <li class="columns small-1"><a href="#" class="social"><i class="icon-instagram"></i></a></li>
+            <li class="columns small-2"><a href="#" class="social"><i class="icon-facebook2"></i></a></li>
+            <li class="columns small-2"><a href="#" class="social"><i class="icon-twitter"></i></a></li>
+            <li class="columns small-2"><a href="#" class="social"><i class="icon-instagram"></i></a></li>
         </ul>
       </div>
     </div>
@@ -36,22 +36,27 @@
     <div class="row align-center">
         <div class="column small-12 large-8 align-self-middle">
           <h2>Our Church</h2>
-          <p>Imagine a church that's working to create better communities, encourages growth of the family, and cultivates leaders for the church of tomorrow.</p>
+          <p>Imagine a church that's working to create better communities,<br> encourages growth of the family, and <br>cultivates leaders for the church of tomorrow.</p>
           <a class="blue-custom-btn" href="{{ sitevars.urlpath }}/about">learn more</a>
         </div>
     </div>
 </section>
 
 <div id="about-us" class="parallax__parent">
-  <div class="parallax__child pic">
+  <div class="parallax__child">
     <div class="row align-center">
-        <div class="column small-10 large-8 align-self-middle text">
-            <h2 class="section-heading">Sermon Series</h2>
-            <a class="blue-custom-btn" href="{{ sitevars.urlpath }}sermon-series/we-are-the-body.html">Learn More</a>
+        <div class="column small-12 large-8 box theme-2 align-self-middle text pic">
+          <h2 class="section-heading align-self-botttom">current sermon series</h2>
+          <div class="blurb">
+            <p>
+              Everyone serves a purpose. Come found out what being part of The Body really means.
+            </p>
+            <a class="blue-custom-btn" href="{{ sitevars.urlpath }}sermon-series/we-are-the-body.html">learn more</a>
+          </div>
+
+          <img data-stoppoints="480,768,1200,1800" data-src="{{ sitevars.cloudinaryImage }},c_fill,g_auto/sermon-series/we-are-the-body.jpg" class="cld-responsive cover-img" />
         </div>
     </div>
-
-    <img data-stoppoints="480,768,1200,1800" data-src="{{ sitevars.cloudinaryImage }},c_fill,g_auto/sermon-series/we-are-the-body.jpg" class="cld-responsive cover-img" />
   </div>
 </div>
 
@@ -107,8 +112,8 @@
 <section id="get_connected">
     <div class="row">
         <div class="columns small-12 medium-4">
-            <h2>We'd Like to Hear from You</h2>
-            <p>If you’re new or if you’ve visited Church of Philadelphia a few times, help us connect with you by filling out this form. We promise not to spam or sign you up for anything.</p>
+          <h2>We'd Like to Hear from You</h2>
+          <p>If you’re new or if you’ve visited Church of Philadelphia a few times, help us connect with you by filling out this form. We promise not to spam or sign you up for anything.</p>
         </div>
         <div class="columns small-12 medium-8">
             <form method="post">
