@@ -13,9 +13,9 @@
         <h2>and we're here to help</h2>
         {# <a class="blue-custom-btn" href="/">learn more</a> #}
         <ul class="social-icons row align-center">
-            <li class="columns small-2"><a href="#" class="social"><i class="icon-facebook2"></i></a></li>
-            <li class="columns small-2"><a href="#" class="social"><i class="icon-twitter"></i></a></li>
-            <li class="columns small-2"><a href="#" class="social"><i class="icon-instagram"></i></a></li>
+            <li class="columns small-2"><a href="https://www.facebook.com/ChurchOfPhiladelphia/" class="social"><i class="icon-facebook2"></i></a></li>
+            <li class="columns small-2"><a href="https://twitter.com/copcharlotte" class="social"><i class="icon-twitter"></i></a></li>
+            <li class="columns small-2"><a href="https://www.instagram.com/cop_charlotte/" class="social"><i class="icon-instagram"></i></a></li>
         </ul>
       </div>
     </div>
@@ -42,7 +42,7 @@
     </div>
 </section>
 
-<div id="about-us" class="parallax__parent">
+{# <div id="about-us" class="parallax__parent">
   <div class="parallax__child">
     <div class="row align-center">
         <div class="column small-12 large-8 box theme-2 align-self-middle text pic">
@@ -58,7 +58,19 @@
         </div>
     </div>
   </div>
-</div>
+</div> #}
+
+<section id="about-us" class="pic">
+  <div class="row align-center">
+      <div class="columns small-12 large-8 box theme-1 align-self-middle">
+        <h2 class="section-heading">Connect</h2>
+        <p>Not only are we helping the lost find Christ and a new hope for living, we're helping believers to grow in their personal faith and become established in the Word. We extend an open invitation to you and your family to grow with us.</p>
+        {# <a class="blue-custom-btn" href="/">Find Out More</a> #}
+      </div>
+  </div>
+  <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/hold-hands.jpg" class="cld-responsive cover-img" />
+</section>
+
 
 <section id="gatherings">
     <div class="row">
@@ -84,19 +96,6 @@
         <img data-stoppoints="480,768,1200,1800" data-src="{{ sitevars.cloudinaryImage }}/guests.jpg" class="cld-responsive cover-img" />
     </div>
 </div>
-
-{# <section id="connect" class="pic">
-    <div class="row align-center">
-        <div class="columns small-12 large-8">
-          <div class="text box theme-1">
-            <h2 class="section-heading">Connect</h2>
-            <p>Not only are we helping the lost find Christ and a new hope for living, we're helping believers to grow in their personal faith and become established in the Word. We extend an open invitation to you and your family to grow with us.</p>
-            <a class="blue-custom-btn" href="/">Find Out More</a>
-          </div>
-        </div>
-    </div>
-    <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/hold-hands.jpg" class="cld-responsive cover-img" />
-</section> #}
 
 <section id="connect" class="pic">
   <div class="row align-center">
@@ -168,7 +167,7 @@
                 </fieldset>
                 <div class="row">
                     <div class="small-12 columns">
-                        <input type="submit" name="submit" value="submit">
+                        <input class="graphite-custom-btn" type="submit" name="submit" value="submit">
                     </div>
                 </div>
 

@@ -31,7 +31,7 @@
 
   @include breakpoint(large) {
     padding-top: rem-calc(120);
-    padding-bottom: rem-calc(200);
+    // padding-bottom: rem-calc(200);
 
     h1 {
       padding-bottom: vr(1);

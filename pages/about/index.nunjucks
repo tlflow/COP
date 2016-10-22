@@ -46,13 +46,13 @@
   </section>
 
   <section class="panel-theme-1">
-    {# <div class="row align-center">
+    <div class="row align-center">
       <div class="columns small-12 large-10">
         <blockquote>
-          "A quick testiomony about what we do as a church should go here. I think we this is a great church because..."
-          <cite>- A Church Goer</cite>
+          "For 6 years I have been apart of Church of Philadelphia and I cannot see myself being apart any other ministry. I have learned how to apply the word of God to my life, that has allowed me to grow both spiritually and naturally."
+          <cite>- M. Watlington</cite>
         </blockquote>
-    </div> #}
+    </div>
   </section>
 
   <section class="panel-theme-2">
@@ -73,13 +73,13 @@
   </section>
 
   <section class="panel-theme-1">
-    {# <div class="row align-center">
+    <div class="row align-center">
       <div class="columns small-12 large-10">
         <blockquote>
-          "A quick testiomony about what we do as a church should go here. I think we this is a great church because..."
-          <cite>- A Church Goer</cite>
+          "I love the people at this church. They make sure failure is not an option and the support system is unmatched!"
+          <cite>- B. Williams</cite>
         </blockquote>
-    </div> #}
+    </div>
   </section>
 
   <section class="panel-theme-2">
@@ -98,13 +98,13 @@
   </section>
 
   <section class="panel-theme-1">
-    {# <div class="row align-center">
+    <div class="row align-center">
       <div class="columns small-12 large-10">
         <blockquote>
-          "A quick testiomony about what we do as a church should go here. I think we this is a great church because..."
-          <cite>- A Church Goer</cite>
+          "I've been a part of this church family for 12 years this year. I would not be the person I am today had I not become a part of this ministry. This is truly been a life changing experience growing and learning how to live the word of God!"
+          <cite>- K. Dudley</cite>
         </blockquote>
-    </div> #}
+    </div>
   </section>
 
   <section class="panel-theme-2">

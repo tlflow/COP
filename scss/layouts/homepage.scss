@@ -148,83 +148,102 @@
   }
 }
 
-#about-us {
-  background-color: #ccc;
-
-  h2 {
-    background-color: #999;
-    position: relative;
-    bottom: 0;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    width: 100%;
-
-    @media screen and #{breakpoint(medium down)},
-    #{breakpoint(large)} and #{breakpoint(landscape)} and #{breakpoint(retina)} {
-      height: 4rem;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-      left: 0;
-      top: 0;
-      font-size: 1.4rem;
-      line-height: 4rem;
-      position: absolute;
-    }
-  }
-
-  .text {
-    @include breakpoint(large) {
-      box-shadow: 1px 1px 1px #999;
-    }
-
-    @media screen and #{breakpoint(large down)} {
-      top: 0;
-      position: relative;
-      height: inherit;
-    }
-
-    @media screen and #{breakpoint(large)} and #{breakpoint(landscape)} and #{breakpoint(retina)} {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-    }
-  }
-
-  .blurb {
-    @media screen and #{breakpoint(medium down)}, #{breakpoint(large)} and #{breakpoint(landscape)} and #{breakpoint(retina)} {
-      width: 100%;
-      top: 60%;
-      left: 0;
-      font-size: 1.4rem;
-      line-height: 1.3rem;
-      position: absolute;
-
-      p {
-        width: 90%;
-        margin: 0 auto;
-        margin-bottom: rem-calc(20);
-      }
-    }
-  }
-
-  // @include breakpoint(small) {
-  //   .text {
-  //     height: inherit;
-  //   }
-  // }
-
-  // @include breakpoint(large) {
-  //   .text {
-  //     width: 1050px;
-  //     height: 600px;
-  //     top: 30%;
-  //   }
-  // }
-}
+// #about-us {
+//   background-color: #ccc;
+//
+//   h2 {
+//     background-color: #999;
+//     color: #fff;
+//     text-align: center;
+//     text-transform: uppercase;
+//     width: 100%;
+//
+//     // @media screen and #{breakpoint(medium down)},
+//     // #{breakpoint(large)} and #{breakpoint(landscape)} and #{breakpoint(retina)} {
+//     @media screen and #{breakpoint(medium down)} {
+//       height: 4rem;
+//       width: 100%;
+//       position: relative;
+//       bottom: 0;
+//       padding: 0;
+//       margin: 0;
+//       left: 0;
+//       top: 0;
+//       font-size: 1.4rem;
+//       line-height: 4rem;
+//       position: absolute;
+//     }
+//
+//     @include breakpoint(large) {
+//       background-color: darken(#999, 0.75);
+//       position: absolute;
+//       left: 0;
+//       top: 0;
+//       height: 40px;
+//       font-size: 1rem;
+//       text-align: left;
+//       line-height: 2rem;
+//       padding-left: 10px;
+//       width: 300px;
+//     }
+//   }
+//
+//   .text {
+//     @include breakpoint(large) {
+//       box-shadow: 1px 1px 1px #999;
+//     }
+//
+//     @media screen and #{breakpoint(large down)} {
+//       top: 0;
+//       position: relative;
+//       height: inherit;
+//     }
+//
+//     @media screen and #{breakpoint(large)} and #{breakpoint(landscape)} and #{breakpoint(retina)} {
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       height: 100%;
+//       width: 100%;
+//     }
+//   }
+//
+//   .blurb {
+//     @media screen and #{breakpoint(medium down)}, #{breakpoint(large)} and #{breakpoint(landscape)} and #{breakpoint(retina)} {
+//       width: 100%;
+//       top: 60%;
+//       left: 0;
+//       font-size: 1.4rem;
+//       line-height: 1.3rem;
+//       position: absolute;
+//
+//       p {
+//         width: 90%;
+//         margin: 0 auto;
+//         margin-bottom: rem-calc(20);
+//       }
+//     }
+//
+//     @include breakpoint(large) {
+//       position: relative;
+//       top: 220px;
+//     }
+//   }
+//
+//   // @include breakpoint(small) {
+//   //   .text {
+//   //     height: inherit;
+//   //   }
+//   // }
+//
+//   // @include breakpoint(large) {
+//   //   .text {
+//   //     width: 1050px;
+//   //     height: 600px;
+//   //     top: 30%;
+//   //   }
+//   // }
+// }
 
 section {
   text-align: center;
