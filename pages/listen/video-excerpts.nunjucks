@@ -1,0 +1,55 @@
+{% set segmentName = 'video excerpts' %}
+{% set pageName = 'video-excerpts' %}
+{% set pageTitle = 'Excerpts from Our Latest Sermons' %}
+{% extends 'subpage-layout.nunjucks' %}
+
+{# {% block masthead %}
+<div id="masthead">
+  <!--<div class="text">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quisquam dolor accusamus porro ut architecto consectetur, quasi natus earum, accusantium!</p>
+  </div>-->
+</div>
+{% endblock %} #}
+
+{% block content %}
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&amp;version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+  <div class="row align-center">
+    <div class="columns small-12 large-10">
+      <h1>Listen In</h1>
+      <section>
+        <h2>Video Excerpts</h2>
+        <div class="row align-justify">
+          <div class="columns small-12 medium-8 large-3">
+            <div class="fb-video" data-href="https://www.facebook.com/ChurchOfPhiladelphia/videos/10157026874175262/" data-width="320" data-allowfullscreen="true"></div>
+            <div class="title">this is a title</div>
+            <div class="date">Posted: Sunday, June 4th</div>
+          </div>
+          <div class="columns small-12 medium-8 large-3">
+            <div class="fb-video" data-href="https://www.facebook.com/ChurchOfPhiladelphia/videos/10157000307420262/" data-width="320" data-allowfullscreen="true"></div>
+            <div class="title">this is a title</div>
+            <div class="date">Posted: Sunday, June 4th</div>
+          </div>
+          <div class="columns small-12 medium-8 large-3">
+            <div class="fb-video" data-href="https://www.facebook.com/ChurchOfPhiladelphia/videos/10156970859405262/" data-width="320" data-allowfullscreen="true"></div>
+            <div class="title">this is a title</div>
+            <div class="date">Posted: Sunday, June 4th</div>
+          </div>
+          <div class="columns small-12 medium-8 large-3">
+            <div class="fb-video" data-href="https://www.facebook.com/ChurchOfPhiladelphia/videos/10156834769030262/" data-width="320" data-allowfullscreen="true"></div>
+            <div class="title">this is a title</div>
+            <div class="date">Posted: Sunday, June 4th</div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
