@@ -1,9 +1,3 @@
-.hide-lg {
-  @include breakpoint(large) {
-    display: none;
-  }
-}
-
 .pic {
   background: #cccccc;
   background-repeat: no-repeat;
@@ -16,74 +10,13 @@
 .cover-img {
   display: none;
 }
-//
-// .box {
-//   padding: rem-calc(30);
-//
-//   @include breakpoint(large) {
-//     max-width: 1050px !important;
-//   }
-//
-//   &.theme-1 {
-//     // black
-//     background-color: rgba(#111, 0.9);
-//     color: #f2f2f2;
-//   }
-//   &.theme-2 {
-//     // white
-//     background-color: #f2f2f2;
-//     color: #333;
-//   }
-// }
-//
-//
-// .parallax__parent {
-//   overflow: hidden;
-//   height: 100vh;
-// }
-//
-// .parallax__child {
-//   position: relative;
-//   text-align: center;
-//   background-size: cover;
-//
-//   @media screen and #{breakpoint(large)} and #{breakpoint(landscape)} {
-//     top: -120%;
-//     height: 200%;
-//   }
-//   @media screen and #{breakpoint(large)} and #{breakpoint(landscape)} and #{breakpoint(retina)} {
-//     top: 0;
-//     height: 100%;
-//   }
-// }
-//
+
 #introduction {
   background-color: darken($darkgrey, 10%);
   color: #f2f2f2;
   @include breakpoint(large) {
     height: rem-calc(400);
     min-height: auto;
-  }
-}
-
-.parallax__parent {
-  overflow: hidden;
-  height: 100vh;
-}
-
-.parallax__child {
-  position: relative;
-  text-align: center;
-  background-size: cover;
-
-  @media screen and #{breakpoint(large)} and #{breakpoint(landscape)} {
-    top: -120%;
-    height: 200%;
-  }
-
-  @media screen and #{breakpoint(large)} and #{breakpoint(landscape)} and #{breakpoint(retina)} {
-    top: 0;
-    height: 100%;
   }
 }
 
@@ -116,83 +49,51 @@
   }
 }
 
+#get_connected {
+  display: none;
+  background-color: darken($darkgrey, 10%);
+  min-height: auto;
+  color: darken(#f2f2f2, 10%);
 
-
-//
-// #get_connected {
-//   background-color: darken($darkgrey, 10%);
-//   min-height: auto;
-//   color: darken(#f2f2f2, 10%);
-//
-//   p {
-//     font-size: 1rem;
-//   }
-//
-//   label {
-//     color: darken(#f2f2f2, 10%);
-//   }
-//
-//   input[type=submit] {
-//     @include breakpoint(medium) {
-//       float: right;
-//     }
-//   }
-//
-//   fieldset {
-//     margin-bottom: rem-calc(30);
-//   }
-// }
-//
-//
-// #masthead {
-//   border: 10px solid #e6e6e6;
-//   box-sizing: border-box;
-//   width: 100%;
-// 	height: 95vh;
-//   // display: flex;
-//   // align-content: center;
-//   // justify-content: center;
-//
-//   > .row {
-//     height: inherit;
-//   }
-//
-//   ul.social-icons {
-//     margin: rem-calc(40) 0 0;
-//   }
-// }
-//
-
-#what-to-expect, #about-us {
-  .row {
-    height: inherit;
+  p {
+    font-size: 1rem;
   }
 
-  @include breakpoint(large) {
-    .box {
-      position: absolute;
-      top: 35%;
+  label {
+    color: darken(#f2f2f2, 10%);
+  }
+
+  input[type=submit] {
+    @include breakpoint(medium) {
+      float: right;
     }
+  }
+
+  fieldset {
+    margin-bottom: rem-calc(30);
   }
 }
-//
 
-#what-to-expect {
-  .pic {
-    display: flex;
-    justify-content: center;
+#masthead {
+  @include breakpoint(large) {
+
+    .box {
+      width: 750px;
+      margin: 0 auto;
+      margin-top: 100px;
+      position: fixed;
+    }
   }
-  .box {
 
-    @include breakpoint(small) {
-      align-self: center;
-      margin: 0 0.625rem 0 0.625rem;
-    }
+  .heading span {
+    width: 100%;
+    display: block;
+  }
+}
 
-    @include breakpoint(large) {
-      width: 905.625px;
-    }
-
+.parallax {
+  @include breakpoint(small) {
+    background-attachment: fixed;
   }
 }
 
@@ -213,10 +114,6 @@ section {
     background-color: #ccc;
   }
 
-  .social-icons {
-
-  }
-
   .section-container {
     align-self: center;
   }
@@ -231,7 +128,6 @@ section {
     height: auto;
     min-height: rem-calc(600);
   }
-
 
   //large
   @include breakpoint(large) {

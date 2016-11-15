@@ -49,6 +49,7 @@
       left: rem-calc(38);
       width: rem-calc(279);
       display: block;
+      letter-spacing: -1px;
     }
 
     @include breakpoint(large) {

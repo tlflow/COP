@@ -1,0 +1,147 @@
+@mixin stepper($start, $finish, $selector, $rule, $breakpoint: small){
+  @for $i from $start through $finish {
+    @if $rule == order {
+      $value: $i;
+			#{$selector}#{$value} {
+        order: $value;
+        -ms-box-ordinal: $value;
+      }
+    }
+    @else {
+      $value: $i * 2;
+      #{$selector}#{$value} {
+        @if $breakpoint == medium {
+          @include breakpoint(medium) {
+            #{$rule}: $value+px;
+            #{$rule}: $value/10+rem;
+          }
+        }
+        @if $breakpoint == large {
+          @include breakpoint(large) {
+            #{$rule}: $value+px;
+            #{$rule}: $value/10+rem;
+          }
+        }
+        @else {
+          #{$rule}: $value+px;
+          #{$rule}: $value/10+rem;
+        }
+      }
+    }
+  }
+}
+
+/* order */
+@include stepper(1, 10, '.order-', 'order');
+
+/* line-height */
+@include stepper(5, 50, '.lh', 'line-height');
+
+/* small breakpoint font-size(.px) */
+@include stepper(5, 50, '.sm-px', 'font-size');
+
+/* medium breakpoint font-size(.px) */
+@include stepper(5, 50, '.md-px', 'font-size', 'medium');
+
+/* large breakpoint font-size(.px) */
+@include stepper(5, 50, '.lg-px', 'font-size', 'large');
+
+/* margin-left(.ml) */
+@include stepper(10, 50, '.ml', 'margin-left');
+
+/* margin-top(.mt) */
+@include stepper(10, 50, '.mt', 'margin-top');
+
+/* margin-right(.mr) */
+@include stepper(10, 50, '.mr', 'margin-right');
+
+/* margin-bottom(.mb) */
+@include stepper(10, 50, '.mb', 'margin-bottom');
+
+/* padding-top(.pt) */
+@include stepper(10, 50, '.pt', 'padding-top');
+
+/* padding-right(.pr) */
+@include stepper(10, 50, '.pr', 'padding-right');
+
+/* padding-bottom(.pb) */
+@include stepper(10, 50, '.pb', 'padding-bottom');
+
+/* padding-left(.pl) */
+@include stepper(10, 50, '.pl', 'padding-left');
+
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+/* colors */
+
+$orange1: #f39c12;
+$orange2: #e67e22;
+$orange3: #d35400;
+$blue1: #3498db;
+$blue2: #2980b9;
+$green1: #2ecc71;
+$green2: #2cc36b;
+$purple1: #9b59b6;
+$purple2: #8e44ad;
+
+
+.purple {
+  color: #5F4A64;
+}
+
+.orange-1 {
+  color: $orange1;
+}
+
+.orange-2 {
+  color: $orange2;
+}
+
+.orange-3 {
+  color: $orange3;
+}
+
+.blue-1 {
+  color: $blue1;
+}
+
+.blue-2 {
+  color: $blue2;
+}
+
+.green-1 {
+  color: $green1;
+}
+
+.green-2 {
+  color: $green2;
+}
+
+.purple-1 {
+  color: $purple1;
+}
+
+.purple-2 {
+  color: $purple2;
+}
+
+/* font families */
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.lato-bold {
+  font-family: 'Lato', sans-serif;
+}

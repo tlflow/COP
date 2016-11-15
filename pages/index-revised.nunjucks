@@ -5,12 +5,18 @@
 
 {% block content %}
 
-<section id="masthead" class="pic">
+<section id="masthead" class="pic parallax">
   <div class="row align-center">
-    <div class="column small-12 medium-10 large-8 section-container">
+    <div class="column small-12 large-8 section-container">
       <div class="box">
-        <h2>Heading</h2>
-        p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        <h2 class="heading">
+          <span class="uppercase sm-px26 lh30">We love you,</span>
+          <span class="uppercase sm-px26 md-px46 lh60 montserrat purple-1">Charlotte</span>
+          <span class="uppercase sm-px14 lh22">And we're here to help</span>
+        </h2>
+        <p>
+          With so much uncertainty going on, we just want you to know there's somewhere to go for answers. We'll be here for you.
+        </p>
         <ul class="social-icons row align-center">
           <li class="columns small-2"><a href="https://www.facebook.com/ChurchOfPhiladelphia/" class="social"><i class="icon-facebook2"></i></a></li>
           <li class="columns small-2"><a href="https://twitter.com/copcharlotte" class="social"><i class="icon-twitter"></i></a></li>
@@ -23,6 +29,8 @@
     <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/charlotte-downtown.jpg" class="cld-responsive cover-img" />
   </div>
 </section>
+
+
 <section id="introduction">
   <div class="row align-center">
     <div class="column small-12 medium-10 large-8 section-container">
@@ -32,11 +40,14 @@
     </div>
   </div>
 </section>
+
 <section id="about-us" class="pic">
   <div class="row align-center">
     <div class="column small-12 medium-10 large-8 section-container">
-      <h2>Heading</h2>
-      p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+      <div class="box">
+        <h2>About Us</h2>
+        <p>Not only are we helping the lost find Christ and a new hope for living, we're helping believers to grow in their personal faith and become established in the Word. We extend an open invitation to you and your family to grow with us.</p>
+      </div>
     </div>
   </div>
   <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/hold-hands.jpg" class="cld-responsive cover-img" />
@@ -54,16 +65,18 @@
   </div>
 </section>
 
-<div id="what-to-expect" class="parallax__parent">
-  <div class="parallax__child pic">
-    <div class="box">
-      <h2 class="section-heading">We Look Forward<br>to Seeing You</h2>
-      <p>We know visiting a church for the first time can be an overwhelming experience. We've all been there and we want you to feel right at home when you come!</p>
-      {# # <a class="blue-custom-btn" href="">What to Expect</a> #}
+<section id="what-to-expect" class="pic">
+  <div class="row align-center">
+    <div class="column small-12 medium-10 large-8 section-container">
+      <div class="box">
+        <h2 class="section-heading">We Look Forward<br>to Seeing You</h2>
+        <p>We know visiting a church for the first time can be an overwhelming experience. We've all been there and we want you to feel right at home when you come!</p>
+        {# <a class="blue-custom-btn" href="/">Find Out More</a> #}
+      </div>
     </div>
-    <img data-stoppoints="480,768,1200,1800" data-src="{{ sitevars.cloudinaryImage }}/guests.jpg" class="cld-responsive cover-img" />
   </div>
-</div>
+  <img data-stoppoints="480,768,1200,1800" data-src="{{ sitevars.cloudinaryImage }}/guests.jpg" class="cld-responsive cover-img" />
+</section>
 
 <section id="connect" class="pic">
   <div class="row align-center">
@@ -78,13 +91,72 @@
   <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/hold-hands.jpg" class="cld-responsive cover-img" />
 </section>
 
-<section>
-  <div class="row align-center">
-    <div class="column small-12 medium-10 large-8 section-container">
-      <h2>Heading</h2>
-      p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+<section id="get_connected">
+    <div class="row">
+        <div class="columns small-12 medium-4">
+          <h2>We'd Like to Hear from You</h2>
+          <p>If you’re new or if you’ve visited Church of Philadelphia a few times, help us connect with you by filling out this form. We promise not to spam or sign you up for anything.</p>
+        </div>
+        <div class="columns small-12 medium-8">
+            <form method="post">
+                <div class="row">
+                    <div class="medium-6 columns">
+                        <label class="text-left">Name
+                            <input type="text" name="name" placeholder="Your name">
+                        </label>
+                    </div>
+                    <div class="medium-6 columns">
+                      <label class="text-left">Email
+                          <input type="email" name="email" placeholder="Your e-mail">
+                      </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-6 columns">
+                      <label class="text-left">Phone
+                          <input type="tel" name="phone" placeholder="Your phone no.">
+                      </label>
+                    </div>
+                    <div class="small-6 columns">
+                      <label class="text-left">Status
+                          <select name="status">
+                              <option value="going-to-visit">Would like to visit</option>
+                              <option value="first-time">First Time Visitor</option>
+                              <option value="second-time">Second Time Visitor</option>
+                              <option value="regular-attender">Regular Attender</option>
+                          </select>
+                      </label>
+                    </div>
+                </div>
+
+                <div class="row">
+                  <div class="small-12 columns">
+                    <label class="text-left">Comments
+                      <textarea name="comment" rows="5" cols="40"></textarea>
+                    </label>
+                  </div>
+                </div>
+                <fieldset class="text-left">
+                    <div class="row">
+                        <div class="small-12 medium-6 columns">
+                            <input id="checkbox1" type="checkbox" name="moreinfo">
+                            <label for="checkbox1">More information about Church of Philadelphia</label>
+                        </div>
+                        <div class="small-12 medium-6 columns">
+                            <input id="checkbox2" type="checkbox" name="joingroup">
+                            <label for="checkbox2">Join a small group</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="row">
+                    <div class="small-12 columns">
+                        <input class="graphite-custom-btn" type="submit" name="submit" value="submit">
+                    </div>
+                </div>
+
+            </form>
+        </div>
     </div>
-  </div>
 </section>
 
 
