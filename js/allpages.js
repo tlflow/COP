@@ -112,6 +112,7 @@ $(function() {
   ///// per media query settings   ////
   /////////////////////////////////////
 
+/*
   if ($_page.hasClass('home')) {
 
     //////////////////////////
@@ -155,7 +156,7 @@ $(function() {
       }
     });
 
-  }
+  } */
 
   // start carousel if on page
   $('.owl-carousel').owlCarousel({
@@ -168,3 +169,6 @@ $(function() {
   });
 
 });
+
+// start WOW.js 
+new WOW().init();

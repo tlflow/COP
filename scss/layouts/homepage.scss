@@ -50,9 +50,10 @@
 }
 
 #get_connected {
-  display: none;
+  // display: none;
   background-color: darken($darkgrey, 10%);
   min-height: auto;
+  height: auto;
   color: darken(#f2f2f2, 10%);
 
   p {
@@ -88,6 +89,11 @@
   .heading span {
     width: 100%;
     display: block;
+  }
+
+  .social-icons {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

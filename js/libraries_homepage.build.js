@@ -17,7 +17,3 @@
 //@prepros-append lib/greensock/TweenMax.min.js
 
 //@prepros-append ../bower_components/owl.carousel/dist/owl.carousel.min.js
-
-//@prepros-append ../bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js
-
-//@prepros-append ../bower_components/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js

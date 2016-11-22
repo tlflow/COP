@@ -5,105 +5,88 @@
 
 {% block content %}
 
-<section id="masthead" class="pic">
+<section id="masthead" class="pic parallax">
   <div class="row align-center">
-    <div class="column small-12 large-8 align-self-middle">
-      <div class="text box theme-1">
-        <h1 class="section-heading">We Love You, <span>Charlotte</span></h1>
-        <h2>and we're here to help</h2>
-        {# <a class="blue-custom-btn" href="/">learn more</a> #}
+    <div class="column small-12 large-8 section-container">
+      <div class="box wow slideInUp">
+        <h2 class="heading">
+          <span class="uppercase sm-px26 lh30">We love you</span>
+          <span class="uppercase sm-px26 md-px46 lh60 montserrat purple-1">Charlotte</span>
+          <span class="uppercase sm-px14 lh22">And we're here to help</span>
+        </h2>
+        <p>
+          With so much uncertainty going on, we just want you to know there's somewhere to go for answers. We'll be here for you.
+        </p>
         <ul class="social-icons row align-center">
-            <li class="columns small-2"><a href="https://www.facebook.com/ChurchOfPhiladelphia/" class="social"><i class="icon-facebook2"></i></a></li>
-            <li class="columns small-2"><a href="https://twitter.com/copcharlotte" class="social"><i class="icon-twitter"></i></a></li>
-            <li class="columns small-2"><a href="https://www.instagram.com/cop_charlotte/" class="social"><i class="icon-instagram"></i></a></li>
+          <li class="columns small-2"><a href="https://www.facebook.com/ChurchOfPhiladelphia/" class="social"><i class="icon-facebook2"></i></a></li>
+          <li class="columns small-2"><a href="https://twitter.com/copcharlotte" class="social"><i class="icon-twitter"></i></a></li>
+          <li class="columns small-2"><a href="https://www.instagram.com/cop_charlotte/" class="social"><i class="icon-instagram"></i></a></li>
         </ul>
       </div>
     </div>
   </div>
-
   <div class="image-1">
     <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/charlotte-downtown.jpg" class="cld-responsive cover-img" />
   </div>
-
-  <!-- <div class="image-2" data-interchange="[{{urlpath}}images/home/charlotte-downtown-bw_small.jpg, small],
-    [{{urlpath}}images/home/charlotte-downtown-bw_medium.jpg, medium],
-    [{{urlpath}}images/home/charlotte-downtown-bw_large.jpg, large],
-    [{{urlpath}}images/home/charlotte-downtown-bw_xlarge.jpg, xlarge]"></div> -->
-
 </section>
+
 
 <section id="introduction">
-    <div class="row align-center">
-        <div class="column small-12 large-8 align-self-middle">
-          <h2>Our Church</h2>
-          <p>Imagine a church that's working to create better communities,<br> encourages growth of the family, and <br>cultivates leaders for the church of tomorrow.</p>
-          <a class="blue-custom-btn" href="{{ sitevars.urlpath }}/about">learn more</a>
-        </div>
-    </div>
-</section>
-
-{# <div id="about-us" class="parallax__parent">
-  <div class="parallax__child">
-    <div class="row align-center">
-        <div class="column small-12 large-8 box theme-2 align-self-middle text pic">
-          <h2 class="section-heading align-self-botttom">current sermon series</h2>
-          <div class="blurb">
-            <p>
-              Everyone serves a purpose. Come found out what being part of The Body really means.
-            </p>
-            <a class="blue-custom-btn" href="{{ sitevars.urlpath }}sermon-series/we-are-the-body.html">learn more</a>
-          </div>
-
-          <img data-stoppoints="480,768,1200,1800" data-src="{{ sitevars.cloudinaryImage }},c_fill,g_auto/sermon-series/we-are-the-body.jpg" class="cld-responsive cover-img" />
-        </div>
+  <div class="row align-center">
+    <div class="column small-12 medium-10 large-8 section-container">
+      <h2>Our Church</h2>
+      <p>Imagine a church that's working to create better communities,<br class="hide-lg"> encourages growth of the family, and <br>cultivates leaders for the church of tomorrow.</p>
+      <a class="blue-custom-btn" href="{{ sitevars.urlpath }}/about">learn more</a>
     </div>
   </div>
-</div> #}
+</section>
 
 <section id="about-us" class="pic">
   <div class="row align-center">
-      <div class="columns small-12 large-8 box theme-1 align-self-middle">
-        <h2 class="section-heading">Connect</h2>
+    <div class="column small-12 medium-10 large-8 section-container">
+      <div class="box">
+        <h2>About Us</h2>
         <p>Not only are we helping the lost find Christ and a new hope for living, we're helping believers to grow in their personal faith and become established in the Word. We extend an open invitation to you and your family to grow with us.</p>
-        {# <a class="blue-custom-btn" href="/">Find Out More</a> #}
       </div>
+    </div>
   </div>
   <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/hold-hands.jpg" class="cld-responsive cover-img" />
 </section>
 
-
 <section id="gatherings">
-    <div class="row">
-        <div class="small-12 columns align-self-middle">
-          <h2 class="section-heading">Our Next Gathering</h2>
-          <p>Every Sunday we come together to celebrate, praise and worship our God.<br>It's not just a church service, it's an encounter.</p>
-          <div id="sunday-clock"></div>
-          <p>until our next
-          <br>Sunday 11am Worship Service</p>
-        </div>
+  <div class="row align-center collapse">
+    <div class="column small-12 section-container">
+      <h2 class="section-heading">Our Next Gathering</h2>
+      <p>Every Sunday we come together to celebrate, praise and worship our God.<br>It's not just a church service, it's an encounter.</p>
+      <div id="sunday-clock"></div>
+      <p>until our next
+      <br>Sunday 11am Worship Service</p>
     </div>
+  </div>
 </section>
 
-<div id="what-to-expect" class="parallax__parent">
-    <div class="parallax__child pic">
-      {# # <a class="blue-custom-btn" href="">What to Expect</a> #}
-        <div class="row align-center">
-            <div class="column small-12 large-8 box theme-1 align-self-middle text">
-              <h2 class="section-heading">We Look Forward<br>to Seeing You</h2>
-              <p>We know visiting a church for the first time can be an overwhelming experience. We've all been there and we want you to feel right at home when you come!</p>
-            </div>
-        </div>
-        <img data-stoppoints="480,768,1200,1800" data-src="{{ sitevars.cloudinaryImage }}/guests.jpg" class="cld-responsive cover-img" />
+<section id="what-to-expect" class="pic">
+  <div class="row align-center">
+    <div class="column small-12 medium-10 large-8 section-container">
+      <div class="box">
+        <h2 class="section-heading">We Look Forward<br>to Seeing You</h2>
+        <p>We know visiting a church for the first time can be an overwhelming experience. We've all been there and we want you to feel right at home when you come!</p>
+        {# <a class="blue-custom-btn" href="/">Find Out More</a> #}
+      </div>
     </div>
-</div>
+  </div>
+  <img data-stoppoints="480,768,1200,1800" data-src="{{ sitevars.cloudinaryImage }}/guests.jpg" class="cld-responsive cover-img" />
+</section>
 
 <section id="connect" class="pic">
   <div class="row align-center">
-      <div class="columns small-12 large-8 box theme-1 align-self-middle">
+    <div class="column small-12 medium-10 large-8 section-container">
+      <div class="box">
         <h2 class="section-heading">Connect</h2>
         <p>Not only are we helping the lost find Christ and a new hope for living, we're helping believers to grow in their personal faith and become established in the Word. We extend an open invitation to you and your family to grow with us.</p>
         {# <a class="blue-custom-btn" href="/">Find Out More</a> #}
       </div>
+    </div>
   </div>
   <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/hold-hands.jpg" class="cld-responsive cover-img" />
 </section>
@@ -175,5 +158,7 @@
         </div>
     </div>
 </section>
+
+
 
 {% endblock %}
