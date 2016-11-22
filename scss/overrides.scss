@@ -1,4 +1,4 @@
-@mixin stepper($start, $finish, $selector, $rule, $breakpoint: small){
+@mixin stepper($start, $finish, $selector, $rule, $breakpoints: true){
   @for $i from $start through $finish {
     @if $rule == order {
       $value: $i;
@@ -9,20 +9,26 @@
     }
     @else {
       $value: $i * 2;
-      #{$selector}#{$value} {
-        @if $breakpoint == medium {
+      @if $breakpoints == true {
+        #{'.sm-'}#{$selector}#{$value} {
+          #{$rule}: $value+px;
+          #{$rule}: $value/10+rem;
+        }
+        #{'.md-'}#{$selector}#{$value} {
           @include breakpoint(medium) {
             #{$rule}: $value+px;
             #{$rule}: $value/10+rem;
           }
         }
-        @if $breakpoint == large {
+        #{'.lg-'}#{$selector}#{$value} {
           @include breakpoint(large) {
             #{$rule}: $value+px;
             #{$rule}: $value/10+rem;
           }
         }
-        @else {
+      }
+      @else {
+        #{$selector}#{$value} {
           #{$rule}: $value+px;
           #{$rule}: $value/10+rem;
         }
@@ -35,16 +41,10 @@
 @include stepper(1, 10, '.order-', 'order');
 
 /* line-height */
-@include stepper(5, 50, '.lh', 'line-height');
+@include stepper(5, 50, 'lh', 'line-height');
 
 /* small breakpoint font-size(.px) */
-@include stepper(5, 50, '.sm-px', 'font-size');
-
-/* medium breakpoint font-size(.px) */
-@include stepper(5, 50, '.md-px', 'font-size', 'medium');
-
-/* large breakpoint font-size(.px) */
-@include stepper(5, 50, '.lg-px', 'font-size', 'large');
+@include stepper(5, 50, 'px', 'font-size');
 
 /* margin-left(.ml) */
 @include stepper(10, 50, '.ml', 'margin-left');

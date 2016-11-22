@@ -75,16 +75,16 @@
 }
 
 #masthead {
-  @include breakpoint(large) {
-
-    .box {
-      width: 750px;
-      margin: 0 auto;
-      margin-top: 100px;
-      position: fixed;
-    }
-  }
-
+  // @include breakpoint(large) {
+  //
+  //   .box {
+  //     width: 750px;
+  //     margin: 0 auto;
+  //     margin-top: 100px;
+  //     position: fixed;
+  //   }
+  // }
+  //
   .heading span {
     width: 100%;
     display: block;
