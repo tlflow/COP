@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "directory-tree": "^1.1.1",
     "git": "^0.1.5",
     "marked": "^0.3.5"
   },

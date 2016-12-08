@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>testing ajax</title>
+</head>
+<body>
+  <h1>This is a test</h1>
+  <script src="/js/libraries.build.min.js"></script>
+  <script src="/js/allpages.js"></script>
+  <script>
+    $(function(){
+      var data;
+
+      $.ajax({
+        dataType: "json",
+        url: "/directory-tree.php",
+        data: data
+      });
+
+      console.log(data);
+    });
+  </script>
+</body>
+</html>

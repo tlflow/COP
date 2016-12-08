@@ -37,8 +37,8 @@
       <div class="columns small-12 large-6 text">
         <div class="columns small-10 small-offset-1 large-12 large-offset-0">
           <h2>What We Believe</h2>
-          <p>We believe that Jesus Christ is the Son of God. We believe that He was crucified, died, and was resurrected on the third day with all power in His hands. We believe God has a purpose and plan for all of us that was purposed by Him before the foundation of the world. Here are a few key principles we stand on as we live and teach according to what we believe.
-          <br><a href="{{ sitevars.urlpath }}about/what-we-believe.html">learn more</a>
+          <p>We believe that Jesus Christ is the Son of God. We also believe God has a purpose and plan for all of us and that the love of God can change lives.
+          <br><a href="{{ sitevars.urlpath }}about/what-we-believe.html">learn more about what we believe</a>
           </p>
         </div>
       </div>
