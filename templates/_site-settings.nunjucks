@@ -2,7 +2,7 @@
 {% set globalTitle = 'Church of Philadelphia' %}
 
 {# Enviroment Settings #}
-{% set environment = '' %}
+{% set environment = 'dev' %}
 
 {% if environment=='dev' %}
   {% set urlpath = '/dist/' %}

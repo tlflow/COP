@@ -35,8 +35,7 @@
   <div class="row align-center">
     <div class="column small-12 medium-10 large-8 section-container">
       <h2>Our Church</h2>
-      <p>Imagine a church that's working to create better communities,<br class="hide-lg"> encourages growth of the family, and <br>cultivates leaders for the church of tomorrow.</p>
-      <a class="blue-custom-btn" href="{{ sitevars.urlpath }}/about">learn more</a>
+      <p class="sm-px16 lh20">Imagine a church that's working to create better communities,<br class="hide-lg"> encourages growth of the family, and <br>cultivates leaders for the church of tomorrow.</p>
     </div>
   </div>
 </section>
@@ -47,10 +46,27 @@
       <div class="box">
         <h2>About Us</h2>
         <p>Not only are we helping the lost find Christ and a new hope for living, we're helping believers to grow in their personal faith and become established in the Word. We extend an open invitation to you and your family to grow with us.</p>
+        <a class="blue-custom-btn" href="{{ sitevars.urlpath }}/about">learn more</a>
       </div>
     </div>
   </div>
-  <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/hold-hands.jpg" class="cld-responsive cover-img" />
+  <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/books.jpg" class="cld-responsive cover-img" />
+</section>
+
+<section id="sermons" class="pic">
+  <div class="row">
+    <div class="column small-12 section-container align-center">
+      <div class="box-2 pic">
+        <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/family-ties.jpg" class="cld-responsive cover-img" />
+      </div>
+    </div>
+  </div>
+  <!--<div class="row align-center">
+    <div class="column small-12 section-container">
+      <a class="blue-custom-btn" href="{{ sitevars.urlpath }}/about">learn more</a>
+    </div>
+  </div>-->
+  <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/darkboard.jpg" class="cld-responsive cover-img" />
 </section>
 
 <section id="gatherings">

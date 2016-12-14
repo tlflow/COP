@@ -110,6 +110,14 @@
   color: #f2f2f2;
 }
 
+.box-2 {
+  background-color: #fff;
+  width: rem-calc(600);
+  height: rem-calc(400);
+  box-sizing: border-box;
+  border: 15px solid #ccc;
+}
+
 section {
   display: flex;
   text-align: center;
