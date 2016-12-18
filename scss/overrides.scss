@@ -43,32 +43,32 @@
 /* line-height */
 @include stepper(5, 50, 'lh', 'line-height');
 
-/* small breakpoint font-size(.px) */
+/* font-size(.px) */
 @include stepper(5, 50, 'px', 'font-size');
 
 /* margin-left(.ml) */
-@include stepper(10, 50, '.ml', 'margin-left');
+@include stepper(10, 50, 'ml', 'margin-left');
 
 /* margin-top(.mt) */
-@include stepper(10, 50, '.mt', 'margin-top');
+@include stepper(10, 50, 'mt', 'margin-top');
 
 /* margin-right(.mr) */
-@include stepper(10, 50, '.mr', 'margin-right');
+@include stepper(10, 50, 'mr', 'margin-right');
 
 /* margin-bottom(.mb) */
-@include stepper(10, 50, '.mb', 'margin-bottom');
+@include stepper(10, 50, 'mb', 'margin-bottom');
 
 /* padding-top(.pt) */
-@include stepper(10, 50, '.pt', 'padding-top');
+@include stepper(10, 50, 'pt', 'padding-top');
 
 /* padding-right(.pr) */
-@include stepper(10, 50, '.pr', 'padding-right');
+@include stepper(10, 50, 'pr', 'padding-right');
 
 /* padding-bottom(.pb) */
-@include stepper(10, 50, '.pb', 'padding-bottom');
+@include stepper(10, 50, 'pb', 'padding-bottom');
 
 /* padding-left(.pl) */
-@include stepper(10, 50, '.pl', 'padding-left');
+@include stepper(10, 50, 'pl', 'padding-left');
 
 
 .uppercase {
@@ -134,6 +134,14 @@ $purple2: #8e44ad;
 
 .purple-2 {
   color: $purple2;
+}
+
+.white {
+  color: #fff;
+}
+
+.gray {
+  color: #ccc;
 }
 
 /* font families */

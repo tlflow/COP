@@ -53,19 +53,49 @@
   <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/books.jpg" class="cld-responsive cover-img" />
 </section>
 
-<section id="sermons" class="pic">
+<section id="news" class="pic">
+  <!--<div class="row">
+    <div class="column small-12">
+      <div class="box">
+        <h2>Current News</h2>
+      </div>
+    </div>
+  </div>
   <div class="row">
-    <div class="column small-12 section-container align-center">
+    <div class="column small-12">
       <div class="box-2 pic">
         <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/family-ties.jpg" class="cld-responsive cover-img" />
       </div>
     </div>
   </div>
-  <!--<div class="row align-center">
-    <div class="column small-12 section-container">
+  <div class="row align-center">
+    <div class="column small-12">
       <a class="blue-custom-btn" href="{{ sitevars.urlpath }}/about">learn more</a>
     </div>
   </div>-->
+
+  <div class="section-container">
+    <div class="row">
+      <div class="column small-12">
+        <!--<div class="box">
+          <h2>This is a test</h2>
+        </div>-->
+        <h2 class="sm-mb20 white">Current News</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column small-12">
+        <div class="box-2 pic">
+          <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/family-ties.jpg" class="cld-responsive cover-img" />
+        </div>
+      </div>
+    </div>
+    <div class="row align-center">
+      <div class="column small-12 sm-mt20">
+        <a class="blue-custom-btn" href="{{ sitevars.urlpath }}/about">learn more</a>
+      </div>
+    </div>
+  </div>
   <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/darkboard.jpg" class="cld-responsive cover-img" />
 </section>
 
