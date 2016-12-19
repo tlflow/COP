@@ -111,7 +111,7 @@ $(function() {
   /////////////////////////////////////
   ///// per media query settings   ////
   /////////////////////////////////////
-
+/*
   if ($_page.hasClass('home')) {
 
     //////////////////////////
@@ -156,16 +156,57 @@ $(function() {
     });
 
   }
+  */
 
   // start carousel if on page
-  $('.owl-carousel').owlCarousel({
-    animateOut: 'slideOutDown',
-    animateIn: 'flipInX',
-    items:1,
-    margin:30,
-    stagePadding:30,
-    smartSpeed:450
+  var owl = $('.owl-carousel');
+
+  function smallOwl() {
+    owl.owlCarousel({
+      // animateOut: 'slideOutDown',
+      // animateIn: 'flipInX',
+      items:1,
+      margin:30,
+      stagePadding:0,
+      smartSpeed:450,
+      autoWidth:false
+    });
+  }
+
+  function otherOwl() {
+    owl.owlCarousel({
+      items:1,
+      margin:0,
+      stagePadding:0,
+      smartSpeed:450,
+      autoWidth:false
+    });
+  }
+
+  if (Foundation.MediaQuery.current == 'small' ) {
+    smallOwl();
+  } else {
+    otherOwl();
+  }
+
+  $(window).on('changed.zf.mediaquery', function(event, newSize, oldSize) {
+    if (newSize == 'small') {
+      smallOwl();
+    } else {
+      otherOwl();
+    }
   });
+
+  // Go to the next item
+  $('.btn-next').click(function() {
+      owl.trigger('next.owl.carousel');
+  })
+  // Go to the previous item
+  $('.btn-prev').click(function() {
+      // With optional speed parameter
+      // Parameters has to be in square bracket '[]'
+      owl.trigger('prev.owl.carousel', [300]);
+  })
 
 });
 

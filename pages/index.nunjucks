@@ -34,7 +34,7 @@
 <section id="introduction">
   <div class="row align-center">
     <div class="column small-12 medium-10 large-8 section-container">
-      <h2>Our Church</h2>
+      <h2 class="section-heading">Our Church</h2>
       <p class="sm-px16 lh20">Imagine a church that's working to create better communities,<br class="hide-lg"> encourages growth of the family, and <br>cultivates leaders for the church of tomorrow.</p>
     </div>
   </div>
@@ -44,7 +44,7 @@
   <div class="row align-center">
     <div class="column small-12 medium-10 large-8 section-container">
       <div class="box">
-        <h2>About Us</h2>
+        <h2 class="section-heading">About Us</h2>
         <p>Not only are we helping the lost find Christ and a new hope for living, we're helping believers to grow in their personal faith and become established in the Word. We extend an open invitation to you and your family to grow with us.</p>
         <a class="blue-custom-btn" href="{{ sitevars.urlpath }}/about">learn more</a>
       </div>
@@ -54,45 +54,41 @@
 </section>
 
 <section id="news" class="pic">
-  <!--<div class="row">
-    <div class="column small-12">
-      <div class="box">
-        <h2>Current News</h2>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="column small-12">
-      <div class="box-2 pic">
-        <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/family-ties.jpg" class="cld-responsive cover-img" />
-      </div>
-    </div>
-  </div>
-  <div class="row align-center">
-    <div class="column small-12">
-      <a class="blue-custom-btn" href="{{ sitevars.urlpath }}/about">learn more</a>
-    </div>
-  </div>-->
-
   <div class="section-container">
     <div class="row">
       <div class="column small-12">
-        <!--<div class="box">
-          <h2>This is a test</h2>
-        </div>-->
-        <h2 class="sm-mb20 white">Current News</h2>
+        <h2 class="sm-mb20 white section-heading">Current News</h2>
       </div>
     </div>
-    <div class="row">
-      <div class="column small-12">
-        <div class="box-2 pic">
-          <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/family-ties.jpg" class="cld-responsive cover-img" />
+    <div class="row collapse align-center">
+      <div class="column medium-1 hide-for-small-only">
+        <button class="btn-prev">prev</button>
+      </div>
+      <div class="column small-12 medium-8">
+        <div class="owl-carousel owl-theme">
+          <div class="slide">
+            <h3>Slide 1</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+          <div class="slide box-2 pic">
+            <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/family-ties.jpg" class="cld-responsive cover-img" />
+          </div>
+          <div class="slide">
+            <h3>Slide 2</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+          <div class="slide">
+            <h3>Slide 3</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+          <div class="slide">
+            <h3>Slide 4</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row align-center">
-      <div class="column small-12 sm-mt20">
-        <a class="blue-custom-btn" href="{{ sitevars.urlpath }}/about">learn more</a>
+      <div class="column medium-1 hide-for-small-only">
+        <button class="btn-next">next</button>
       </div>
     </div>
   </div>

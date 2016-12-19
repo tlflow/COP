@@ -110,12 +110,36 @@
   color: #f2f2f2;
 }
 
+.slide {
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: rem-calc(20);
+  height: rem-calc(350);
+}
+
 .box-2 {
   background-color: #fff;
-  width: rem-calc(600);
-  height: rem-calc(400);
-  box-sizing: border-box;
   border: 15px solid #ccc;
+}
+
+.owl-item .box-2 img {
+  display: none !important;
+}
+
+#news {
+  .section-container {
+    @include breakpoint(small) {
+      width: 80%;
+    }
+    @include breakpoint(medium) {
+      width: 75%;
+    }
+  }
+  button {
+    background-color: rgba(#353535, 0.5);
+    height: 100%;
+    width: 100%;
+  }
 }
 
 section {
