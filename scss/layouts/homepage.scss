@@ -114,12 +114,24 @@
   background-color: #fff;
   box-sizing: border-box;
   padding: rem-calc(20);
-  height: rem-calc(350);
+
+  @include breakpoint(small) {
+    height: rem-calc(200);
+  }
+  @include breakpoint(medium) {
+    height: rem-calc(320);
+  }
 }
 
 .box-2 {
   background-color: #fff;
-  border: 15px solid #ccc;
+
+  @include breakpoint(small) {
+    border: none;
+  }
+  @include breakpoint(medium) {
+    border: 15px solid #ccc;
+  }
 }
 
 .owl-item .box-2 img {
@@ -132,6 +144,9 @@
       width: 80%;
     }
     @include breakpoint(medium) {
+      width: rem-calc(650);
+    }
+    @include breakpoint(large) {
       width: 75%;
     }
   }

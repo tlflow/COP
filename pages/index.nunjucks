@@ -91,6 +91,11 @@
         <button class="btn-next">next</button>
       </div>
     </div>
+    <div class="row collapse">
+      <div class="column small-12 hide-for-medium">
+        <button class="btn-prev">prev</button> <button class="btn-next">next</button>
+      </div>
+    </div>
   </div>
   <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/darkboard.jpg" class="cld-responsive cover-img" />
 </section>

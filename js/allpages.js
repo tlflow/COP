@@ -192,9 +192,12 @@ $(function() {
   $(window).on('changed.zf.mediaquery', function(event, newSize, oldSize) {
     if (newSize == 'small') {
       smallOwl();
+      console.log('current', newSize);
     } else {
       otherOwl();
+      console.log('current', newSize);
     }
+    console.log('event', event);
   });
 
   // Go to the next item
