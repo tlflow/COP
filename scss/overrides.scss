@@ -59,16 +59,16 @@
 @include stepper(10, 50, 'mb', 'margin-bottom');
 
 /* padding-top(.pt) */
-@include stepper(10, 50, 'pt', 'padding-top');
+@include stepper(5, 50, 'pt', 'padding-top');
 
 /* padding-right(.pr) */
-@include stepper(10, 50, 'pr', 'padding-right');
+@include stepper(5, 50, 'pr', 'padding-right');
 
 /* padding-bottom(.pb) */
-@include stepper(10, 50, 'pb', 'padding-bottom');
+@include stepper(5, 50, 'pb', 'padding-bottom');
 
 /* padding-left(.pl) */
-@include stepper(10, 50, 'pl', 'padding-left');
+@include stepper(5, 50, 'pl', 'padding-left');
 
 
 .uppercase {
@@ -83,7 +83,7 @@
   text-transform: lowercase;
 }
 
-/* colors */
+/* text colors */
 
 $orange1: #f39c12;
 $orange2: #e67e22;
@@ -143,6 +143,13 @@ $purple2: #8e44ad;
 .gray {
   color: #ccc;
 }
+
+/* background colors */
+
+.bkg-black {
+  background-color: #111;
+}
+
 
 /* font families */
 

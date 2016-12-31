@@ -119,7 +119,7 @@
     height: rem-calc(200);
   }
   @include breakpoint(medium) {
-    height: rem-calc(320);
+    height: rem-calc(360);
   }
 }
 
@@ -134,7 +134,7 @@
   }
 }
 
-.owl-item .box-2 img {
+.owl-item .slide img {
   display: none !important;
 }
 
@@ -151,9 +151,22 @@
     }
   }
   button {
-    background-color: rgba(#353535, 0.5);
-    height: 100%;
-    width: 100%;
+
+    @include breakpoint(small) {
+      margin-top: rem-calc(20);
+      height: rem-calc(50);
+      background-color: rgba(#353535, 1);
+      width: 48%;
+      display: inline;
+      color: #fff;
+    }
+    @include breakpoint(medium) {
+      height: rem-calc(360);
+      width: 100%;
+      margin-top: 0;
+      background-color: rgba(#353535, 0.5);
+      display: block;
+    }
   }
 }
 
@@ -186,5 +199,23 @@ section {
   @include breakpoint(large) {
     // min-height: rem-calc(700);
     // font-size: rem-calc(21);
+  }
+}
+
+.arrow {
+  display: block;
+  width: 75px;
+  height: 75px;
+}
+
+
+// * Special Overrides for Slides */
+
+.watchnight a {
+  @include breakpoint(small) {
+    margin-top: rem-calc(90);
+  }
+  @include breakpoint(medium) {
+    margin-top: rem-calc(210);
   }
 }

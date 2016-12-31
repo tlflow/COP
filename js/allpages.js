@@ -2,21 +2,27 @@
 
 $(function() {
 
-  $.cloudinary.config({ cloud_name: 'church-of-philadelphia', api_key: '952514468874921'});
+  var pic = $('.pic');
 
-  $.cloudinary.responsive({
-    type : 'fetch',
-	  responsive_use_stoppoints : true
-  });
+  if(pic.length !== 0) {
 
-  $(".cover-img").load(function(){
-    var self = $(this);
-    var picLink = self.attr('src');
+    $.cloudinary.config({ cloud_name: 'church-of-philadelphia', api_key: '952514468874921'});
 
-    setTimeout(function(){
-        self.closest('.pic').css('backgroundImage', 'url('+picLink+')');
-    }, 2);
-  });
+    $.cloudinary.responsive({
+      type : 'fetch',
+  	  responsive_use_stoppoints : true
+    });
+
+    $(".cover-img").load(function(){
+      var self = $(this);
+      var picLink = self.attr('src');
+
+      setTimeout(function(){
+          self.closest('.pic').css('backgroundImage', 'url('+picLink+')');
+      }, 2);
+    });
+
+  }
 
   // copyright
   $("#copyright").prepend("&copy;" + moment().format('YYYY')+ " ");
@@ -161,55 +167,58 @@ $(function() {
   // start carousel if on page
   var owl = $('.owl-carousel');
 
-  function smallOwl() {
-    owl.owlCarousel({
-      // animateOut: 'slideOutDown',
-      // animateIn: 'flipInX',
-      items:1,
-      margin:30,
-      stagePadding:0,
-      smartSpeed:450,
-      autoWidth:false
-    });
-  }
+  if (owl.length!==0) {
+    function smallOwl() {
+      owl.owlCarousel({
+        // animateOut: 'slideOutDown',
+        // animateIn: 'flipInX',
+        items:1,
+        margin:30,
+        stagePadding:0,
+        smartSpeed:450,
+        autoWidth:false
+      });
+    }
 
-  function otherOwl() {
-    owl.owlCarousel({
-      items:1,
-      margin:0,
-      stagePadding:0,
-      smartSpeed:450,
-      autoWidth:false
-    });
-  }
+    function otherOwl() {
+      owl.owlCarousel({
+        items:1,
+        margin:0,
+        stagePadding:0,
+        smartSpeed:450,
+        autoWidth:false
+      });
+    }
 
-  if (Foundation.MediaQuery.current == 'small' ) {
-    smallOwl();
-  } else {
-    otherOwl();
-  }
-
-  $(window).on('changed.zf.mediaquery', function(event, newSize, oldSize) {
-    if (newSize == 'small') {
+    if (Foundation.MediaQuery.current == 'small' ) {
       smallOwl();
-      console.log('current', newSize);
     } else {
       otherOwl();
-      console.log('current', newSize);
     }
-    console.log('event', event);
-  });
 
-  // Go to the next item
-  $('.btn-next').click(function() {
-      owl.trigger('next.owl.carousel');
-  })
-  // Go to the previous item
-  $('.btn-prev').click(function() {
-      // With optional speed parameter
-      // Parameters has to be in square bracket '[]'
-      owl.trigger('prev.owl.carousel', [300]);
-  })
+    $(window).on('changed.zf.mediaquery', function(event, newSize, oldSize) {
+      if (newSize == 'small') {
+        smallOwl();
+        console.log('current', newSize);
+      } else {
+        otherOwl();
+        console.log('current', newSize);
+      }
+      console.log('event', event);
+    });
+
+    // Go to the next item
+    $('.btn-next').click(function() {
+        owl.trigger('next.owl.carousel');
+    });
+    // Go to the previous item
+    $('.btn-prev').click(function() {
+        // With optional speed parameter
+        // Parameters has to be in square bracket '[]'
+        owl.trigger('prev.owl.carousel', [300]);
+    });
+
+  }
 
 });
 
