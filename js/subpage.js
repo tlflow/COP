@@ -1,7 +1,8 @@
 $(document).ready(function(){
-  $(document).foundation();
-  // $(".owl-carousel").owlCarousel(); // uncomment for carousel eventually
 
+  $(document).foundation();
+
+  // Owl Carousel
   if ($('#page.about').length==1) {
 
     $('.owl-carousel').owlCarousel({
@@ -25,6 +26,8 @@ $(document).ready(function(){
 
   }
 
+  // Instagram Feed
+
   if ($('#page.news').length==1) {
 
     var feed = new Instafeed({
@@ -36,6 +39,10 @@ $(document).ready(function(){
     feed.run();
 
   }
+
+  // Modals for Scripture verses
+  COP.components.scriptures._init();
+
 
   // copyright
   $("#copyright").prepend("&copy;" + moment().format('YYYY')+ " ");

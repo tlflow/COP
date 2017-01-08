@@ -11,6 +11,7 @@
 {% else %}
 <script type="text/javascript" src="{{ sitevars.urlpath }}js/libraries.build.min.js"></script>
 <script type="text/javascript" src="{{ sitevars.urlpath }}js/component.build.min.js"></script>
+<script type="text/javascript" src="{{ sitevars.urlpath }}js/subpage.js"></script>
 {% endif %}
 
 <script type="text/javascript" src="{{ sitevars.urlpath }}js/allpages.js"></script>

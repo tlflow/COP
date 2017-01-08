@@ -1,5 +1,3 @@
-
-
 $(function() {
 
   var pic = $('.pic');
@@ -81,6 +79,47 @@ $(function() {
       this.resize( scrollPos );
     }
   };
+
+
+  ///////////////////////////////////
+  ///// scripture glossary item  ////
+  ///////////////////////////////////
+
+ // if the link has rel="scripture" get the text and match that to a li with a child of .verse's text
+
+  // $('rel="scripture"').
+
+  // var $scripture_modal = $('#modal');
+  //
+  // $.ajax('../scriptures.html')
+  //   .done(function(resp){
+  //     // $scripture_modal.html(resp).foundation('open');
+  //     var scriptureUl = $(resp).find('ul.verses');
+  //
+  //     var content = $("#content");
+  //
+  //     $(scriptureUl).find("li").each( function() {
+  //       console.log( $(this).html() );
+  //
+  //       var scriptureVerse = $(this).find('.verse').text();
+  //
+  //       var scriptureText = $(this).html();
+  //
+  //       var template = '<div class=\"reveal\" id=\"'+scriptureVerse+'\" data-reveal>' +scriptureText+ '</div>';
+  //
+  //       //   <h2>Deuteronomy 8:18</h2>
+  //       //   <p><span>18</span> But thou shalt remember the Lord thy God: for it is he that giveth thee power to get wealth, that he may establish his covenant which he sware unto thy fathers, as it is this day.</p>
+  //       //   <button class="close-button" data-close aria-label="Close modal" type="button">
+  //       //     <span aria-hidden="true">&times;</span>
+  //       //   </button>
+  //       // </div>
+  //
+  //       content.append(template);
+  //
+  //     });
+  //
+  // });
+
 
   /////////////////////////////////////////
   ///// global navigation controllers  ////
@@ -220,7 +259,8 @@ $(function() {
 
   }
 
-});
+  // start WOW.js
+  new WOW().init();
 
-// start WOW.js
-new WOW().init();
+
+});

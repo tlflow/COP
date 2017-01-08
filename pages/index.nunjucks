@@ -53,7 +53,7 @@
   <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/books.jpg" class="cld-responsive cover-img" />
 </section>
 
-<section id="news" class="pic">
+<!--<section id="news" class="pic">
   <div class="section-container">
     <div class="row">
       <div class="column small-12">
@@ -61,23 +61,23 @@
       </div>
     </div>
     <div class="row collapse align-center">
-      <!--<div class="column medium-1 hide-for-small-only">
+      <div class="column medium-1 hide-for-small-only">
         <button class="btn-prev">&lsaquo;<span>prev</span></button>
-      </div>-->
+      </div>
       <div class="column small-12 medium-8">
         <div class="owl-carousel owl-theme">
           <div class="slide pic watchnight">
-            <!--<h3 class="uppercase white bkg-black">Join Us for Our<br>Watch Night Service</h3>
-            <p class="hide-for-small-only sm-px16 sm-lh22 white bkg-black">10:30pm<br>at 9829 Providence Road W<br> Charlotte, NC 28277 </p>-->
+            <h3 class="uppercase white bkg-black">Join Us for Our<br>Watch Night Service</h3>
+            <p class="hide-for-small-only sm-px16 sm-lh22 white bkg-black">10:30pm<br>at 9829 Providence Road W<br> Charlotte, NC 28277 </p>
             <a class="blue-custom-btn" href="http://maps.google.com/?q=9829 Providence Rd W, Charlotte, NC 28277">Find on Google Maps</a>
             <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/watchnight-2017.jpg" class="cld-responsive cover-img" />
           </div>
-          <!--<div class="slide pic">
+          <div class="slide pic">
             <h3 class="uppercase sm-px12 sm-lh18 white bkg-black">Current Sermon Series</h3>
             {# <a href="/news/sermon-series/">here is a link</a> #}
             <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/gods-vs-god.jpg" class="cld-responsive cover-img" />
-          </div>-->
-          <!--<div class="slide pic">
+          </div>
+          <div class="slide pic">
             <h3 class="uppercase sm-px24 sm-lh30 white bkg-black">Join Our Next<br> Outreach Effort</h3>
             <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/praying.jpg" class="cld-responsive cover-img" />
           </div>
@@ -88,21 +88,21 @@
           <div class="slide">
             <h3>Slide 4</h3>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>-->
+          </div>
         </div>
       </div>
-      <!--<div class="column medium-1 hide-for-small-only">
+      <div class="column medium-1 hide-for-small-only">
         <button class="btn-next">&rsaquo;<span>next</span></button>
-      </div>-->
+      </div>
     </div>
-    <!--<div class="row collapse">
+    <div class="row collapse">
       <div class="column small-12 hide-for-medium">
         <button class="btn-prev">prev</button> <button class="btn-next">next</button>
       </div>
-    </div>-->
+    </div>
   </div>
   <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/darkboard.jpg" class="cld-responsive cover-img" />
-</section>
+</section>-->
 
 <section id="gatherings">
   <div class="row align-center collapse">

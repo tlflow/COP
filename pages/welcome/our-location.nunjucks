@@ -18,11 +18,6 @@
 
 {% block content %}
 <div class="row align-center">
-  <div class="columns small-12 ">
-
-  </div>
-</div>
-<div class="row align-center">
   <div class="columns small-12 large-10">
     <h1>Our Location</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolorem, dolore sint voluptatem, assumenda labore beatae ad necessitatibus non architecto delectus eum sunt dicta cum quam, iste perspiciatis nostrum enim!</p>
