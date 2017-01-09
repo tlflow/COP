@@ -18,18 +18,11 @@ if (!COP.components) COP.components = {};
             var this = $(this);
             COP.components.scriptures.apis.glossary.push(this);
           });
-
-          // $.each($(scriptureUl +' li'), function( index, value ) {
-          //   console.log( index + ": " + value );
-          //   // COP.components.scriptures.apis.glossary.push(value);
-          // });
-
-          console.log('scruiptures api', COP.components.scriptures.apis.glossary);
         });
     },
 
     findLinks: function() {
-      // console.log('test3', $.COP.scriptures.conversion());
+      // ('test3', $.COP.scriptures.conversion());
 
       $('[rel=scripture]').each( function(){
   			var self = $(this);
@@ -73,19 +66,54 @@ if (!COP.components) COP.components = {};
   		convertedScripture = book+'.'+verse;
 
   		this.updateLinks( convertedScripture, $el );
+      this.buildModals( scripture, convertedScripture );
   	},
 
   	updateLinks: function( scripture, element ) {
   		var $el = element;
   		$el.data('open', scripture+'-modal');
-      this.buildModals( element );
   	},
 
-    buildModals: function( element ) {
-      var $el = element;
+    buildModals: function( scripture, convertedScripture ) {
+      var glossary = COP.components.scriptures.apis.glossary;
+      var content = $("#content");
 
-      // var $modal = $el.
 
+
+
+      setTimeout(function(){
+
+        // if ( $(glossary[0]).find('.verse').text()===scripture ) {
+
+        // }
+
+        var scriptureText = $(glossary[0]).html();
+
+        var template = '<div class=\"reveal\" id=\"'+convertedScripture+'-modal\" data-reveal>' +scriptureText+ '</div>';
+
+
+              //   <h2>Deuteronomy 8:18</h2>
+              //   <p><span>18</span> But thou shalt remember the Lord thy God: for it is he that giveth thee power to get wealth, that he may establish his covenant which he sware unto thy fathers, as it is this day.</p>
+              //   <button class="close-button" data-close aria-label="Close modal" type="button">
+              //     <span aria-hidden="true">&times;</span>
+              //   </button>
+              // </div>
+
+        content.append(template);
+
+        var $modal = $('#Act.2.4-modal');
+
+        $modal.html(template);
+
+        var popup = new Foundation.Reveal( $modal );
+
+        // popup.open();
+
+        // console.log($modal);
+
+        // console.log('template', template);
+
+      }, 2000);
     },
 
   	_init: function() {
