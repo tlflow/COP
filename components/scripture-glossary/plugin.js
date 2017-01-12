@@ -65,60 +65,63 @@ if (!COP.components) COP.components = {};
   		// put book and verse together
   		convertedScripture = book+'.'+verse;
 
+      convertedScripture = convertedScripture.toString().toLowerCase();
+
   		this.updateLinks( convertedScripture, $el );
       this.buildModals( scripture, convertedScripture );
   	},
 
   	updateLinks: function( scripture, element ) {
   		var $el = element;
-  		$el.data('open', scripture+'-modal');
+      var findDots = new RegExp(/\./g);
+      var dashedScripture = scripture.replace(findDots, '-');
+      $el.data('open', scripture+'-modal').addClass(dashedScripture+'-modal');
   	},
 
     buildModals: function( scripture, convertedScripture ) {
       var glossary = COP.components.scriptures.apis.glossary;
       var content = $("#content");
 
-
-
-
       setTimeout(function(){
-
-        // if ( $(glossary[0]).find('.verse').text()===scripture ) {
-
-        // }
 
         var scriptureText = $(glossary[0]).html();
 
-        var template = '<div class=\"reveal\" id=\"'+convertedScripture+'-modal\" data-reveal>' +scriptureText+ '</div>';
-
-
-              //   <h2>Deuteronomy 8:18</h2>
-              //   <p><span>18</span> But thou shalt remember the Lord thy God: for it is he that giveth thee power to get wealth, that he may establish his covenant which he sware unto thy fathers, as it is this day.</p>
-              //   <button class="close-button" data-close aria-label="Close modal" type="button">
-              //     <span aria-hidden="true">&times;</span>
-              //   </button>
-              // </div>
+        var template = '<div class=\"reveal\" id=\"'+convertedScripture+'-modal\" data-reveal>' +scriptureText+ '<button class=\"close-button\" data-close aria-label=\"Close modal\" type=\"button\"><span aria-hidden="true">&times;</span></button></div>';
 
         content.append(template);
 
-        var $modal = $('#Act.2.4-modal');
-
-        $modal.html(template);
-
-        var popup = new Foundation.Reveal( $modal );
-
-        // popup.open();
-
-        // console.log($modal);
-
-        // console.log('template', template);
-
       }, 2000);
+    },
+
+    initializeModals: function() {
+
+      var modal = [];
+
+      $('.reveal').each(function(i, el){
+        var $el = $(el);
+        var $el_id = $el.attr('id');
+        var findDots = new RegExp(/\./g);
+        var dashedScripture = $el_id.replace(findDots, '-');
+
+        modal[i] = new Foundation.Reveal( $el );
+
+        $('.'+ dashedScripture ).on('click', function(e){
+          e.preventDefault();
+          modal[i].open();
+          console.log($(this));
+        });
+
+      });
+
     },
 
   	_init: function() {
       this.getAllScriptures();
       this.findLinks();
+
+      setTimeout(function(){
+        COP.components.scriptures.initializeModals();
+      }, 4000);
     }
 
   }
