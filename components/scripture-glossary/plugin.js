@@ -38,6 +38,7 @@ if (!COP.components) COP.components = {};
           findChars,
           verse,
           lastSegment,
+          splitMultipleScriptures,
           convertedScripture;
 
   		$el = element;
@@ -65,6 +66,13 @@ if (!COP.components) COP.components = {};
   		// put book and verse together
   		convertedScripture = book+'.'+verse;
 
+      // remove everything after "-" if using multiple scriptures
+      // for example Acts 1:2-3 (just references the 1st scripture)
+      splitMultipleScriptures = convertedScripture.split('-');
+
+      convertedScripture = splitMultipleScriptures[0];
+
+      // make everything lowercase
       convertedScripture = convertedScripture.toString().toLowerCase();
 
   		this.updateLinks( convertedScripture, $el );
@@ -84,11 +92,17 @@ if (!COP.components) COP.components = {};
 
       setTimeout(function(){
 
-        var scriptureText = $(glossary[0]).html();
+        for( var i=0 ; i<glossary.length-1; i++) {
 
-        var template = '<div class=\"reveal\" id=\"'+convertedScripture+'-modal\" data-reveal>' +scriptureText+ '<button class=\"close-button\" data-close aria-label=\"Close modal\" type=\"button\"><span aria-hidden="true">&times;</span></button></div>';
+          if ( scripture==$(COP.components.scriptures.apis.glossary[i].childNodes[0]).text() ){
+            var scriptureText = $(glossary[i]).html();
 
-        content.append(template);
+            var template = '<div class=\"reveal\" id=\"'+convertedScripture+'-modal\" data-reveal>' +scriptureText+ '<button class=\"close-button\" data-close aria-label=\"Close modal\" type=\"button\"><span aria-hidden="true">&times;</span></button></div>';
+
+            content.append(template);
+          }
+
+        }
 
       }, 2000);
     },
