@@ -50,6 +50,7 @@ if (!COP.components) COP.components = {};
   			book = splitScripture[1].substr(0, 3);
   			// add number part of book back to beginning
   			book = splitScripture[0]+book;
+
   		} else {
   			// scripture starts with a letter
   			book = splitScripture[0].substr(0, 3);
@@ -83,7 +84,7 @@ if (!COP.components) COP.components = {};
   		var $el = element;
       var findDots = new RegExp(/\./g);
       var dashedScripture = scripture.replace(findDots, '-');
-      $el.data('open', scripture+'-modal').addClass(dashedScripture+'-modal');
+      $el.data('open', scripture+'-modal').addClass('kjv-'+dashedScripture+'-modal');
   	},
 
     buildModals: function( scripture, convertedScripture ) {
@@ -94,17 +95,21 @@ if (!COP.components) COP.components = {};
 
         for( var i=0 ; i<glossary.length-1; i++) {
 
-          if ( scripture==$(COP.components.scriptures.apis.glossary[i].childNodes[0]).text() ){
+          if ( scripture===$(COP.components.scriptures.apis.glossary[i]).find('.verse').text() ){
             var scriptureText = $(glossary[i]).html();
 
-            var template = '<div class=\"reveal\" id=\"'+convertedScripture+'-modal\" data-reveal>' +scriptureText+ '<button class=\"close-button\" data-close aria-label=\"Close modal\" type=\"button\"><span aria-hidden="true">&times;</span></button></div>';
+            var template = '<div class=\"reveal\" id=\"kjv-'+convertedScripture+'-modal\" data-reveal>' +scriptureText+ '<button class=\"close-button\" data-close aria-label=\"Close modal\" type=\"button\"><span aria-hidden="true">&times;</span></button></div>';
 
             content.append(template);
           }
-
         }
+      }, 3000);
 
-      }, 2000);
+      // setTimeout(function(){
+      //   console.log('scripture', scripture);
+      //   console.log('glossary', $(COP.components.scriptures.apis.glossary[14]).find('.verse').text());
+      // }, 3000);
+
     },
 
     initializeModals: function() {
@@ -122,7 +127,7 @@ if (!COP.components) COP.components = {};
         $('.'+ dashedScripture ).on('click', function(e){
           e.preventDefault();
           modal[i].open();
-          console.log($(this));
+          // console.log($(this));
         });
 
       });
