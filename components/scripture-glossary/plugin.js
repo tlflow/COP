@@ -93,7 +93,7 @@ if (!COP.components) COP.components = {};
 
       setTimeout(function(){
 
-        for( var i=0 ; i<glossary.length-1; i++) {
+        for( var i=0 ; i<glossary.length; i++) {
 
           if ( scripture===$(COP.components.scriptures.apis.glossary[i]).find('.verse').text() ){
             var scriptureText = $(glossary[i]).html();
@@ -104,11 +104,6 @@ if (!COP.components) COP.components = {};
           }
         }
       }, 3000);
-
-      // setTimeout(function(){
-      //   console.log('scripture', scripture);
-      //   console.log('glossary', $(COP.components.scriptures.apis.glossary[14]).find('.verse').text());
-      // }, 3000);
 
     },
 
