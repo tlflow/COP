@@ -1,0 +1,105 @@
+{% set pageName = 'home' %}
+{% set pageTitle = 'Church of Philadelphia' %}
+{% extends 'homepage-layout.nunjucks' %}
+
+{% block content %}
+
+<!--<div id="news" class="parallax">
+  <div class="owl-carousel owl-theme">
+    <div class="slide pic watchnight">
+      <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/watchnight-2017.jpg" class="cld-responsive cover-img" />
+    </div>
+    <div class="slide pic">
+      <h3 class="uppercase sm-px12 sm-lh18 white bkg-black">Current Sermon Series</h3>
+      {# <a href="/news/sermon-series/">here is a link</a> #}
+      <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/gods-vs-god.jpg" class="cld-responsive cover-img" />
+    </div>
+    <div class="slide pic">
+      <h3 class="uppercase sm-px24 sm-lh30 white bkg-black">Join Our Next<br> Outreach Effort</h3>
+      <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/praying.jpg" class="cld-responsive cover-img" />
+    </div>
+    <div class="slide">
+      <h3>Slide 3</h3>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div class="slide">
+      <h3>Slide 4</h3>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+  </div>
+</div>-->
+
+<div id="masthead" class="parallax pic">
+  <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/praying.jpg" class="cld-responsive cover-img" />
+</div>
+
+<div class="section-container">
+
+  <section id="announcement">
+    <div class="row align-center">
+      <div class="column small-12 medium-10 large-6 lg-px24 uppercase">
+        <p>Join Us</p>
+      </div>
+      <div class="column small-12 medium-2 large-4">
+        <ul class="social-icons row align-center">
+          <li class="columns small-2"><a href="https://www.facebook.com/ChurchOfPhiladelphia/" class="social"><i class="icon-facebook2"></i></a></li>
+          <li class="columns small-2"><a href="https://twitter.com/copcharlotte" class="social"><i class="icon-twitter"></i></a></li>
+          <li class="columns small-2"><a href="https://www.instagram.com/cop_charlotte/" class="social"><i class="icon-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="about-us" class="pic">
+    <div class="row align-center">
+      <div class="column small-12 medium-10 large-8 section-container">
+        <div class="box">
+          <h2 class="section-heading">About Us</h2>
+          <p>Not only are we helping the lost find Christ and a new hope for living, we're helping believers to grow in their personal faith and become established in the Word. We extend an open invitation to you and your family to grow with us.</p>
+          <a class="blue-custom-btn" href="{{ sitevars.urlpat }}/about/">learn more</a>
+        </div>
+      </div>
+    </div>
+    <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/books.jpg" class="cld-responsive cover-img" />
+  </section>
+
+  <section id="gatherings">
+    <div class="row align-center collapse">
+      <div class="column small-12 section-container">
+        <h2 class="section-heading">Our Next Gathering</h2>
+        <p>Every Sunday we come together to celebrate, praise and worship our God.<br>It's not just a church service, it's an encounter.</p>
+        <div id="sunday-clock"></div>
+        <p>until our next
+        <br>Sunday 11am Worship Service</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="what-to-expect" class="pic">
+    <div class="row align-center">
+      <div class="column small-12 medium-10 large-8 section-container">
+        <div class="box">
+          <h2 class="section-heading">We Look Forward<br>to Seeing You</h2>
+          <p>We know visiting a church for the first time can be an overwhelming experience. We've all been there and we want you to feel right at home when you come!</p>
+          {# <a class="blue-custom-btn" href="/">Find Out More</a> #}
+        </div>
+      </div>
+    </div>
+    <img data-stoppoints="480,768,1200,1800" data-src="{{ sitevars.cloudinaryImage }}/guests.jpg" class="cld-responsive cover-img" />
+  </section>
+
+  <section id="connect" class="pic">
+    <div class="row align-center">
+      <div class="column small-12 medium-10 large-8 section-container">
+        <div class="box">
+          <h2 class="section-heading">Connect</h2>
+          <p>Not only are we helping the lost find Christ and a new hope for living, we're helping believers to grow in their personal faith and become established in the Word. We extend an open invitation to you and your family to grow with us.</p>
+          {# <a class="blue-custom-btn" href="/">Find Out More</a> #}
+        </div>
+      </div>
+    </div>
+    <img data-stoppoints="480,768,1200" data-src="{{ sitevars.cloudinaryImage }}/hold-hands.jpg" class="cld-responsive cover-img" />
+  </section>
+</div>
+
+{% endblock %}

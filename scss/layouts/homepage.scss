@@ -1,3 +1,5 @@
+/*
+
 .pic {
   background: #cccccc;
   background-repeat: no-repeat;
@@ -99,7 +101,12 @@
 
 .parallax {
   @include breakpoint(small) {
+    background-attachment: scroll;
+  }
+  @include breakpoint(large) {
+    height: 100%;
     background-attachment: fixed;
+    background-repeat: no-repeat;
   }
 }
 
@@ -139,6 +146,8 @@
 }
 
 #news {
+  padding: 0;
+
   .section-container {
     @include breakpoint(small) {
       width: 80%;
@@ -209,7 +218,7 @@ section {
 }
 
 
-// * Special Overrides for Slides */
+// * Special Overrides for Slides
 
 .watchnight a {
   @include breakpoint(small) {
@@ -217,5 +226,150 @@ section {
   }
   @include breakpoint(medium) {
     margin-top: rem-calc(210);
+  }
+}
+
+/// END ORIGINAL DESIGN
+
+*/
+
+body, html {
+  height: 100%;
+}
+
+.row {
+  @include breakpoint(large) {
+    width: rem-calc(1110);
+  }
+
+  .row {
+    width: auto;
+  }
+}
+
+.parallax {
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pic {
+  background: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: scroll;
+  overflow: hidden;
+
+  &.parallax {
+    background-attachment: fixed;
+  }
+}
+
+.cover-img {
+  display: none;
+}
+
+.owl-item .slide img {
+  display: none !important;
+}
+
+#masthead {
+  height: 80vh;
+}
+
+#gatherings {
+  background-color: darken($darkgrey, 10%);
+  color: #f2f2f2;
+  display: flex;
+
+  #sunday-clock {
+    width: 460px;
+    padding: rem-calc(40) 0;
+    margin: 0 auto;
+
+    .flip-clock-dot {
+      background-color: #f2f2f2;
+    }
+
+    .flip-clock-label {
+      color: #f2f2f2;
+      top: -2em;
+      text-transform: uppercase;
+    }
+
+    @include breakpoint(small only) {
+      zoom: 70%;
+    }
+  }
+}
+
+.box {
+  padding: rem-calc(30);
+  max-width: rem-calc(1050);
+  background-color: rgba(#111, 0.9);
+  color: #f2f2f2;
+}
+
+section {
+  display: flex;
+  text-align: center;
+  position: relative;
+  justify-content: center;
+
+  &#announcement {
+    background-color: #9b59b6;
+    color: #fff;
+
+    ul.social-icons {
+      height: 100%;
+      align-items: center;
+      
+      i {
+        font-size: rem-calc(30);
+      }
+    }
+
+    @include breakpoint(small) {
+      height: auto;
+      min-height: auto;
+      padding: rem-calc(20) 0;
+    }
+  }
+
+  &#gatherings {
+    @include breakpoint(small only) {
+      height: 100vh;
+    }
+
+    @include breakpoint(medium) {
+      height: auto;
+      min-height: rem-calc(450);
+    }
+  }
+
+  &#about-us {
+    @include breakpoint(small only) {
+      height: 100vh;
+    }
+
+    @include breakpoint(medium) {
+      height: auto;
+      min-height: rem-calc(400);
+    }
+  }
+
+  @include breakpoint(small only) {
+    height: 100vh;
+  }
+
+  @include breakpoint(medium) {
+    height: auto;
+    min-height: rem-calc(600);
   }
 }

@@ -1,0 +1,46 @@
+{% set segmentName = 'about' %}
+{% set pageName = 'what-we-believe' %}
+{% set pageTitle = 'What We Believe' %}
+{% set themeSetting = 'show-related' %}
+{% extends 'subpage-layout.nunjucks' %}
+
+{# {% block masthead %}
+<div id="masthead">
+  <!--<div class="text">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quisquam dolor accusamus porro ut architecto consectetur, quasi natus earum, accusantium!</p>
+  </div>-->
+</div>
+{% endblock %} #}
+
+{% block content %}
+  <div class="row align-center">
+    <div class="columns small-12 large-10">
+      <h1>What We Believe</h1>
+      <div class="row">
+        <div class="columns small-12 large-8">
+          <p>We believe:</p>
+          <ul>
+            <li>the Bible is to be our daily guide to living for Jesus Christ.</li>
+            <li>in water baptism in the name of Jesus according to <a data-open rel="scripture">Matthew 28:19-20</a>, <a data-open rel="scripture">Romans 6:4</a>, and <a data-open rel="scripture">Acts 2:38</a>.</li>
+            <li>in the baptism of the Holy Spirit according to <a data-open rel="scripture">Acts 2:4</a>.</li>
+            <li>speaking in tongues is the outward demonstration of the physical evidence of the Holy Ghost.</li>
+            <li>in the full operation of the gifts through the Holy Ghost as stated in <a data-open rel="scripture">1 Corinthians 12:8-11</a>.</li>
+            <li class="mg-bottom-50">God has commanded us to go into the highways &amp; hedges to tell of His goodness to the land of the living, as it says in <a data-open rel="scripture">Luke 14:23</a>.</li>
+          </ul>
+        </div>
+        <div class="columns small-12 large-3">
+          <h2>Related Topics</h2>
+        </div>
+    </div>
+  </div>
+  <section class="related">
+    <div class="row align-center">
+      <div class="columns small-12 large-10">
+        <h2>Related Topics</h2>
+        <div class="row align-justify">
+          {% include 'partials/about-related.nunjucks' %}
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
