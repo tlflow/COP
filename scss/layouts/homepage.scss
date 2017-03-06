@@ -237,13 +237,14 @@ body, html {
   height: 100%;
 }
 
-.row {
-  @include breakpoint(large) {
-    width: rem-calc(1110);
+#announcement .row {
+  @include breakpoint(medium) {
+    max-width: auto;
+    width: 80%;
   }
 
   .row {
-    width: auto;
+    width: 100%;
   }
 }
 
@@ -252,7 +253,7 @@ body, html {
   height: 100%;
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  background-attachment: fixed !important;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -278,16 +279,9 @@ body, html {
 #vanilla-slideshow-container {
   height: 80vh;
 
-  // @include breakpoint(small) {
-  //   height: rem-calc(200);
-  // }
-  // @include breakpoint(medium) {
-  //   height: rem-calc(360);
-  // }
-
   @include breakpoint(large) {
     height: 80vh;
-    margin-top: 5vh;
+    margin-top: 7vh;
   }
 
   #vanilla-slideshow {
@@ -357,19 +351,45 @@ body, html {
   color: #f2f2f2;
 }
 
+.top-bar {
+  @include breakpoint(large) {
+    & + #content {
+      margin-top: rem-calc(100);
+    }
+  }
+}
+
 section {
   display: flex;
   text-align: center;
   position: relative;
+  align-items: center;
   justify-content: center;
 
   &#announcement {
     background-color: #9b59b6;
     color: #fff;
 
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+      text-transform: uppercase;
+
+      @include breakpoint(small only) {
+        font-size: rem-calc(24);
+        margin-bottom: rem-calc(13);
+      }
+
+      @include breakpoint(medium) {
+        border-right: 1px solid rgba(#fff, 0.5);
+        font-size: rem-calc(24);
+      }
+    }
+
     ul.social-icons {
       height: 100%;
       align-items: center;
+      justify-content: space-between;
 
       i {
         font-size: rem-calc(30);
