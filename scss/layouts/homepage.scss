@@ -279,8 +279,37 @@ body, html {
   display: none !important;
 }
 
-#masthead {
+.slide {
+  background-color: #fff;
+  box-sizing: border-box;
+
+  @include breakpoint(small) {
+    height: rem-calc(200);
+  }
+  @include breakpoint(medium) {
+    height: rem-calc(360);
+  }
+  @include breakpoint(large) {
+    height: 80vh;
+    margin-top: 10vh;
+  }
+}
+
+#vanilla-slideshow-container {
   height: 80vh;
+  margin-top: 5vh;
+
+  #vanilla-slideshow {
+    height: 100%;
+  }
+}
+
+.vanilla-slide {
+  height: 100%;
+
+  img {
+    display: none !important;
+  }
 }
 
 #gatherings {
@@ -329,7 +358,7 @@ section {
     ul.social-icons {
       height: 100%;
       align-items: center;
-      
+
       i {
         font-size: rem-calc(30);
       }

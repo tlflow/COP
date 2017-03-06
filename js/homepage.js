@@ -8,7 +8,6 @@ $(function(){
 
   $('#sunday-clock').timer();
 
-
   //////////////////////////////////
   /// homepage form submission /////
   //////////////////////////////////
@@ -61,6 +60,22 @@ $(function(){
     });
 
   });
+
+
+  ////////////////////////
+  /// vanilla slider /////
+  ////////////////////////
+
+
+	vanillaSlideshow.init({
+		slideshow: true,
+		delay: 5000,
+		arrows: true,
+		indicators: true,
+		random: false,
+		animationSpeed: '1s'
+	});
+
 
 
   //////////////////////////////////////////

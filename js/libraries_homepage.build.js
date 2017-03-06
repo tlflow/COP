@@ -12,8 +12,8 @@
 
 //@prepros-append ../bower_components/cloudinary-jquery/cloudinary-jquery.min.js
 
-//@prepros-append ../bower_components/foundation-sites/dist/foundation.min.js
+//@prepros-append ../bower_components/foundation-sites/dist/js/foundation.min.js
 
 //@prepros-append lib/greensock/TweenMax.min.js
 
-//@prepros-append ../bower_components/owl.carousel/dist/owl.carousel.min.js
+//@prepros-append ../bower_components/vanilla-slideshow/js/vanillaSlideshow.min.js
