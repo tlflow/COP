@@ -1,0 +1,54 @@
+{% set segmentName = 'events' %}
+{% set pageName = 'coffee' %}
+{% set pageTitle = 'Coffee with Pastors' %}
+{% set hideRegional = 'yes' %}
+
+{% extends 'subpage-layout.nunjucks' %}
+
+{% block masthead %}
+<div id="masthead" class="pic">
+  <img data-stoppoints="480,768,1200,1800" data-src="{{ sitevars.cloudinaryImage }}/coffee.jpg" class="cld-responsive cover-img" />
+</div>
+{% endblock %}
+
+{% block content %}
+  <div class="row align-center">
+    <div class="columns small-12 large-10">
+      <h1>Coffee with Our Pastors</h1>
+      <p>Maybe you have been attending Church of Philadelphia for a while, and have some questions about the inner workings of the church.  Maybe you're new to the church and would like to simply meet Pastor Lincoln or the other pastors on staff, and learn about ways you can get connected.  Whatever stage you're in, we want to meet you and let you know more about who we are and why we're here.</p>
+      <p>Join us for a casual coffee with our pastors and a few members of Church of Philadelphia. Feel free to ask questions and chat about Church of Philadelphia, how things work, or anything else you might want to know as you get more familiar with the family at Church of Philadelphia.
+
+      <h2>Directions</h2>
+      <p>Panera Bread is really easy to find.
+      <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d104184.63281346769!2d-80.81521198970529!3d35.31170160761678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x88541c3d0c63d99d%3A0x83b0956c941fb5b0!2spanera+bread+jw+clay!3m2!1d35.3117218!2d-80.7451719!5e0!3m2!1sen!2sus!4v1489725404960" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="row">
+        <div class="columns small-12 medium-6">
+          <h3>Directions from the church</h3>
+          <ul>
+            <li>One</li>
+            <li>One</li>
+            <li>One</li>
+            <li>One</li>
+          </ul>
+        </div>
+        <div class="columns small-12 medium-6">
+          <h3>Directions from 85</h3>
+          <ul>
+            <li>Two</li>
+            <li>Two</li>
+            <li>Two</li>
+            <li>Two</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Questions?</h2>
+      <p>Have some questions? Please call us at <a href="tel:980.313.3039">(980)313-3039</a> or <a href="mailto:info@churchofphiladelphia.com">e-mail</a> us. </p>
+    </div>
+
+  </div>
+{% endblock %}
+
+{% block extra %}
+
+{% endblock %}

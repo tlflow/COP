@@ -1,26 +1,5 @@
 {% set columnSettings = "columns small-12" %}
 
-{% block believe_content %}
-  <div class="{{ columnSettings }}">
-    <h3></h3>
-    <p></p>
-  </div>
-{% endblock %}
-{% block mission_content %}
-  <div class="{{ columnSettings }}">
-    <h3></h3>
-    <p></p>
-  </div>
-{% endblock %}
-{% block vision_content %}
-  <div class="{{ columnSettings }}">
-    <h3></h3>
-    <p></p>
-  </div>
-{% endblock %}
-
-
-
 {% if pageName=='mission' %}
   <div class="columns small-12 large-4">
     <h3>What We Believe</h3>

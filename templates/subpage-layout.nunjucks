@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <div id="page" class="{{ pageName }}">
+  <div id="page" class="{{ pageName }} {%if hideRegional == 'yes' %} hide-regional {% endif %}">
     {% include 'partials/header.nunjucks'%}
 
     {% block masthead %} {% endblock %}

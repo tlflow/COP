@@ -122,7 +122,6 @@ if (!COP.components) COP.components = {};
         $('.'+ dashedScripture ).on('click', function(e){
           e.preventDefault();
           modal[i].open();
-          // console.log($(this));
         });
 
       });
